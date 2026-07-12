@@ -50,12 +50,19 @@ between your devices. When you're signed in we hold:
   the original post links, and their **captions/notes**.
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
+- **Posts and likes** — text posts you choose to publish in the app. A post
+  contains the text you write (a caption), an optional place name with its
+  coordinates, and timestamps. Your posts, and a record of which posts you've
+  liked, are stored with your account.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
-data is left untouched. Your saved places and profile are private to your
-account — nothing is made public unless and until public/social features
-launch and you choose to opt in.
+data is left untouched. Your saved places, profile, and points stay private to
+your account. **Posts are the exception:** a text post you publish is visible
+to other signed-in users whenever your profile is public — and during beta,
+accounts are public by default. You can delete any of your own posts at any
+time, and deleting your account removes your posts and likes along with
+everything else.
 
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
@@ -75,8 +82,10 @@ When you save a post, the app needs to turn text into a map pin:
 
 ### Planned (not live yet — we'll update this policy first)
 
-- **Social features** — public profiles, shared maps, posts, follows,
-  meetups. Anything you choose to make public will be visible to other users.
+- **More social features** — following other users, shared/creator maps, and
+  meetups. These aren't built yet (text posts, described above, are the one
+  social feature live today). Anything you choose to make public will be
+  visible to other users.
 - **Location services** — strictly opt-in, used to localize your feed and
   send nearby alerts. Off by default; the app works without it.
 - **Push notifications** — opt-in via your device's normal permission
@@ -104,7 +113,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | TikTok / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
-| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, and points activity — only when you're signed in |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts and likes you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 
 Each of these services has its own privacy policy that governs its side of
@@ -130,7 +139,9 @@ what lets us restore your map on a new phone.
 - **Deletion:** if you don't have an account, deleting the app deletes all
   your NomadMap data — it's the only place it exists. If you have an account,
   **email admin@nomadzachstudios.com to delete your account and everything
-  stored for it**, and we'll action it promptly. An in-app "delete my
+  stored for it** (including your posts and likes), and we'll action it
+  promptly. You can also delete any individual post yourself inside the app.
+  An in-app "delete my
   account" button is coming and will do the same thing.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
@@ -157,6 +168,11 @@ one-time-code sign-in and cloud sync of your saved places and profile to
 Supabase (Sydney, Australia); documented the in-app points activity log and
 the email-based account-deletion path; and clarified that the TikTok/X
 caption lookup and AI place extraction happen today rather than "upcoming."
+Also went live today: **social posts** — signed-in users can publish text
+posts (with an optional place and coordinates) that are visible to other
+signed-in users when your profile is public (public by default in beta),
+along with likes; you can delete your own posts, and account deletion removes
+them. Following, shared maps, and meetups remain planned.
 
 ## Contact
 

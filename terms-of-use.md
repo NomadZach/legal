@@ -61,6 +61,15 @@ back to you so the app can work and sync across your devices. You're
 responsible for the content you add and for having the right to use any link
 or caption you save.
 
+You can also **publish text posts** in the app. When your profile is public
+(the default during beta), your posts are visible to other signed-in users.
+For any post you publish, you grant NomadZach Studios the non-exclusive
+license needed to store, display, and distribute that post within the app so
+other users can see it — you keep ownership of what you write. You're
+responsible for your posts, and they must follow the acceptable-use rules in
+section 5; we may remove content that breaks those rules. You can delete your
+own posts at any time.
+
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
 governed by those platforms' terms. NomadMap does not host, own, or
@@ -96,7 +105,10 @@ change means you accept the updated terms.
 
 **Changelog — July 12, 2026:** added optional accounts (email one-time-code
 sign-in) and cloud sync, a clause that in-app points are not money, and a
-disclosure that some booking links are affiliate links.
+disclosure that some booking links are affiliate links. Also added user
+**posts**: you can publish text posts that other signed-in users can see when
+your profile is public, you grant us the license to display them, they must
+follow the acceptable-use rules, and we may remove content that breaks them.
 
 ## 11. Governing law
 
