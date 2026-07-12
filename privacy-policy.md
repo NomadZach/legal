@@ -139,11 +139,13 @@ what lets us restore your map on a new phone.
   exported copy, email us.
 - **Deletion:** if you don't have an account, deleting the app deletes all
   your NomadMap data — it's the only place it exists. If you have an account,
-  **email admin@nomadzachstudios.com to delete your account and everything
-  stored for it** (including your posts and likes), and we'll action it
-  promptly. You can also delete any individual post yourself inside the app.
-  An in-app "delete my
-  account" button is coming and will do the same thing.
+  use the **"delete my account" button in the Profile screen** — it
+  permanently erases your cloud account and everything stored for it
+  (including your posts and likes) immediately. You can also delete any
+  individual post yourself inside the app, or **email
+  admin@nomadzachstudios.com** and we'll action the deletion for you
+  promptly. Deleting your account does not touch the data saved on your own
+  phone.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
   gives you similar rights, including the right to know we don't sell your
