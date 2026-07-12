@@ -54,6 +54,13 @@ between your devices. When you're signed in we hold:
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
   liked, are stored with your account.
+- **Social handles and self-reported follower counts** — the @handles you type
+  in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
+  follower counts you enter for them, stored with your account and shown on your
+  public profile as an aggregated "reach". These are **self-reported and NOT
+  verified with the platforms** — we don't connect to your social accounts or
+  read anything from them to produce these numbers. You can change or remove them
+  anytime by unlinking the platform, which deletes them from your account.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
@@ -175,7 +182,12 @@ Also went live today: **social posts** — signed-in users can publish text
 posts (with an optional place and coordinates) that are visible to other
 signed-in users when your profile is public (public by default in beta),
 along with likes, which are likewise visible to signed-in users; you can delete
-your own posts, and account deletion removes them. Following, shared maps, and meetups remain planned.
+your own posts, and account deletion removes them. Also added: you can **link
+your social handles** (Instagram, TikTok, X, Facebook, YouTube) by typing them
+in, along with **self-reported follower counts** that stack into an aggregated
+"reach" shown on your public profile — these are self-reported and NOT verified
+with the platforms, and unlinking a platform deletes them. Following, shared
+maps, and meetups remain planned.
 
 ## Contact
 
