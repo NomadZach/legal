@@ -80,11 +80,11 @@ When you save a post, the app needs to turn text into a map pin:
 - The **place text** (e.g. "Bánh Mì Phượng, Hội An") is sent to
   OpenStreetMap's Nominatim geocoding service to look up coordinates. Only
   the place text is sent.
-- If you share a **TikTok or X (Twitter) link**, the app fetches that
-  post's public caption from the platform's official oEmbed endpoint (a
-  public lookup service those platforms provide). The platform sees the
-  request came from your device, the same as if you opened the link in a
-  browser.
+- If you share a **TikTok, Instagram, or X (Twitter) link**, the app fetches
+  that post's public caption from the platform's official oEmbed endpoint (a
+  public lookup service those platforms provide; it only works for public
+  posts). The platform sees the request came from your device, the same as
+  if you opened the link in a browser.
 - If the place still isn't clear, the **caption text** is sent to Anthropic's
   Claude API, through our server, so an AI model can extract the place name
   and city from it. Only the caption text is sent — we don't attach your
@@ -121,7 +121,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Service | What it does | What it receives |
 |---|---|---|
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
-| TikTok / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
+| TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts and likes you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
