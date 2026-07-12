@@ -58,11 +58,12 @@ between your devices. When you're signed in we hold:
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
 data is left untouched. Your saved places, profile, and points stay private to
-your account. **Posts are the exception:** a text post you publish is visible
-to other signed-in users whenever your profile is public — and during beta,
-accounts are public by default. You can delete any of your own posts at any
-time, and deleting your account removes your posts and likes along with
-everything else.
+your account. **Posts and likes are the exception:** a text post you publish is
+visible to other signed-in users whenever your profile is public — and during
+beta, accounts are public by default. Likes are visible too: every post shows
+its like count, and the fact that your account liked a post can be seen by other
+signed-in users. You can delete any of your own posts at any time, and deleting
+your account removes your posts and likes along with everything else.
 
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
@@ -171,8 +172,8 @@ caption lookup and AI place extraction happen today rather than "upcoming."
 Also went live today: **social posts** — signed-in users can publish text
 posts (with an optional place and coordinates) that are visible to other
 signed-in users when your profile is public (public by default in beta),
-along with likes; you can delete your own posts, and account deletion removes
-them. Following, shared maps, and meetups remain planned.
+along with likes, which are likewise visible to signed-in users; you can delete
+your own posts, and account deletion removes them. Following, shared maps, and meetups remain planned.
 
 ## Contact
 
