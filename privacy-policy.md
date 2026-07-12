@@ -1,17 +1,20 @@
-# NomadMap Privacy Policy
+# Pinorama Privacy Policy
 
 **Effective date: July 12, 2026**
 
+> **Pinorama was previously known as NomadMap during early beta — same app,
+> same operator (NomadZach Studios).**
+
 ## Who we are
 
-NomadMap is a mobile travel app for iOS and Android that lets you save
+Pinorama is a mobile travel app for iOS and Android that lets you save
 places from social media posts to your own personal travel map. It is made
 by NomadZach Studios (currently operating as a sole proprietorship while a
 company entity is being formalized). If you have any question about this
 policy or your data, email us at **admin@nomadzachstudios.com** — a real
 person reads it.
 
-NomadMap is in **beta**. You can use the whole app **without an account**,
+Pinorama is in **beta**. You can use the whole app **without an account**,
 in which case your data stays on your device and we hold almost none of it.
 If you **create an account** (optional), your saved places and profile are
 stored in our cloud database so they survive a lost phone and sync between
@@ -23,7 +26,7 @@ before any of the "planned" items below go live.
 
 ### Without an account (local-only — the default)
 
-**If you don't sign in, everything you put into NomadMap stays on your
+**If you don't sign in, everything you put into Pinorama stays on your
 device.** There is no server-side copy of your personal data. Data the app
 handles locally includes:
 
@@ -42,10 +45,10 @@ you do sign in, we store a copy of some of your data on our cloud database
 between your devices. When you're signed in we hold:
 
 - **Your email address**, used to sign you in. We send a **6-digit one-time
-  code** to your email instead of using passwords — NomadMap has no password
+  code** to your email instead of using passwords — Pinorama has no password
   to store.
 - **Your profile** from onboarding: display name, avatar emoji, home base,
-  traveler types, interests, and your NomadMap passport number.
+  traveler types, interests, and your Pinorama passport number.
 - **Your saved places**, including their names, **coordinates**, categories,
   the original post links, and their **captions/notes**.
 - **Points activity** — a log of in-app points you earn (e.g. save
@@ -147,7 +150,7 @@ what lets us restore your map on a new phone.
   places, your profile, and your points. If you have an account and want an
   exported copy, email us.
 - **Deletion:** if you don't have an account, deleting the app deletes all
-  your NomadMap data — it's the only place it exists. If you have an account,
+  your Pinorama data — it's the only place it exists. If you have an account,
   use the **"delete my account" button in the Profile screen** — it
   permanently erases your cloud account and everything stored for it
   (including your posts and likes) immediately. You can also delete any
@@ -163,7 +166,7 @@ what lets us restore your map on a new phone.
 
 ## Children
 
-NomadMap is not directed at anyone under 18, and you must be 18 or older
+Pinorama is not directed at anyone under 18, and you must be 18 or older
 to use it (social and dating-style features are planned). We do not
 knowingly collect data from minors; if you believe a minor is using the
 app, contact us.
@@ -189,7 +192,9 @@ your social handles** (Instagram, TikTok, X, Facebook, YouTube) by typing them
 in, along with **self-reported follower counts** that stack into an aggregated
 "reach" shown on your own profile screen (visible only to you for now) — these are self-reported and NOT verified
 with the platforms, and unlinking a platform deletes them. Following, shared
-maps, and meetups remain planned.
+maps, and meetups remain planned. **The app was also renamed from NomadMap to
+Pinorama** — same app, same operator (NomadZach Studios), same data handling;
+only the name changed.
 
 ## Contact
 

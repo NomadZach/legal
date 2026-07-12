@@ -1,16 +1,19 @@
-# NomadMap Terms of Use (Beta)
+# Pinorama Terms of Use (Beta)
 
 **Effective date: July 12, 2026**
 
-These are short beta terms for NomadMap, made by NomadZach Studios
+> **Pinorama was previously known as NomadMap during early beta — same app,
+> same operator (NomadZach Studios).**
+
+These are short beta terms for Pinorama, made by NomadZach Studios
 (contact: admin@nomadzachstudios.com). By using the app you agree to them.
 A fuller version will replace this when the app leaves beta.
 
 ## 1. Beta software, provided as-is
 
-NomadMap is pre-release software. It is provided **"as is" and "as
+Pinorama is pre-release software. It is provided **"as is" and "as
 available," without warranties of any kind** — things may break, change,
-or be removed without notice, and data may be lost. If you use NomadMap
+or be removed without notice, and data may be lost. If you use Pinorama
 without an account, your data lives only on your device and deleting the app
 deletes it; if you have an account, we sync a cloud backup, but during beta
 we don't guarantee against data loss. To the maximum extent permitted by
@@ -26,7 +29,7 @@ prices. Nothing in the beta is a booking, purchase, or commitment.
 
 ## 3. Your account
 
-Accounts are optional — you can use NomadMap without one. If you create an
+Accounts are optional — you can use Pinorama without one. If you create an
 account, you sign in with a **one-time code sent to your email**, so keep
 access to that email address; there is no password. You're responsible for
 activity under your account and for giving us an email address you control.
@@ -36,7 +39,7 @@ Privacy Policy for what that removes.
 
 ## 4. Who can use it
 
-You must be **18 or older** to use NomadMap.
+You must be **18 or older** to use Pinorama.
 
 ## 5. Acceptable use
 
@@ -72,13 +75,13 @@ own posts at any time.
 
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
-governed by those platforms' terms. NomadMap does not host, own, or
+governed by those platforms' terms. Pinorama does not host, own, or
 endorse it, and links may stop working if the original post changes or is
 removed.
 
 ## 7. Points and rewards
 
-NomadMap may award in-app points (for example, for save milestones). **Points
+Pinorama may award in-app points (for example, for save milestones). **Points
 are not money**: they have no cash value, can't be bought, sold, or redeemed
 for cash, and may be adjusted, expired, or reset — especially during beta as
 we tune the system. If we ever let you redeem points for perks, we'll
@@ -86,15 +89,15 @@ describe how here when it launches.
 
 ## 8. Bookings and affiliate links
 
-Some booking, deal, or product links in NomadMap are **affiliate links**: if
-you book or buy through them, the operator of NomadMap may earn a commission
+Some booking, deal, or product links in Pinorama are **affiliate links**: if
+you book or buy through them, the operator of Pinorama may earn a commission
 from the provider, at no extra cost to you. During beta, booking inventory
 shown in the app is sample/preview content and not a real offer (see
 section 2).
 
 ## 9. Privacy
 
-How we handle data is described in the [NomadMap Privacy
+How we handle data is described in the [Pinorama Privacy
 Policy](privacy-policy.html), which is part of these terms.
 
 ## 10. Changes
@@ -109,6 +112,8 @@ disclosure that some booking links are affiliate links. Also added user
 **posts**: you can publish text posts that other signed-in users can see when
 your profile is public, you grant us the license to display them, they must
 follow the acceptable-use rules, and we may remove content that breaks them.
+**The app was also renamed from NomadMap to Pinorama** — same app, same
+operator (NomadZach Studios), same terms; only the name changed.
 
 ## 11. Governing law
 
