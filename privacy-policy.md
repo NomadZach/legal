@@ -11,51 +11,72 @@ company entity is being formalized). If you have any question about this
 policy or your data, email us at **admin@nomadzachstudios.com** — a real
 person reads it.
 
-NomadMap is in **beta**. That matters for privacy, because right now the
-app is built so that we hold almost none of your data at all. This policy
-explains what happens today, and what will change as planned features
-launch. We will update this policy — and tell you — before any of the
-"planned" items below go live.
+NomadMap is in **beta**. You can use the whole app **without an account**,
+in which case your data stays on your device and we hold almost none of it.
+If you **create an account** (optional), your saved places and profile are
+stored in our cloud database so they survive a lost phone and sync between
+your devices. This policy explains both cases, plus what will change as
+further planned features launch. We will update this policy — and tell you —
+before any of the "planned" items below go live.
 
 ## What we collect
 
-### Right now (beta)
+### Without an account (local-only — the default)
 
-**Everything you put into NomadMap stays on your device.** There are no
-user accounts and no server-side storage of your personal data. Data the
-app handles locally includes:
+**If you don't sign in, everything you put into NomadMap stays on your
+device.** There is no server-side copy of your personal data. Data the app
+handles locally includes:
 
-- Places you save (name, coordinates, category)
+- Places you save (name, coordinates, category, and the caption/notes)
 - Links to social media posts you share or paste in, and their captions
 - Your answers to the onboarding questions (travel style, preferences)
 - App settings and progress (e.g. which tips you've seen)
 
-None of this is uploaded to us. We can't see it, and we don't have it.
+We can't see any of this, and we don't have it.
 
-**One thing leaves your device: figuring out where a place is.** When you
-save a post, the app needs to turn text into a map pin:
+### With an account (optional cloud sync)
+
+**Creating an account is optional** — the app is fully usable signed out. If
+you do sign in, we store a copy of some of your data on our cloud database
+(Supabase — see the table below) so it survives a lost phone and syncs
+between your devices. When you're signed in we hold:
+
+- **Your email address**, used to sign you in. We send a **6-digit one-time
+  code** to your email instead of using passwords — NomadMap has no password
+  to store.
+- **Your profile** from onboarding: display name, avatar emoji, home base,
+  traveler types, interests, and your NomadMap passport number.
+- **Your saved places**, including their names, **coordinates**, categories,
+  the original post links, and their **captions/notes**.
+- **Points activity** — a log of in-app points you earn (e.g. save
+  milestones). Points are in-app only and are not money (see the Terms).
+
+Your device stays the primary copy; the cloud copy is a synced backup. Syncing
+happens when you sign in and when you open the app. If you sign out, your local
+data is left untouched. Your saved places and profile are private to your
+account — nothing is made public unless and until public/social features
+launch and you choose to opt in.
+
+**One thing leaves your device either way: figuring out where a place is.**
+When you save a post, the app needs to turn text into a map pin:
 
 - The **place text** (e.g. "Bánh Mì Phượng, Hội An") is sent to
   OpenStreetMap's Nominatim geocoding service to look up coordinates. Only
-  the place text is sent — not your identity, since you don't have one in
-  the app.
+  the place text is sent.
 - If you share a **TikTok or X (Twitter) link**, the app fetches that
   post's public caption from the platform's official oEmbed endpoint (a
   public lookup service those platforms provide). The platform sees the
   request came from your device, the same as if you opened the link in a
   browser.
-- In an **upcoming version**, caption text will also be sent to Anthropic's
-  Claude API via our server so an AI model can extract the place name and
-  city from it. The caption text goes through — no account identity or
-  personal details are attached, because there are no accounts yet.
+- If the place still isn't clear, the **caption text** is sent to Anthropic's
+  Claude API, through our server, so an AI model can extract the place name
+  and city from it. Only the caption text is sent — we don't attach your
+  account or profile to it.
 
 ### Planned (not live yet — we'll update this policy first)
 
-- **User accounts and cloud sync** — email/password or similar sign-in, and
-  your saved maps synced to the cloud so they survive a lost phone. We plan
-  to use Supabase, hosted in the Australia/Singapore region.
-- **Social features** — public profiles, shared maps, posts, meetups.
-  Anything you choose to make public will be visible to other users.
+- **Social features** — public profiles, shared maps, posts, follows,
+  meetups. Anything you choose to make public will be visible to other users.
 - **Location services** — strictly opt-in, used to localize your feed and
   send nearby alerts. Off by default; the app works without it.
 - **Push notifications** — opt-in via your device's normal permission
@@ -67,7 +88,8 @@ save a post, the app needs to turn text into a map pin:
 
 ## How we use your data
 
-Today: to make the app work on your device and to place pins on your map.
+To make the app work, place pins on your map, and — if you have an account —
+sync your saved places and profile across your devices and back them up.
 That's the whole list.
 
 We do **not** sell personal data. We do **not** track you across other
@@ -81,36 +103,40 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 |---|---|---|
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | TikTok / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
-| Anthropic (Claude API) — upcoming | Extracts place names from captions, via our server | Caption text only, no identity attached |
+| Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, and points activity — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
-| Supabase — planned | Account and cloud-sync hosting (Australia/Singapore region) | Account details and synced data, once accounts exist |
 
 Each of these services has its own privacy policy that governs its side of
 the exchange.
 
 ## Storage and security
 
-In the beta, your data lives in your phone's local app storage, protected
-by your device's own security (passcode, encryption). Because there's no
-server copy, there's also nothing for us to leak — but it also means **we
-can't recover your data if you delete the app or lose your phone**.
-Cloud sync, when it arrives, will fix that trade-off, with account data
-protected by industry-standard encryption in transit and at rest.
+If you don't have an account, your data lives only in your phone's local app
+storage, protected by your device's own security (passcode, encryption).
+There's no server copy to leak — but it also means **we can't recover your
+data if you delete the app or lose your phone**.
+
+If you have an account, a copy is also stored on Supabase, protected by
+industry-standard encryption in transit and at rest, with database access
+rules that keep your places and profile readable only by you. That copy is
+what lets us restore your map on a new phone.
 
 ## Your rights and choices
 
-- **Access:** in the beta, everything we "have" is already in front of you
-  inside the app.
-- **Deletion:** in the beta, deleting the app deletes all your NomadMap
-  data — it goes with the app, because that's the only place it exists.
-  Once accounts launch, you'll be able to delete your account and data
-  in-app, or by emailing admin@nomadzachstudios.com.
+- **Access:** everything we hold is visible to you inside the app — your
+  places, your profile, and your points. If you have an account and want an
+  exported copy, email us.
+- **Deletion:** if you don't have an account, deleting the app deletes all
+  your NomadMap data — it's the only place it exists. If you have an account,
+  **email admin@nomadzachstudios.com to delete your account and everything
+  stored for it**, and we'll action it promptly. An in-app "delete my
+  account" button is coming and will do the same thing.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
   gives you similar rights, including the right to know we don't sell your
-  data (we don't). Given the beta's local-only design, most of these rights
-  are exercised by simply using or deleting the app — but you can always
-  email us and we'll help.
+  data (we don't). You can exercise these rights by using or deleting the app
+  (local data) or by emailing us (account data), and we'll help either way.
 
 ## Children
 
@@ -125,6 +151,12 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — July 12, 2026:** added optional accounts with email
+one-time-code sign-in and cloud sync of your saved places and profile to
+Supabase (Sydney, Australia); documented the in-app points activity log and
+the email-based account-deletion path; and clarified that the TikTok/X
+caption lookup and AI place extraction happen today rather than "upcoming."
 
 ## Contact
 
