@@ -56,8 +56,10 @@ between your devices. When you're signed in we hold:
   liked, are stored with your account.
 - **Social handles and self-reported follower counts** — the @handles you type
   in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
-  follower counts you enter for them, stored with your account and shown on your
-  public profile as an aggregated "reach". These are **self-reported and NOT
+  follower counts you enter for them, stored with your account and shown to you
+  in the app as an aggregated "reach" on your profile. Today only you can see
+  them; when public creator profiles launch they'll appear there, and we'll
+  update this policy first. These are **self-reported and NOT
   verified with the platforms** — we don't connect to your social accounts or
   read anything from them to produce these numbers. You can change or remove them
   anytime by unlinking the platform, which deletes them from your account.
@@ -185,7 +187,7 @@ along with likes, which are likewise visible to signed-in users; you can delete
 your own posts, and account deletion removes them. Also added: you can **link
 your social handles** (Instagram, TikTok, X, Facebook, YouTube) by typing them
 in, along with **self-reported follower counts** that stack into an aggregated
-"reach" shown on your public profile — these are self-reported and NOT verified
+"reach" shown on your own profile screen (visible only to you for now) — these are self-reported and NOT verified
 with the platforms, and unlinking a platform deletes them. Following, shared
 maps, and meetups remain planned.
 
