@@ -119,6 +119,13 @@ safety tools — blocking works instantly and both ways. Matches and
 conversations are between you and the other traveler; Pinorama is not
 responsible for what happens off the app or in person.
 
+Pinorama has an optional **social map** that can show you're in an area. It is
+off until you turn it on, sharing is by your explicit tap only, what others see
+is limited to anonymous city counts (or a blurred approximate pin for mutual
+matches), and turning it off deletes your shared location. Only share your
+location if you're comfortable other travelers knowing roughly where you are,
+and use good judgment about meeting people — Pinorama doesn't vet travelers.
+
 Matched travelers can send each other **direct messages**. DMs are private
 to the two of you, but they are not exempt from the rules: the section-5
 acceptable-use rules apply, harassment or solicitation in DMs is grounds for

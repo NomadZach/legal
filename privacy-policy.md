@@ -242,6 +242,28 @@ You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
 profile, likes, matches, and blocks.
 
+## Sharing your location on the map (optional)
+
+Pinorama has an optional **social map** that can show you're around. It is
+**off until you turn it on** — we never share your location on the map unless
+you tap to share it, and we never read your location in the background.
+
+When you turn it on, we take a **single approximate location** and store it
+rounded to roughly a city block (~110 m); we never store your exact GPS
+coordinates for this feature. What others see is deliberately limited:
+
+- Any signed-in traveler sees only **anonymous city counts** ("12 travelers in
+  Da Nang") — no coordinates, no identity, no distance, and a city is only
+  shown when at least two people are there.
+- Only travelers you have a **mutual match** with can see an approximate,
+  further-blurred (~1 km grid) pin and a whole-kilometre distance — never your
+  exact spot, name, or coordinates.
+
+Your shared location automatically ages off the map after a few hours, and
+turning the social map off **deletes** your shared location from our servers
+(it's gone, not hidden). Blocking a traveler stops the sharing between you.
+Deleting your account removes your shared location too.
+
 ## Messages between matches
 
 When you match with another traveler in dating / travel-buddy discovery, you
@@ -338,7 +360,11 @@ up to **5 self-uploaded photos** (stored by us, deleted with your account)
 rooms** (new section above): public per-city rooms for signed-in travelers,
 joined only by your explicit tap — suggestions come from your saved places
 or base city, never background location; messages are deletable by you and
-erased with your account.
+erased with your account. Added **direct messages** between matched travelers
+(private to the two of you, blocking ends them, erased with your account) and
+an optional **social map** (off until you turn it on, single approximate
+location rounded to ~110 m, others see only anonymous city counts or a blurred
+match-only pin, auto-expires, deleting it or your account removes it).
 
 ## Contact
 
