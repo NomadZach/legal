@@ -242,6 +242,24 @@ You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
 profile, likes, matches, and blocks.
 
+## City chat rooms
+
+Pinorama has **city chat rooms** — one public room per city, open to signed-in
+travelers. Joining a room is **always your explicit choice**: the app may
+suggest a room based on places you've already saved or the base city on your
+profile (never from background location tracking), but you are never added to
+a room without tapping join, and dismissing a suggestion means that city
+won't be suggested again.
+
+If you send a message, we store the message text, the room's city, your
+account id, and the time — and every signed-in traveler in that room can see
+the message with your display name. An anti-spam limit caps how fast anyone
+can post. You can delete your own messages at any time (they disappear from
+the room), block other travelers (their messages stop appearing for you, on
+your device, immediately), and report messages — reports are noted on your
+device while the full review pipeline is built. Deleting your account
+permanently deletes your chat messages.
+
 ## Children
 
 Pinorama is not directed at anyone under 18, and you must be 18 or older
@@ -306,7 +324,11 @@ distance only, never your exact location, name, or email. Later the same
 day, discovery profiles gained an optional **display name**, optional
 **gender and who-you-want-to-meet** (a private filter, never shown), and
 up to **5 self-uploaded photos** (stored by us, deleted with your account)
-— the section above describes all of it.
+— the section above describes all of it. Also switched on **city chat
+rooms** (new section above): public per-city rooms for signed-in travelers,
+joined only by your explicit tap — suggestions come from your saved places
+or base city, never background location; messages are deletable by you and
+erased with your account.
 
 ## Contact
 

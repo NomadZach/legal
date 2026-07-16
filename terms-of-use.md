@@ -119,6 +119,14 @@ safety tools — blocking works instantly and both ways. Matches and
 conversations are between you and the other traveler; Pinorama is not
 responsible for what happens off the app or in person.
 
+You can also join **city chat rooms** — public per-city rooms visible to all
+signed-in travelers in that room. You join only by your own tap (suggestions
+are never auto-enrollment). Messages you send are public content within the
+room: the section-5 rules apply in full, we may remove messages or restrict
+accounts for abuse, an anti-spam rate limit applies, and you can delete your
+own messages at any time. Be kind — these rooms exist so travelers can help
+each other.
+
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
 governed by those platforms' terms. Pinorama does not host, own, or
