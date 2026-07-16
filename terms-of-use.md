@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 12, 2026**
+**Effective date: July 16, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -33,9 +33,9 @@ Accounts are optional — you can use Pinorama without one. If you create an
 account, you sign in with a **one-time code sent to your email**, so keep
 access to that email address; there is no password. You're responsible for
 activity under your account and for giving us an email address you control.
-You can delete your account at any time by emailing
-admin@nomadzachstudios.com (an in-app delete button is coming); see the
-Privacy Policy for what that removes.
+You can delete your account at any time with the **"delete my account"
+button in the Profile screen**, or by emailing admin@nomadzachstudios.com;
+see the Privacy Policy for what that removes.
 
 ## 4. Who can use it
 
@@ -72,6 +72,20 @@ other users can see it — you keep ownership of what you write. You're
 responsible for your posts, and they must follow the acceptable-use rules in
 section 5; we may remove content that breaks those rules. You can delete your
 own posts at any time.
+
+You can also post **game nights** — a notice that a venue will air a sports
+fixture (venue name, sport/fixture, showing time, free entry, and a venue map
+location). Game nights are **public promo content: they appear on the map for
+everyone using the app, including people without accounts.** By posting one
+you confirm that **you own, manage, or are authorized to promote that venue**
+and that the information is accurate — a fixture you genuinely plan to show.
+The same non-exclusive display license and acceptable-use rules as posts
+apply. To keep the public map honest, each account can have at most **10 live
+game nights** at a time, game nights **expire automatically after 7 days**,
+and we may remove any game night (spam, fake venues, wrong locations, or any
+section-5 breach). Showing sports to the public can require rights or
+licenses in some places — that's the venue's responsibility, not Pinorama's.
+Posting game nights is free during beta.
 
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
@@ -114,6 +128,13 @@ your profile is public, you grant us the license to display them, they must
 follow the acceptable-use rules, and we may remove content that breaks them.
 **The app was also renamed from NomadMap to Pinorama** — same app, same
 operator (NomadZach Studios), same terms; only the name changed.
+
+**Changelog — July 16, 2026:** added **game nights** (section 6): venue promo
+posts that are public to everyone including signed-out users, require you to
+be authorized to promote the venue, carry a 10-live cap and 7-day auto-expiry,
+and may be removed for abuse. Also corrected section 3: the in-app
+"delete my account" button exists today (it shipped earlier — the old text
+still said it was coming).
 
 ## 11. Governing law
 

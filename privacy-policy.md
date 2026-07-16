@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 12, 2026**
+**Effective date: July 16, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -66,16 +66,32 @@ between your devices. When you're signed in we hold:
   verified with the platforms** — we don't connect to your social accounts or
   read anything from them to produce these numbers. You can change or remove them
   anytime by unlinking the platform, which deletes them from your account.
+- **Game nights you post (venue promo — PUBLIC)** — if you tell us your venue
+  will air a sports fixture (the "log a game night" card in the Work hub), we
+  store the venue name, the sport and fixture, the showing time you type, a
+  free-entry flag, and **a map location for the venue**. The location comes
+  from your device **only if you tick "pin at my current location"**, which
+  asks for your device's location permission and reads it once; if you don't,
+  the game night stays on your phone and is not uploaded. A game night with a
+  location is **public promo content**: it appears on the map for **everyone
+  using the app, including people without accounts**. The app shows the venue
+  name with it, not your name or handle, but it is stored with your account.
+  Game nights **expire off the map automatically after 7 days**, you can
+  remove your own at any time in the Work hub (it disappears for everyone
+  immediately), and deleting your account erases them entirely.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
 data is left untouched. Your saved places, profile, and points stay private to
-your account. **Posts and likes are the exception:** a text post you publish is
-visible to other signed-in users whenever your profile is public — and during
-beta, accounts are public by default. Likes are visible too: every post shows
-its like count, and the fact that your account liked a post can be seen by other
-signed-in users. You can delete any of your own posts at any time, and deleting
-your account removes your posts and likes along with everything else.
+your account. **Posts, likes, and game nights are the exceptions:** a text post
+you publish is visible to other signed-in users whenever your profile is public
+— and during beta, accounts are public by default. Likes are visible too: every
+post shows its like count, and the fact that your account liked a post can be
+seen by other signed-in users. **Game nights go further: they're shown on the
+map to everyone using the app, even people without accounts** (they're venue
+promo content — that's their whole point). You can delete any of your own posts
+or game nights at any time, and deleting your account removes your posts, likes,
+and game nights along with everything else.
 
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
@@ -99,8 +115,13 @@ When you save a post, the app needs to turn text into a map pin:
   meetups. These aren't built yet (text posts, described above, are the one
   social feature live today). Anything you choose to make public will be
   visible to other users.
-- **Location services** — strictly opt-in, used to localize your feed and
-  send nearby alerts. Off by default; the app works without it.
+- **Location services** — strictly opt-in and off by default; the app works
+  without it. **One use is live today:** when you log a game night you can
+  tick "pin at my current location," which asks your device's permission and
+  reads your location **once** to place your venue's pin — it is never read
+  in the background. (The map's "game night near you" card uses the area of
+  the map you're looking at, not your device's location.) Broader uses —
+  localizing your feed, nearby alerts via push — remain planned and opt-in.
 - **Push notifications** — opt-in via your device's normal permission
   prompt.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
@@ -126,7 +147,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
-| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts and likes you create — only when you're signed in |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 
 Each of these services has its own privacy policy that governs its side of
@@ -195,6 +216,18 @@ with the platforms, and unlinking a platform deletes them. Following, shared
 maps, and meetups remain planned. **The app was also renamed from NomadMap to
 Pinorama** — same app, same operator (NomadZach Studios), same data handling;
 only the name changed.
+
+**Changelog — July 16, 2026:** added **game nights** — signed-in venue
+partners can post that their venue will air a sports fixture (venue name,
+sport/fixture, showing time, free-entry flag, and a venue map location taken
+once from your device only if you tick "pin at my current location"). Game
+nights are **public promo content shown on the map to everyone, including
+people without accounts**; they display the venue name (not your name or
+handle), expire off the map automatically after 7 days, can be removed by you
+at any time, and are erased with your account. This is also the first live
+use of device location — a single opt-in read to pin your own venue, never in
+the background; the "game night near you" card is based on the map area
+you're viewing, not your device's location.
 
 ## Contact
 
