@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 16, 2026**
+**Effective date: July 17, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -104,6 +104,13 @@ Links and captions you save point to content on third-party platforms
 governed by those platforms' terms. Pinorama does not host, own, or
 endorse it, and links may stop working if the original post changes or is
 removed.
+
+Place details shown in the app — star ratings, review counts, price levels,
+opening hours, photos, and review snippets — are supplied by Google and
+displayed with "Powered by Google" attribution. That content belongs to
+Google and its users, is provided as-is (it may be outdated or incomplete —
+always confirm important details like opening hours with the venue), and is
+governed by Google's own terms. Review snippets link back to Google Maps.
 
 ## 7. Points and rewards
 

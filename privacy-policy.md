@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 16, 2026**
+**Effective date: July 17, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -159,10 +159,18 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Service | What it does | What it receives |
 |---|---|---|
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
+| Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
+
+**About Google place content:** ratings, review counts, price levels, hours,
+photos, and review snippets shown on place pages are supplied by Google and
+displayed with "Powered by Google" attribution; review snippets link back to
+Google Maps. Our server caches this place content briefly (up to 7 days per
+place) to avoid repeated lookups — the cache holds place facts only, never
+anything about you. Google's own terms and privacy policy govern that content.
 
 Each of these services has its own privacy policy that governs its side of
 the exchange.
