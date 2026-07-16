@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pinorama · Secure checkout</title>
+<!--
+  Pinorama hosted card form (LiteAPI User Payment flow).
+  WHY THIS LIVES HERE: Supabase's gateway force-rewrites edge-function HTML to
+  text/plain and injects a default-src 'none' CSP, so the payment page cannot be
+  served from the native-checkout function. GitHub Pages is our static host.
+  SECURITY: this page contains NO secrets. The per-transaction secretKey arrives
+  as a runtime query param (Stripe-style client intent secret, safe client-side
+  by design). returnUrl is HARD-ALLOWLISTED to the app's own scheme so this
+  public page can never be abused as an open redirect.
+-->
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:16px;background:#fff;color:#111}
+  .badge{display:inline-block;background:#FFF4E0;color:#B76E00;border:1px solid #F0C070;
+    border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;margin-bottom:12px}
+  #targetElement{margin-top:12px}
+  .hint{color:#667;font-size:12px;margin-top:16px;line-height:1.5}
+  .err{color:#a33;font-size:14px;margin-top:16px}
+</style>
+</head>
+<body>
+  <span class="badge" id="badge" style="display:none">SANDBOX · no real charge</span>
+  <div id="targetElement"></div>
+  <p class="hint" id="hint" style="display:none">Test card 4242 4242 4242 4242, any future expiry, any CVC.</p>
+  <p class="err" id="err" style="display:none">Payment could not start — missing or invalid payment session. Please go back and try again.</p>
+  <script src="https://payment-wrapper.liteapi.travel/dist/liteAPIPayment.js?v=a1"></script>
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var secretKey = q.get('secretKey') || '';
+      var returnUrl = q.get('returnUrl') || '';
+      var sandbox = q.get('sandbox') !== '0'; // default sandbox until production era
+      var publicKey = sandbox ? 'sandbox' : (q.get('publicKey') || 'sandbox');
+
+      // Validation mirrors the native-checkout fn: token-shaped secret, and the
+      // returnUrl may ONLY be the app's own scheme (never http/https — this is a
+      // public page and must not function as an open redirect).
+      var tokenOk = /^[A-Za-z0-9_-]{10,200}$/.test(secretKey.replace(/[^A-Za-z0-9_-]/g, '')) && secretKey.length >= 10;
+      var returnOk = /^nomadmap:\/\/[A-Za-z0-9\-._~/?#@!$&'()*+,;=%]*$/.test(returnUrl);
+      if (!secretKey || !returnUrl || !tokenOk || !returnOk) {
+        document.getElementById('err').style.display = 'block';
+        return;
+      }
+      if (sandbox) {
+        document.getElementById('badge').style.display = 'inline-block';
+        document.getElementById('hint').style.display = 'block';
+      }
+      try {
+        var cfg = {
+          publicKey: publicKey,
+          appearance: { theme: 'flat' },
+          targetElement: '#targetElement',
+          secretKey: secretKey,
+          returnUrl: returnUrl
+        };
+        // NOTE(go-live): confirm the exact post-init method against a current
+        // LiteAPI SDK example before flipping flag('nativeBooking') on — a wrong
+        // name only fails to render the form (caught below, honest), never fakes
+        // a booking, so it is safe while dark but must be verified for launch.
+        var pay = new LiteAPIPayment(cfg);
+        pay.handlePayment();
+      } catch (e) {
+        document.getElementById('targetElement').innerText =
+          'Could not load the payment form. Please go back and try again.';
+      }
+    })();
+  </script>
+</body>
+</html>
