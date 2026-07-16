@@ -79,6 +79,20 @@ between your devices. When you're signed in we hold:
   Game nights **expire off the map automatically after 7 days**, you can
   remove your own at any time in the Work hub (it disappears for everyone
   immediately), and deleting your account erases them entirely.
+- **Events you create (PUBLIC ones)** — the "create" button on the map lets you
+  post an event (a meet-up, game night, drinks night, or club night): we store
+  the kind, a title, the place name, **its map location**, and the date/time you
+  set. You choose **public** or **private** for each event. A **private** event
+  **never leaves your phone** — it is not uploaded; you invite people yourself
+  through your phone's normal share sheet. A **public** event is **public promo/
+  social content**: it appears on the map for **everyone using the app,
+  including people without accounts**, so nearby travelers can find and join it.
+  Public events show the event title and place, are stored with your account,
+  **expire off the map automatically** (after the event's time, or after 7 days
+  if you set no time), can be removed by you at any time, and are erased when you
+  delete your account. Whether an event is public or private, when you **share an
+  invite** the message is created on your device and sent by you through your own
+  apps — we don't send it or see who you send it to.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
@@ -227,7 +241,17 @@ handle), expire off the map automatically after 7 days, can be removed by you
 at any time, and are erased with your account. This is also the first live
 use of device location — a single opt-in read to pin your own venue, never in
 the background; the "game night near you" card is based on the map area
-you're viewing, not your device's location.
+you're viewing, not your device's location. Also added **map events**: you can
+create meet-ups / game / drinks / club nights and choose public or private per
+event — a public event is shown on the map to everyone (title + place, expires
+automatically, removable, erased with your account); a private event never
+leaves your phone and is shared only by an invite you send yourself. Sharing an
+invite happens on your device through your own apps; we don't send it or see the
+recipients. **Map events** work the same way:
+a public event you create is shown on the map to everyone (private events never
+leave your phone), and the optional "use my current location" when creating one
+is a single opt-in read to pin your event — the "happening near you" card uses
+the map area you're viewing, not your device's location.
 
 ## Contact
 

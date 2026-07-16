@@ -87,6 +87,18 @@ section-5 breach). Showing sports to the public can require rights or
 licenses in some places — that's the venue's responsibility, not Pinorama's.
 Posting game nights is free during beta.
 
+You can also **create events** on the map (meet-ups, game/drinks/club nights)
+and choose **public** or **private** for each. A **public** event is social
+content shown on the map to everyone using the app, including people without
+accounts; the same non-exclusive display license and acceptable-use rules as
+posts apply, it may be removed for abuse, and the 10-live cap and automatic
+expiry apply. A **private** event stays on your device and is not published —
+you invite people yourself. When you share an event invite, you are responsible
+for who you send it to and for the accuracy of what it says. Only create public
+events you are entitled to promote at a place you have the right to gather at;
+any permits, venue permission, or safety obligations for a real-world gathering
+are yours, not Pinorama's. Creating events is free during beta.
+
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
 governed by those platforms' terms. Pinorama does not host, own, or
@@ -129,12 +141,13 @@ follow the acceptable-use rules, and we may remove content that breaks them.
 **The app was also renamed from NomadMap to Pinorama** — same app, same
 operator (NomadZach Studios), same terms; only the name changed.
 
-**Changelog — July 16, 2026:** added **game nights** (section 6): venue promo
-posts that are public to everyone including signed-out users, require you to
-be authorized to promote the venue, carry a 10-live cap and 7-day auto-expiry,
-and may be removed for abuse. Also corrected section 3: the in-app
-"delete my account" button exists today (it shipped earlier — the old text
-still said it was coming).
+**Changelog — July 16, 2026:** added **game nights** and **map events**
+(section 6): venue game nights and user-created public events are shown on the
+map to everyone including signed-out users, require you to be authorized to
+promote the venue/place, carry a 10-live cap and automatic expiry, and may be
+removed for abuse; private events stay on your device and are shared by invite
+only. Also corrected section 3: the in-app "delete my account" button exists
+today (it shipped earlier — the old text still said it was coming).
 
 ## 11. Governing law
 
