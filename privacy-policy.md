@@ -214,17 +214,22 @@ until you opt in** (create a discovery profile and turn discovery on), and
 it requires an account and being 18 or older.
 
 If you opt in, we store: your short bio, your interest tags, an optional
-photo, your city, your search radius, and — only when you tap the
-share-location button — an **approximate position** from a single opt-in
-device-location read, saved rounded to roughly a city block (~110 m). We
-never store your exact GPS coordinates for discovery and never read your
-location in the background.
+display name, your gender and who you want to meet (both optional — used
+to decide who appears in whose deck), up to **5 photos you choose to
+upload** (stored on our servers and deleted with your account; each photo
+lives at an unguessable address), your city, your search radius, and —
+only when you tap the share-location button — an **approximate position**
+from a single opt-in device-location read, saved rounded to roughly a city
+block (~110 m). We never store your exact GPS coordinates for discovery
+and never read your location in the background.
 
 What other travelers can see: signed-in users searching nearby see your
-bio, interests, photo, city, and a distance rounded to whole kilometers,
-computed from a further-blurred (~1 km grid) position — never your name,
-email, exact location, or coordinates. Who liked you is not shown to
-anyone; likes are stored server-side only to detect a mutual match. A
+display name, bio, interests, photos, gender (if you set one), city, and a
+distance rounded to whole kilometers,
+computed from a further-blurred (~1 km grid) position — never your legal
+name, email, exact location, or coordinates. **Who you want to meet is
+never shown to anyone** — it is only a filter. Who liked you is not shown
+to anyone; likes are stored server-side only to detect a mutual match. A
 match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
@@ -297,7 +302,11 @@ review snippets, with "Powered by Google" attribution (see Third-party
 services). Also switched on **dating & travel-buddy discovery** (optional,
 18+): the new section above describes exactly what an opt-in discovery
 profile stores and what other travelers can and cannot see — approximate
-distance only, never your exact location, name, or email.
+distance only, never your exact location, name, or email. Later the same
+day, discovery profiles gained an optional **display name**, optional
+**gender and who-you-want-to-meet** (a private filter, never shown), and
+up to **5 self-uploaded photos** (stored by us, deleted with your account)
+— the section above describes all of it.
 
 ## Contact
 

@@ -104,9 +104,12 @@ any permits, venue permission, or safety obligations for a real-world gathering
 are yours, not Pinorama's. Creating events is free during beta.
 
 You can also create an optional **dating / travel-buddy profile** (18 or
-older only). By turning discovery on, you make your profile card — bio,
-interests, optional photo, city, and an approximate distance — visible to
-other signed-in travelers nearby, and you agree to be honest in your
+older only). By turning discovery on, you make your profile card — display
+name, bio, interests, gender (if set), up to 5 photos you upload, city,
+and an approximate distance — visible to other signed-in travelers nearby.
+Photos you upload must be of yourself and must not be unlawful, explicit,
+or someone else's picture; we may remove photos or profiles that break
+this. You agree to be honest in your
 profile, treat people respectfully, and never use the feature to harass,
 solicit, scam, or harm anyone (all section-5 rules apply; we may remove
 profiles or suspend accounts for abuse). **Meeting strangers carries risk
