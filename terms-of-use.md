@@ -119,6 +119,12 @@ safety tools — blocking works instantly and both ways. Matches and
 conversations are between you and the other traveler; Pinorama is not
 responsible for what happens off the app or in person.
 
+Matched travelers can send each other **direct messages**. DMs are private
+to the two of you, but they are not exempt from the rules: the section-5
+acceptable-use rules apply, harassment or solicitation in DMs is grounds for
+removal, an anti-spam rate limit applies, and blocking someone ends the
+conversation both ways.
+
 You can also join **city chat rooms** — public per-city rooms visible to all
 signed-in travelers in that room. You join only by your own tap (suggestions
 are never auto-enrollment). Messages you send are public content within the

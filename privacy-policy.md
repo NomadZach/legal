@@ -242,6 +242,16 @@ You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
 profile, likes, matches, and blocks.
 
+## Messages between matches
+
+When you match with another traveler in dating / travel-buddy discovery, you
+can send each other **direct messages**. Messages are stored on our servers
+so they can be delivered, and each message is visible **only to the two of
+you** — no other user can read it. We store the message text, who sent it to
+whom, the time, and whether it was read. An anti-spam limit caps how fast
+anyone can send. Blocking a traveler stops messages between you in both
+directions, and deleting your account permanently deletes your messages.
+
 ## City chat rooms
 
 Pinorama has **city chat rooms** — one public room per city, open to signed-in
