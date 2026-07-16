@@ -165,15 +165,15 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 
+Each of these services has its own privacy policy that governs its side of
+the exchange.
+
 **About Google place content:** ratings, review counts, price levels, hours,
 photos, and review snippets shown on place pages are supplied by Google and
 displayed with "Powered by Google" attribution; review snippets link back to
 Google Maps. Our server caches this place content briefly (up to 7 days per
 place) to avoid repeated lookups — the cache holds place facts only, never
 anything about you. Google's own terms and privacy policy govern that content.
-
-Each of these services has its own privacy policy that governs its side of
-the exchange.
 
 ## Storage and security
 
@@ -207,10 +207,40 @@ what lets us restore your map on a new phone.
   data (we don't). You can exercise these rights by using or deleting the app
   (local data) or by emailing us (account data), and we'll help either way.
 
+## Dating & travel-buddy discovery (optional)
+
+Pinorama includes an optional dating / travel-buddy feature. It is **off
+until you opt in** (create a discovery profile and turn discovery on), and
+it requires an account and being 18 or older.
+
+If you opt in, we store: your short bio, your interest tags, an optional
+photo, your city, your search radius, and — only when you tap the
+share-location button — an **approximate position** from a single opt-in
+device-location read, saved rounded to roughly a city block (~110 m). We
+never store your exact GPS coordinates for discovery and never read your
+location in the background.
+
+What other travelers can see: signed-in users searching nearby see your
+bio, interests, photo, city, and a distance rounded to whole kilometers,
+computed from a further-blurred (~1 km grid) position — never your name,
+email, exact location, or coordinates. Who liked you is not shown to
+anyone; likes are stored server-side only to detect a mutual match. A
+match is created only when two people like each other, and each match is
+visible only to the two people in it.
+
+Blocking is two-way and immediate: blocks are stored on your device and on
+the server, and a blocked traveler no longer appears to you nor you to
+them. Reports are currently noted on your device while the full review
+pipeline is built — blocking is the instant protection.
+
+You can turn discovery off at any time (your profile stops being served to
+others), and deleting your account permanently deletes your discovery
+profile, likes, matches, and blocks.
+
 ## Children
 
 Pinorama is not directed at anyone under 18, and you must be 18 or older
-to use it (social and dating-style features are planned). We do not
+to use it (the optional dating / travel-buddy feature is strictly 18+). We do not
 knowingly collect data from minors; if you believe a minor is using the
 app, contact us.
 
@@ -260,6 +290,14 @@ a public event you create is shown on the map to everyone (private events never
 leave your phone), and the optional "use my current location" when creating one
 is a single opt-in read to pin your event — the "happening near you" card uses
 the map area you're viewing, not your device's location.
+
+**Changelog — July 17, 2026:** place pages now show details supplied by
+**Google** — ratings, review counts, price levels, opening hours, photos and
+review snippets, with "Powered by Google" attribution (see Third-party
+services). Also switched on **dating & travel-buddy discovery** (optional,
+18+): the new section above describes exactly what an opt-in discovery
+profile stores and what other travelers can and cannot see — approximate
+distance only, never your exact location, name, or email.
 
 ## Contact
 

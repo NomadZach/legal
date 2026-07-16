@@ -25,7 +25,11 @@ of the beta.
 Parts of the app show **sample or preview content** (labeled "sample" or
 similar): example deals, listings, creators, prices, and weather. These
 are illustrations of planned features, not real offers, inventory, or
-prices. Nothing in the beta is a booking, purchase, or commitment.
+prices. Other listings are marked **"LIVE"**: those show real prices
+fetched from travel partners. LIVE prices are informational quotes that can
+change; any actual booking happens on the partner's own site under the
+partner's terms (see section 8). Nothing inside the beta app itself is a
+booking, purchase, or commitment.
 
 ## 3. Your account
 
@@ -99,6 +103,19 @@ events you are entitled to promote at a place you have the right to gather at;
 any permits, venue permission, or safety obligations for a real-world gathering
 are yours, not Pinorama's. Creating events is free during beta.
 
+You can also create an optional **dating / travel-buddy profile** (18 or
+older only). By turning discovery on, you make your profile card — bio,
+interests, optional photo, city, and an approximate distance — visible to
+other signed-in travelers nearby, and you agree to be honest in your
+profile, treat people respectfully, and never use the feature to harass,
+solicit, scam, or harm anyone (all section-5 rules apply; we may remove
+profiles or suspend accounts for abuse). **Meeting strangers carries risk
+that is yours to manage**: Pinorama does not verify or vet travelers. Meet
+in public places, tell someone where you're going, and use the in-app
+safety tools — blocking works instantly and both ways. Matches and
+conversations are between you and the other traveler; Pinorama is not
+responsible for what happens off the app or in person.
+
 Links and captions you save point to content on third-party platforms
 (Instagram, TikTok, X, etc.). That content belongs to its creators and is
 governed by those platforms' terms. Pinorama does not host, own, or
@@ -155,6 +172,13 @@ promote the venue/place, carry a 10-live cap and automatic expiry, and may be
 removed for abuse; private events stay on your device and are shared by invite
 only. Also corrected section 3: the in-app "delete my account" button exists
 today (it shipped earlier — the old text still said it was coming).
+
+**Changelog — July 17, 2026:** added the optional **dating / travel-buddy
+profile** (section 6): 18+ only, honest-profile and respect rules, instant
+two-way blocking, and a plain statement that Pinorama doesn't vet travelers —
+meet safely. Updated section 2/8: some listings are now **LIVE** real partner
+prices (informational quotes; bookings still complete on the partner's site,
+Pinorama doesn't take your payment).
 
 ## 11. Governing law
 
