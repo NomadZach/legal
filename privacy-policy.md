@@ -292,6 +292,10 @@ your device, immediately), and report messages — reports are noted on your
 device while the full review pipeline is built. Deleting your account
 permanently deletes your chat messages.
 
+When you're signed in, we also remember **which city rooms you've joined** (the
+city and the time you joined) so your rooms sync across your devices. You can
+leave a room at any time, and deleting your account removes this too.
+
 ## Food delivery & express parcels (optional; activating during beta)
 
 Pinorama is adding **food delivery** (order from a local restaurant and have a
