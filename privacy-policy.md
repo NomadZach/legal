@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 17, 2026**
+**Effective date: July 18, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -292,6 +292,77 @@ your device, immediately), and report messages — reports are noted on your
 device while the full review pipeline is built. Deleting your account
 permanently deletes your chat messages.
 
+## Food delivery & express parcels (optional; activating during beta)
+
+Pinorama is adding **food delivery** (order from a local restaurant and have a
+driver bring it) and **express parcels** (send a package from one address to
+another). These are being **switched on gradually during beta** and may not be
+available in your area yet. They require an account, and everything below
+applies only once the service is active for you — we'll never turn them on
+silently, and this section describes what they collect before they do.
+
+**Food orders.** When you place a food order we store, with your account:
+
+- **What you ordered** — the items/dishes, their options, quantities, the
+  per-item and total prices, the currency, and the order's timestamps.
+- **Where to bring it** — the **drop-off address** you enter, **optional
+  map-picked coordinates** if you drop a pin on the map, and an optional
+  free-text **delivery note** (gate code, building, floor, a landmark).
+- **The order's status history** — placed → accepted → preparing → picked up →
+  on the way → delivered (or cancelled) — kept with the order so you, the
+  restaurant, and support can see what happened, **for safety and to resolve any
+  dispute**.
+
+**The optional location permission.** To help you set the drop-off pin, the app
+can center the map on **roughly where you are** — this asks your device's
+location permission and takes a **single foreground reading, only when you tap to
+use it**. It is **never required to order** (you can always just type the
+address), it is **never read in the background**, and if you decline, the map
+simply centers on your saved places or your base city instead.
+
+**Who can see a food order.** The order is not public. Only its parties can see
+it:
+
+- **The restaurant sees only its own orders** — the items, the total, and the
+  drop-off address and note needed to make and hand off your food. One
+  restaurant can never see another's orders, and none of them can browse the
+  app's orders at large.
+- **A driver** sees your order's delivery details (address, note, and the items
+  to deliver) **only while they are actively carrying it** — from the moment they
+  accept your order until it is delivered or cancelled. **Their access ends with
+  the job:** once the food is handed over, they can no longer see your order.
+- **Before a driver accepts**, drivers looking for a run see **only** the pickup
+  restaurant's name, the order's value, and an **approximate drop-off area
+  (rounded to about a kilometre)** so they can judge the trip — never your exact
+  address, your note, your dishes, or who you are.
+
+**Express parcels.** When you send a parcel we store, with your account: the
+**recipient's name and phone number** and an optional drop-off note (so the
+courier can hand it over), the **package type and size**, the **pickup and
+drop-off addresses** (and optional map coordinates for each), the **service
+level**, price, currency, timestamps, the parcel's **status history**, and —
+once it's delivered — a **proof-of-delivery record**. The recipient does **not**
+need a Pinorama account; their name and phone are information **you provide** for
+the delivery. By sending a parcel you confirm you're allowed to share those
+recipient details for this purpose.
+
+**Who can see a parcel.** You (the sender) see the full record. **The assigned
+courier** sees the recipient's name, phone, notes, and address **only while the
+delivery is live** (assigned, picked up, or in transit); once it is delivered or
+cancelled, **the courier loses access to the recipient's details**. A driver
+**browsing for a parcel to carry** sees only the package type and size, the
+price, and **approximate (~1 km) pickup and drop-off areas** — never the
+recipient's name or phone, the exact addresses, or who sent it.
+
+**Retention.** Your own delivery and parcel history stays with your account so
+you keep a record — a food order survives even if the restaurant later closes
+its account (it simply stops being able to see it). **Dispatch and status
+history is kept for safety and dispute purposes.** Deleting your account removes
+your orders and parcels along with everything else. **No payment is taken inside
+the app during this phase;** when paid delivery launches, payments will be
+handled by established payment processors and we would never see or store your
+full card number.
+
 ## Children
 
 Pinorama is not directed at anyone under 18, and you must be 18 or older
@@ -365,6 +436,24 @@ erased with your account. Added **direct messages** between matched travelers
 an optional **social map** (off until you turn it on, single approximate
 location rounded to ~110 m, others see only anonymous city counts or a blurred
 match-only pin, auto-expires, deleting it or your account removes it).
+
+**Changelog — July 18, 2026:** documented the upcoming **food delivery** and
+**express parcel** services (new section above), which are switched on gradually
+during beta. A food order stores your items and prices, the drop-off address,
+**optional** map-picked coordinates, and an optional delivery note; the location
+permission that centers the drop-off map is **optional and never required** —
+a single foreground read only when you tap it, never in the background. Who can
+see an order is spelled out: a **restaurant sees only its own orders**, a
+**driver sees your delivery address and the items to deliver only while actively
+carrying your order** and loses them once the job ends, and drivers **browsing
+for a run** see only the
+pickup name, the order value, and an **approximate (~1 km) drop-off area** —
+never your exact address, dishes, or identity. For **express parcels**: the
+recipient name/phone and drop-off note you provide, the package tier, the
+pickup/drop-off addresses and optional coordinates, and a **proof-of-delivery**
+record — the full record visible to you, and only while the delivery is live to
+the assigned courier. **Dispatch/status history is kept for safety and
+disputes**, and deleting your account removes it all.
 
 ## Contact
 

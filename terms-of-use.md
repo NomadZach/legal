@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 17, 2026**
+**Effective date: July 18, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -169,12 +169,62 @@ from the provider, at no extra cost to you. During beta, booking inventory
 shown in the app is sample/preview content and not a real offer (see
 section 2).
 
-## 9. Privacy
+## 9. Delivery and express parcels (activating during beta)
+
+Pinorama is adding **food delivery** and **express parcel** services, switched
+on **gradually during beta** — they may not be available in your area yet, and
+these terms apply only where and when the service is active.
+
+**Our role.** Pinorama is a **platform that connects** customers, merchant
+partners (restaurants and stores), and independent driver/courier partners so
+they can arrange an order or a delivery. Pinorama does **not** cook the food, own
+the goods, or carry the parcels itself: the restaurant is responsible for what it
+makes and the driver for how they carry it. We provide the software that lets the
+three parties find each other and track an order.
+
+**Ordering, acceptance, and cancellation.** When you place a food order, the
+**prices and any fees are shown to you before you order**, and a merchant chooses
+whether to **accept** it. You can **cancel a food order while it is still placed
+or accepted** (before the kitchen and a driver are committed); a merchant may
+cancel while it is placed, accepted, or being prepared. **Once a driver has
+picked up the food, it can no longer be cancelled in the app** — that becomes a
+support matter (contact admin@nomadzachstudios.com). For an **express parcel**,
+you (the sender) can **cancel while it is confirmed or assigned** — that is,
+before the courier has collected it; once it has been picked up, cancellation is
+likewise a support matter.
+
+**Prohibited items (express parcels).** You may **not** send anything **illegal,
+stolen, or that you have no right to send**, and no **dangerous or hazardous
+materials** — including but not limited to explosives, flammable or corrosive
+substances, compressed gases, weapons or ammunition, illegal drugs, hazardous
+chemicals, or perishable, living, or otherwise restricted items. You are
+responsible for the **contents, lawfulness, and accurate description** of
+anything you send, and for providing accurate recipient details you are entitled
+to share. We and our partners may refuse, hold, or remove a parcel that breaks
+this rule.
+
+**Partner responsibilities.** Merchant and driver partners are **independent** —
+not Pinorama employees. Merchants are responsible for their menus, pricing
+accuracy, food safety, and any licences their business requires; drivers and
+couriers are responsible for delivering safely and lawfully. Pinorama does not
+guarantee any partner's acts and, to the maximum extent permitted by law, is not
+liable for them. The acceptable-use rules in section 5 apply to your use of these
+services.
+
+**Estimates.** Any delivery time, distance, or arrival estimate shown in the app
+is an **estimate only**, not a guarantee — real times vary with traffic, weather,
+kitchen load, and driver availability.
+
+**Payment.** No payment is taken inside the app during this phase. When paid
+delivery launches, payment will be handled by established payment processors
+under their own terms.
+
+## 10. Privacy
 
 How we handle data is described in the [Pinorama Privacy
 Policy](privacy-policy.html), which is part of these terms.
 
-## 10. Changes
+## 11. Changes
 
 We may update these terms as the app evolves. We'll update the effective
 date above and flag meaningful changes in the app. Continued use after a
@@ -204,12 +254,24 @@ meet safely. Updated section 2/8: some listings are now **LIVE** real partner
 prices (informational quotes; bookings still complete on the partner's site,
 Pinorama doesn't take your payment).
 
-## 11. Governing law
+**Changelog — July 18, 2026:** added **delivery and express parcels** (new
+section 9), which activate gradually during beta: Pinorama's role as a platform
+connecting customers, merchant partners, and independent driver/courier
+partners; that prices and fees are shown before you order; the cancellation
+windows (cancel a food order while placed or accepted, a merchant while
+placed/accepted/preparing, nobody once a driver has the food; a parcel sender
+while confirmed or assigned, i.e. before pickup); a standard **prohibited-items**
+clause for express parcels (no illegal goods or dangerous materials);
+partner-responsibility and "estimates are estimates" clauses. The closing
+sections were renumbered — Privacy, Changes, Governing law, and Contact are now
+sections 10-13.
+
+## 12. Governing law
 
 These terms are governed by the laws of the United States; the specific
 state will be designated here when the company entity is formalized.
 
-## 12. Contact
+## 13. Contact
 
 **NomadZach Studios**
 admin@nomadzachstudios.com
