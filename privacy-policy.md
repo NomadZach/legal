@@ -57,6 +57,20 @@ between your devices. When you're signed in we hold:
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
   liked, are stored with your account.
+- **Follows (who you follow)** — tapping "follow" on another traveler's
+  profile stores a follow record (your account → theirs). **Who you follow,
+  and who follows you, is visible only to the two people in each pair** —
+  other users see only **numbers** (a follower and following count on
+  profiles), never the lists themselves. Unfollowing deletes the record
+  immediately, and deleting your account erases every follow record in both
+  directions.
+- **The traveler directory** — signed-in travelers can see a directory of
+  travelers who have a public profile and at least one published post. It
+  shows only what your public profile already shows: display name, avatar
+  emoji, @username, and how many posts you've shared — never your email,
+  location, saved places, or linked handles. During beta, accounts are
+  public by default (same as posts, above), so publishing a post can list
+  you here; deleting your posts or your account removes you.
 - **Social handles and self-reported follower counts** — the @handles you type
   in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
   follower counts you enter for them, stored with your account and shown to you
@@ -125,10 +139,10 @@ When you save a post, the app needs to turn text into a map pin:
 
 ### Planned (not live yet — we'll update this policy first)
 
-- **More social features** — following other users, shared/creator maps, and
-  meetups. These aren't built yet (text posts, described above, are the one
-  social feature live today). Anything you choose to make public will be
-  visible to other users.
+- **More social features** — shared/creator maps and meetups. These aren't
+  built yet (text posts and follows, described above, are the social features
+  live today). Anything you choose to make public will be visible to other
+  users.
 - **Location services** — strictly opt-in and off by default; the app works
   without it. **One use is live today:** when you log a game night you can
   tick "pin at my current location," which asks your device's permission and
