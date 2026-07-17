@@ -59,10 +59,12 @@
           secretKey: secretKey,
           returnUrl: returnUrl
         };
-        // NOTE(go-live): confirm the exact post-init method against a current
-        // LiteAPI SDK example before flipping flag('nativeBooking') on — a wrong
-        // name only fails to render the form (caught below, honest), never fakes
-        // a booking, so it is safe while dark but must be verified for launch.
+        // VERIFIED 2026-07-18 against the LIVE SDK bundle (payment-wrapper
+        // .liteapi.travel/dist/liteAPIPayment.js): the class exposes
+        // handlePayment(), and publicKey 'sandbox' resolves via the SDK's
+        // /config endpoint to LiteAPI's Stripe TEST publishable key
+        // (provider stripe-test → Stripe.js loads and confirms the secretKey
+        // payment intent). The go-live method-name question is CLOSED.
         var pay = new LiteAPIPayment(cfg);
         pay.handlePayment();
       } catch (e) {
