@@ -64,6 +64,13 @@ between your devices. When you're signed in we hold:
   profiles), never the lists themselves. Unfollowing deletes the record
   immediately, and deleting your account erases every follow record in both
   directions.
+- **Profile views (counts only)** — when the profile-views feature is on and
+  you view another traveler's profile signed in, we store a view record (your
+  account → theirs, once per day). **Only the profile's owner ever sees
+  anything, and only numbers** — "how many travelers viewed you this week /
+  all-time." Who viewed is **never shown to anyone**, including the owner;
+  no client can read the raw records. Deleting your account erases every
+  view record in both directions.
 - **The traveler directory** — signed-in travelers can see a directory of
   travelers who have a public profile and at least one published post. It
   shows only what your public profile already shows: display name, avatar
