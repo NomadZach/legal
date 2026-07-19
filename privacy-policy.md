@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 18, 2026**
+**Effective date: July 20, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -361,6 +361,21 @@ it:
   (rounded to about a kilometre)** so they can judge the trip — never your exact
   address, your note, your dishes, or who you are.
 
+**Driver live location (during a live run only).** When the live-tracking
+feature is on and a driver is **actively carrying a run**, the driver's app
+sends their device's current position (a single latitude/longitude fix, roughly
+every 15 seconds) **only while the app is open in the foreground** — we never
+collect a driver's location in the background, and never outside an active
+delivery. That position is visible to exactly **two people: the driver
+themselves, and the one customer whose order that run is serving** (so the
+customer can watch their delivery approach on the map). No merchant, no other
+user, and no signed-out visitor can ever see it. We keep only the **latest
+single position — each update overwrites the last, so there is no route
+history** — and the record is **deleted automatically the instant the run ends**
+(delivered, cancelled, or handed back). Deleting a driver's account removes it
+too. Drivers grant their device's location permission themselves; declining it
+simply means no live pin is shown.
+
 **Express parcels.** When you send a parcel we store, with your account: the
 **recipient's name and phone number** and an optional drop-off note (so the
 courier can hand it over), the **package type and size**, the **pickup and
@@ -461,6 +476,14 @@ erased with your account. Added **direct messages** between matched travelers
 an optional **social map** (off until you turn it on, single approximate
 location rounded to ~110 m, others see only anonymous city counts or a blurred
 match-only pin, auto-expires, deleting it or your account removes it).
+
+**Changelog — July 20, 2026:** documented **driver live location** (new
+paragraph in the delivery section): while a driver is actively carrying a run
+and the tracking feature is on, their app sends a foreground-only position fix
+(~every 15 s) visible **only to that run's customer and the driver themselves**;
+we keep a **single latest position (no route history)** and **delete it the
+moment the run ends** (or with account deletion); location is never collected in
+the background or outside an active delivery.
 
 **Changelog — July 18, 2026:** documented the upcoming **food delivery** and
 **express parcel** services (new section above), which are switched on gradually

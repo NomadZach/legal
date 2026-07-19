@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 18, 2026**
+**Effective date: July 20, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -210,6 +210,14 @@ couriers are responsible for delivering safely and lawfully. Pinorama does not
 guarantee any partner's acts and, to the maximum extent permitted by law, is not
 liable for them. The acceptable-use rules in section 5 apply to your use of these
 services.
+
+**Live tracking (drivers).** If you deliver as a driver/courier partner and the
+live-tracking feature is on, carrying a run means your device's foreground
+position is shared **with that run's customer only, for the duration of the run**
+— as described in the Privacy Policy (single latest position, no route history,
+deleted when the run ends, never collected in the background). If you don't want
+to share it, don't grant the location permission or don't carry runs while
+tracking is on; customers may then see the run's status without a live pin.
 
 **Estimates.** Any delivery time, distance, or arrival estimate shown in the app
 is an **estimate only**, not a guarantee — real times vary with traffic, weather,
