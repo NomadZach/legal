@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 20, 2026**
+**Effective date: July 21, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -76,6 +76,15 @@ other users can see it — you keep ownership of what you write. You're
 responsible for your posts, and they must follow the acceptable-use rules in
 section 5; we may remove content that breaks those rules. You can delete your
 own posts at any time.
+
+You can also **comment on posts**. Comments are visible to the same audience
+as the post they're on, carry your display name and avatar, and get the same
+treatment as posts: the non-exclusive display license, the section-5
+acceptable-use rules, a profanity filter, and anti-flood rate limits. Other
+users can report comments or block you, we may remove a comment that breaks
+the rules (a removed comment cannot be restored by its author), and you can
+delete your own comments at any time. Comments follow their post — if the
+post goes, its comments go with it.
 
 You can also post **game nights** — a notice that a venue will air a sports
 fixture (venue name, sport/fixture, showing time, free entry, and a venue map

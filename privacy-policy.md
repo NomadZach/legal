@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 20, 2026**
+**Effective date: July 21, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -57,6 +57,15 @@ between your devices. When you're signed in we hold:
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
   liked, are stored with your account.
+- **Comments on posts** — the comment text you write on a feed post (up to 300
+  characters), stored with your account and shown publicly on that post to
+  other signed-in users, alongside your display name and avatar. Comments run
+  through the same profanity filter as city chat before they're stored, are
+  rate-limited against flooding, and follow the post they're on: if a post is
+  deleted or its author's profile isn't public, its comments disappear with
+  it. You can delete any of your own comments at any time, other users can
+  report a comment or block you (a block hides everything you write from that
+  person), and deleting your account erases all your comments.
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
@@ -118,15 +127,17 @@ between your devices. When you're signed in we hold:
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. If you sign out, your local
 data is left untouched. Your saved places, profile, and points stay private to
-your account. **Posts, likes, and game nights are the exceptions:** a text post
-you publish is visible to other signed-in users whenever your profile is public
-— and during beta, accounts are public by default. Likes are visible too: every
-post shows its like count, and the fact that your account liked a post can be
-seen by other signed-in users. **Game nights go further: they're shown on the
-map to everyone using the app, even people without accounts** (they're venue
-promo content — that's their whole point). You can delete any of your own posts
-or game nights at any time, and deleting your account removes your posts, likes,
-and game nights along with everything else.
+your account. **Posts, likes, comments, and game nights are the exceptions:** a
+text post you publish is visible to other signed-in users whenever your profile
+is public — and during beta, accounts are public by default. Likes are visible
+too: every post shows its like count, and the fact that your account liked a
+post can be seen by other signed-in users. Comments you write are visible on
+the post they're on to the same audience as the post itself. **Game nights go
+further: they're shown on the map to everyone using the app, even people
+without accounts** (they're venue promo content — that's their whole point).
+You can delete any of your own posts, comments, or game nights at any time, and
+deleting your account removes your posts, likes, comments, and game nights
+along with everything else.
 
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
@@ -183,7 +194,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
-| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, and game nights you create — only when you're signed in |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 
 Each of these services has its own privacy policy that governs its side of
