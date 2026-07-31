@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 21, 2026**
+**Effective date: July 31, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -112,7 +112,9 @@ between your devices. When you're signed in we hold:
 - **Events you create (PUBLIC ones)** — the "create" button on the map lets you
   post an event (a meet-up, game night, drinks night, or club night): we store
   the kind, a title, the place name, **its map location**, and the date/time you
-  set. You choose **public** or **private** for each event. A **private** event
+  set. The map location comes from the place you type or search for, **or from
+  your device if you tap "use my current location"** in the composer (see
+  "Device location" below). You choose **public** or **private** for each event. A **private** event
   **never leaves your phone** — it is not uploaded; you invite people yourself
   through your phone's normal share sheet. A **public** event is **public promo/
   social content**: it appears on the map for **everyone using the app,
@@ -125,9 +127,30 @@ between your devices. When you're signed in we hold:
   apps — we don't send it or see who you send it to.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
-happens when you sign in and when you open the app. If you sign out, your local
-data is left untouched. Your saved places, profile, and points stay private to
-your account. **Posts, likes, comments, and game nights are the exceptions:** a
+happens when you sign in and when you open the app. Your saved places, profile,
+and points stay private to your account.
+
+**What signing out does — and the one thing it erases.** Signing out leaves
+almost all of your local data alone: your saved places, your profile, your
+notes, your points and your trip history all stay on the phone. **There is one
+exception, and it is deliberate: your dating data is cleared from the device
+when your session ends.** That means your date check-ins (including a safety
+check-in for a first date), your date plans, your matches, and the cached
+profiles of people you were shown are all removed from local storage. We do this
+so that someone else signing in on the same phone can never see them. **Please
+note this also happens if your session simply expires** — not only when you tap
+"sign out" — so if a check-in matters to you, don't rely on it surviving on the
+device.
+
+**And one more clearing, on a different trigger — when the phone changes hands.**
+Your blocked list and your safety reports are treated differently on purpose.
+They are **not** cleared when you sign out or when your session expires, because
+that would silently un-block people you had blocked just because your connection
+dropped — and we would rather you keep that protection. They **are** removed when
+a **different account** signs in on the same device, or when the app opens and
+finds a different account owns it. Those two cases mean the phone has genuinely
+changed hands, and both lists name other people, so they should not follow the
+device to its next user. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and during beta, accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -155,19 +178,73 @@ When you save a post, the app needs to turn text into a map pin:
   and city from it. Only the caption text is sent — we don't attach your
   account or profile to it.
 
+### Device location (live — opt-in, foreground only, never in the background)
+
+**Location is off by default and the app works entirely without it. Nothing
+reads your location until you have granted your device's location permission
+yourself, and we never read it in the background — only while the app is open
+on your screen.**
+
+**Please read this part carefully, because it is the bit that surprises
+people:** your phone asks for location permission **once**, and the permission
+you grant covers the **whole app**, not the one button you tapped. Three
+features below ask for it, and each of them only asks at the moment you tap
+something. But once you have granted it — for any of them — the app can also
+take the quiet city-level reading described in the last bullet without asking
+you again. You can withdraw the permission at any time in your phone's
+settings, and every one of these features degrades to its non-location
+behaviour when you do.
+
+These uses are live in the main app:
+
+- **Pinning a game night at your venue.** When you log a game night you can
+  tick "pin at my current location," which asks your device's permission and
+  reads your location **once** to place your venue's pin. (The map's "game
+  night near you" card uses the area of the map you're looking at, not your
+  device's location.)
+- **Pinning an event you create on the map.** The map's **create** button
+  offers "use my current location" for the event's pin. Tapping it asks your
+  device's permission and reads your location **once**. If you type or search
+  for a place instead, no reading is taken. A **public** event's pin is then
+  shown on the map to everyone — see "Events you create" above.
+- **The "Local" tab in the feed.** If you are signed in and tap **Local**,
+  the app asks your device's permission and takes **a single reading at that
+  moment**. **The Local tab reads nothing before you tap it**, and it reads
+  nothing in the background afterwards. **Those
+  coordinates are not sent to us.** They are used on your phone to measure
+  the distance to the feed posts your phone has already downloaded, so the
+  tab can show you the nearby ones; the reading itself never leaves the
+  device. If you decline the permission, the tab says location is off and
+  offers a try-again button — nothing else changes. Signed out, tapping
+  **Local** does not ask for or read your location at all.
+- **Guessing which city you are in, to choose what to show you — no prompt,
+  and only if you have already granted the permission.** When the **Home** or
+  **Book** screens load, the app checks whether location permission is
+  *already* granted. If it is not, nothing happens and nothing is asked. If it
+  is, the app takes one foreground reading — the position your phone already
+  has on hand, or a deliberately **coarse** fresh one if it has none — and
+  turns it into a **city name**. That conversion is done by **your phone's own
+  built-in map service** (Apple's on iPhone, Google's on Android), so those
+  coordinates go from your phone to your phone's platform provider; they are
+  **not sent to our servers** and we do not store them. The city name is used
+  only to pick which deals to show you and which "popular in …" list to head
+  the Book tab with, and it is kept in the app's memory for a few minutes so
+  the app doesn't repeat the lookup. If you would rather this did not happen,
+  turn Pinorama's location permission off in your phone's settings — the app
+  falls back to your saved places and your profile's home base.
+
+Other optional location features are described in their own sections below:
+sharing your location on the map, the drop-off pin when you order a delivery,
+and driver live location during an active run.
+
 ### Planned (not live yet — we'll update this policy first)
 
 - **More social features** — shared/creator maps and meetups. These aren't
   built yet (text posts and follows, described above, are the social features
   live today). Anything you choose to make public will be visible to other
   users.
-- **Location services** — strictly opt-in and off by default; the app works
-  without it. **One use is live today:** when you log a game night you can
-  tick "pin at my current location," which asks your device's permission and
-  reads your location **once** to place your venue's pin — it is never read
-  in the background. (The map's "game night near you" card uses the area of
-  the map you're looking at, not your device's location.) Broader uses —
-  localizing your feed, nearby alerts via push — remain planned and opt-in.
+- **Nearby alerts** — being notified about things close to you is still
+  planned, and would be opt-in like every other use of location.
 - **Push notifications** — opt-in via your device's normal permission
   prompt.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
@@ -196,6 +273,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
+| Your phone's built-in map service (Apple on iPhone, Google on Android) | Turns a location reading into a city name, on your own device's request — see "Device location" above | The coordinates of that one reading, sent by your phone to its platform provider. It does not pass through our servers and we never see it |
 
 Each of these services has its own privacy policy that governs its side of
 the exchange.
@@ -513,6 +591,25 @@ pickup/drop-off addresses and optional coordinates, and a **proof-of-delivery**
 record — the full record visible to you, and only while the delivery is live to
 the assigned courier. **Dispatch/status history is kept for safety and
 disputes**, and deleting your account removes it all.
+
+**Changelog — July 26, 2026:** corrected how this policy describes **device
+location**, in four ways. (1) Localizing your feed was listed as "planned," but
+the **Local** tab in the feed is live and does use your location, so it has
+been moved into its own live section above. (2) That section now also names two
+uses the policy had never described: **"use my current location" when you
+create an event on the map**, and — the important one — **the quiet city guess
+on the Home and Book screens**. That guess never prompts you and never runs
+unless you have *already* granted location permission for something else, but
+it does take a foreground reading each time those screens load, and an earlier
+draft of this section wrongly implied your device asks you before *every*
+reading. It does not: the permission is granted once and covers the app. (3)
+The coordinates of that city guess are turned into a city name by **your
+phone's own map service** (Apple's or Google's), which is now listed in the
+Third-party services table — they are not sent to us. (4) One behaviour change
+shipped the same day: **tapping Local while signed out no longer asks for your
+location**, because that tab has no feed to filter until you sign in. Nothing
+here is read in the background, and nearby alerts via push remain planned and
+opt-in.
 
 ## Contact
 
