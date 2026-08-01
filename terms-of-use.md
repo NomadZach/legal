@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: July 21, 2026**
+**Effective date: August 1, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -38,8 +38,12 @@ account, you sign in with a **one-time code sent to your email**, so keep
 access to that email address; there is no password. You're responsible for
 activity under your account and for giving us an email address you control.
 You can delete your account at any time with the **"delete my account"
-button in the Profile screen**, or by emailing admin@nomadzachstudios.com;
-see the Privacy Policy for what that removes.
+button in the Settings screen** — tap the **⚙️ gear at the top of your Profile
+screen** to get there — or by emailing admin@nomadzachstudios.com;
+see the Privacy Policy for what that removes. Deleting your account also **signs
+you out on the phone**, which clears your dating data and your conversations
+from the device while leaving your saved places, profile, notes and points in
+place; the Privacy Policy section **"What signing out does"** lists both sides.
 
 ## 4. Who can use it
 
@@ -282,6 +286,16 @@ clause for express parcels (no illegal goods or dangerous materials);
 partner-responsibility and "estimates are estimates" clauses. The closing
 sections were renumbered — Privacy, Changes, Governing law, and Contact are now
 sections 10-13.
+
+**Changelog — August 1, 2026:** corrected section 3. The **"delete my account"
+button is in the Settings screen** (reach it from the ⚙️ gear at the top of your
+Profile screen), not the Profile screen — it moved and this document had not
+caught up, so anyone following the old instruction would not have found the
+control. Section 3 now also says plainly that deleting your account **signs you
+out on the phone**, which clears your dating data and your conversations from
+the device while leaving your saved places, profile, notes and points in place;
+the Privacy Policy's "What signing out does" section lists both sides. No terms
+changed — these are corrections to text that described the app wrongly.
 
 ## 12. Governing law
 

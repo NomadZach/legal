@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: July 31, 2026**
+**Effective date: August 1, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -130,17 +130,25 @@ Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. Your saved places, profile,
 and points stay private to your account.
 
-**What signing out does — and the one thing it erases.** Signing out leaves
-almost all of your local data alone: your saved places, your profile, your
-notes, your points and your trip history all stay on the phone. **There is one
-exception, and it is deliberate: your dating data is cleared from the device
-when your session ends.** That means your date check-ins (including a safety
+**What signing out does — and what it erases.** Signing out leaves most of your
+local data alone: your saved places, your profile, your notes, your points and
+your trip history all stay on the phone. **There are two deliberate exceptions,
+and both are cleared from the device when your session ends.**
+
+**First, your dating data.** That means your date check-ins (including a safety
 check-in for a first date), your date plans, your matches, and the cached
-profiles of people you were shown are all removed from local storage. We do this
-so that someone else signing in on the same phone can never see them. **Please
+profiles of people you were shown are all removed from local storage.
+
+**Second, your conversations.** The copy of your direct-message threads held on
+the device is cleared, and so is your chat with the in-app NomadZach assistant,
+which contains whatever you typed into it. The internal markers the app uses to
+remember how far it has synced your messages are cleared with them.
+
+We do this for both groups for the same reason: so that someone else signing in
+on the same phone can never read them. **Please
 note this also happens if your session simply expires** — not only when you tap
-"sign out" — so if a check-in matters to you, don't rely on it surviving on the
-device.
+"sign out" — so if a check-in or a conversation matters to you, don't rely on it
+surviving on the device.
 
 **And one more clearing, on a different trigger — when the phone changes hands.**
 Your blocked list and your safety reports are treated differently on purpose.
@@ -304,13 +312,17 @@ what lets us restore your map on a new phone.
   exported copy, email us.
 - **Deletion:** if you don't have an account, deleting the app deletes all
   your Pinorama data — it's the only place it exists. If you have an account,
-  use the **"delete my account" button in the Profile screen** — it
+  use the **"delete my account" button in the Settings screen** — tap the
+  **⚙️ gear at the top of your Profile screen** to get there. It
   permanently erases your cloud account and everything stored for it
   (including your posts and likes) immediately. You can also delete any
   individual post yourself inside the app, or **email
   admin@nomadzachstudios.com** and we'll action the deletion for you
-  promptly. Deleting your account does not touch the data saved on your own
-  phone.
+  promptly. **Deleting your account also signs you out on the phone, so
+  everything listed under "What signing out does" above is cleared from the
+  device too** — your dating data and your conversations. **Your saved places,
+  your profile, your notes and your points stay on the phone** and are not
+  deleted with your account; if you want those gone as well, delete the app.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
   gives you similar rights, including the right to know we don't sell your
@@ -610,6 +622,22 @@ shipped the same day: **tapping Local while signed out no longer asks for your
 location**, because that tab has no feed to filter until you sign in. Nothing
 here is read in the background, and nearby alerts via push remain planned and
 opt-in.
+
+**Changelog — August 1, 2026:** corrected three statements about what happens to
+the data on your own phone. (1) The "what signing out does" section said there
+was **one** exception — your dating data. There are **two**: your
+direct-message threads and your chat with the in-app NomadZach assistant are
+also cleared from the device when your session ends, and they are not dating
+data. That section now names both. (2) This policy said **"deleting your account
+does not touch the data saved on your own phone."** That was wrong: deleting
+your account signs you out on the phone, and signing out clears the two things
+listed above. It also contradicted the sign-out section on the same page. Both
+now point at each other and say the same thing. (3) The **"delete my account"
+button is in the Settings screen** (reach it from the ⚙️ gear at the top of your
+Profile screen), not the Profile screen, and both documents said the wrong
+place — anyone following the old instruction would not have found the control.
+Nothing about the app's behaviour changed today; these are corrections to a
+document that described it wrongly.
 
 ## Contact
 
