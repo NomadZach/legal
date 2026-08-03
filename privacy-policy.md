@@ -76,6 +76,14 @@ between your devices. When you're signed in we hold:
   when, against your account. The application reuses details you've already
   given us — it collects no new personal information beyond that choice — and
   no other user can see it. Deleting your account erases it.
+- **Merchant menus** — if you run a restaurant and publish your menu in the
+  app, we store what you publish: the restaurant's name, the dishes with
+  their prices and currency, and when you last updated it. A published menu
+  is business content and is shown to other signed-in users, like posts you
+  publish. If you use the photo scan to fill a menu in, the photo is sent
+  through our server to Anthropic's Claude API so an AI model can read the
+  dishes off it — the photo itself is not stored, and only the dish list you
+  confirm is saved. Deleting your account erases your menus.
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
@@ -288,7 +296,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
-| Anthropic (Claude API) | Extracts place names from captions, via our server | Caption text only, no identity attached |
+| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 | Your phone's built-in map service (Apple on iPhone, Google on Android) | Turns a location reading into a city name, on your own device's request — see "Device location" above | The coordinates of that one reading, sent by your phone to its platform provider. It does not pass through our servers and we never see it |
