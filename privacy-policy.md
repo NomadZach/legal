@@ -71,6 +71,11 @@ between your devices. When you're signed in we hold:
   it. You can delete any of your own comments at any time, other users can
   report a comment or block you (a block hides everything you write from that
   person), and deleting your account erases all your comments.
+- **Partner applications** — if you apply to work with Pinorama (as a driver,
+  restaurant, influencer or host), we store which role you applied for and
+  when, against your account. The application reuses details you've already
+  given us — it collects no new personal information beyond that choice — and
+  no other user can see it. Deleting your account erases it.
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
