@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: August 1, 2026**
+**Effective date: August 2, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -173,6 +173,34 @@ are not money**: they have no cash value, can't be bought, sold, or redeemed
 for cash, and may be adjusted, expired, or reset — especially during beta as
 we tune the system. If we ever let you redeem points for perks, we'll
 describe how here when it launches.
+
+## 7a. Earning programs (referrals, partners, drivers) — not live yet
+
+Pinorama may offer programs where you can **earn money** — for example by
+referring someone who joins, by signing up a venue, or by driving. **No such
+program is live during beta.** If one launches, these terms apply to it.
+
+**Rates are set at Pinorama's discretion and can change.** Any rate,
+percentage, bonus, tier, qualifying window, or eligibility rule may be
+**increased, reduced, paused, or withdrawn at any time**, for future earnings,
+at Pinorama's sole discretion — including where a published figure turns out
+to be wrong. We will publish the current rules in the app when a program goes
+live.
+
+**What a "share" means.** Where Pinorama describes an earning share, it means a
+share of **the commission Pinorama actually receives** — never a share of what
+the customer paid. A booking a traveler pays $600 for might earn Pinorama $36;
+a 20% share of that is **$7.20, not $120**.
+
+**Earning is not a wage or a guarantee.** Nothing here creates employment, a
+partnership, or a minimum amount. Amounts shown before money is actually
+collected are **estimates of what a rule would pay**, not a balance you can
+withdraw, and Pinorama does not owe a payout on a transaction that is refunded,
+charged back, cancelled, or never collected.
+
+**Abuse.** Earnings obtained through self-referral, fake accounts, or any
+attempt to manufacture qualifying activity may be reversed and the account
+closed.
 
 ## 8. Bookings and affiliate links
 
