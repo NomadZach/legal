@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 1, 2026**
+**Effective date: August 4, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -57,6 +57,11 @@ between your devices. When you're signed in we hold:
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
   liked, are stored with your account.
+- **Which posts you've seen** — so the feed can stop showing you the same
+  things and, later, rank what you see. We store one row per post per day
+  (your account saw this post, on this date), never a moment-by-moment
+  record, and no other user can ever see it. Deleting your account erases
+  this history with everything else.
 - **Comments on posts** — the comment text you write on a feed post (up to 300
   characters), stored with your account and shown publicly on that post to
   other signed-in users, alongside your display name and avatar. Comments run
