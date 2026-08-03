@@ -375,8 +375,11 @@ visible only to the two people in it.
 
 Blocking is two-way and immediate: blocks are stored on your device and on
 the server, and a blocked traveler no longer appears to you nor you to
-them. Reports are currently noted on your device while the full review
-pipeline is built — blocking is the instant protection.
+them. When you report someone, we send us what you reported (which profile,
+which surface), the reason you picked, anything you typed in the note, your
+account id, and the time — so a moderator can review it and act. Blocking is
+still the instant protection: it takes effect immediately, whether or not you
+also report.
 
 You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
@@ -414,6 +417,35 @@ whom, the time, and whether it was read. An anti-spam limit caps how fast
 anyone can send. Blocking a traveler stops messages between you in both
 directions, and deleting your account permanently deletes your messages.
 
+## Reporting content and people
+
+Every place you can report something — a post, a comment, a direct message, a
+city-chat message, a dating profile, or a place — sends the report to us so a
+person can look at it. Apple requires this for apps with user-generated content,
+and we would want it anyway.
+
+**What a report contains:** what you reported (which surface, and which item),
+the reason you chose from the list, anything you typed in the optional note
+(500 characters maximum), your account id, and the time you filed it.
+
+**What we do with it:** a moderator reviews it and decides what happens to the
+reported content or account. We keep the report so we can act on repeat
+behaviour — a single complaint and a tenth complaint about the same person are
+different situations.
+
+**Who can see it:** you can see the reports you filed. **The person you reported
+cannot see your report and is never told who reported them.** That is deliberate:
+telling someone who reported them turns a safety tool into a way to retaliate.
+
+**You cannot delete a report once filed.** That is also deliberate — a report a
+user can delete is a report someone can pressure them into retracting, and
+moderation needs the record to survive that pressure. If you delete your account,
+your reports are deleted with it.
+
+**Blocking is separate and immediate.** Blocking takes effect straight away and
+does not require a report. Reporting does not automatically block — do both if
+you want both.
+
 ## City chat rooms
 
 Pinorama has **city chat rooms** — one public room per city, open to signed-in
@@ -428,9 +460,10 @@ account id, and the time — and every signed-in traveler in that room can see
 the message with your display name. An anti-spam limit caps how fast anyone
 can post. You can delete your own messages at any time (they disappear from
 the room), block other travelers (their messages stop appearing for you, on
-your device, immediately), and report messages — reports are noted on your
-device while the full review pipeline is built. Deleting your account
-permanently deletes your chat messages.
+your device, immediately), and report messages — a report sends us the message
+you reported, the reason you picked, anything you typed, your account id, and
+the time, so a moderator can review it. Deleting your account permanently
+deletes your chat messages and the reports you filed.
 
 When you're signed in, we also remember **which city rooms you've joined** (the
 city and the time you joined) so your rooms sync across your devices. You can
