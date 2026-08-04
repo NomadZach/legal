@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 4, 2026**
+**Effective date: August 5, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -194,6 +194,10 @@ When you save a post, the app needs to turn text into a map pin:
 - The **place text** (e.g. "Bánh Mì Phượng, Hội An") is sent to
   OpenStreetMap's Nominatim geocoding service to look up coordinates. Only
   the place text is sent.
+- When a business owner types their venue's address in the partner sign-up,
+  the **typed text** is also sent, as they type, to Photon (an open geocoding
+  service by komoot running on the same OpenStreetMap data) to suggest
+  matching addresses. Only the typed text is sent.
 - If you share a **TikTok, Instagram, or X (Twitter) link**, the app fetches
   that post's public caption from the platform's official oEmbed endpoint (a
   public lookup service those platforms provide; it only works for public
@@ -294,6 +298,7 @@ beta. If we ever add analytics, it will be a privacy-respecting option
 | Service | What it does | What it receives |
 |---|---|---|
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
+| Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
