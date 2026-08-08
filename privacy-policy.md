@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 7, 2026**
+**Effective date: August 8, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -250,8 +250,8 @@ These uses are live in the main app:
   offers a try-again button — nothing else changes. Signed out, tapping
   **Local** does not ask for or read your location at all.
 - **Guessing which city you are in, to choose what to show you — no prompt,
-  and only if you have already granted the permission.** When the **Home** or
-  **Book** screens load, the app checks whether location permission is
+  and only if you have already granted the permission.** When the **Home**,
+  **Book**, or **city chats** screens load, the app checks whether location permission is
   *already* granted. If it is not, nothing happens and nothing is asked. If it
   is, the app takes one foreground reading — the position your phone already
   has on hand, or a deliberately **coarse** fresh one if it has none — and
@@ -259,9 +259,13 @@ These uses are live in the main app:
   built-in map service** (Apple's on iPhone, Google's on Android), so those
   coordinates go from your phone to your phone's platform provider; they are
   **not sent to our servers** and we do not store them. The city name is used
-  only to pick which deals to show you and which "popular in …" list to head
-  the Book tab with, and it is kept in the app's memory for a few minutes so
-  the app doesn't repeat the lookup. If you would rather this did not happen,
+  only to pick which deals to show you, which "popular in …" list to head
+  the Book tab with, and **which city chat rooms to suggest to you**, and it is
+  kept in the app's memory for a few minutes so
+  the app doesn't repeat the lookup. **Suggesting a city chat is all it does
+  there — it does not join you to any room, tell anyone where you are, or send
+  anything to us. You join a room by tapping "join", exactly as before.** If you
+  would rather this did not happen,
   turn Pinorama's location permission off in your phone's settings — the app
   falls back to your saved places and your profile's home base.
 
@@ -291,20 +295,6 @@ sync your saved places and profile across your devices and back them up.
 That's the whole list.
 
 We do **not** sell personal data. We do **not** track you across other
-<!-- ⚠️ MAINTAINER NOTE (2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The sentence below is the app's strongest privacy claim AND its most fragile: it is
-     falsified by a value that lives outside this repo.
-     `@sentry/react-native` is INSTALLED (package.json), listed in app.json plugins, and
-     WIRED in src/monitoring.js — but DORMANT, because Sentry.init is guarded on
-     expoConfig.extra.sentryDsn and that key is absent. Nothing is sent today.
-     🔴 PASTING ONE DSN STRING makes this sentence FALSE and adds an unnamed third-party
-     recipient of crash + device diagnostics. It also flips the Apple privacy answer for
-     Diagnostics to YES (docs/app-privacy-declaration.md).
-     ➡️ If the DSN is ever set, THIS SENTENCE and the Third-party services table below
-     must change in the SAME session, per CLAUDE.md's legal-docs gate — which names
-     analytics explicitly.
-     Same class as the PLACES_PROVIDER note further down (#468): a published claim whose
-     truth depends on configuration the repo cannot see. -->
 apps or websites. There is **no analytics or advertising tracking** in the
 beta. If we ever add analytics, it will be a privacy-respecting option
 (anonymized/aggregated) and disclosed here first.
@@ -326,17 +316,6 @@ privacy documentation at sentry.io/privacy for their practices.
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
-<!-- ⚠️ MAINTAINER NOTE (#468, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The row below names Google Places BY NAME. Which provider actually answers is set by
-     the Supabase secret PLACES_PROVIDER (default `google`, places-details/index.ts:64).
-     A dashboard flip to Foursquare ships with NO code change, NO deploy and NO review —
-     and the instant it lands, THIS PUBLISHED PAGE IS FALSE.
-     🔴 The standing legal-docs gate does not catch it: that gate fires "before shipping
-     any FEATURE that changes how user data is handled", and a secret flip is not a
-     commit, so there is no session for it to fire in.
-     ➡️ If PLACES_PROVIDER is ever changed, this row MUST change in the same action, and
-     Foursquare's branded-credit requirement (#437) applies to every screen showing it.
-     Verify what is live with: node scripts/probe-places-provider.mjs -->
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
@@ -543,36 +522,6 @@ simply centers on your saved places or your base city instead.
 **Who can see a food order.** The order is not public. Only its parties can see
 it:
 
-<!-- ⚠️ MAINTAINER NOTE (#470, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The claim below is ABSOLUTE ("can never see another's orders") and is enforced
-     ENTIRELY by 11 RLS policies — 9 in 0023_delivery_core.sql, 2 in
-     0026_delivery_dispatch_express.sql. With them absent or RLS disabled, any
-     authenticated merchant can select every row.
-
-     🔻 CORRECTION (2026-07-31, money/partner lane) — "ENTIRELY by 11 RLS policies"
-     is TRUE of the merchant bullet and the driver bullet, and FALSE of the THIRD
-     bullet below ("Before a driver accepts…"). That one CANNOT rest on RLS: before
-     a claim there is no assignment, so fn_delivery_holds is false and every
-     order-scoped policy correctly denies — a browsing driver would see nothing at
-     all. The discovery path is public.fn_delivery_available_runs (0026 PART A),
-     which is SECURITY DEFINER and therefore BYPASSES RLS by design. For that
-     bullet the promise IS the function's `returns table (…)` column list: one
-     added line publishes every open order's exact doorstep to every approved
-     driver, and NOT ONE of the 11 policies fires. Same for parcels via
-     fn_parcel_available_runs. Both projections are now gated by
-     dex-lab/dispatchProjectionPromise.test.js (address / note / dishes / identity
-     forbidden; an unclassified new column reds; the round(…,2) fuzzing asserted
-     at each column, because `o.dropoff_lat as fuzz_dropoff_lat` passes every
-     name-based check while publishing the doorstep). Both match this page today.
-     🔴 NOBODY HAS PROBED THOSE POLICIES. docs/migrations-applied.md marks 0023
-     "✅ APPLIED | 3/3 exist" — and that "3/3" is THREE TABLES. That ledger was built
-     from read-only REST probes asking whether a relation responds; it says so in its
-     own header and never claimed to check policies. A table can exist with its policies
-     absent (separate statements, same file), so "3/3 exist" stays true either way.
-     ➡️ Closing it needs a read-only pg_policies probe naming the 11, in the shape of
-     scripts/probe-flags.mjs — no static test can see production configuration.
-     Same class as the PLACES_PROVIDER and no-analytics notes in this file: a published
-     claim whose truth lives outside the repo. This is the one never verified at all. -->
 - **The restaurant sees only its own orders** — the items, the total, and the
   drop-off address and note needed to make and hand off your food. One
   restaurant can never see another's orders, and none of them can browse the
@@ -762,6 +711,20 @@ Profile screen), not the Profile screen, and both documents said the wrong
 place — anyone following the old instruction would not have found the control.
 Nothing about the app's behaviour changed today; these are corrections to a
 document that described it wrongly.
+
+**Changelog — August 8, 2026:** one new use of the quiet city guess, described
+here before it shipped. The **city chats** screen used to suggest rooms based on
+the city you typed as your home base at signup, the city of the last place you
+saved, and our launch city — so a traveler sitting in one city was offered the
+chat for another. It now also suggests **the city your phone says you are in**,
+listed first. This uses the same reading already described in "Device location"
+above: it never asks you for permission, it does nothing at all unless you have
+already granted location permission for something else, the coordinates are
+turned into a city name **by your own phone** and never reach us, and nothing is
+stored. **It suggests only.** It does not join you to a room, it does not tell
+other travelers where you are, and you still join a room by tapping "join". A
+city you have already declined is not suggested again. Turn the permission off
+and the screen goes back to suggesting your home base, as before.
 
 ## Contact
 
