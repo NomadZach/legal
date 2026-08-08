@@ -390,6 +390,12 @@ from a single opt-in device-location read, saved rounded to roughly a city
 block (~110 m). We never store your exact GPS coordinates for discovery
 and never read your location in the background.
 
+**Date of birth.** If you use Pinorama's dating features, we ask for your
+date of birth to confirm you are 18 or over and to let other travelers
+filter by age range. We store the date; we only ever share your **age in
+years** — never the date itself. You can remove it by deleting your dating
+profile.
+
 What other travelers can see: signed-in users searching nearby see your
 display name, bio, interests, photos, gender (if you set one), city, and a
 distance rounded to whole kilometers,
