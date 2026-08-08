@@ -482,11 +482,19 @@ you want both.
 ## City chat rooms
 
 Pinorama has **city chat rooms** — one public room per city, open to signed-in
-travelers. Joining a room is **always your explicit choice**: the app may
-suggest a room based on places you've already saved or the base city on your
-profile (never from background location tracking), but you are never added to
-a room without tapping join, and dismissing a suggestion means that city
-won't be suggested again.
+travelers. Joining a room is **your choice, with one clearly-marked exception
+below (a trip you booked)**: the app may suggest a room based on places you've
+already saved or the base city on your profile (never from background location
+tracking), you are never added to a room from a suggestion without tapping
+join, and dismissing a suggestion means that city won't be suggested again.
+
+**City chat after a booking.** When you book a trip in Pinorama (or tell us
+you did), we use the destination city to add you to that city's public chat
+room so you can meet travelers there. The app tells you the moment it happens,
+with a one-tap **leave** right on the same card. You can leave any room with
+one tap, a room you leave is never joined for you again, and dismissing a
+suggested city also stops it being auto-joined. Your booking details are never
+shown to the room — other travelers only see what you choose to post.
 
 If you send a message, we store the message text, the room's city, your
 account id, and the time — and every signed-in traveler in that room can see
