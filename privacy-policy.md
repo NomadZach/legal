@@ -51,6 +51,11 @@ between your devices. When you're signed in we hold:
   traveler types, interests, and your Pinorama passport number.
 - **Your saved places**, including their names, **coordinates**, categories,
   the original post links, and their **captions/notes**.
+- **Buddy-trip drafts.** The trips you draft on the travel-buddy board are
+  stored with your account so they come back on a new phone. No other traveler
+  can ever see them — a draft is private to you, and the day real buddy
+  matching ships it will ask you before anything is shared. Deleting a draft
+  removes it from our servers, and deleting your account erases them all.
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
 - **Posts and likes** — text posts you choose to publish in the app. A post
