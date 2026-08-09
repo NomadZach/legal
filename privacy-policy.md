@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 8, 2026**
+**Effective date: August 9, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -256,7 +256,7 @@ These uses are live in the main app:
   **Local** does not ask for or read your location at all.
 - **Guessing which city you are in, to choose what to show you — no prompt,
   and only if you have already granted the permission.** When the **Home**,
-  **Book**, or **city chats** screens load, the app checks whether location permission is
+  **Book**, **Social**, or **city chats** screens load, the app checks whether location permission is
   *already* granted. If it is not, nothing happens and nothing is asked. If it
   is, the app takes one foreground reading — the position your phone already
   has on hand, or a deliberately **coarse** fresh one if it has none — and
@@ -265,7 +265,9 @@ These uses are live in the main app:
   coordinates go from your phone to your phone's platform provider; they are
   **not sent to our servers** and we do not store them. The city name is used
   only to pick which deals to show you, which "popular in …" list to head
-  the Book tab with, and **which city chat rooms to suggest to you**, and it is
+  the Book tab with, and **which city chat rooms to suggest to you** (as a list
+  on the city-chats screen, and as a single ask-to-join card on the Social
+  feed), and it is
   kept in the app's memory for a few minutes so
   the app doesn't repeat the lookup. **Suggesting a city chat is all it does
   there — it does not join you to any room, tell anyone where you are, or send
