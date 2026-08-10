@@ -50,6 +50,7 @@
     spots, stays, flights and the people out there with you.</p>
 
     <div class="code-wrap" id="codeWrap">
+      <a id="open-app" style="display:none" class="btn">Open in the app</a>
       <div class="code-label">Your invite code</div>
       <div class="code" id="code"></div>
     </div>
@@ -74,6 +75,8 @@
       if (/^[A-Z0-9-]{4,24}$/i.test(ref)) {
         document.getElementById('code').textContent = ref.toUpperCase();
         document.getElementById('codeWrap').style.display = 'block';
+        var a = document.getElementById('open-app');
+        if (a) { a.href = 'nomadmap://get?ref=' + encodeURIComponent(ref.toUpperCase()); a.style.display = ''; }
       }
     } catch (e) {}
   </script>
