@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 9, 2026**
+**Effective date: August 11, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -56,6 +56,13 @@ between your devices. When you're signed in we hold:
   can ever see them — a draft is private to you, and the day real buddy
   matching ships it will ask you before anything is shared. Deleting a draft
   removes it from our servers, and deleting your account erases them all.
+- **Your buddy-profile draft.** The profile you draft for the travel-buddy
+  feature (display name, age, home base, bio, interests, what you're looking
+  for, relationship status, and whether your info is verified) is stored with
+  your account so it comes back on a new phone. No other traveler can read it —
+  it is a restore copy for you alone. Whether you are discoverable is NEVER
+  restored automatically: that stays off until you turn it on yourself on the
+  device. Deleting your account erases it.
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
 - **Posts and likes** — text posts you choose to publish in the app. A post
