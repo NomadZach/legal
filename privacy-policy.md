@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 11, 2026**
+**Effective date: August 12, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -217,10 +217,15 @@ When you save a post, the app needs to turn text into a map pin:
   public lookup service those platforms provide; it only works for public
   posts). The platform sees the request came from your device, the same as
   if you opened the link in a browser.
-- If the place still isn't clear, the **caption text** is sent to Anthropic's
-  Claude API, through our server, so an AI model can extract the place name
-  and city from it. Only the caption text is sent — we don't attach your
-  account or profile to it.
+- If the place still isn't clear, we **ask your permission first** before the
+  **caption text** is sent to Anthropic's Claude API. Only if you tap "Use AI"
+  on that prompt is the caption sent, through our server, so an AI model can
+  extract the place name and city from it. If you tap "Not now," nothing is
+  sent to Anthropic and the app falls back to matching the place on its own.
+  Only the caption text is ever sent — we don't attach your account or profile
+  to it — and you can turn this off any time under Settings → AI place
+  detection. (This third-party-AI sharing is disclosed here and asked for
+  in-app because it is your personal content leaving our systems.)
 
 ### Device location (live — opt-in, foreground only, never in the background)
 
