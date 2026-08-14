@@ -284,6 +284,26 @@ typically 5–10 business days). A non-refundable rate cannot be refunded once
 booked — it says so before you pay. Accommodation support:
 admin@nomadzachstudios.com.
 
+## Copyright complaints (DMCA)
+
+Pinorama hosts content that travelers post. If you believe something posted in
+the app infringes your copyright, send a takedown notice to our designated
+agent, registered with the U.S. Copyright Office (Registration DMCA-1078344):
+
+**Copyright Agent, NomadZach Studios**
+3916 N Potsdam Ave, PMB 2865, Sioux Falls, SD 57104
+admin@nomadzachstudios.com
+
+Your notice must include: identification of the copyrighted work, the location
+of the infringing material in the app (a link or screenshot), your contact
+information, a statement that you have a good-faith belief the use is
+unauthorized, a statement under penalty of perjury that your notice is accurate
+and you are (or act for) the copyright owner, and your physical or electronic
+signature. We remove or disable access to material identified in valid notices,
+notify the poster, and accept counter-notices meeting the requirements of 17
+U.S.C. §512(g). **Repeat infringers lose their accounts:** a user whose content
+draws repeated valid takedown notices will have their account terminated.
+
 ## 10. Privacy
 
 How we handle data is described in the [Pinorama Privacy
@@ -340,6 +360,12 @@ out on the phone**, which clears your dating data and your conversations from
 the device while leaving your saved places, profile, notes and points in place;
 the Privacy Policy's "What signing out does" section lists both sides. No terms
 changed — these are corrections to text that described the app wrongly.
+
+**Changelog — August 14, 2026 (second entry, same day):** added the **Copyright
+complaints (DMCA)** section — Pinorama now has a designated copyright agent
+registered with the U.S. Copyright Office (Registration DMCA-1078344, filed and
+paid August 14, 2026), a documented takedown and counter-notice process, and a
+repeat-infringer termination policy.
 
 **Changelog — August 14, 2026:** **hotel booking went live** — you can now book
 and pay for hotel rooms inside the app (new "Hotel bookings" part of section 9):
