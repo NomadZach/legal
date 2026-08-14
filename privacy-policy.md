@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 12, 2026**
+**Effective date: August 14, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -155,6 +155,27 @@ between your devices. When you're signed in we hold:
   delete your account. Whether an event is public or private, when you **share an
   invite** the message is created on your device and sent by you through your own
   apps — we don't send it or see who you send it to.
+- **Maps you publish (PUBLIC — and readable without an account)** — you can pick
+  places you have saved and publish them together as a **map** under your creator
+  profile. Publishing takes a **copy** of the places you chose: for each pin on the
+  published map we store its name, its address, its **coordinates**, its category,
+  the **note you wrote on it**, and its position on the map — plus the map's title,
+  blurb and cover emoji, stored with your account.
+  **A published map is open to anyone: it is listed in the app's creator section, and
+  it can be opened from a shared link by someone who has no Pinorama account at all.**
+  What they see is: the map's title, blurb, cover emoji, how many pins it has,
+  when you last updated it, every pin listed above — and **your creator profile's
+  display name, @username and avatar emoji**. Your email address, the saved places you
+  did **not** put on the map, and your private notes on those places are never part of
+  a published map.
+  The pins are a **copy taken at the moment you publish**, so editing or deleting one
+  of your own saved places afterwards does not change a map you have already
+  published — re-publishing is what updates it. **Unpublishing is what takes a map
+  down:** it removes the map and its pins from view immediately. Making your creator
+  profile private removes your maps from the public list. Deleting your account erases
+  your maps and their pins.
+  **Opening a published map records nothing about the person opening it** — there is
+  no view counter, and a reader without an account can only read.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
 happens when you sign in and when you open the app. Your saved places, profile,
@@ -200,7 +221,9 @@ further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
 You can delete any of your own posts, comments, or game nights at any time, and
 deleting your account removes your posts, likes, comments, and game nights
-along with everything else.
+along with everything else. **A map you publish is public in the same way** —
+see "Maps you publish" above: anyone can open it, including someone with no
+account.
 
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
@@ -294,9 +317,9 @@ and driver live location during an active run.
 
 ### Planned (not live yet — we'll update this policy first)
 
-- **More social features** — shared/creator maps and meetups. These aren't
-  built yet (text posts and follows, described above, are the social features
-  live today). Anything you choose to make public will be visible to other
+- **Meetups** — organised meet-ups are not built yet. (Text posts, follows and
+  the creator maps you publish — all described above — are the social features
+  live today.) Anything you choose to make public will be visible to other
   users.
 - **Nearby alerts** — being notified about things close to you is still
   planned, and would be opt-in like every other use of location.
@@ -314,6 +337,20 @@ sync your saved places and profile across your devices and back them up.
 That's the whole list.
 
 We do **not** sell personal data. We do **not** track you across other
+<!-- ⚠️ MAINTAINER NOTE (2026-08-01) — DO NOT PUBLISH THIS COMMENT.
+     The sentence below is the app's strongest privacy claim AND its most fragile: it is
+     falsified by a value that lives outside this repo.
+     `@sentry/react-native` is INSTALLED (package.json), listed in app.json plugins, and
+     WIRED in src/monitoring.js — but DORMANT, because Sentry.init is guarded on
+     expoConfig.extra.sentryDsn and that key is absent. Nothing is sent today.
+     🔴 PASTING ONE DSN STRING makes this sentence FALSE and adds an unnamed third-party
+     recipient of crash + device diagnostics. It also flips the Apple privacy answer for
+     Diagnostics to YES (docs/app-privacy-declaration.md).
+     ➡️ If the DSN is ever set, THIS SENTENCE and the Third-party services table below
+     must change in the SAME session, per CLAUDE.md's legal-docs gate — which names
+     analytics explicitly.
+     Same class as the PLACES_PROVIDER note further down (#468): a published claim whose
+     truth depends on configuration the repo cannot see. -->
 apps or websites. There is **no analytics or advertising tracking** in the
 beta. If we ever add analytics, it will be a privacy-respecting option
 (anonymized/aggregated) and disclosed here first.
@@ -335,6 +372,17 @@ privacy documentation at sentry.io/privacy for their practices.
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
+<!-- ⚠️ MAINTAINER NOTE (#468, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
+     The row below names Google Places BY NAME. Which provider actually answers is set by
+     the Supabase secret PLACES_PROVIDER (default `google`, places-details/index.ts:64).
+     A dashboard flip to Foursquare ships with NO code change, NO deploy and NO review —
+     and the instant it lands, THIS PUBLISHED PAGE IS FALSE.
+     🔴 The standing legal-docs gate does not catch it: that gate fires "before shipping
+     any FEATURE that changes how user data is handled", and a secret flip is not a
+     commit, so there is no session for it to fire in.
+     ➡️ If PLACES_PROVIDER is ever changed, this row MUST change in the same action, and
+     Foursquare's branded-credit requirement (#437) applies to every screen showing it.
+     Verify what is live with: node scripts/probe-places-provider.mjs -->
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
@@ -351,6 +399,30 @@ displayed with "Powered by Google" attribution; review snippets link back to
 Google Maps. Our server caches this place content briefly (up to 7 days per
 place) to avoid repeated lookups — the cache holds place facts only, never
 anything about you. Google's own terms and privacy policy govern that content.
+
+**LiteAPI (Nuitée) — hotel search and paid hotel bookings (live since August
+14, 2026):** hotel availability and prices come from LiteAPI, and when you book
+a room they are the merchant of record — the payment happens on their secure
+hosted card form under their own privacy terms. See the "Hotel bookings"
+section below for exactly what we store about a booking.
+
+**Viator (Tripadvisor) — tours and activities (live since August 14, 2026):**
+tour and activity listings come from Viator's partner API. Our server sends
+Viator only the city being browsed — never your name, account, or location.
+
+## Hotel bookings (accommodation)
+
+When you book a hotel room in Pinorama we store a booking record: the guest
+name and email you enter at checkout, the hotel, the stay dates, the price and
+currency, the supplier's booking reference, and whether the booking was made in
+the test ("sandbox") or live environment. We use this to show the booking in
+your app, deliver your confirmation, and handle cancellation and support. The
+guest name and email are passed to the accommodation supplier (LiteAPI/Nuitée)
+so the hotel knows who is arriving — that is what a booking is. **Your card
+details never touch Pinorama:** the card is entered on the payment processor's
+hosted form and processed by them as merchant of record. Booking records are
+deleted with your account, except records we must keep for bookkeeping and tax
+law, which are kept only as long as those laws require.
 
 ## Storage and security
 
@@ -555,6 +627,36 @@ simply centers on your saved places or your base city instead.
 **Who can see a food order.** The order is not public. Only its parties can see
 it:
 
+<!-- ⚠️ MAINTAINER NOTE (#470, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
+     The claim below is ABSOLUTE ("can never see another's orders") and is enforced
+     ENTIRELY by 11 RLS policies — 9 in 0023_delivery_core.sql, 2 in
+     0026_delivery_dispatch_express.sql. With them absent or RLS disabled, any
+     authenticated merchant can select every row.
+
+     🔻 CORRECTION (2026-07-31, money/partner lane) — "ENTIRELY by 11 RLS policies"
+     is TRUE of the merchant bullet and the driver bullet, and FALSE of the THIRD
+     bullet below ("Before a driver accepts…"). That one CANNOT rest on RLS: before
+     a claim there is no assignment, so fn_delivery_holds is false and every
+     order-scoped policy correctly denies — a browsing driver would see nothing at
+     all. The discovery path is public.fn_delivery_available_runs (0026 PART A),
+     which is SECURITY DEFINER and therefore BYPASSES RLS by design. For that
+     bullet the promise IS the function's `returns table (…)` column list: one
+     added line publishes every open order's exact doorstep to every approved
+     driver, and NOT ONE of the 11 policies fires. Same for parcels via
+     fn_parcel_available_runs. Both projections are now gated by
+     dex-lab/dispatchProjectionPromise.test.js (address / note / dishes / identity
+     forbidden; an unclassified new column reds; the round(…,2) fuzzing asserted
+     at each column, because `o.dropoff_lat as fuzz_dropoff_lat` passes every
+     name-based check while publishing the doorstep). Both match this page today.
+     🔴 NOBODY HAS PROBED THOSE POLICIES. docs/migrations-applied.md marks 0023
+     "✅ APPLIED | 3/3 exist" — and that "3/3" is THREE TABLES. That ledger was built
+     from read-only REST probes asking whether a relation responds; it says so in its
+     own header and never claimed to check policies. A table can exist with its policies
+     absent (separate statements, same file), so "3/3 exist" stays true either way.
+     ➡️ Closing it needs a read-only pg_policies probe naming the 11, in the shape of
+     scripts/probe-flags.mjs — no static test can see production configuration.
+     Same class as the PLACES_PROVIDER and no-analytics notes in this file: a published
+     claim whose truth lives outside the repo. This is the one never verified at all. -->
 - **The restaurant sees only its own orders** — the items, the total, and the
   drop-off address and note needed to make and hand off your food. One
   restaurant can never see another's orders, and none of them can browse the
@@ -758,6 +860,23 @@ stored. **It suggests only.** It does not join you to a room, it does not tell
 other travelers where you are, and you still join a room by tapping "join". A
 city you have already declined is not suggested again. Turn the permission off
 and the screen goes back to suggesting your home base, as before.
+
+**Changelog — August 14, 2026:** documented **maps you publish**, and this entry
+is late: the feature became readable to people without an account on **August 11,
+2026**, and until today this policy still listed "shared/creator maps" as a
+planned feature that was not live. We would rather say that plainly than quietly
+move the line. A published creator map now has its own entry in "With an account"
+above, which describes exactly what a visitor with **no Pinorama account** can see
+when they open one from a shared link or from the app's creator section: the map's
+title, blurb, cover emoji, pin count and last-updated date; every pin's name,
+address, coordinates, category and the note the creator wrote on it; and the
+creator's display name, @username and avatar emoji. Nothing about the person
+opening a map is recorded — there is no view counter. Publishing takes a **copy**
+of the chosen places, so later edits to a saved place do not change a map already
+published; **unpublishing removes the map and its pins from view immediately**,
+making your creator profile private removes your maps from the public list, and
+deleting your account erases them. **Nothing else changed today** — no new data is
+collected, and the "planned" list above no longer names shared/creator maps.
 
 ## Contact
 

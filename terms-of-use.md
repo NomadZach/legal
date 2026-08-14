@@ -1,6 +1,6 @@
 # Pinorama Terms of Use (Beta)
 
-**Effective date: August 2, 2026**
+**Effective date: August 14, 2026**
 
 > **Pinorama was previously known as NomadMap during early beta — same app,
 > same operator (NomadZach Studios).**
@@ -264,9 +264,25 @@ tracking is on; customers may then see the run's status without a live pin.
 is an **estimate only**, not a guarantee — real times vary with traffic, weather,
 kitchen load, and driver availability.
 
-**Payment.** No payment is taken inside the app during this phase. When paid
-delivery launches, payment will be handled by established payment processors
-under their own terms.
+**Payment (delivery).** Delivery and parcel orders take no payment inside the
+app during this phase. When paid delivery launches, payment will be handled by
+established payment processors under their own terms. Hotel room bookings are
+different — they are live and paid, as described in the next section.
+
+**Hotel bookings (accommodation) — live since August 14, 2026.** You can book
+hotel rooms inside Pinorama. The room price, currency, and that rate's
+cancellation policy are shown before you pay. Payment is processed by our
+accommodation supplier, **LiteAPI (Nuitée)**, acting as the merchant of record:
+your card is entered on their secure hosted payment form and charged by them —
+**Pinorama never sees or stores your card number.** A room booking exists only
+when the supplier returns a real confirmation, which the app shows you together
+with your booking reference. **Cancellation and refunds:** every rate carries
+its own cancellation window, shown before you book. A refundable rate can be
+cancelled in the app within its window, and the refund is issued by the payment
+processor back to your original payment method (bank posting times vary,
+typically 5–10 business days). A non-refundable rate cannot be refunded once
+booked — it says so before you pay. Accommodation support:
+admin@nomadzachstudios.com.
 
 ## 10. Privacy
 
@@ -324,6 +340,16 @@ out on the phone**, which clears your dating data and your conversations from
 the device while leaving your saved places, profile, notes and points in place;
 the Privacy Policy's "What signing out does" section lists both sides. No terms
 changed — these are corrections to text that described the app wrongly.
+
+**Changelog — August 14, 2026:** **hotel booking went live** — you can now book
+and pay for hotel rooms inside the app (new "Hotel bookings" part of section 9):
+LiteAPI (Nuitée) is the merchant of record and charges your card on its own
+secure hosted form, Pinorama never sees your card number, every rate shows its
+cancellation policy before you pay, refundable rates can be cancelled in-app
+with the refund issued to your original payment method. The old no-payment-
+inside-the-app sentence now applies to delivery orders only. Tour and activity
+listings from Viator also went live (display with booking links). Effective
+date bumped.
 
 ## 12. Governing law
 
