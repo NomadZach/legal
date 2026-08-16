@@ -49,6 +49,14 @@ between your devices. When you're signed in we hold:
   to store.
 - **Your profile** from onboarding: display name, avatar emoji, home base,
   traveler types, interests, and your Pinorama passport number.
+- **Who invited you (referrals).** If you first open Pinorama through another
+  traveler's personal invite link (a `pinorama.app/get?ref=…` link or QR code),
+  we record on your profile **which account invited you and when**, so we can
+  credit the person who invited you under our rewards program. That link
+  between the two accounts **expires 6 months after you join**, is recorded
+  **once** (the first invite link wins; it never changes afterwards), and is
+  erased with your account. We never see who you *send* an invite to — a
+  referral is recorded only if the person you invited actually joins.
 - **Your saved places**, including their names, **coordinates**, categories,
   the original post links, and their **captions/notes**.
 - **Buddy-trip drafts.** The trips you draft on the travel-buddy board are
@@ -154,7 +162,9 @@ between your devices. When you're signed in we hold:
   if you set no time), can be removed by you at any time, and are erased when you
   delete your account. Whether an event is public or private, when you **share an
   invite** the message is created on your device and sent by you through your own
-  apps — we don't send it or see who you send it to.
+  apps — we don't send it or see who you send it to. (This is about event
+  invites. Personal *referral* invite links work differently: if someone joins
+  Pinorama through yours, that is recorded — see **"Who invited you"** above.)
 - **Maps you publish (PUBLIC — and readable without an account)** — you can pick
   places you have saved and publish them together as a **map** under your creator
   profile. Publishing takes a **copy** of the places you chose: for each pin on the
@@ -841,6 +851,19 @@ your phone remembers it for a few hours so it does not have to ask again. If a
 post has no picture, or the service cannot be reached, the place shows its
 coloured category tile instead. **No new personal data is collected**, and
 nothing new is sent to us or to anyone else.
+
+**Changelog — August 16, 2026:** documented **referrals**, and this entry is
+late: since around **August 10, 2026** the app has been able to record, on a
+new account's profile, **which existing account's invite link that person
+joined through and when** (with a 6-month expiry on the link between the two
+accounts). Until today this page said nothing about it, and the only
+invite-shaped sentence on the page — written about event invites — could be
+read as a promise that no invite is ever visible to us. We would rather say
+this plainly than quietly move the line: a new **"Who invited you
+(referrals)"** entry now sits in "With an account" above, and the event-invite
+sentence now points to it. What has *not* changed: we still never see who you
+send any invite to — a referral is recorded only when the invited person
+actually joins, and it is erased with either account's normal deletion rights.
 
 ## Contact
 
