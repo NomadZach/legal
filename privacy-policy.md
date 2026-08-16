@@ -1,8 +1,8 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 14, 2026**
+**Effective date: August 16, 2026**
 
-> **Pinorama was previously known as NomadMap during early beta — same app,
+> **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
 
 ## Who we are
@@ -14,7 +14,7 @@ company entity is being formalized). If you have any question about this
 policy or your data, email us at **admin@nomadzachstudios.com** — a real
 person reads it.
 
-Pinorama is in **beta**. You can use the whole app **without an account**,
+You can use the whole app **without an account**,
 in which case your data stays on your device and we hold almost none of it.
 If you **create an account** (optional), your saved places and profile are
 stored in our cloud database so they survive a lost phone and sync between
@@ -114,7 +114,7 @@ between your devices. When you're signed in we hold:
   travelers who have a public profile and at least one published post. It
   shows only what your public profile already shows: display name, avatar
   emoji, @username, and how many posts you've shared — never your email,
-  location, saved places, or linked handles. During beta, accounts are
+  location, saved places, or linked handles. Accounts are
   public by default (same as posts, above), so publishing a post can list
   you here; deleting your posts or your account removes you.
 - **Social handles and self-reported follower counts** — the @handles you type
@@ -213,7 +213,7 @@ device to its next user. With an account, your blocked list is also saved to
 your account so it comes back when you sign in on a new phone. Unblocking
 someone removes them there too. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
-is public — and during beta, accounts are public by default. Likes are visible
+is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
 post can be seen by other signed-in users. Comments you write are visible on
 the post they're on to the same audience as the post itself. **Game nights go
@@ -236,10 +236,18 @@ When you save a post, the app needs to turn text into a map pin:
   service by komoot running on the same OpenStreetMap data) to suggest
   matching addresses. Only the typed text is sent.
 - If you share a **TikTok, Instagram, or X (Twitter) link**, the app fetches
-  that post's public caption from the platform's official oEmbed endpoint (a
+  that post's public caption **and, where the platform provides one, the
+  post's small preview image** from the platform's official oEmbed endpoint (a
   public lookup service those platforms provide; it only works for public
   posts). The platform sees the request came from your device, the same as
-  if you opened the link in a browser.
+  if you opened the link in a browser. When a saved place needs a picture,
+  your device asks that same service for the post's preview image and then
+  loads the image itself from the platform's image server — which that
+  server sees in the same way. **We do not store the picture, and we do not
+  keep its address on our servers**; your phone remembers it for a few hours
+  so it does not have to ask again, and after that it asks afresh. If the
+  post has no picture, or we cannot reach the service, the place simply
+  shows its coloured category tile.
 - If the place still isn't clear, we **ask your permission first** before the
   **caption text** is sent to Anthropic's Claude API. Only if you tap "Use AI"
   on that prompt is the caption sent, through our server, so an AI model can
@@ -337,22 +345,8 @@ sync your saved places and profile across your devices and back them up.
 That's the whole list.
 
 We do **not** sell personal data. We do **not** track you across other
-<!-- ⚠️ MAINTAINER NOTE (2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The sentence below is the app's strongest privacy claim AND its most fragile: it is
-     falsified by a value that lives outside this repo.
-     `@sentry/react-native` is INSTALLED (package.json), listed in app.json plugins, and
-     WIRED in src/monitoring.js — but DORMANT, because Sentry.init is guarded on
-     expoConfig.extra.sentryDsn and that key is absent. Nothing is sent today.
-     🔴 PASTING ONE DSN STRING makes this sentence FALSE and adds an unnamed third-party
-     recipient of crash + device diagnostics. It also flips the Apple privacy answer for
-     Diagnostics to YES (docs/app-privacy-declaration.md).
-     ➡️ If the DSN is ever set, THIS SENTENCE and the Third-party services table below
-     must change in the SAME session, per CLAUDE.md's legal-docs gate — which names
-     analytics explicitly.
-     Same class as the PLACES_PROVIDER note further down (#468): a published claim whose
-     truth depends on configuration the repo cannot see. -->
 apps or websites. There is **no analytics or advertising tracking** in the
-beta. If we ever add analytics, it will be a privacy-respecting option
+app. If we ever add analytics, it will be a privacy-respecting option
 (anonymized/aggregated) and disclosed here first.
 
 **Crash reports (diagnostics).** The app sends automatic **crash reports** so
@@ -372,19 +366,8 @@ privacy documentation at sentry.io/privacy for their practices.
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
 | OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
 | Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
-<!-- ⚠️ MAINTAINER NOTE (#468, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The row below names Google Places BY NAME. Which provider actually answers is set by
-     the Supabase secret PLACES_PROVIDER (default `google`, places-details/index.ts:64).
-     A dashboard flip to Foursquare ships with NO code change, NO deploy and NO review —
-     and the instant it lands, THIS PUBLISHED PAGE IS FALSE.
-     🔴 The standing legal-docs gate does not catch it: that gate fires "before shipping
-     any FEATURE that changes how user data is handled", and a secret flip is not a
-     commit, so there is no session for it to fire in.
-     ➡️ If PLACES_PROVIDER is ever changed, this row MUST change in the same action, and
-     Foursquare's branded-credit requirement (#437) applies to every screen showing it.
-     Verify what is live with: node scripts/probe-places-provider.mjs -->
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
-| TikTok / Instagram / X oEmbed | Fetches a shared post's public caption | The post link, requested from your device |
+| TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
@@ -596,12 +579,12 @@ When you're signed in, we also remember **which city rooms you've joined** (the
 city and the time you joined) so your rooms sync across your devices. You can
 leave a room at any time, and deleting your account removes this too.
 
-## Food delivery & express parcels (optional; activating during beta)
+## Food delivery & express parcels (optional; not yet active)
 
 Pinorama is adding **food delivery** (order from a local restaurant and have a
 driver bring it) and **express parcels** (send a package from one address to
-another). These are being **switched on gradually during beta** and may not be
-available in your area yet. They require an account, and everything below
+another). These are **not active yet** and will switch on gradually, so they may not be
+available in your area at first. They require an account, and everything below
 applies only once the service is active for you — we'll never turn them on
 silently, and this section describes what they collect before they do.
 
@@ -627,36 +610,6 @@ simply centers on your saved places or your base city instead.
 **Who can see a food order.** The order is not public. Only its parties can see
 it:
 
-<!-- ⚠️ MAINTAINER NOTE (#470, 2026-08-01) — DO NOT PUBLISH THIS COMMENT.
-     The claim below is ABSOLUTE ("can never see another's orders") and is enforced
-     ENTIRELY by 11 RLS policies — 9 in 0023_delivery_core.sql, 2 in
-     0026_delivery_dispatch_express.sql. With them absent or RLS disabled, any
-     authenticated merchant can select every row.
-
-     🔻 CORRECTION (2026-07-31, money/partner lane) — "ENTIRELY by 11 RLS policies"
-     is TRUE of the merchant bullet and the driver bullet, and FALSE of the THIRD
-     bullet below ("Before a driver accepts…"). That one CANNOT rest on RLS: before
-     a claim there is no assignment, so fn_delivery_holds is false and every
-     order-scoped policy correctly denies — a browsing driver would see nothing at
-     all. The discovery path is public.fn_delivery_available_runs (0026 PART A),
-     which is SECURITY DEFINER and therefore BYPASSES RLS by design. For that
-     bullet the promise IS the function's `returns table (…)` column list: one
-     added line publishes every open order's exact doorstep to every approved
-     driver, and NOT ONE of the 11 policies fires. Same for parcels via
-     fn_parcel_available_runs. Both projections are now gated by
-     dex-lab/dispatchProjectionPromise.test.js (address / note / dishes / identity
-     forbidden; an unclassified new column reds; the round(…,2) fuzzing asserted
-     at each column, because `o.dropoff_lat as fuzz_dropoff_lat` passes every
-     name-based check while publishing the doorstep). Both match this page today.
-     🔴 NOBODY HAS PROBED THOSE POLICIES. docs/migrations-applied.md marks 0023
-     "✅ APPLIED | 3/3 exist" — and that "3/3" is THREE TABLES. That ledger was built
-     from read-only REST probes asking whether a relation responds; it says so in its
-     own header and never claimed to check policies. A table can exist with its policies
-     absent (separate statements, same file), so "3/3 exist" stays true either way.
-     ➡️ Closing it needs a read-only pg_policies probe naming the 11, in the shape of
-     scripts/probe-flags.mjs — no static test can see production configuration.
-     Same class as the PLACES_PROVIDER and no-analytics notes in this file: a published
-     claim whose truth lives outside the repo. This is the one never verified at all. -->
 - **The restaurant sees only its own orders** — the items, the total, and the
   drop-off address and note needed to make and hand off your food. One
   restaurant can never see another's orders, and none of them can browse the
@@ -733,7 +686,7 @@ the email-based account-deletion path; and clarified that the TikTok/X
 caption lookup and AI place extraction happen today rather than "upcoming."
 Also went live today: **social posts** — signed-in users can publish text
 posts (with an optional place and coordinates) that are visible to other
-signed-in users when your profile is public (public by default in beta),
+signed-in users when your profile is public (public by default),
 along with likes, which are likewise visible to signed-in users; you can delete
 your own posts, and account deletion removes them. Also added: you can **link
 your social handles** (Instagram, TikTok, X, Facebook, YouTube) by typing them
@@ -795,8 +748,7 @@ moment the run ends** (or with account deletion); location is never collected in
 the background or outside an active delivery.
 
 **Changelog — July 18, 2026:** documented the upcoming **food delivery** and
-**express parcel** services (new section above), which are switched on gradually
-during beta. A food order stores your items and prices, the drop-off address,
+**express parcel** services (new section above), which are switched on gradually. A food order stores your items and prices, the drop-off address,
 **optional** map-picked coordinates, and an optional delivery note; the location
 permission that centers the drop-off map is **optional and never required** —
 a single foreground read only when you tap it, never in the background. Who can
@@ -875,8 +827,20 @@ opening a map is recorded — there is no view counter. Publishing takes a **cop
 of the chosen places, so later edits to a saved place do not change a map already
 published; **unpublishing removes the map and its pins from view immediately**,
 making your creator profile private removes your maps from the public list, and
-deleting your account erases them. **Nothing else changed today** — no new data is
-collected, and the "planned" list above no longer names shared/creator maps.
+deleting your account erases them. The "planned" list above no longer names
+shared/creator maps.
+
+Also documented today, and this part is late as well: **a saved place can show the
+preview picture from the post you saved it from**, and this page did not say so.
+That began on **August 8, 2026** on the place's own screen; from today it also
+fills in your saved list. In both cases your device asks the platform's public
+preview service for the picture's address and then loads the picture from that
+platform's image server — the same way it would if you opened the post yourself.
+**We do not store the picture, and we do not keep its address on our servers**;
+your phone remembers it for a few hours so it does not have to ask again. If a
+post has no picture, or the service cannot be reached, the place shows its
+coloured category tile instead. **No new personal data is collected**, and
+nothing new is sent to us or to anyone else.
 
 ## Contact
 

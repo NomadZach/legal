@@ -1,24 +1,23 @@
-# Pinorama Terms of Use (Beta)
+# Pinorama Terms of Use
 
-**Effective date: August 14, 2026**
+**Effective date: August 16, 2026**
 
-> **Pinorama was previously known as NomadMap during early beta — same app,
+> **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
 
-These are short beta terms for Pinorama, made by NomadZach Studios
+These are short terms for Pinorama, made by NomadZach Studios
 (contact: admin@nomadzachstudios.com). By using the app you agree to them.
-A fuller version will replace this when the app leaves beta.
 
-## 1. Beta software, provided as-is
+## 1. Provided as-is
 
-Pinorama is pre-release software. It is provided **"as is" and "as
+Pinorama is provided **"as is" and "as
 available," without warranties of any kind** — things may break, change,
 or be removed without notice, and data may be lost. If you use Pinorama
 without an account, your data lives only on your device and deleting the app
-deletes it; if you have an account, we sync a cloud backup, but during beta
-we don't guarantee against data loss. To the maximum extent permitted by
+deletes it; if you have an account, we sync a cloud backup, but we don't
+guarantee against data loss. To the maximum extent permitted by
 law, NomadZach Studios is not liable for any damages arising from your use
-of the beta.
+of Pinorama.
 
 ## 2. Sample content
 
@@ -28,7 +27,7 @@ are illustrations of planned features, not real offers, inventory, or
 prices. Other listings are marked **"LIVE"**: those show real prices
 fetched from travel partners. LIVE prices are informational quotes that can
 change; any actual booking happens on the partner's own site under the
-partner's terms (see section 8). Nothing inside the beta app itself is a
+partner's terms (see section 8). Nothing inside the app itself is a
 booking, purchase, or commitment.
 
 ## 3. Your account
@@ -73,7 +72,7 @@ responsible for the content you add and for having the right to use any link
 or caption you save.
 
 You can also **publish text posts** in the app. When your profile is public
-(the default during beta), your posts are visible to other signed-in users.
+(the default), your posts are visible to other signed-in users.
 For any post you publish, you grant NomadZach Studios the non-exclusive
 license needed to store, display, and distribute that post within the app so
 other users can see it — you keep ownership of what you write. You're
@@ -102,7 +101,7 @@ game nights** at a time, game nights **expire automatically after 7 days**,
 and we may remove any game night (spam, fake venues, wrong locations, or any
 section-5 breach). Showing sports to the public can require rights or
 licenses in some places — that's the venue's responsibility, not Pinorama's.
-Posting game nights is free during beta.
+Posting game nights is currently free.
 
 You can also **create events** on the map (meet-ups, game/drinks/club nights)
 and choose **public** or **private** for each. A **public** event is social
@@ -114,7 +113,7 @@ you invite people yourself. When you share an event invite, you are responsible
 for who you send it to and for the accuracy of what it says. Only create public
 events you are entitled to promote at a place you have the right to gather at;
 any permits, venue permission, or safety obligations for a real-world gathering
-are yours, not Pinorama's. Creating events is free during beta.
+are yours, not Pinorama's. Creating events is currently free.
 
 You can also create an optional **dating / travel-buddy profile** (18 or
 older only). By turning discovery on, you make your profile card — display
@@ -170,7 +169,7 @@ governed by Google's own terms. Review snippets link back to Google Maps.
 
 Pinorama may award in-app points (for example, for save milestones). **Points
 are not money**: they have no cash value, can't be bought, sold, or redeemed
-for cash, and may be adjusted, expired, or reset — especially during beta as
+for cash, and may be adjusted, expired, or reset — especially as
 we tune the system. If we ever let you redeem points for perks, we'll
 describe how here when it launches.
 
@@ -178,7 +177,7 @@ describe how here when it launches.
 
 Pinorama may offer programs where you can **earn money** — for example by
 referring someone who joins, by signing up a venue, or by driving. **No such
-program is live during beta.** If one launches, these terms apply to it.
+program is live yet.** If one launches, these terms apply to it.
 
 **Rates are set at Pinorama's discretion and can change.** Any rate,
 percentage, bonus, tier, qualifying window, or eligibility rule may be
@@ -206,15 +205,15 @@ closed.
 
 Some booking, deal, or product links in Pinorama are **affiliate links**: if
 you book or buy through them, the operator of Pinorama may earn a commission
-from the provider, at no extra cost to you. During beta, booking inventory
-shown in the app is sample/preview content and not a real offer (see
-section 2).
+from the provider, at no extra cost to you. Some booking inventory shown
+in the app is sample/preview content and not a real offer; other listings are
+marked **"LIVE"** (see section 2).
 
-## 9. Delivery and express parcels (activating during beta)
+## 9. Delivery and express parcels (not yet active)
 
-Pinorama is adding **food delivery** and **express parcel** services, switched
-on **gradually during beta** — they may not be available in your area yet, and
-these terms apply only where and when the service is active.
+Pinorama is adding **food delivery** and **express parcel** services. They are
+**not active yet** — these terms apply only where and when the service is
+switched on in your area.
 
 **Our role.** Pinorama is a **platform that connects** customers, merchant
 partners (restaurants and stores), and independent driver/courier partners so
@@ -340,7 +339,7 @@ prices (informational quotes; bookings still complete on the partner's site,
 Pinorama doesn't take your payment).
 
 **Changelog — July 18, 2026:** added **delivery and express parcels** (new
-section 9), which activate gradually during beta: Pinorama's role as a platform
+section 9), which activate gradually: Pinorama's role as a platform
 connecting customers, merchant partners, and independent driver/courier
 partners; that prices and fees are shown before you order; the cancellation
 windows (cancel a food order while placed or accepted, a merchant while
