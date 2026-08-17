@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: August 16, 2026**
+**Effective date: August 17, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -117,8 +117,9 @@ are yours, not Pinorama's. Creating events is currently free.
 
 You can also create an optional **dating / travel-buddy profile** (18 or
 older only). By turning discovery on, you make your profile card — display
-name, bio, interests, gender (if set), up to 5 photos you upload, city,
-and an approximate distance — visible to other signed-in travelers nearby.
+name, bio, interests, gender (if set), whether you're looking to date, to
+find a travel buddy, or both, up to 5 photos you upload, city, and an
+approximate distance — visible to other signed-in travelers nearby.
 Photos you upload must be of yourself and must not be unlawful, explicit,
 or someone else's picture; we may remove photos or profiles that break
 this. You agree to be honest in your

@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 16, 2026**
+**Effective date: August 17, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -476,11 +476,13 @@ years** — never the date itself. You can remove it by deleting your dating
 profile.
 
 What other travelers can see: signed-in users searching nearby see your
-display name, bio, interests, photos, gender (if you set one), city, and a
+display name, bio, interests, photos, gender (if you set one), whether
+you're looking to date, to find a travel buddy, or both, city, and a
 distance rounded to whole kilometers,
 computed from a further-blurred (~1 km grid) position — never your legal
-name, email, exact location, or coordinates. **Who you want to meet is
-never shown to anyone** — it is only a filter. Who liked you is not shown
+name, email, exact location, or coordinates. **Which genders you want to
+meet is never shown to anyone** — it is only a filter. Who liked you is
+not shown
 to anyone; likes are stored server-side only to detect a mutual match. A
 match is created only when two people like each other, and each match is
 visible only to the two people in it.
@@ -737,7 +739,8 @@ services). Also switched on **dating & travel-buddy discovery** (optional,
 profile stores and what other travelers can and cannot see — approximate
 distance only, never your exact location, name, or email. Later the same
 day, discovery profiles gained an optional **display name**, optional
-**gender and who-you-want-to-meet** (a private filter, never shown), and
+**gender and which genders you want to meet** (a private filter, never
+shown), and
 up to **5 self-uploaded photos** (stored by us, deleted with your account)
 — the section above describes all of it. Also switched on **city chat
 rooms** (new section above): public per-city rooms for signed-in travelers,
@@ -864,6 +867,21 @@ this plainly than quietly move the line: a new **"Who invited you
 sentence now points to it. What has *not* changed: we still never see who you
 send any invite to — a referral is recorded only when the invited person
 actually joins, and it is erased with either account's normal deletion rights.
+
+**Changelog — August 17, 2026:** documented **what you are looking for on
+the discovery profile** — whether you want to date, to find a travel
+buddy, or both — and this entry is late. Since around **July 17, 2026**,
+when the discovery profile gained these fields, that choice has been sent
+to other signed-in travelers nearby and shown on their screen as whether
+your goal matches theirs. Until today this page listed what other
+travelers can see and left it out, and the sentence directly after that
+list — "who you want to meet is never shown to anyone" — could reasonably
+be read as covering it. We would rather correct that plainly than quietly
+move the line: the field now appears in that list, and the sentence has
+been narrowed to say what it always meant, which is **which genders** you
+want to meet. What has *not* changed: which genders you want to meet is
+still never shown to anyone and remains a filter only, and your date of
+birth is still never shared — only your age in years.
 
 ## Contact
 
