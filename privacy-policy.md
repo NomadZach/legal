@@ -345,8 +345,6 @@ and driver live location during an active run.
   prompt.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
   get locked out.
-- **Payments for bookings** — handled by established payment processors
-  (e.g. Stripe). We would never see or store your full card number.
 
 ## How we use your data
 
@@ -882,6 +880,23 @@ been narrowed to say what it always meant, which is **which genders** you
 want to meet. What has *not* changed: which genders you want to meet is
 still never shown to anyone and remains a filter only, and your date of
 birth is still never shared — only your age in years.
+
+**Changelog — August 17, 2026:** removed one line that contradicted the rest of
+this page. Under "Planned (not live yet)" this policy still said: *"Payments for
+bookings — handled by established payment processors (e.g. Stripe). We would
+never see or store your full card number."* Two things were wrong with it. It
+filed booking payments under "not live yet", while the **"Hotel bookings
+(accommodation)"** section and the **LiteAPI (Nuitée)** entry further up already
+describe how a hotel payment works and exactly what we keep about a booking — so
+one page was saying both things at once. And it named the wrong company:
+**Stripe does not process hotel payments in Pinorama.** The card is entered on
+the accommodation supplier's own hosted payment form and **LiteAPI (Nuitée) is
+the merchant of record**, which is what those two sections say. The old wording
+is quoted above rather than quietly deleted, so nobody has to guess what
+changed. **No new data is collected and nothing new is shared:** what we keep
+about a booking is unchanged, and the promise that line was making — that your
+full card number never reaches us — still stands and is stated in "Hotel
+bookings (accommodation)".
 
 ## Contact
 
