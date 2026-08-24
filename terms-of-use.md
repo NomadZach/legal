@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: August 17, 2026**
+**Effective date: August 23, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -26,9 +26,9 @@ similar): example deals, listings, creators, prices, and weather. These
 are illustrations of planned features, not real offers, inventory, or
 prices. Other listings are marked **"LIVE"**: those show real prices
 fetched from travel partners. LIVE prices are informational quotes that can
-change; any actual booking happens on the partner's own site under the
-partner's terms (see section 8). Nothing inside the app itself is a
-booking, purchase, or commitment.
+change. Some listings are booked and paid for inside Pinorama (see section
+9); others link out to a partner, and those complete on the partner's own
+site under the partner's terms (see section 8).
 
 ## 3. Your account
 
@@ -284,6 +284,46 @@ typically 5–10 business days). A non-refundable rate cannot be refunded once
 booked — it says so before you pay. Accommodation support:
 admin@nomadzachstudios.com.
 
+**Flight bookings (air travel) — not yet active.** Flight booking is built but
+**not switched on yet**; these terms apply from the moment it is, and we are
+setting them out first. When it switches on you will be able to book and pay for
+flights inside Pinorama.
+
+**The price.** The total you see is the total you pay. **Pinorama adds no
+booking fee of its own at checkout.** When you continue to payment we lock that
+fare with the supplier; a locked fare does not last forever, and if it expires
+before your booking completes, the booking **fails and tells you so** — we never
+quietly re-price a flight you have agreed to.
+
+**Who you are buying from.** Flights are supplied through **LiteAPI (Nuitée)**,
+who place the booking with the airline; the ticket is issued by the airline.
+Your card is entered into a payment form run by their payment provider and
+charged there — **Pinorama never sees or stores your card number.** A flight
+booking exists only when the supplier confirms it, and the app shows you the
+booking reference and the airline's record locator when it does. If the supplier
+reports that ticketing is still in progress, the app says exactly that — it is
+not a failure, and you should not book again.
+
+**Names must match the document.** Airlines match a ticket to a travel document.
+You are responsible for entering each passenger's name **exactly as printed on
+their passport**, along with a correct date of birth and document details. A
+ticket issued in the wrong name can be worthless and the airline decides whether
+anything can be done about it.
+
+**Changes, cancellations and refunds.** Whether a fare can be changed or
+refunded, and what the airline charges for it, is set by **the airline's own
+fare rules**, not by Pinorama. Where the supplier tells us those rules and fees,
+the app shows them to you before you pay. **Flights cannot currently be changed
+or cancelled inside the app** — if you need to change or cancel one, email
+admin@nomadzachstudios.com with your booking reference and we will take it up
+with the supplier. Any refund is decided and paid by the airline and the
+supplier; we show you what they tell us. If Pinorama ever charges a fee of its
+own for handling a change, it will be shown to you before you agree to it.
+
+**Travel documents, visas and entry rules are yours.** A ticket is not
+permission to enter a country. Passport validity, visas, transit rules and
+health requirements are your responsibility, and Pinorama does not check them.
+
 ## Copyright complaints (DMCA)
 
 Pinorama hosts content that travelers post. If you believe something posted in
@@ -376,6 +416,25 @@ with the refund issued to your original payment method. The old no-payment-
 inside-the-app sentence now applies to delivery orders only. Tour and activity
 listings from Viator also went live (display with booking links). Effective
 date bumped.
+
+**Changelog — August 23, 2026:** documented **flight booking** before it
+switches on (new "Flight bookings (air travel)" part of section 9). Flight
+booking is built but **not active yet**. When it switches on: flights are
+supplied through LiteAPI (Nuitée), who place the booking with the airline and
+the airline issues the ticket; your card is entered into a payment form run by
+their payment provider and **Pinorama never sees your card number**; **Pinorama
+adds no booking fee of its own at checkout**; the fare is locked when you
+continue to payment and a booking that outlives its lock fails rather than
+quietly re-pricing; and **flights cannot be changed or cancelled inside the
+app** — change, cancellation and refund rules are the airline's, and a change
+request goes by email to admin@nomadzachstudios.com. You are responsible for
+entering each passenger's name exactly as printed on their passport, and for
+visas and entry rules. **Section 2 was also corrected.** It said: *"any actual
+booking happens on the partner's own site under the partner's terms (see section
+8). Nothing inside the app itself is a booking, purchase, or commitment."* That
+stopped being true when hotel booking went live on August 14 — some listings are
+now booked and paid for inside Pinorama, as section 9 already described. The old
+wording is quoted here rather than quietly deleted. Effective date bumped.
 
 ## 12. Governing law
 

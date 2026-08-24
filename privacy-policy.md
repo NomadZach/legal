@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 17, 2026**
+**Effective date: August 23, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -397,6 +397,16 @@ a room they are the merchant of record — the payment happens on their secure
 hosted card form under their own privacy terms. See the "Hotel bookings"
 section below for exactly what we store about a booking.
 
+**LiteAPI (Nuitée) — flights (built, not switched on yet):** flight prices and
+the flight booking itself will also come from LiteAPI. Flight booking is **not
+active yet**, and this page describes it before it switches on. For flights
+they act as the consolidator between us and the airline: the passenger details
+you type at checkout go to them and on into the airline's booking system so a
+ticket can be issued in your name, and your card is entered into a payment form
+run by their payment provider. See the "Flight bookings" section below for
+exactly what leaves your phone, what we keep, and what we deliberately do not
+keep.
+
 **Viator (Tripadvisor) — tours and activities (live since August 14, 2026):**
 tour and activity listings come from Viator's partner API. Our server sends
 Viator only the city being browsed — never your name, account, or location.
@@ -414,6 +424,64 @@ details never touch Pinorama:** the card is entered on the payment processor's
 hosted form and processed by them as merchant of record. Booking records are
 deleted with your account, except records we must keep for bookkeeping and tax
 law, which are kept only as long as those laws require.
+
+## Flight bookings (air travel) — not yet active
+
+Booking a flight needs more about you than anything else in Pinorama, because
+an airline cannot issue a ticket without it. Flight booking is **not switched
+on yet** — everything below applies once it is, and we would rather describe it
+here first than after. Here is exactly what we ask for, where it goes, and what
+we keep.
+
+**What you type at checkout.** For each traveler on the booking: their **first
+and last name exactly as printed on their travel document**, their **date of
+birth**, and their **travel document details** — the type (a passport today),
+its number, its expiry date, and the country that issued it. For the booking as
+a whole: a **contact first and last name, email address, and phone number**, so
+the airline and the supplier can reach whoever made the booking.
+
+**Where the travel-document details go — and where they do not.** Your travel
+document details and date of birth are sent **straight through us to our flight
+supplier, LiteAPI (Nuitée), and on into the airline's booking system**. They are
+**not stored on our servers**. There is no passport field in our booking table
+and no passport number in our records — that is a deliberate choice, not an
+oversight: we would rather not hold a number we have no use for after the ticket
+is issued. They are **not kept on your phone either**. If the app is closed or
+crashes in the middle of paying, the note it leaves itself so it can finish the
+booking holds only the booking references, the route, and your contact name and
+email — never a document number or a date of birth.
+
+**What we do keep.** Once a flight is booked we store a booking record, and if
+you are signed in it is stored against your account: the **contact name and
+email** you gave, the **booking reference** and the **airline's record locator**
+(the code the airline knows your ticket by), the **price and currency**, the
+**airports you are flying between**, the **departure date**, **how many
+passengers** the booking is for, **when the ticket was issued**, and whether the
+booking was made in our test environment or the live one. We keep it so the
+booking can be shown back to you in the app, so we can help you when something
+goes wrong with it, and because a record of a sale is something we have to keep
+for bookkeeping and tax. **No other traveler can see it** — a booking is readable
+only by the account that made it.
+
+**Your card never touches Pinorama.** The card is entered into a payment form
+run by our supplier's payment provider and charged by them. The checkout page
+that form appears on is served by us, but the card details go straight from your
+phone to the payment provider — our servers only ever hold a reference to that
+payment, never a card number.
+
+**Deleting your account.** Deleting your account **removes your name and email
+from your flight booking records and unlinks them from your account.** What
+remains is the part with nothing personal in it — the route, the reference, the
+price — kept only as long as bookkeeping and tax law require. One honest limit:
+if you booked a flight **without being signed in**, that booking was never
+attached to an account, so deleting an account cannot find it. Email
+admin@nomadzachstudios.com with your booking reference and we will delete it by
+hand.
+
+**Booking for someone else.** If you book a flight for another traveler, you are
+giving us their name, date of birth and travel document details. By doing that
+you confirm you are allowed to. The same rules above apply to their details: the
+document details pass through to the airline and are not stored by us.
 
 ## Storage and security
 
@@ -897,6 +965,24 @@ changed. **No new data is collected and nothing new is shared:** what we keep
 about a booking is unchanged, and the promise that line was making — that your
 full card number never reaches us — still stands and is stated in "Hotel
 bookings (accommodation)".
+
+**Changelog — August 23, 2026:** documented **flight booking** before it
+switches on. Flight booking is built but **not active yet**; when it is, you
+will be able to book and pay for a flight inside the app, and this page now
+carries a **"Flight bookings (air travel)"** section describing it in advance.
+Booking a flight asks for more than anything else in Pinorama: each passenger's
+full name as printed on their travel document, their date of birth, and their
+passport number, expiry and issuing country, plus a contact name, email and
+phone. **The travel document details and date of birth are passed straight
+through to our flight supplier and the airline and are not stored by us** —
+there is no passport field in our records, on our servers or on your phone, and
+that is on purpose. What we keep is the booking itself: contact name and email,
+the booking reference and the airline's record locator, price, route, departure
+date, passenger count and ticketing time. Your card is entered into a payment
+form run by the supplier's payment provider and never reaches us. Deleting your
+account strips your name and email from your flight bookings; a flight booked
+while signed out was never attached to an account, so that one has to be deleted
+by email — the new section says so plainly.
 
 ## Contact
 
