@@ -15,6 +15,58 @@
   by design). returnUrl is HARD-ALLOWLISTED to the app's own scheme so this
   public page can never be abused as an open redirect.
 -->
+<!-- ========================================================================
+  🔒 #1066 — ANTI-CLICKJACKING ON A HOST THAT CANNOT SET HEADERS.
+  The in-function fallback page sets `X-Frame-Options: DENY`. THIS page is the
+  one travelers actually load, and it is served by GitHub Pages, which permits
+  NO custom response headers at all. Probed live 2026-08-25:
+      x-frame-options ......... ABSENT
+      content-security-policy . ABSENT
+      x-content-type-options .. ABSENT
+  So until this block, the real payment page was fully frameable while the page
+  nobody loads was protected. That is #1066's actual gap.
+
+  ⛔ WHY NOT A `<meta>` CSP: `frame-ancestors` is IGNORED when delivered in a
+  meta tag — it is header-only, by spec. Adding one would look like protection
+  in a diff and do nothing in a browser, which is worse than no line at all.
+  `nosniff` is header-only too; GitHub Pages already serves this as
+  `text/html; charset=utf-8`, so there is nothing to re-sniff.
+
+  ✅ WHAT THIS DOES INSTEAD — hide first, reveal only when NOT framed. The
+  ORDER is the security property, not a style choice:
+    · framed, scripts allowed ....... reveal never runs, and we try to break
+                                      out. Blank either way.
+    · framed, `sandbox` with NO
+      `allow-scripts` ............... our script never runs, so the style is
+                                      never removed. Still blank. This is the
+                                      case a naive `top.location = …` buster
+                                      fails, and why the hiding must not depend
+                                      on the navigation succeeding.
+    · framed, scripts allowed but NO
+      `allow-top-navigation` ........ the break-out throws, is caught, blank.
+    · top-level (every real load) ... revealed immediately and without flicker,
+                                      because this runs in <head> before paint.
+  ⚖️ HONEST COST: with JavaScript disabled the page stays blank. It is already
+  non-functional without JS — the card form is rendered by the LiteAPI SDK — so
+  this trades a blank page for a blank page, never a working one.
+======================================================================== -->
+<style id="antiframe">html{display:none !important}</style>
+<script>
+  (function () {
+    // FAIL CLOSED: unknown ⇒ treat as framed. ⚖️ The `catch` is what carries
+    // that; the initializer is belt-and-braces and is REDUNDANT today (proved
+    // by mutation — flipping it alone changes nothing, flipping the catch reds).
+    // It is kept so that removing the catch cannot silently fail open.
+    var framed = true;
+    try { framed = (window.self !== window.top); } catch (e) { framed = true; }
+    if (!framed) {
+      var s = document.getElementById('antiframe');
+      if (s && s.parentNode) s.parentNode.removeChild(s);
+      return;                                // ⚠️ the ONLY path that reveals
+    }
+    try { window.top.location = window.self.location; } catch (e) { /* sandboxed */ }
+  })();
+</script>
 <style>
   body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:16px;background:#fff;color:#111}
   .badge{display:inline-block;background:#FFF4E0;color:#B76E00;border:1px solid #F0C070;

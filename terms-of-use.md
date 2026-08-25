@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: August 23, 2026**
+**Effective date: August 25, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -284,10 +284,9 @@ typically 5–10 business days). A non-refundable rate cannot be refunded once
 booked — it says so before you pay. Accommodation support:
 admin@nomadzachstudios.com.
 
-**Flight bookings (air travel) — not yet active.** Flight booking is built but
-**not switched on yet**; these terms apply from the moment it is, and we are
-setting them out first. When it switches on you will be able to book and pay for
-flights inside Pinorama.
+**Flight bookings (air travel).** Flight booking is **live** — it switched on on
+**August 25, 2026**. You can book and pay for flights inside Pinorama, and these
+terms apply to those bookings now.
 
 **The price.** The total you see is the total you pay. **Pinorama adds no
 booking fee of its own at checkout.** When you continue to payment we lock that
@@ -416,6 +415,10 @@ with the refund issued to your original payment method. The old no-payment-
 inside-the-app sentence now applies to delivery orders only. Tour and activity
 listings from Viator also went live (display with booking links). Effective
 date bumped.
+
+**Changelog — August 25, 2026:** **flight booking went live today.** The flight
+terms set out on August 23 apply from now; nothing in them changed, only their
+status. The effective date above is bumped to match.
 
 **Changelog — August 23, 2026:** documented **flight booking** before it
 switches on (new "Flight bookings (air travel)" part of section 9). Flight

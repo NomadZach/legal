@@ -397,9 +397,8 @@ a room they are the merchant of record — the payment happens on their secure
 hosted card form under their own privacy terms. See the "Hotel bookings"
 section below for exactly what we store about a booking.
 
-**LiteAPI (Nuitée) — flights:** flight prices and
-the flight booking itself come from LiteAPI. Flight booking is **live** (switched
-on August 25, 2026; this page described it in advance from August 23). For flights
+**LiteAPI (Nuitée) — flights (live since August 25, 2026):** flight prices and
+the flight booking itself also come from LiteAPI. For flights
 they act as the consolidator between us and the airline: the passenger details
 you type at checkout go to them and on into the airline's booking system so a
 ticket can be issued in your name, and your card is entered into a payment form
@@ -428,12 +427,9 @@ law, which are kept only as long as those laws require.
 ## Flight bookings (air travel)
 
 Booking a flight needs more about you than anything else in Pinorama, because
-an airline cannot issue a ticket without it. Flight booking is **live**: you
-can book and pay for a flight inside the app. We described this section before
-the switch-on (August 23) and turned the feature on on August 25 — nothing
-about what we ask for or where it goes changed between the advance description
-and the live one. Here is exactly what we ask for, where it goes, and what
-we keep.
+an airline cannot issue a ticket without it. Flight booking is **live** — it
+switched on on **August 25, 2026**, and everything below describes what happens
+now. Here is exactly what we ask for, where it goes, and what we keep.
 
 **What you type at checkout.** For each traveler on the booking: their **first
 and last name exactly as printed on their travel document**, their **date of
@@ -992,12 +988,17 @@ about a booking is unchanged, and the promise that line was making — that your
 full card number never reaches us — still stands and is stated in "Hotel
 bookings (accommodation)".
 
-**Changelog — August 25, 2026:** **flight booking switched ON.** The "Flight
-bookings (air travel)" section above now describes a live feature. What we
-collect and where it goes is unchanged from the advance description below —
-passenger names as printed on the travel document, date of birth, and travel
-document details pass straight through to our flight supplier and the airline,
-and are not kept on our servers.
+**Changelog — August 25, 2026:** **flight booking went LIVE today.** The
+"Flight bookings (air travel)" section below was written in advance on August
+23 and described this accurately; what changed today is that it stopped being a
+description of something switched off. Three places on this page still said
+flight booking was not active — that heading, its opening paragraph, and the
+LiteAPI entry in the third-party list above — and all three now say it is live.
+**Nothing about what we collect, send or keep changed**: the passenger details,
+the pass-through of travel-document data to LiteAPI and the airline, and the
+deliberate non-storage of document numbers are exactly as documented on August
+23. What we owed you was an accurate status, and for part of one day this page
+under-described what the app does.
 
 **Changelog — August 23, 2026:** documented **flight booking** before it
 switches on. Flight booking is built but **not active yet**; when it is, you
