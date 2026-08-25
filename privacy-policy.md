@@ -535,6 +535,13 @@ recorded until you check in yourself.
   who has blocked you — can never see your presence, in either direction.
 - **Checking out** deletes the record entirely, and deleting your account
   deletes it automatically.
+- **Invites:** if you are visible to another traveler in your city, they can
+  send you a fixed "wants to chill" invite (invites carry no free-text
+  message). Declining is silent — the sender is never told. **Accepting an
+  invite connects the two of you for messaging** inside Pinorama, the same
+  way a travel-buddy match does; blocking someone hides you from each other
+  everywhere, including any invites already sent. Invite records are deleted
+  when either account is deleted.
 
 ## Dating & travel-buddy discovery (optional)
 
