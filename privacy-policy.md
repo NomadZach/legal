@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 23, 2026**
+**Effective date: August 25, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -518,6 +518,23 @@ what lets us restore your map on a new phone.
   gives you similar rights, including the right to know we don't sell your
   data (we don't). You can exercise these rights by using or deleting the app
   (local data) or by emailing us (account data), and we'll help either way.
+
+## City presence — "who's in this city" (optional)
+
+Pinorama includes an optional city-presence feature. It is **invisible until
+you opt in**: by default nobody can see which city you're in, and nothing is
+recorded until you check in yourself.
+
+- **What we store when you check in:** the **city name you type or pick**
+  (never your GPS location — the feature stores city names only and has no
+  way to hold coordinates), your chosen visibility (public, friends-only, or
+  private), and when you last updated it.
+- **Who can see it:** your choice. *Public* shows your city to signed-in
+  Pinorama travelers; *friends-only* shows it only to people you follow who
+  also follow you; *private* shows it to nobody. Anyone you have blocked — or
+  who has blocked you — can never see your presence, in either direction.
+- **Checking out** deletes the record entirely, and deleting your account
+  deletes it automatically.
 
 ## Dating & travel-buddy discovery (optional)
 
