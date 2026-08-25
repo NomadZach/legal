@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: August 25, 2026**
+**Effective date: August 23, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -417,8 +417,16 @@ listings from Viator also went live (display with booking links). Effective
 date bumped.
 
 **Changelog — August 25, 2026:** **flight booking went live today.** The flight
-terms set out on August 23 apply from now; nothing in them changed, only their
-status. The effective date above is bumped to match.
+terms set out on August 23 already said they applied "from the moment it
+switches on" — that moment is now, so what changed is a fact about the world,
+not the agreement. **No obligation, price, refund rule or liability in these
+terms changed**, which is why the **effective date above deliberately stays
+August 23**: bumping it would mark these terms as rewritten and ask every
+existing user to accept them again, and re-consent should mean the terms
+changed — not that a feature we already described switched on. ⚖️ If anyone
+reviewing this considers "flights are now live" a material change that warrants
+re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
+`src/data/termsAcceptance.js` together, and the gate re-asks.
 
 **Changelog — August 23, 2026:** documented **flight booking** before it
 switches on (new "Flight bookings (air travel)" part of section 9). Flight
