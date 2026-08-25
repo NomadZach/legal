@@ -397,9 +397,9 @@ a room they are the merchant of record — the payment happens on their secure
 hosted card form under their own privacy terms. See the "Hotel bookings"
 section below for exactly what we store about a booking.
 
-**LiteAPI (Nuitée) — flights (built, not switched on yet):** flight prices and
-the flight booking itself will also come from LiteAPI. Flight booking is **not
-active yet**, and this page describes it before it switches on. For flights
+**LiteAPI (Nuitée) — flights:** flight prices and
+the flight booking itself come from LiteAPI. Flight booking is **live** (switched
+on August 25, 2026; this page described it in advance from August 23). For flights
 they act as the consolidator between us and the airline: the passenger details
 you type at checkout go to them and on into the airline's booking system so a
 ticket can be issued in your name, and your card is entered into a payment form
@@ -425,12 +425,14 @@ hosted form and processed by them as merchant of record. Booking records are
 deleted with your account, except records we must keep for bookkeeping and tax
 law, which are kept only as long as those laws require.
 
-## Flight bookings (air travel) — not yet active
+## Flight bookings (air travel)
 
 Booking a flight needs more about you than anything else in Pinorama, because
-an airline cannot issue a ticket without it. Flight booking is **not switched
-on yet** — everything below applies once it is, and we would rather describe it
-here first than after. Here is exactly what we ask for, where it goes, and what
+an airline cannot issue a ticket without it. Flight booking is **live**: you
+can book and pay for a flight inside the app. We described this section before
+the switch-on (August 23) and turned the feature on on August 25 — nothing
+about what we ask for or where it goes changed between the advance description
+and the live one. Here is exactly what we ask for, where it goes, and what
 we keep.
 
 **What you type at checkout.** For each traveler on the booking: their **first
@@ -989,6 +991,13 @@ changed. **No new data is collected and nothing new is shared:** what we keep
 about a booking is unchanged, and the promise that line was making — that your
 full card number never reaches us — still stands and is stated in "Hotel
 bookings (accommodation)".
+
+**Changelog — August 25, 2026:** **flight booking switched ON.** The "Flight
+bookings (air travel)" section above now describes a live feature. What we
+collect and where it goes is unchanged from the advance description below —
+passenger names as printed on the travel document, date of birth, and travel
+document details pass straight through to our flight supplier and the airline,
+and are not kept on our servers.
 
 **Changelog — August 23, 2026:** documented **flight booking** before it
 switches on. Flight booking is built but **not active yet**; when it is, you
