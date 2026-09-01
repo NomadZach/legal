@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: August 25, 2026**
+**Effective date: September 1, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -44,7 +44,7 @@ you do sign in, we store a copy of some of your data on our cloud database
 (Supabase — see the table below) so it survives a lost phone and syncs
 between your devices. When you're signed in we hold:
 
-- **Your email address**, used to sign you in. We send a **6-digit one-time
+- **Your email address**, used to sign you in. We send an **8-digit one-time
   code** to your email instead of using passwords — Pinorama has no password
   to store.
 - **Your profile** from onboarding: display name, avatar emoji, home base,
@@ -345,6 +345,18 @@ and driver live location during an active run.
   prompt.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
   get locked out.
+- **Anonymous usage counts** — we don't currently measure how the app is used
+  at all, which means we can't tell which parts are worth improving. When we
+  turn this on we'll update this policy first, and it will work like this: we
+  record that an event happened — you finished setting up, you saved a place,
+  you opened a screen — and nothing about *what* the place was. **The records
+  are not linked to you or your account**, so they can't be traced back to a
+  person, and they stay in our own database — we don't send them to any
+  analytics company. Nothing in the app can read them back, including you,
+  which is why they aren't listed under "Access" below: there is nothing there
+  that is about you specifically. We never put your name, email, phone,
+  address or location in them, and the app additionally refuses any value that
+  looks like an email address, a phone number or a pair of coordinates.
 
 ## How we use your data
 
@@ -355,7 +367,9 @@ That's the whole list.
 We do **not** sell personal data. We do **not** track you across other
 apps or websites. There is **no analytics or advertising tracking** in the
 app. If we ever add analytics, it will be a privacy-respecting option
-(anonymized/aggregated) and disclosed here first.
+(anonymized/aggregated) and disclosed here first — see "Anonymous usage
+counts" under *Planned* above for exactly what that would be, written before
+it is switched on rather than after.
 
 **Crash reports (diagnostics).** The app sends automatic **crash reports** so
 we can find and fix errors. When the app crashes or hits an internal error, a
@@ -395,7 +409,13 @@ anything about you. Google's own terms and privacy policy govern that content.
 14, 2026):** hotel availability and prices come from LiteAPI, and when you book
 a room they are the merchant of record — the payment happens on their secure
 hosted card form under their own privacy terms. See the "Hotel bookings"
-section below for exactly what we store about a booking.
+section below for exactly what we store about a booking. **Your hotel search
+itself — the city and country, your check-in and check-out dates and the number
+of adults — is sent to LiteAPI to get live prices, and we keep the results in a
+shared cache on our server for up to 30 minutes so that several travelers
+searching the same place for the same dates do not each trigger a fresh
+lookup.** That cache is keyed by the search terms alone: it holds no account id,
+no device id and nothing that identifies who ran the search.
 
 **LiteAPI (Nuitée) — flights:** flight prices and
 the flight booking itself come from LiteAPI. Flight booking is **live** (switched
@@ -506,8 +526,13 @@ what lets us restore your map on a new phone.
   your Pinorama data — it's the only place it exists. If you have an account,
   use the **"delete my account" button in the Settings screen** — tap the
   **⚙️ gear at the top of your Profile screen** to get there. It
-  permanently erases your cloud account and everything stored for it
-  (including your posts and likes) immediately. You can also delete any
+  permanently erases your cloud account and the records stored for it
+  (including your posts and likes) immediately. Photos you uploaded are
+  removed on a best-effort pass straight after: **dating photos are
+  deleted today; photos attached to posts live in a separate store and
+  are not yet included in that pass.** We are closing that gap; until we
+  do, this sentence tells you exactly what happens rather than promising
+  more than the app does. You can also delete any
   individual post yourself inside the app, or **email
   admin@nomadzachstudios.com** and we'll action the deletion for you
   promptly. **Deleting your account also signs you out on the phone, so
