@@ -411,8 +411,8 @@ a room they are the merchant of record — the payment happens on their secure
 hosted card form under their own privacy terms. See the "Hotel bookings"
 section below for exactly what we store about a booking. **Your hotel search
 itself — the city and country, your check-in and check-out dates and the number
-of adults — is sent to LiteAPI to get live prices, and we keep the results in a
-shared cache on our server for up to 30 minutes so that several travelers
+of adults — is sent to LiteAPI to get live prices, and those results may be held
+in a shared cache on our server for up to 30 minutes so that several travelers
 searching the same place for the same dates do not each trigger a fresh
 lookup.** That cache is keyed by the search terms alone: it holds no account id,
 no device id and nothing that identifies who ran the search.
