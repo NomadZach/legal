@@ -111,6 +111,12 @@ between your devices. When you're signed in we hold:
   profiles), never the lists themselves. Unfollowing deletes the record
   immediately, and deleting your account erases every follow record in both
   directions.
+  **Known gap, disclosed September 13, 2026:** a server rule from our first
+  release still lets any signed-in user query follow records beyond their own
+  pair through the database interface (not through any screen in the app). The
+  fix is written and waits on a scheduled database update; until this note is
+  removed, treat who you follow as potentially readable by other signed-in
+  users. Nobody outside the app (signed out) can read it.
 - **Profile views (counts only)** — when the profile-views feature is on and
   you view another traveler's profile signed in, we store a view record (your
   account → theirs, once per day). **Only the profile's owner ever sees
@@ -832,6 +838,14 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 13, 2026:** added the "Abuse prevention counts"
+paragraph under Storage and security (a short-lived per-account count of how
+often the nearby-traveler features were asked, deleted within about a day), and
+a dated **known gap** under Follows: until a pending database fix is applied,
+follow records are technically readable by other signed-in users beyond the two
+people in the pair. We would rather say so than let the policy promise more
+than the server keeps. The note comes out the day the fix is applied.
 
 **Changelog — July 12, 2026:** added optional accounts with email
 one-time-code sign-in and cloud sync of your saved places and profile to
