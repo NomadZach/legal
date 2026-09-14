@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 13, 2026**
+**Effective date: September 14, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -682,8 +682,8 @@ directions, and deleting your account permanently deletes your messages.
 ## Reporting content and people
 
 Every place you can report something — a post, a comment, a direct message, a
-city-chat message, a dating profile, or a place — sends the report to us so a
-person can look at it. Apple requires this for apps with user-generated content,
+city-chat message, a dating profile, a place, or a creator's published map —
+sends the report to us so a person can look at it. Apple requires this for apps with user-generated content,
 and we would want it anyway.
 
 **What a report contains:** what you reported (which surface, and which item),
@@ -838,6 +838,11 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 14, 2026:** creator maps joined the list of things you
+can report (the report mechanism Apple requires on user-generated content now
+reaches every surface); a report on a map contains the same fields as any other
+report.
 
 **Changelog — September 13, 2026:** added the "Abuse prevention counts"
 paragraph under Storage and security (a short-lived per-account count of how
