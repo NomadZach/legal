@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: August 23, 2026**
+**Effective date: September 6, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -278,10 +278,9 @@ your card is entered on their secure hosted payment form and charged by them —
 when the supplier returns a real confirmation, which the app shows you together
 with your booking reference. **Cancellation and refunds:** every rate carries
 its own cancellation window, shown before you book. A refundable rate can be
-cancelled in the app within its window, and the refund is issued by the payment
-processor back to your original payment method (bank posting times vary,
-typically 5–10 business days). A non-refundable rate cannot be refunded once
-booked — it says so before you pay. Accommodation support:
+cancelled in the app within its window, and the refund is handled by the payment
+processor; timing depends on your bank and card issuer. A non-refundable rate
+cannot be refunded once booked — it says so before you pay. Accommodation support:
 admin@nomadzachstudios.com.
 
 **Flight bookings (air travel).** Flight booking is **live** — it switched on on
@@ -427,6 +426,17 @@ changed — not that a feature we already described switched on. ⚖️ If anyon
 reviewing this considers "flights are now live" a material change that warrants
 re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
 `src/data/termsAcceptance.js` together, and the gate re-asks.
+
+**Changelog — September 6, 2026:** one sentence in section 9 (hotel bookings) was
+narrowed. It said: *"the refund is issued by the payment processor back to your
+original payment method (bank posting times vary, typically 5–10 business days)."*
+Neither the destination nor the 5–10 day figure had a source in our supplier's
+documentation, so the sentence now says only what we can stand behind: *"the
+refund is handled by the payment processor; timing depends on your bank and card
+issuer."* **No refund right changed** — a refundable rate can still be cancelled
+in the app within its window — only an unsupported promise about where the money
+lands and how fast was removed. The old wording is quoted here rather than
+quietly deleted. Effective date bumped.
 
 **Changelog — August 23, 2026:** documented **flight booking** before it
 switches on (new "Flight bookings (air travel)" part of section 9). Flight

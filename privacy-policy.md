@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 1, 2026**
+**Effective date: September 13, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -124,7 +124,9 @@ between your devices. When you're signed in we hold:
   emoji, @username, and how many posts you've shared — never your email,
   location, saved places, or linked handles. Accounts are
   public by default (same as posts, above), so publishing a post can list
-  you here; deleting your posts or your account removes you.
+  you here. **You can turn this off:** Settings has a **private profile**
+  switch that takes you out of the directory and stops other travelers
+  opening your profile. Deleting your posts or your account also removes you.
 - **Social handles and self-reported follower counts** — the @handles you type
   in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
   follower counts you enter for them, stored with your account and shown to you
@@ -219,9 +221,11 @@ dropped — and we would rather you keep that protection. They **are** removed w
 a **different account** signs in on the same device, or when the app opens and
 finds a different account owns it. Those two cases mean the phone has genuinely
 changed hands, and both lists name other people, so they should not follow the
-device to its next user. With an account, your blocked list is also saved to
-your account so it comes back when you sign in on a new phone. Unblocking
-someone removes them there too. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
+device to its next user. **Your blocked list lives on this phone.** It is not
+copied to your account today, so if you reinstall the app or sign in on a new
+phone, the app will not know who you had blocked and you will need to block
+them again. We would rather it followed you, and the code to do that is
+written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -238,9 +242,16 @@ account.
 **One thing leaves your device either way: figuring out where a place is.**
 When you save a post, the app needs to turn text into a map pin:
 
-- The **place text** (e.g. "Bánh Mì Phượng, Hội An") is sent to
-  OpenStreetMap's Nominatim geocoding service to look up coordinates. Only
-  the place text is sent.
+- The **place text** (e.g. "Bánh Mì Phượng, Hội An") is sent to our own
+  server, which looks the place up with OpenStreetMap's Nominatim geocoding
+  service and sends the coordinates back. Only the place text is sent — never
+  your name, your account, or anything else about you.
+- **We keep a copy of that place text on our server for up to 30 days**, with
+  the answer we got for it, so that the next person who looks up the same place
+  does not cost OpenStreetMap another request — a limit their terms ask us to
+  respect. The saved row holds **only the text and the answer**: it is not
+  linked to you, your account or your device, and two people who look up the
+  same place share one row. After 30 days it is fetched fresh.
 - When a business owner types their venue's address in the partner sign-up,
   the **typed text** is also sent, as they type, to Photon (an open geocoding
   service by komoot running on the same OpenStreetMap data) to suggest
@@ -386,7 +397,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | Service | What it does | What it receives |
 |---|---|---|
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
-| OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only |
+| OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only — sent by our server on your behalf, and kept there for up to 30 days as an unlinked cache (see "One thing leaves your device either way") |
 | Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
@@ -519,6 +530,14 @@ industry-standard encryption in transit and at rest, with database access
 rules that keep your places and profile readable only by you. That copy is
 what lets us restore your map on a new phone.
 
+**Abuse prevention counts.** To stop automated scraping of the "who's nearby"
+features (the city bubbles, the match pins and the dating deck), our server
+keeps a short-lived count of how many times your account asked for each of
+them in the current hour — your account id, the feature name, the hour and a
+number. It holds no location, no names and nothing about who was shown to
+you; past an hourly allowance far above normal use the app shows "couldn't
+load" until the next hour; and the counts are deleted within about a day.
+
 ## Your rights and choices
 
 - **Access:** everything we hold is visible to you inside the app — your
@@ -606,8 +625,12 @@ to anyone; likes are stored server-side only to detect a mutual match. A
 match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
-Blocking is two-way and immediate: blocks are stored on your device and on
-the server, and a blocked traveler no longer appears to you nor you to
+Blocking is two-way and immediate. **Where the block is kept depends on the
+surface:** for dating, a record is stored on our server as well, which is what
+stops the other person reaching you even from their own phone; for the rest of
+the app the block is kept **on your device**, so it protects you immediately
+and does not follow you to a new phone — see "your blocked list lives on this
+phone" above. Either way, a blocked traveler no longer appears to you nor you to
 them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
 account id, and the time — so a moderator can review it and act. Blocking is
