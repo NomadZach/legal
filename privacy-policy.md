@@ -567,6 +567,11 @@ load" until the next hour; and the counts are deleted within about a day.
   device too** — your dating data and your conversations. **Your saved places,
   your profile, your notes and your points stay on the phone** and are not
   deleted with your account; if you want those gone as well, delete the app.
+  **One item on the phone is not yours alone:** if you ever sent an express
+  parcel, the parcel record kept on your phone includes the **recipient's name,
+  phone number and addresses**, and it stays there after you delete your
+  account until you delete the app (see Express parcels below). We say this
+  because the list above would otherwise read as complete.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
   gives you similar rights, including the right to know we don't sell your
@@ -806,7 +811,10 @@ level**, price, currency, timestamps, the parcel's **status history**, and —
 once it's delivered — a **proof-of-delivery record**. The recipient does **not**
 need a Pinorama account; their name and phone are information **you provide** for
 the delivery. By sending a parcel you confirm you're allowed to share those
-recipient details for this purpose.
+recipient details for this purpose. **A copy of each parcel record is also kept
+on your phone**, and that copy survives signing out and deleting your account —
+delete the app to remove it (disclosed September 14, 2026; an in-app eraser for
+it is a decision we have not made yet).
 
 **Who can see a parcel.** You (the sender) see the full record. **The assigned
 courier** sees the recipient's name, phone, notes, and address **only while the
@@ -842,7 +850,10 @@ project repository.
 **Changelog — September 14, 2026:** creator maps joined the list of things you
 can report (the report mechanism Apple requires on user-generated content now
 reaches every surface); a report on a map contains the same fields as any other
-report.
+report. Also disclosed: the express-parcel record kept on your phone (which
+holds a recipient's name, phone and addresses) survives account deletion until
+you delete the app — the "what stays on the phone" list had omitted the one item
+that belongs to someone else.
 
 **Changelog — September 13, 2026:** added the "Abuse prevention counts"
 paragraph under Storage and security (a short-lived per-account count of how
