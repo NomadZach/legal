@@ -60,10 +60,14 @@ between your devices. When you're signed in we hold:
 - **Your saved places**, including their names, **coordinates**, categories,
   the original post links, and their **captions/notes**.
 - **Buddy-trip drafts.** The trips you draft on the travel-buddy board are
-  stored with your account so they come back on a new phone. No other traveler
-  can ever see them — a draft is private to you, and the day real buddy
-  matching ships it will ask you before anything is shared. Deleting a draft
-  removes it from our servers, and deleting your account erases them all.
+  stored with your account so they come back on a new phone. They stay private
+  to you unless you switch a trip to **share with friends** — off by default,
+  one switch per trip. Friends are people you follow who follow you back; a
+  friend then sees that trip's **destination, dates and vibe, never your
+  note**, and can react to it or ask to join. If your profile is private, your
+  trips stay hidden too. Switch it off and the trip is private again. Deleting
+  a draft removes it from our servers, and deleting your account erases them
+  all.
 - **Your buddy-profile draft.** The profile you draft for the travel-buddy
   feature (display name, age, home base, bio, interests, what you're looking
   for, relationship status, and whether your info is verified) is stored with
@@ -857,7 +861,7 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — September 23, 2026:** blocking now reaches further. A block made
+**Changelog — September 23, 2026:** buddy-trip drafts gain a per-trip "share with friends" switch (off by default): friends — people you follow who follow you back — see the destination, dates and vibe of a trip you switch on, never the note; a private profile hides trips. Also: blocking now reaches further. A block made
 from a dating deck, a match, a traveler's profile, or a post or comment is
 recorded on our server (not only on your phone), removes any follow between
 the two of you in both directions, and prevents a re-follow while it stands;
