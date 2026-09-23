@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 14, 2026**
+**Effective date: September 23, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -90,7 +90,8 @@ between your devices. When you're signed in we hold:
   deleted or its author's profile isn't public, its comments disappear with
   it. You can delete any of your own comments at any time, other users can
   report a comment or block you (a block hides everything you write from that
-  person), and deleting your account erases all your comments.
+  person and removes any follow between the two of you — see "Blocking" under
+  the dating section below), and deleting your account erases all your comments.
 - **Partner applications** — if you apply to work with Pinorama (as a driver,
   restaurant, influencer or host), we store which role you applied for and
   when, against your account. The application reuses details you've already
@@ -230,8 +231,11 @@ changed hands, and both lists name other people, so they should not follow the
 device to its next user. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
-them again. We would rather it followed you, and the code to do that is
-written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
+them again. The exception is a block that is also recorded on our server
+(a block made from a dating deck, a match, a traveler's profile, or a post or
+comment — see "Blocking" below): those are restored to this list when you sign
+in. For city-chat blocks, the code to do the same is written and switched off —
+when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -637,11 +641,17 @@ match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
 Blocking is two-way and immediate. **Where the block is kept depends on the
-surface:** for dating, a record is stored on our server as well, which is what
-stops the other person reaching you even from their own phone; for the rest of
-the app the block is kept **on your device**, so it protects you immediately
-and does not follow you to a new phone — see "your blocked list lives on this
-phone" above. Either way, a blocked traveler no longer appears to you nor you to
+surface:** a block you make from a dating deck, a match, a traveler's profile,
+or a post or comment in the feed is recorded on our server as well as on your
+device. That server record is what stops the other person reaching you even
+from their own phone. **It also removes any follow between the two of you, in
+both directions, and prevents either of you from following the other again
+while the block stands. Unblocking lifts the block but does not bring the
+follow back** — either of you may follow again later as a fresh choice. A block
+you make inside a city chat room is kept **on your device** only, so it protects
+you immediately and does not follow you to a new phone — see "your blocked
+list lives on this phone" above. Either way, a blocked traveler no longer
+appears to you nor you to
 them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
 account id, and the time — so a moderator can review it and act. Blocking is
@@ -846,6 +856,14 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 23, 2026:** blocking now reaches further. A block made
+from a dating deck, a match, a traveler's profile, or a post or comment is
+recorded on our server (not only on your phone), removes any follow between
+the two of you in both directions, and prevents a re-follow while it stands;
+unblocking does not bring the follow back. Blocks recorded on the server are
+restored to your phone's list when you sign in. City-chat blocks are unchanged
+and stay on your device.
 
 **Changelog — September 14, 2026:** creator maps joined the list of things you
 can report (the report mechanism Apple requires on user-generated content now
