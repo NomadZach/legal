@@ -64,7 +64,8 @@ between your devices. When you're signed in we hold:
   to you unless you switch a trip to **share with friends** — off by default,
   one switch per trip. Friends are people you follow who follow you back; a
   friend then sees that trip's **destination, dates and vibe, never your
-  note**, and can react to it or ask to join. If your profile is private, your
+  note**, and can react to it or ask to join. Only you, the trip's owner, see
+  who reacted; friends see only the count. If your profile is private, your
   trips stay hidden too. Switch it off and the trip is private again. Deleting
   a draft removes it from our servers, and deleting your account erases them
   all.
@@ -861,7 +862,7 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — September 23, 2026:** buddy-trip drafts gain a per-trip "share with friends" switch (off by default): friends — people you follow who follow you back — see the destination, dates and vibe of a trip you switch on, never the note; a private profile hides trips. Also: blocking now reaches further. A block made
+**Changelog — September 23, 2026:** buddy-trip drafts gain a per-trip "share with friends" switch (off by default): friends — people you follow who follow you back — see the destination, dates and vibe of a trip you switch on, never the note; only the trip's owner sees who reacted; a private profile hides trips. Also: blocking now reaches further. A block made
 from a dating deck, a match, a traveler's profile, or a post or comment is
 recorded on our server (not only on your phone), removes any follow between
 the two of you in both directions, and prevents a re-follow while it stands;
