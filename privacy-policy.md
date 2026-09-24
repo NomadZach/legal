@@ -562,8 +562,10 @@ not become a booking (the hold ran out, the supplier said no, or we could not
 confirm the outcome), and one when a booking you made **while signed out**
 succeeded. Each holds only references (the hold or cart id, the payment
 reference, the confirmation code or booking reference), the dates, the amount
-and currency, and for a hotel or tour its name — **never your name, email or
-card details, and never a ticket or voucher link.** A receipt is shown only to
+and currency, for a hotel or tour its name, for a flight the route (the two
+airport codes), and — when you were signed in — your own account's user id,
+which is what lets your account see its own receipts — **never your name, email
+or card details, and never a ticket or voucher link.** A receipt is shown only to
 the session that made it: a signed-in account sees its own, and a receipt made
 while signed out is shown to the signed-out session on that phone and never to
 any signed-in account. It survives signing out until you remove it with its own
@@ -895,6 +897,11 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 24, 2026 (receipts on your phone, corrected the same day):** the
+list of what a receipt holds was short by two items — a flight receipt also holds the
+route (two airport codes), and a signed-in account's receipts hold that account's own user
+id. Both are now named. Nothing else changed.
 
 **Changelog — September 24, 2026 (receipts on your phone):** the on-phone receipt now
 covers all three rails and both outcomes — a payment attempt that did not become a
