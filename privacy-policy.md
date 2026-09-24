@@ -556,6 +556,21 @@ deletion can reach that record; it stays until you email us to delete it (see
 the Hotel and Flight sections). Local-only also means **we can't recover your
 data if you delete the app or lose your phone**.
 
+**Small receipts kept on your phone (hotels, flights and tours).** Two kinds of
+booking receipt can be kept on the phone itself: one when a payment attempt did
+not become a booking (the hold ran out, the supplier said no, or we could not
+confirm the outcome), and one when a booking you made **while signed out**
+succeeded. Each holds only references (the hold or cart id, the payment
+reference, the confirmation code or booking reference), the dates, the amount
+and currency, and for a hotel or tour its name — **never your name, email or
+card details, and never a ticket or voucher link.** A receipt is shown only to
+the session that made it: a signed-in account sees its own, and a receipt made
+while signed out is shown to the signed-out session on that phone and never to
+any signed-in account. It survives signing out until you remove it with its own
+"Remove this receipt" control under My bookings (whether it should also be
+cleared by signing out is an open decision, dated September 24, 2026). Nothing
+about these receipts is sent anywhere.
+
 If you have an account, a copy is also stored on Supabase, protected by
 industry-standard encryption in transit and at rest, with database access
 rules that keep your places and profile readable only by you. That copy is
@@ -880,6 +895,13 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 24, 2026 (receipts on your phone):** the on-phone receipt now
+covers all three rails and both outcomes — a payment attempt that did not become a
+booking, and a booking made while signed out that succeeded — under one paragraph in
+Storage and security: what a receipt holds, that it is shown only to the session that
+made it, that it survives signing out until you remove it, and that nothing about it
+is sent anywhere.
 
 **Changelog — September 24, 2026:** a flight payment attempt that runs out of time before the
 booking is made now leaves a small receipt on your phone (hold id, payment reference, amount,
