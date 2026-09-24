@@ -471,7 +471,11 @@ so the hotel knows who is arriving — that is what a booking is. **Your card
 details never touch Pinorama:** the card is entered on the payment processor's
 hosted form and processed by them as merchant of record. Booking records are
 deleted with your account, except records we must keep for bookkeeping and tax
-law, which are kept only as long as those laws require.
+law, which are kept only as long as those laws require. **If you booked a hotel
+without being signed in**, that booking was never attached to an account, so
+deleting an account cannot find it. Email admin@nomadzachstudios.com with your
+booking reference and we will delete it by hand — the same rule as for flights,
+below.
 
 ## Flight bookings (air travel)
 
@@ -537,7 +541,12 @@ document details pass through to the airline and are not stored by us.
 
 If you don't have an account, your data lives only in your phone's local app
 storage, protected by your device's own security (passcode, encryption).
-There's no server copy to leak — but it also means **we can't recover your
+There's no server copy to leak — **with one exception: a hotel or flight you
+book while signed out is a record on our server** (the contact name and email
+the booking needs, the booking reference, price, dates and route), because a
+supplier cannot deliver a booking to a record that does not exist. No account
+deletion can reach that record; it stays until you email us to delete it (see
+the Hotel and Flight sections). Local-only also means **we can't recover your
 data if you delete the app or lose your phone**.
 
 If you have an account, a copy is also stored on Supabase, protected by
@@ -559,7 +568,10 @@ load" until the next hour; and the counts are deleted within about a day.
   places, your profile, and your points. If you have an account and want an
   exported copy, email us.
 - **Deletion:** if you don't have an account, deleting the app deletes all
-  your Pinorama data — it's the only place it exists. If you have an account,
+  your Pinorama data on the phone — the only place it exists, **except a hotel
+  or flight you booked while signed out:** that booking record is on our
+  server, no account can reach it, and we delete it by hand when you email
+  admin@nomadzachstudios.com with the booking reference. If you have an account,
   use the **"delete my account" button in the Settings screen** — tap the
   **⚙️ gear at the top of your Profile screen** to get there. It
   permanently erases your cloud account and the records stored for it
@@ -861,6 +873,14 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 23, 2026 (bookings without an account):** this policy
+said a traveler without an account had no server copy and nothing to delete but
+the app. That was false once they booked a hotel or a flight while signed out:
+the booking is a record on our server that no account deletion can reach. The
+Storage, Deletion and Hotel sections now say so, and the hotel section gains the
+same by-email deletion route the flight section already had. Nothing about the
+app changed; the words caught up.
 
 **Changelog — September 23, 2026:** buddy-trip drafts gain a per-trip "share with friends" switch (off by default): friends — people you follow who follow you back — see the destination, dates and vibe of a trip you switch on, never the note; only the trip's owner sees who reacted; a private profile hides trips. Also: blocking now reaches further. A block made
 from a dating deck, a match, a traveler's profile, or a post or comment is
