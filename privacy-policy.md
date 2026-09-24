@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 23, 2026**
+**Effective date: September 24, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -505,6 +505,12 @@ crashes in the middle of paying, the note it leaves itself so it can finish the
 booking holds only the booking references, the route, and your contact name and
 email — never a document number or a date of birth.
 
+**If a payment attempt runs out of time** (a fare is held for about 15 minutes) before the
+booking is made, nothing is booked and the app keeps a small receipt **on your phone only**
+under My bookings — the hold id, the payment reference, the amount and the time — so that if
+your bank shows a temporary hold you have the reference to quote to us. You can remove it
+yourself; signing out clears it; nothing about it is sent anywhere.
+
 **What we do keep.** Once a flight is booked we store a booking record, and if
 you are signed in it is stored against your account: the **contact name and
 email** you gave, the **booking reference** and the **airline's record locator**
@@ -873,6 +879,10 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 24, 2026:** a flight payment attempt that runs out of time before the
+booking is made now leaves a small receipt on your phone (hold id, payment reference, amount,
+time) under My bookings, removable by you and cleared on sign-out; the Flight section says so.
 
 **Changelog — September 23, 2026 (bookings without an account):** this policy
 said a traveler without an account had no server copy and nothing to delete but
