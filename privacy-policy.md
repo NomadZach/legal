@@ -509,7 +509,8 @@ email — never a document number or a date of birth.
 booking is made, nothing is booked and the app keeps a small receipt **on your phone only**
 under My bookings — the hold id, the payment reference, the amount and the time — so that if
 your bank shows a temporary hold you have the reference to quote to us. You can remove it
-yourself; signing out clears it; nothing about it is sent anywhere.
+yourself; it stays on the phone until you do (signing out does not remove it, and after a
+sign-out only the account that made the attempt can see it); nothing about it is sent anywhere.
 
 **What we do keep.** Once a flight is booked we store a booking record, and if
 you are signed in it is stored against your account: the **contact name and
@@ -882,7 +883,9 @@ project repository.
 
 **Changelog — September 24, 2026:** a flight payment attempt that runs out of time before the
 booking is made now leaves a small receipt on your phone (hold id, payment reference, amount,
-time) under My bookings, removable by you and cleared on sign-out; the Flight section says so.
+time) under My bookings, removable by you; the Flight section says so. *(Corrected the same
+day: this entry first said the receipt is "cleared on sign-out" — it is not; it stays on the
+phone until you remove it, and only the account that made the attempt can see it.)*
 
 **Changelog — September 23, 2026 (bookings without an account):** this policy
 said a traveler without an account had no server copy and nothing to delete but
