@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 24, 2026**
+**Effective date: September 25, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -502,13 +502,17 @@ and no passport number in our records — that is a deliberate choice, not an
 oversight: we would rather not hold a number we have no use for after the ticket
 is issued. They are **not kept on your phone either**. If the app is closed or
 crashes in the middle of paying, the note it leaves itself so it can finish the
-booking holds only the booking references, the route, and your contact name and
-email — never a document number or a date of birth.
+booking holds only the booking references, the route and date, the number of
+travelers, your contact name and email, the fare and its currency, when you started
+paying, your own account's user id when you were signed in, and one word for how the
+card page closed (completed, cancelled, failed or dismissed) — never a document
+number or a date of birth.
 
-**If a payment attempt runs out of time** (a fare is held for about 15 minutes) before the
-booking is made, nothing is booked and the app keeps a small receipt **on your phone only**
-under My bookings — the hold id, the payment reference, the amount and the time — so that if
-your bank shows a temporary hold you have the reference to quote to us. You can remove it
+**If a flight payment attempt does not end in a confirmed booking** — the fare hold (about 15
+minutes) runs out, the booking is refused or expires after the card page, or we cannot confirm
+what happened — the app keeps a small receipt **on your phone only** under My bookings — the
+hold id, the payment reference, the amount and the time — so that if your card shows a charge
+you have the reference to quote to us. You can remove it
 yourself; it stays on the phone until you do (signing out does not remove it, and after a
 sign-out only the account that made the attempt can see it); nothing about it is sent anywhere.
 
@@ -897,6 +901,14 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 25, 2026 (flight payments):** the flight section now says when the
+on-phone receipt is kept: not only when the fare hold runs out, but also when the booking is
+refused or expires after the card page, or when we cannot confirm what happened. Our flight
+supplier charges the card before the booking step, so the section no longer says "nothing is
+booked" or calls the charge a hold your bank releases. The note the app keeps while you pay now
+lists everything it holds, including one new item: a single word for how the card page closed.
+Nothing new is sent anywhere.
 
 **Changelog — September 24, 2026 (receipts on your phone, corrected the same day):** the
 list of what a receipt holds was short by two items — a flight receipt also holds the
