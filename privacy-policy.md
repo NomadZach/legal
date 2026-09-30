@@ -137,7 +137,9 @@ between your devices. When you're signed in we hold:
   publish. If you use the photo scan to fill a menu in, the photo is sent
   through our server to Anthropic's Claude API so an AI model can read the
   dishes off it — the photo itself is not stored, and only the dish list you
-  confirm is saved. Deleting your account erases your menus.
+  confirm is saved. From the next version of the app, it asks you before each
+  scan and sends nothing unless you say yes; the version now in use sends the
+  photo as soon as you take or pick it. Deleting your account erases your menus.
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
@@ -465,7 +467,8 @@ and driver live location during an active run.
   switch it on: what you type into the planner's chat (where you want to go,
   when, your budget, pace and interests), and the names of the stops the app has
   already picked for your plan, are sent through our server to Anthropic's
-  Claude so it can understand your request and word the day-by-day plan. Your
+  Claude so it can understand your request and word the day-by-day plan — only
+  after the app has asked you and you have said yes. Your
   name, account and location are not attached. The plan itself — flights,
   hotels, prices — comes from the searches described in this policy, never from
   the AI.
@@ -527,7 +530,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
 | Wikidata / Wikimedia Commons — **not switched on yet** | A free photo of a well-known place, and the place's own website, on its place page. Our server looks places up in Wikidata ahead of time; nobody's request is involved | Nothing about you reaches Wikidata. When such a photo is shown, your phone loads it straight from Wikimedia's image servers, which see that the request came from your phone |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
-| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
+| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after you have said yes (once, and you can change it in Settings); a menu photo, from the next version of the app, only after you say yes to that scan |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
@@ -1120,7 +1123,10 @@ switched on, the Wikimedia photo for well-known places — and the push-notifica
 line under "Planned" now says exactly what will be stored when notifications are
 switched on (a push token for your phone, with your account id), before they are.
 A new "Planned" line does the same for the AI trip planner (what you type is sent
-through our server to Anthropic's Claude, without your name or account).
+through our server to Anthropic's Claude, without your name or account). And
+the menu photo scan: the version now in use sends the photo to Anthropic's Claude
+as soon as it is taken, without asking; from the next version it asks before
+every scan — said in the Merchant menus line and the Anthropic row.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
