@@ -515,10 +515,24 @@ it is switched on rather than after.
 **Crash reports (diagnostics).** The app sends automatic **crash reports** so
 we can find and fix errors. When the app crashes or hits an internal error, a
 report goes to **Sentry** (Functional Software, Inc., USA), our crash-reporting
-provider. A report contains technical diagnostics: the error and stack trace,
-device model, operating system version, and app version. We do not attach your
-name, email, account identity, or precise location to crash reports, and crash
-data is never used for advertising or cross-app tracking. Crash reports exist
+provider. A report contains technical diagnostics: the error and stack trace;
+the phone's model, operating system version, language, time zone, memory and
+free storage; the app version; a random identifier for this installation of the
+app and, on iPhone, a scrambled code made from the identifier the phone gives our apps
+(neither is your account); and a short trail of what the app did just before —
+the screens and system events, and for each recent request, which service it
+went to and which part of it (for example our server's profiles table, or the
+map search), with everything after that cut off. Apart from the dated known gap
+below, we do not attach your name, email, account identity, or precise location
+to crash reports, and crash data is never used for advertising or cross-app
+tracking. **Known gap, disclosed September 30, 2026:** in the test versions of
+the app so far (crash reports began on August 7, 2026), that trail kept each
+request's full address — which can hold your account's ID, the text of a place
+search, the link of a post you saved, or the area of the map around you — and
+the app's own log lines, and the app also told Sentry each time it was opened,
+with that installation identifier. From the next version of the app, every
+address is cut down to the service and its part, the log lines are left out,
+and nothing goes to Sentry unless the app crashes or hits an error. Crash reports exist
 only to fix defects. Sentry processes this data on our behalf; see Sentry's
 privacy documentation at sentry.io/privacy for their practices.
 
@@ -526,7 +540,7 @@ privacy documentation at sentry.io/privacy for their practices.
 
 | Service | What it does | What it receives |
 |---|---|---|
-| Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
+| Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces; the phone's model, OS version, language, time zone, memory and storage; the app version; a random installation identifier and, on iPhone, a scrambled code made from the identifier the phone gives our apps; the screens and system events just before, and which service and part of it the app's most recent requests went to. No name, email, account identity, or precise location attached by us — see the dated known gap under "Crash reports" for the test versions so far |
 | OpenStreetMap Nominatim | Turns place text into map coordinates, and the city typed into a hotel search into that city | The place or city text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way"). **Known gap, disclosed September 30, 2026:** in the current version of the app, a hotel search made before the app has read its settings (for example on its very first launch) can send the typed city straight from your phone to Nominatim instead; the next version always goes through our server |
 | Photon (komoot) | Suggests places while you type in the Rooms search on Book, and addresses while a business partner types their venue | The typed text only, requested from your phone |
 | ExchangeRate-API (open.er-api.com), with Frankfurter (api.frankfurter.app) as a fallback | Today's currency exchange rates, so prices can be shown in your currency | A request for the day's rates against the US dollar, sent from your phone — usually no more than about twice a day. Nothing about you is in it; like any website, the service sees that the request came from your phone |
@@ -1152,6 +1166,19 @@ a partner's website — Aviasales, Agoda, Klook and others — with what you wer
 looking at and a partner code in the link, sometimes through an affiliate network
 that records the click. A new section, "Partner websites you open from the app",
 now says so.
+
+**And from the same check, crash reports:** a crash report sent to Sentry
+carries a trail of the app's most recent requests. In the test versions so far
+that trail kept each request's full address — which can hold your account's ID,
+the text of a place search, the link of a post you saved, or the area of the
+map around you — and the app's log lines, while this page said crash reports
+carry no account identity or precise location; and the app told Sentry each time
+it was opened, while this page said a report goes out when the app crashes. The
+next version cuts each address down to the service and its part, leaves the log
+lines out, and stops the app-open messages. The "Crash reports" paragraph now
+lists everything a report holds — including a random installation identifier
+and, on iPhone, a scrambled code made from the identifier the phone gives our apps, which
+it did not mention — with a dated known gap for the versions already on phones.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
