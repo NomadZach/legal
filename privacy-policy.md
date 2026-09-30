@@ -57,8 +57,18 @@ between your devices. When you're signed in we hold:
   **once** (the first invite link wins; it never changes afterwards), and is
   erased with your account. We never see who you *send* an invite to — a
   referral is recorded only if the person you invited actually joins.
-- **Your saved places**, including their names, **coordinates**, categories,
-  the original post links, and their **captions/notes**.
+- **Your saved places**, including their names, **addresses and coordinates**,
+  categories, the original post links, their **captions**, **your own notes,
+  want-to-go / been-there marks, star ratings and reviews** of them (private —
+  only you can see them), and the address of the post picture you saved one
+  from, if any.
+  **Known gap, disclosed September 29, 2026:** a saved place you delete leaves
+  your list at once, but its details (everything but its category: the name,
+  address and location, caption, post link and the post it came from, your
+  notes and want-to-go / been-there mark, star rating and review, the address of
+  any post picture, and when you saved it) stay hidden on our server until you
+  delete your account.
+  Email admin@nomadzachstudios.com if you want them erased sooner.
 - **Buddy-trip drafts.** The trips you draft on the travel-buddy board are
   stored with your account so they come back on a new phone. They stay private
   to you unless you switch a trip to **share with friends** — off by default,
@@ -68,9 +78,12 @@ between your devices. When you're signed in we hold:
   who reacted; friends see only the count. If your profile is private, your
   trips stay hidden too. Switch it off and the trip is private again. Deleting
   a draft removes it from our servers, and deleting your account erases them
-  all.
+  all. **Known gap, disclosed September 29, 2026:** while you have other drafts
+  saved with your account, deleting one removes it from your phone at once but
+  its server copy can stay — and newer drafts may not be backed up — until a
+  pending database update lands. Deleting your account still erases them all.
 - **Your buddy-profile draft.** The profile you draft for the travel-buddy
-  feature (display name, age, home base, bio, interests, what you're looking
+  feature (display name, age or date of birth, home base, bio, interests, what you're looking
   for, relationship status, and whether your info is verified) is stored with
   your account so it comes back on a new phone. No other traveler can read it —
   it is a restore copy for you alone. Whether you are discoverable is NEVER
@@ -93,10 +106,12 @@ between your devices. When you're signed in we hold:
   through the same profanity filter as city chat before they're stored, are
   rate-limited against flooding, and follow the post they're on: if a post is
   deleted or its author's profile isn't public, its comments disappear with
-  it. You can delete any of your own comments at any time, other users can
-  report a comment or block you (a block hides everything you write from that
-  person and removes any follow between the two of you — see "Blocking" under
-  the dating section below), and deleting your account erases all your comments.
+  it. You can delete any of your own comments at any time (a deleted comment's
+  text stays hidden on our server — see the dated known gaps in the social
+  section below), other users can report a comment or block you (a block hides
+  everything you write from that person and removes any follow between the two
+  of you — see "Blocking" under the dating section below, including its dated
+  known gap), and deleting your account erases all your comments.
 - **Partner applications** — if you apply to work with Pinorama (as a driver,
   restaurant, influencer or host), we store which role you applied for and
   when, against your account. The application reuses details you've already
@@ -130,6 +145,12 @@ between your devices. When you're signed in we hold:
   all-time." Who viewed is **never shown to anyone**, including the owner;
   no client can read the raw records. Deleting your account erases every
   view record in both directions.
+- **Which posts your feed showed you** — when you're signed in and your feed
+  loads, we record which posts were on it: one record per post per day, holding
+  your account, the post and the date — never how long you looked or how far
+  you scrolled. Nothing reads these records yet; they are kept for a future
+  "For You" feed that will use them to rank posts. You can't see them in the app,
+  other travelers never can, and deleting your account erases them.
 - **The traveler directory** — signed-in travelers can see a directory of
   travelers who have a public profile and at least one published post. It
   shows only what your public profile already shows: display name, avatar
@@ -160,7 +181,9 @@ between your devices. When you're signed in we hold:
   name with it, not your name or handle, but it is stored with your account.
   Game nights **expire off the map automatically after 7 days**, you can
   remove your own at any time in the Work hub (it disappears for everyone
-  immediately), and deleting your account erases them entirely.
+  immediately, though its details stay hidden on our server — see the dated
+  known gaps in the social section), and deleting your account erases them
+  entirely.
 - **Events you create (PUBLIC ones)** — the "create" button on the map lets you
   post an event (a meet-up, game night, drinks night, or club night): we store
   the kind, a title, the place name, **its map location**, and the date/time you
@@ -174,7 +197,11 @@ between your devices. When you're signed in we hold:
   Public events show the event title and place, are stored with your account,
   **expire off the map automatically** (after the event's time, or after 7 days
   if you set no time), can be removed by you at any time, and are erased when you
-  delete your account. Whether an event is public or private, when you **share an
+  delete your account. **Known gap, disclosed September 29, 2026:** a public event
+  you remove leaves your map at once and everyone else's once our server records
+  it (if that fails, others may see it until it expires), but its title, type,
+  place, location and time stay hidden on our server until you delete your
+  account. Whether an event is public or private, when you **share an
   invite** the message is created on your device and sent by you through your own
   apps — we don't send it or see who you send it to. (This is about event
   invites. Personal *referral* invite links work differently: if someone joins
@@ -251,13 +278,19 @@ without accounts** (they're venue promo content — that's their whole point).
 You can delete any of your own posts, comments, or game nights at any time, and
 deleting your account removes your posts, likes, comments, and game nights
 along with everything else.
-**Known gap, disclosed September 29, 2026:** deleting a post removes it from the
+**Known gaps, disclosed September 29, 2026:** deleting a post removes it from the
 app at once, but **a photo you attached to it stays in our storage** at its
-unguessable web address — nothing in the app links to it any more, yet anyone
-who already has that address can still open it. If you want the photo itself
-gone, email admin@nomadzachstudios.com and we will delete it by hand. We would
-rather say so than let this policy promise more than the app does; the note
-comes out the day deleting a post also deletes its photo.
+unguessable web address — the post no longer shows it, though a place another
+traveler saved from that post can still show it, and anyone who has the address
+can still open it. **A comment or game night you delete — and the comments on
+a post that is deleted —** disappear for everyone at once, but **their text and
+details stay hidden in our database** (for a game night: the venue, the sport
+and match, the time and the map location): a game night until you delete your
+account; a comment until its writer, or the post's author, deletes their
+account. If you want any of these erased now, email admin@nomadzachstudios.com
+and we will do it by hand. We would rather say so than let this policy promise
+more than the app does; each note comes out the day the app deletes that item
+fully.
 
 **A map you publish is public in the same way** —
 see "Maps you publish" above: anyone can open it, including someone with no
@@ -270,12 +303,14 @@ When you save a post, the app needs to turn text into a map pin:
   server, which looks the place up with OpenStreetMap's Nominatim geocoding
   service and sends the coordinates back. Only the place text is sent — never
   your name, your account, or anything else about you.
-- **We keep a copy of that place text on our server for up to 30 days**, with
+- **We reuse a copy of that place text on our server for up to 30 days**, with
   the answer we got for it, so that the next person who looks up the same place
   does not cost OpenStreetMap another request — a limit their terms ask us to
   respect. The saved row holds **only the text and the answer**: it is not
   linked to you, your account or your device, and two people who look up the
-  same place share one row. After 30 days it is fetched fresh.
+  same place share one row. After 30 days it is fetched fresh. **Known gap,
+  disclosed September 29, 2026:** older copies are no longer used, but they are
+  not yet deleted automatically.
 - When a business owner types their venue's address in the partner sign-up,
   the **typed text** is also sent, as they type, to Photon (an open geocoding
   service by komoot running on the same OpenStreetMap data) to suggest
@@ -421,14 +456,14 @@ privacy documentation at sentry.io/privacy for their practices.
 | Service | What it does | What it receives |
 |---|---|---|
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
-| OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only — sent by our server on your behalf, and kept there for up to 30 days as an unlinked cache (see "One thing leaves your device either way") |
+| OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way") |
 | Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
-| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, and any posts, likes, comments, and game nights you create — only when you're signed in |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 | Your phone's built-in map service (Apple on iPhone, Google on Android) | Turns a location reading into a city name, on your own device's request — see "Device location" above | The coordinates of that one reading, sent by your phone to its platform provider. It does not pass through our servers and we never see it |
 
@@ -438,8 +473,9 @@ the exchange.
 **About Google place content:** ratings, review counts, price levels, hours,
 photos, and review snippets shown on place pages are supplied by Google and
 displayed with "Powered by Google" attribution; review snippets link back to
-Google Maps. Our server caches this place content briefly (up to 7 days per
-place) to avoid repeated lookups — the cache holds place facts only, never
+Google Maps. Our server reuses this place content for up to 7 days per place
+(older copies are no longer shown, but are not yet deleted automatically) to avoid
+repeated lookups — the cache holds place facts only, never
 anything about you. Google's own terms and privacy policy govern that content.
 
 **LiteAPI (Nuitée) — hotel search and paid hotel bookings (live since August
@@ -601,9 +637,11 @@ load" until the next hour; and the counts are deleted within about a day.
 
 ## Your rights and choices
 
-- **Access:** everything we hold is visible to you inside the app — your
-  places, your profile, and your points. If you have an account and want an
-  exported copy, email us.
+- **Access:** your places, your profile and your points are visible to you
+  inside the app. Some records are never shown in the app (for example, which
+  posts your feed showed you), and where we know a deletion leaves something
+  hidden on our server, a dated known gap in this policy says so. If you have
+  an account and want an exported copy, email us.
 - **Deletion:** if you don't have an account, deleting the app deletes all
   your Pinorama data on the phone — the only place it exists, **except a hotel
   or flight you booked while signed out:** that booking record is on our
@@ -678,9 +716,10 @@ and never read your location in the background.
 
 **Date of birth.** If you use Pinorama's dating features, we ask for your
 date of birth to confirm you are 18 or over and to let other travelers
-filter by age range. We store the date; we only ever share your **age in
-years** — never the date itself. You can remove it by deleting your dating
-profile.
+filter by age range. We store the date on your dating profile and in the saved
+copy of your buddy-profile draft; we only ever share your **age in years** —
+never the date itself. On your dating profile it stays until you delete your
+account — the app has no separate way to delete a dating profile yet.
 
 What other travelers can see: signed-in users searching nearby see your
 display name, bio, interests, photos, gender (if you set one), whether
@@ -701,7 +740,11 @@ device. That server record is what stops the other person reaching you even
 from their own phone. **It also removes any follow between the two of you, in
 both directions, and prevents either of you from following the other again
 while the block stands. Unblocking lifts the block but does not bring the
-follow back** — either of you may follow again later as a fresh choice. A block
+follow back** — either of you may follow again later as a fresh choice.
+**Known gap, disclosed September 29, 2026:** until a pending database update
+lands, a block does not remove the other person's follow of you, and the version
+of the app now in the store does not remove your follow of them either; either of
+you can still follow the other while the block stands. A block
 you make inside a city chat room is kept **on your device** only, so it protects
 you immediately and does not follow you to a new phone — see "your blocked
 list lives on this phone" above. Either way, a blocked traveler no longer
@@ -798,7 +841,8 @@ If you send a message, we store the message text, the room's city, your
 account id, and the time — and every signed-in traveler in that room can see
 the message with your display name. An anti-spam limit caps how fast anyone
 can post. You can delete your own messages at any time (they disappear from
-the room), block other travelers (their messages stop appearing for you, on
+the room at once; the text itself stays on our server until our daily clean-up,
+which deletes every chat message once it is 30 days old), block other travelers (their messages stop appearing for you, on
 your device, immediately), and report messages — a report sends us the message
 you reported, the reason you picked, anything you typed, your account id, and
 the time, so a moderator can review it. Deleting your account permanently
@@ -911,10 +955,28 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — September 29, 2026:** a dated **known gap** under the social
-posts section: deleting a post removes it from the app, but a photo attached to
-it stays in our storage at its address until you ask us to delete it. Nothing
-else about what we collect or keep changed.
+**Changelog — September 29, 2026:** we checked every deletion promise in this
+policy against what the app does. **Newly described, because the app already did
+it:** we record which posts your feed showed you (one record per post per day,
+for a future "For You" feed); a saved place also holds its address, your
+want-to-go / been-there mark, your star rating and review, and the address of the
+post picture you saved it from; and your date of birth is also kept in the saved
+copy of your buddy-profile draft. **Dated known gaps**, each noted beside the
+promise it corrects: a deleted post's photo stays in our storage; a deleted
+game night's details stay hidden on our server until you delete your account,
+and a deleted comment's text — or the comments on a deleted post — until its
+writer or the post's author deletes their account; a removed public event's
+details and a deleted saved place's details (everything but its category) stay
+hidden until you delete your account, and a removed event may stay visible to
+others if our server does not record the removal; a deleted trip draft's server
+copy can stay while you have others, and newer drafts may not be backed up; until
+a pending update, a block does not remove the other person's follow, the app now
+in the store does not remove yours, and either of you can still follow the other;
+the place-lookup and Google caches are no longer reused after 30 and 7 days but
+are not yet deleted automatically. Also corrected: your date of birth leaves your
+dating profile only with your account — the app has no separate way to delete a
+dating profile — and a deleted chat message's text stays until the daily clean-up
+deletes every chat message once it is 30 days old.
 
 **Changelog — September 25, 2026 (flight payments):** the flight section now says when the
 on-phone receipt is kept: not only when the fare hold runs out, but also when the booking is
