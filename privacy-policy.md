@@ -48,7 +48,11 @@ between your devices. When you're signed in we hold:
   code** to your email instead of using passwords — Pinorama has no password
   to store.
 - **Your profile** from onboarding: display name, avatar emoji, home base,
-  traveler types, interests, and your Pinorama passport number.
+  traveler types, interests, and your Pinorama passport number — and, stored
+  with it as a copy no other traveler can read: your other sign-up answers (the social
+  platform and @handle you gave, your traveler personas and the features you
+  said you were interested in), the short bio you add in Settings, and your
+  display currency.
 - **Who invited you (referrals).** If you first open Pinorama through another
   traveler's personal invite link (a `pinorama.app/get?ref=…` link or QR code),
   we record on your profile **which account invited you and when**, so we can
@@ -91,6 +95,11 @@ between your devices. When you're signed in we hold:
   device. Deleting your account erases it.
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
+- **Your daily streak** — how many days in a row you have saved, posted or
+  liked something, and the last such day, stored with your account. **The
+  number is public unless you make your profile private:** other travelers, and
+  anyone using the app's public data interface even without an account, can read
+  it. The day itself is never shown to anyone else.
 - **Posts and likes** — text posts you choose to publish in the app. A post
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
@@ -206,11 +215,17 @@ between your devices. When you're signed in we hold:
   apps — we don't send it or see who you send it to. (This is about event
   invites. Personal *referral* invite links work differently: if someone joins
   Pinorama through yours, that is recorded — see **"Who invited you"** above.)
+- **Your creator profile (only if you fill in creator mode in Settings)** — the
+  headline and bio you save there, even if you never list yourself, and whether
+  you are listed. While you are listed, signed-in travelers can see your headline
+  and bio on the Creators tab and on your profile page, with your display name and
+  avatar. Deleting your account erases it.
 - **Maps you publish (PUBLIC — and readable without an account)** — you can pick
   places you have saved and publish them together as a **map** under your creator
   profile. Publishing takes a **copy** of the places you chose: for each pin on the
   published map we store its name, its address, its **coordinates**, its category,
-  the **note you wrote on it**, and its position on the map — plus the map's title,
+  the **caption saved with it** (often the words of the post you saved it from —
+  never your private note), and its position on the map — plus the map's title,
   blurb and cover emoji, stored with your account.
   **A published map is open to anyone: it is listed in the app's creator section, and
   it can be opened from a shared link by someone who has no Pinorama account at all.**
@@ -506,21 +521,29 @@ Viator only the city being browsed — never your name, account, or location.
 
 ## Hotel bookings (accommodation)
 
-When you book a hotel room in Pinorama we store a booking record: the guest
-name and email you enter at checkout, the hotel, the stay dates, the price and
+When you book a hotel room in Pinorama we store a booking record: the email you
+enter at checkout (the guest's name goes to the supplier with the booking, but we
+don't keep it), the hotel, the stay dates, the price and
 currency, the supplier's booking reference, and whether the booking was made in
 the test ("sandbox") or live environment. We use this to show the booking in
 your app, deliver your confirmation, and handle cancellation and support. The
 guest name and email are passed to the accommodation supplier (LiteAPI/Nuitée)
 so the hotel knows who is arriving — that is what a booking is. **Your card
 details never touch Pinorama:** the card is entered on the payment processor's
-hosted form and processed by them as merchant of record. Booking records are
-deleted with your account, except records we must keep for bookkeeping and tax
-law, which are kept only as long as those laws require. **If you booked a hotel
+hosted form and processed by them as merchant of record. Deleting your account
+removes your email from your booking records and unlinks them from your account;
+the rest of each record (the hotel, dates, price and reference) is kept, because a
+record of a sale is something we have to keep for bookkeeping and tax. **If you booked a hotel
 without being signed in**, that booking was never attached to an account, so
 deleting an account cannot find it. Email admin@nomadzachstudios.com with your
 booking reference and we will delete it by hand — the same rule as for flights,
 below.
+
+**A payment attempt that does not become a booking is recorded too** — even one
+you back out of on the card page — with the guest's email and the payment
+reference, plus the hotel, dates, price and the hotel's booking reference when we
+have them, so a charge can be traced and returned. It is kept and deleted like a
+booking record.
 
 ## Flight bookings (air travel)
 
@@ -579,6 +602,12 @@ that form appears on is served by us, but the card details go straight from your
 phone to the payment provider — our servers only ever hold a reference to that
 payment, never a card number.
 
+**A payment attempt that does not become a booking is recorded too** — even one
+you back out of on the card page — with the contact name and email, the route, the
+date, the number of travelers and the payment reference, plus the price and
+booking reference when we have them, so a charge can be traced and returned. It is kept and
+deleted like a booking record.
+
 **Deleting your account.** Deleting your account **removes your name and email
 from your flight booking records and unlinks them from your account.** What
 remains is the part with nothing personal in it — the route, the reference, the
@@ -594,6 +623,11 @@ you confirm you are allowed to. The same rules above apply to their details: the
 document details pass through to the airline and are not stored by us.
 
 ## Storage and security
+
+**Sign-in and request logs.** Our hosting provider (Supabase) records the IP
+address and the device or browser type of sign-ins (kept with your sign-in
+sessions) and of requests to our server, for security and troubleshooting. We
+don't use them to build a profile of you.
 
 If you don't have an account, your data lives only in your phone's local app
 storage, protected by your device's own security (passcode, encryption).
@@ -725,8 +759,12 @@ What other travelers can see: signed-in users searching nearby see your
 display name, bio, interests, photos, gender (if you set one), whether
 you're looking to date, to find a travel buddy, or both, city, and a
 distance rounded to whole kilometers,
-computed from a further-blurred (~1 km grid) position — never your legal
-name, email, exact location, or coordinates. **Which genders you want to
+computed from a further-blurred (~1 km grid) position. **That blurred position
+itself is sent to their app too** (it is not shown on screen) — never your legal
+name, email or exact location. **Known gap, disclosed September 29, 2026:** until
+a pending database update lands, the distance is worked out from your stored
+~110 m position rather than the ~1 km grid, so it can be a little more precise
+than this paragraph describes. **Which genders you want to
 meet is never shown to anyone** — it is only a filter. Who liked you is
 not shown
 to anyone; likes are stored server-side only to detect a mutual match. A
@@ -977,6 +1015,17 @@ are not yet deleted automatically. Also corrected: your date of birth leaves you
 dating profile only with your account — the app has no separate way to delete a
 dating profile — and a deleted chat message's text stays until the daily clean-up
 deletes every chat message once it is 30 days old.
+**Also on September 29, after a second check of everything the app stores.** Now
+described: the copy of your sign-up answers, Settings bio and currency that no other
+traveler can read; your daily streak (its number is public unless your profile is
+private); your creator profile's headline and bio (saved even if you never list
+yourself); failed payment attempts, recorded like bookings; and our hosting
+provider's sign-in and request logs (IP address and device type). Corrected: a
+published map pin carries the saved caption, not your private note; the dating deck
+sends your ~1 km-blurred position to other travelers' apps, and — a dated known
+gap — its distance is still worked out from the ~110 m position; and a hotel booking
+record keeps your email but not your name, and account deletion blanks the email
+rather than deleting the record.
 
 **Changelog — September 25, 2026 (flight payments):** the flight section now says when the
 on-phone receipt is kept: not only when the fare hold runs out, but also when the booking is
