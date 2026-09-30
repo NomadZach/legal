@@ -534,7 +534,11 @@ the app's own log lines, and the app also told Sentry each time it was opened,
 with that installation identifier. From the next version of the app, every
 address is cut down to the service and its part, the log lines are left out,
 and nothing goes to Sentry unless the app crashes or hits an error. Crash reports exist
-only to fix defects. Sentry processes this data on our behalf; see Sentry's
+only to fix defects. Sentry deletes each report 30 days after it arrives (on the
+plan we use today). Deleting your account does not reach reports already sent, so
+a report from the test versions that holds your account's ID in an address stays
+until those 30 days pass; and a report the app has not been able to send yet waits
+on the phone until it can, even after you sign out. Sentry processes this data on our behalf; see Sentry's
 privacy documentation at sentry.io/privacy for their practices.
 
 ## Third-party services
