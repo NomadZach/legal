@@ -461,6 +461,14 @@ and driver live location during an active run.
   users.
 - **Nearby alerts** — being notified about things close to you is still
   planned, and would be opt-in like every other use of location.
+- **AI trip planner** — not switched on yet. When it is, written here before we
+  switch it on: what you type into the planner's chat (where you want to go,
+  when, your budget, pace and interests), and the names of the stops the app has
+  already picked for your plan, are sent through our server to Anthropic's
+  Claude so it can understand your request and word the day-by-day plan. Your
+  name, account and location are not attached. The plan itself — flights,
+  hotels, prices — comes from the searches described in this policy, never from
+  the AI.
 - **Push notifications** — not switched on yet, and opt-in via your
   device's normal permission prompt. When we turn them on, written here before
   we do: the next time you are signed in, the app asks with your phone's own
@@ -832,7 +840,7 @@ while the block stands. Unblocking lifts the block but does not bring the
 follow back** — either of you may follow again later as a fresh choice.
 **Known gap, disclosed September 29, 2026:** until a pending database update
 lands, a block does not remove the other person's follow of you, and the version
-of the app now in the store does not remove your follow of them either; either of
+of the app now in use does not remove your follow of them either; either of
 you can still follow the other while the block stands. A block
 you make inside a city chat room is kept **on your device** only, so it protects
 you immediately and does not follow you to a new phone — see "your blocked
@@ -1111,6 +1119,8 @@ read its settings, which the next version fixes. We also list, before it is
 switched on, the Wikimedia photo for well-known places — and the push-notification
 line under "Planned" now says exactly what will be stored when notifications are
 switched on (a push token for your phone, with your account id), before they are.
+A new "Planned" line does the same for the AI trip planner (what you type is sent
+through our server to Anthropic's Claude, without your name or account).
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
