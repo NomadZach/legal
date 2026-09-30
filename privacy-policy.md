@@ -450,8 +450,15 @@ and driver live location during an active run.
   users.
 - **Nearby alerts** — being notified about things close to you is still
   planned, and would be opt-in like every other use of location.
-- **Push notifications** — opt-in via your device's normal permission
-  prompt.
+- **Push notifications** — not switched on yet, and opt-in via your
+  device's normal permission prompt. When we turn them on, written here before
+  we do: the next time you are signed in, the app asks with your phone's own
+  prompt. If you allow it, we store a **push token** for your phone — the
+  address Apple's or Google's notification service uses to reach this device,
+  issued through Expo's push service — with your account id, whether it is an
+  iPhone or an Android phone, and when it was last updated, only so we can send
+  you notifications. If you say no, nothing is stored. Deleting your account
+  deletes it.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
   get locked out.
 - **Anonymous usage counts** — we don't currently measure how the app is used
@@ -1086,7 +1093,9 @@ page is hosted on GitHub Pages. None of these carries anything about you; each
 is now described. One dated known gap, in the Nominatim row: the city typed into
 a hotel search could reach Nominatim straight from your phone before the app had
 read its settings, which the next version fixes. We also list, before it is
-switched on, the Wikimedia photo for well-known places.
+switched on, the Wikimedia photo for well-known places — and the push-notification
+line under "Planned" now says exactly what will be stored when notifications are
+switched on (a push token for your phone, with your account id), before they are.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
