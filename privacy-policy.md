@@ -235,7 +235,10 @@ between your devices. When you're signed in we hold:
   blurb and cover emoji, stored with your account. **From the next version of the
   app, a pin no longer carries that caption:** a map you publish or re-publish from
   then on stores no caption on its pins, and a map published before keeps the
-  captions it was published with until you re-publish or unpublish it.
+  captions it was published with until you re-publish or unpublish it — or until
+  a pending database update is applied, which clears the captions already on
+  published pins and keeps every new pin clear, whichever version of the app
+  published it.
   **A published map is open to anyone: it is listed in the app's creator section, and
   it can be opened from a shared link by someone who has no Pinorama account at all.**
   What they see is: the map's title, blurb, cover emoji, how many pins it has,
