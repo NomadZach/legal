@@ -101,8 +101,7 @@ between your devices. When you're signed in we hold:
   number is public unless you make your profile private:** other travelers, and
   anyone using the app's public data interface even without an account, can read
   it. The app itself never shows another traveler's number, and once a pending
-  database update lands (after the next version of the app is on phones), readers
-  without an account can no longer read it. The day itself is never shown to
+  database update lands, readers without an account can no longer read it. The day itself is never shown to
   anyone else.
 - **Posts and likes** — text posts you choose to publish in the app. A post
   contains the text you write (a caption), an optional place name with its
