@@ -106,10 +106,14 @@ between your devices. When you're signed in we hold:
   it. The app itself never shows another traveler's number, and once a pending
   database update lands, readers without an account can no longer read it. The day itself is never shown to
   anyone else.
-- **Posts and likes** — text posts you choose to publish in the app. A post
-  contains the text you write (a caption), an optional place name with its
-  coordinates, and timestamps. Your posts, and a record of which posts you've
-  liked, are stored with your account.
+- **Posts and likes** — posts you choose to publish in the app. A post
+  contains the text you write (a caption), an optional photo you pick from your
+  phone, an optional place name with its coordinates, and timestamps. A post's
+  photo is stored on our servers at an unguessable web address — anyone who has
+  that address can open it, which is how other travelers' apps show it — and the
+  app removes the photo's location and camera details before it leaves your
+  phone (a photo in a format it can't clean is not uploaded). Your posts, and a
+  record of which posts you've liked, are stored with your account.
 - **Which posts you've seen** — so the feed can stop showing you the same
   things and, later, rank what you see. We store one row per post per day
   (your account saw this post, on this date), never a moment-by-moment
@@ -1221,6 +1225,11 @@ the email with your sign-in code has been delivered for us by Resend, an
 email-delivery service, which receives your email address and that message.
 This page never named it; the sign-in line and the table of outside services
 now do.
+
+**And from the same check, post photos:** the line describing posts said *"text
+posts"*; a post can also carry a photo you pick, stored at an unguessable web
+address that anyone who has it can open, with the photo's location and camera
+details removed on your phone first. That is now said.
 
 **And five more from the same check:** the section on using the app without an
 account opened with *"everything you put into Pinorama stays on your device.
