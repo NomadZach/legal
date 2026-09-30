@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 29, 2026**
+**Effective date: September 30, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -226,7 +226,10 @@ between your devices. When you're signed in we hold:
   published map we store its name, its address, its **coordinates**, its category,
   the **caption saved with it** (often the words of the post you saved it from —
   never your private note), and its position on the map — plus the map's title,
-  blurb and cover emoji, stored with your account.
+  blurb and cover emoji, stored with your account. **From the next version of the
+  app, a pin no longer carries that caption:** a map you publish or re-publish from
+  then on stores no caption on its pins, and a map published before keeps the
+  captions it was published with until you re-publish or unpublish it.
   **A published map is open to anyone: it is listed in the app's creator section, and
   it can be opened from a shared link by someone who has no Pinorama account at all.**
   What they see is: the map's title, blurb, cover emoji, how many pins it has,
@@ -752,8 +755,8 @@ and never read your location in the background.
 date of birth to confirm you are 18 or over and to let other travelers
 filter by age range. We store the date on your dating profile and in the saved
 copy of your buddy-profile draft; we only ever share your **age in years** —
-never the date itself. On your dating profile it stays until you delete your
-account — the app has no separate way to delete a dating profile yet.
+never the date itself. On your dating profile it stays until you remove the
+profile (see "Removing your dating profile" below) or delete your account.
 
 What other travelers can see: signed-in users searching nearby see your
 display name, bio, interests, photos, gender (if you set one), whether
@@ -796,6 +799,24 @@ also report.
 You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
 profile, likes, matches, and blocks.
+
+**Removing your dating profile.** From the next version of the app, **Remove my
+travel profile**, at the bottom of your travel profile, turns discovery off and
+erases from our servers your display name, bio, interest tags, date of birth,
+gender, city and approximate position, and resets who you want to meet to
+everyone; its photos come off the profile at once (the files themselves: see the
+known gap below). An empty, switched-off profile record stays behind. Your likes,
+matches and blocks stay until you delete your account, and so does your
+buddy-profile draft — on your phone and in its restore copy with your account
+(described above) — so saving it publishes the profile again. Travelers who were
+already shown your profile may still have what their app saved of it. Until you
+have that version, email admin@nomadzachstudios.com and we'll remove your profile
+for you. **Known gap, disclosed September 30, 2026:** removing a photo from your
+profile, or removing the whole profile, takes the photo off your profile at once,
+but until a pending storage fix is applied the file itself stays in our storage
+at its unguessable web address — travelers who were shown your profile received
+that address, and anyone who has it can still open the file. It is deleted when
+you delete your account. If you want a photo file erased now, email us.
 
 ## Sharing your location on the map (optional)
 
@@ -992,6 +1013,14 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 30, 2026:** the dating section now describes **Remove my
+travel profile**, coming in the next version of the app: it erases your dating
+profile from our servers without deleting your account (until then, email us).
+Also a dated known gap: a photo you remove from your dating profile stays in our
+storage until a pending storage fix is applied or you delete your account. And
+the published-map section now says that, from the next version, a map pin no
+longer carries the caption of the post you saved the place from.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
