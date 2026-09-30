@@ -46,7 +46,8 @@ between your devices. When you're signed in we hold:
 
 - **Your email address**, used to sign you in. We send an **8-digit one-time
   code** to your email instead of using passwords — Pinorama has no password
-  to store.
+  to store. That email is delivered for us by Resend, our email-delivery
+  service (see the table below).
 - **Your profile** from onboarding: display name, avatar emoji, home base,
   traveler types, interests, and your Pinorama passport number — and, stored
   with it as a copy no other traveler can read: your other sign-up answers (the social
@@ -551,6 +552,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
+| Resend (Resend, Inc., USA) | Delivers the email with your sign-in code, for our server (since August 3, 2026) | Your email address and that message, with its one-time code. Nothing else about you |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 | Your phone's built-in map service (Apple on iPhone, Google on Android) | Draws the maps in the app, and turns a location reading into a city name, on your own device's request — see "Device location" above | The part of the map you are looking at (the map pictures for that area), and for a city name the coordinates of that one reading — both sent by your phone to its platform provider. Neither passes through our servers and we never see either |
 
@@ -1179,6 +1181,12 @@ lines out, and stops the app-open messages. The "Crash reports" paragraph now
 lists everything a report holds — including a random installation identifier
 and, on iPhone, a scrambled code made from the identifier the phone gives our apps, which
 it did not mention — with a dated known gap for the versions already on phones.
+
+**And one more from the same check, the sign-in email:** since August 3, 2026,
+the email with your sign-in code has been delivered for us by Resend, an
+email-delivery service, which receives your email address and that message.
+This page never named it; the sign-in line and the table of outside services
+now do.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
