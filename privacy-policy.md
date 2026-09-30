@@ -99,7 +99,10 @@ between your devices. When you're signed in we hold:
   liked something, and the last such day, stored with your account. **The
   number is public unless you make your profile private:** other travelers, and
   anyone using the app's public data interface even without an account, can read
-  it. The day itself is never shown to anyone else.
+  it. The app itself never shows another traveler's number, and once a pending
+  database update lands (after the next version of the app is on phones), readers
+  without an account can no longer read it. The day itself is never shown to
+  anyone else.
 - **Posts and likes** — text posts you choose to publish in the app. A post
   contains the text you write (a caption), an optional place name with its
   coordinates, and timestamps. Your posts, and a record of which posts you've
@@ -294,9 +297,17 @@ post can be seen by other signed-in users. Comments you write are visible on
 the post they're on to the same audience as the post itself. **Game nights go
 further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
-You can delete your own posts at any time; deleting your own comments does not
-go through yet (see the known gap below). Deleting your account removes your
-posts, likes, comments, and game nights along with everything else.
+You can delete your own posts at any time: a deleted post disappears for everyone
+at once and its words, place and location are erased (its photo: see the known
+gap below). Once a pending database update and the next version of the app are
+in, one thing changes: if someone had reported the post and that report is still
+open or under review when you delete it, we keep the post — its words, place,
+location and photo — hidden from everyone but our moderators, so the report can
+be dealt with; we do not yet erase it automatically once the report is closed
+(that clean-up is still being built), so email us if you want it gone. Deleting
+your own comments does not go through yet (see the known gap below). Deleting
+your account removes your posts, likes, comments, and game nights along with
+everything else.
 **Known gaps, disclosed September 29, 2026:** deleting a post removes it from the
 app at once, but **a photo you attached to it stays in our storage** at its
 unguessable web address — the post no longer shows it, though a place another
@@ -457,8 +468,8 @@ and driver live location during an active run.
   address Apple's or Google's notification service uses to reach this device,
   issued through Expo's push service — with your account id, whether it is an
   iPhone or an Android phone, and when it was last updated, only so we can send
-  you notifications. If you say no, nothing is stored. Deleting your account
-  deletes it.
+  you notifications. If you say no, nothing is stored. Signing out removes
+  this phone's token from your account, and deleting your account deletes it.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
   get locked out.
 - **Anonymous usage counts** — we don't currently measure how the app is used
@@ -1078,7 +1089,11 @@ and the next app version are in (a deleted comment or message has its text
 erased, unless a report of it we have not dismissed exists — then moderators
 keep it), and that a report filed after a deletion finds nothing to review
 unless an earlier report kept it. Game nights, not switched on yet, would hit
-the same refusal. The dated known gap sits in the social section.
+the same refusal. The dated known gap sits in the social section. The social
+section also says what the next update changes for posts: deleting a post
+someone has reported, while that report is open or under review, keeps the post
+for our moderators instead of erasing it. And the daily-streak line says a
+pending update stops readers without an account from reading your streak number.
 
 **And on September 30, from the continuing check of what leaves your phone:** the
 list of outside services now includes several your phone contacts directly that
