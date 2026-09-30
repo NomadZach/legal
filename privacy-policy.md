@@ -286,6 +286,15 @@ note this also happens if your session simply expires** — not only when you ta
 "sign out" — so if a check-in or a conversation matters to you, don't rely on it
 surviving on the device.
 
+**Your linked social accounts are set aside, not cleared — from the next version of the app.** When your session ends,
+the handles you linked (with the follower counts you typed, and any removal that hasn't reached our server yet) are
+moved aside on the phone under your account and hidden: while nobody is signed in, the app shows no linked accounts and
+lets no one change yours. They come back when you sign in again with the same account. If a different account signs in
+on this phone before you do, it sees its own linked accounts, never yours; yours come back from your account when you
+next sign in, but anything that only ever existed on this phone — a platform linked without a handle, or a removal that
+never reached our server — may not. Until that version, your linked accounts stay visible on the phone after you sign
+out, like the rest of your profile.
+
 **And one more clearing, on a different trigger — when the phone changes hands.**
 Your blocked list and your safety reports are treated differently on purpose.
 They are **not** cleared when you sign out or when your session expires, because
@@ -1161,6 +1170,10 @@ Also a dated known gap: a photo you remove from your dating profile stays in our
 storage until a pending storage fix is applied or you delete your account. And
 the published-map section now says that, from the next version, a map pin no
 longer carries the caption of the post you saved the place from.
+
+**Also on September 30 — linked social accounts at sign-out:** from the next version of the app, signing out sets the
+social accounts you linked aside on the phone and hides them until you sign in again with the same account. Until then
+they stay visible — and, on a shared phone, changeable — to whoever uses the app next.
 
 **Also on September 30:** we found that **deleting your own comment or city-chat
 message has never gone through** — our database refused it, so the comment or
