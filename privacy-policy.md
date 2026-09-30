@@ -581,6 +581,22 @@ Viator only the city being browsed — never your name, account, or location. Th
 tour photos you see are loaded by your phone straight from Viator's (Tripadvisor's)
 image servers, which see that the request came from your phone.
 
+## Partner websites you open from the app
+
+Not everything is booked inside Pinorama. Some buttons open a partner's own
+website in your browser instead — for example flights on Aviasales, hotels on
+Agoda, tours and tickets on Klook, GetYourGuide or Viator, and airport
+transfers, car and bike rental, intercity buses and trains, luggage storage,
+eSIMs, travel insurance, flight-delay compensation or a VPN from our other
+partners. **The link carries what you were looking at** — for example the
+route, the city, the dates or the country — so the partner can show you matching
+results, **and a partner code that tells them the visit came from Pinorama**, so
+we may earn a commission if you book. Some of these links first pass through an
+affiliate network (such as Travelpayouts or Awin) that records the click to
+credit us. Nothing else about you is added to the link — no name, email, account
+or location. Everything you do on the partner's website, including any booking
+and payment, is covered by that partner's own privacy policy, not this one.
+
 ## Hotel bookings (accommodation)
 
 When you book a hotel room in Pinorama we store a booking record: the email you
@@ -1130,6 +1146,12 @@ through our server to Anthropic's Claude, without your name or account). And
 the menu photo scan: the version now in use sends the photo to Anthropic's Claude
 as soon as it is taken, without asking; from the next version it asks before
 every scan — said in the Merchant menus line and the Anthropic row.
+
+**And one more from the same check:** this page never said that some buttons open
+a partner's website — Aviasales, Agoda, Klook and others — with what you were
+looking at and a partner code in the link, sometimes through an affiliate network
+that records the click. A new section, "Partner websites you open from the app",
+now says so.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
