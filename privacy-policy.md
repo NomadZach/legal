@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 25, 2026**
+**Effective date: September 29, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -250,7 +250,16 @@ further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
 You can delete any of your own posts, comments, or game nights at any time, and
 deleting your account removes your posts, likes, comments, and game nights
-along with everything else. **A map you publish is public in the same way** —
+along with everything else.
+**Known gap, disclosed September 29, 2026:** deleting a post removes it from the
+app at once, but **a photo you attached to it stays in our storage** at its
+unguessable web address — nothing in the app links to it any more, yet anyone
+who already has that address can still open it. If you want the photo itself
+gone, email admin@nomadzachstudios.com and we will delete it by hand. We would
+rather say so than let this policy promise more than the app does; the note
+comes out the day deleting a post also deletes its photo.
+
+**A map you publish is public in the same way** —
 see "Maps you publish" above: anyone can open it, including someone with no
 account.
 
@@ -901,6 +910,11 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — September 29, 2026:** a dated **known gap** under the social
+posts section: deleting a post removes it from the app, but a photo attached to
+it stays in our storage at its address until you ask us to delete it. Nothing
+else about what we collect or keep changed.
 
 **Changelog — September 25, 2026 (flight payments):** the flight section now says when the
 on-phone receipt is kept: not only when the fare hold runs out, but also when the booking is
