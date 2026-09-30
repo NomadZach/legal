@@ -115,9 +115,10 @@ between your devices. When you're signed in we hold:
   through the same profanity filter as city chat before they're stored, are
   rate-limited against flooding, and follow the post they're on: if a post is
   deleted or its author's profile isn't public, its comments disappear with
-  it. You can delete any of your own comments at any time (a deleted comment's
-  text stays hidden on our server — see the dated known gaps in the social
-  section below), other users can report a comment or block you (a block hides
+  it. **Deleting your own comment does not go through yet in the current
+  version of the app**, and once it does, a comment someone reported is kept
+  for our moderators (see the dated known gaps in the social section below).
+  Other users can report a comment or block you (a block hides
   everything you write from that person and removes any follow between the two
   of you — see "Blocking" under the dating section below, including its dated
   known gap), and deleting your account erases all your comments.
@@ -293,22 +294,39 @@ post can be seen by other signed-in users. Comments you write are visible on
 the post they're on to the same audience as the post itself. **Game nights go
 further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
-You can delete any of your own posts, comments, or game nights at any time, and
-deleting your account removes your posts, likes, comments, and game nights
-along with everything else.
+You can delete your own posts at any time; deleting your own comments does not
+go through yet (see the known gap below). Deleting your account removes your
+posts, likes, comments, and game nights along with everything else.
 **Known gaps, disclosed September 29, 2026:** deleting a post removes it from the
 app at once, but **a photo you attached to it stays in our storage** at its
 unguessable web address — the post no longer shows it, though a place another
 traveler saved from that post can still show it, and anyone who has the address
-can still open it. **A comment or game night you delete — and the comments on
-a post that is deleted —** disappear for everyone at once, but **their text and
-details stay hidden in our database** (for a game night: the venue, the sport
-and match, the time and the map location): a game night until you delete your
-account; a comment until its writer, or the post's author, deletes their
-account. If you want any of these erased now, email admin@nomadzachstudios.com
+can still open it. **The comments on a post that is deleted** disappear for
+everyone at once, but **their text stays on our server**, hidden from everyone
+except the post's author, until the comment's writer, or the post's author,
+deletes their account. **Game nights are not switched on yet**; if they are
+before the fix below lands, deleting one will not go through either. If you want
+any of these erased now, email admin@nomadzachstudios.com
 and we will do it by hand. We would rather say so than let this policy promise
 more than the app does; each note comes out the day the app deletes that item
 fully.
+**Known gap, disclosed September 30, 2026 — deleting your own comments and
+city-chat messages:** in the current version of the app, **deleting your own
+comment or city-chat message does not work.** Our database refuses it, so the
+comment or message stays up for everyone who could see it. A pending database
+update and the next version of the app fix it; until you have both, email
+admin@nomadzachstudios.com and we will delete it by hand. **Once that fix is
+in,** deleting a comment or a city-chat message takes it down for everyone at
+once and **erases its text** — unless someone reported it before you deleted it
+and we have not dismissed that report (it is open, under review, or was acted
+on): then the text is kept, readable only by our moderators, and we do not yet
+erase it afterwards (that clean-up is still being built), so email us if you
+want it gone. What stays either way is the hidden record that you wrote it,
+where and when: for a comment until you delete your account; for a city-chat
+message until our 30-day clean-up, which deletes every chat message — kept text
+included. And because deleting erases the text, **a report filed after you
+deleted something finds nothing left to review** — unless an earlier report we
+had not dismissed had already kept it.
 
 **A map you publish is public in the same way** —
 see "Maps you publish" above: anyone can open it, including someone with no
@@ -329,10 +347,13 @@ When you save a post, the app needs to turn text into a map pin:
   same place share one row. After 30 days it is fetched fresh. **Known gap,
   disclosed September 29, 2026:** older copies are no longer used, but they are
   not yet deleted automatically.
-- When a business owner types their venue's address in the partner sign-up,
-  the **typed text** is also sent, as they type, to Photon (an open geocoding
-  service by komoot running on the same OpenStreetMap data) to suggest
-  matching addresses. Only the typed text is sent.
+- When you type in the search box on Book's **Rooms** tab (a hotel name, an area
+  or a city — from the third letter), and when a business partner types their
+  venue's address in the Work hub, the **typed text** is also sent, as it is
+  typed, **from your phone** to Photon (an open geocoding service by komoot
+  running on the same OpenStreetMap data) to suggest matching places or
+  addresses. Only the typed text is sent; like any website, Photon sees that the
+  request came from your phone.
 - If you share a **TikTok, Instagram, or X (Twitter) link**, the app fetches
   that post's public caption **and, where the platform provides one, the
   post's small preview image** from the platform's official oEmbed endpoint (a
@@ -474,16 +495,18 @@ privacy documentation at sentry.io/privacy for their practices.
 | Service | What it does | What it receives |
 |---|---|---|
 | Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces, device model, OS version, app version. No name, email, or precise location attached by us |
-| OpenStreetMap Nominatim | Turns place text into map coordinates | The place text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way") |
-| Photon (komoot) | Suggests addresses while a business owner types their venue | The typed text only |
-| Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google |
+| OpenStreetMap Nominatim | Turns place text into map coordinates, and the city typed into a hotel search into that city | The place or city text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way"). **Known gap, disclosed September 30, 2026:** in the current version of the app, a hotel search made before the app has read its settings (for example on its very first launch) can send the typed city straight from your phone to Nominatim instead; the next version always goes through our server |
+| Photon (komoot) | Suggests places while you type in the Rooms search on Book, and addresses while a business partner types their venue | The typed text only, requested from your phone |
+| ExchangeRate-API (open.er-api.com), with Frankfurter (api.frankfurter.app) as a fallback | Today's currency exchange rates, so prices can be shown in your currency | A request for the day's rates against the US dollar, sent from your phone — usually no more than about twice a day. Nothing about you is in it; like any website, the service sees that the request came from your phone |
+| Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
+| Wikidata / Wikimedia Commons — **not switched on yet** | A free photo of a well-known place, and the place's own website, on its place page. Our server looks places up in Wikidata ahead of time; nobody's request is involved | Nothing about you reaches Wikidata. When such a photo is shown, your phone loads it straight from Wikimedia's image servers, which see that the request came from your phone |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
-| Your phone's built-in map service (Apple on iPhone, Google on Android) | Turns a location reading into a city name, on your own device's request — see "Device location" above | The coordinates of that one reading, sent by your phone to its platform provider. It does not pass through our servers and we never see it |
+| Your phone's built-in map service (Apple on iPhone, Google on Android) | Draws the maps in the app, and turns a location reading into a city name, on your own device's request — see "Device location" above | The part of the map you are looking at (the map pictures for that area), and for a city name the coordinates of that one reading — both sent by your phone to its platform provider. Neither passes through our servers and we never see either |
 
 Each of these services has its own privacy policy that governs its side of
 the exchange.
@@ -506,7 +529,9 @@ of adults — is sent to LiteAPI to get live prices, and those results may be he
 in a shared cache on our server for up to 30 minutes so that several travelers
 searching the same place for the same dates do not each trigger a fresh
 lookup.** That cache is keyed by the search terms alone: it holds no account id,
-no device id and nothing that identifies who ran the search.
+no device id and nothing that identifies who ran the search. The hotel photos you
+see are loaded by your phone straight from LiteAPI's image servers, which see that
+the request came from your phone.
 
 **LiteAPI (Nuitée) — flights:** flight prices and
 the flight booking itself come from LiteAPI. Flight booking is **live** (switched
@@ -520,7 +545,9 @@ keep.
 
 **Viator (Tripadvisor) — tours and activities (live since August 14, 2026):**
 tour and activity listings come from Viator's partner API. Our server sends
-Viator only the city being browsed — never your name, account, or location.
+Viator only the city being browsed — never your name, account, or location. The
+tour photos you see are loaded by your phone straight from Viator's (Tripadvisor's)
+image servers, which see that the request came from your phone.
 
 ## Hotel bookings (accommodation)
 
@@ -601,7 +628,8 @@ only by the account that made it.
 
 **Your card never touches Pinorama.** The card is entered into a payment form
 run by our supplier's payment provider and charged by them. The checkout page
-that form appears on is served by us, but the card details go straight from your
+that form appears on is ours — hosted on GitHub Pages, which like any web host
+sees that the request came from your phone — but the card details go straight from your
 phone to the payment provider — our servers only ever hold a reference to that
 payment, never a card number.
 
@@ -767,7 +795,9 @@ itself is sent to their app too** (it is not shown on screen) — never your leg
 name, email or exact location. **Known gap, disclosed September 29, 2026:** until
 a pending database update lands, the distance is worked out from your stored
 ~110 m position rather than the ~1 km grid, so it can be a little more precise
-than this paragraph describes. **Which genders you want to
+than this paragraph describes. That same pending update also stops sending the
+blurred position to other travelers' apps: once it lands, they receive only the
+whole-kilometre distance. **Which genders you want to
 meet is never shown to anyone** — it is only a filter. Who liked you is
 not shown
 to anyone; likes are stored server-side only to detect a mutual match. A
@@ -862,7 +892,12 @@ the reason you chose from the list, anything you typed in the optional note
 (500 characters maximum), your account id, and the time you filed it.
 
 **What we do with it:** a moderator reviews it and decides what happens to the
-reported content or account. We keep the report so we can act on repeat
+reported content or account. Once the fix for deleting comments and city-chat
+messages is in (see the dated known gap in the social section): if the author
+deletes a comment or city-chat message after you reported it, we keep its text
+for the moderator unless we dismissed your report; if they deleted it before
+anyone reported it, its text is already erased and there is nothing left for us
+to review. We keep the report so we can act on repeat
 behaviour — a single complaint and a tenth complaint about the same person are
 different situations.
 
@@ -899,9 +934,12 @@ shown to the room — other travelers only see what you choose to post.
 If you send a message, we store the message text, the room's city, your
 account id, and the time — and every signed-in traveler in that room can see
 the message with your display name. An anti-spam limit caps how fast anyone
-can post. You can delete your own messages at any time (they disappear from
-the room at once; the text itself stays on our server until our daily clean-up,
-which deletes every chat message once it is 30 days old), block other travelers (their messages stop appearing for you, on
+can post. **Deleting your own message does not go through yet in the current
+version of the app** (see the dated known gap in the social section); once it
+does, a deleted message disappears from the room at once and its text is erased,
+unless a report of it that we have not dismissed exists — then we keep the text,
+hidden, for our moderators. Our daily clean-up deletes every chat message once it
+is 30 days old. You can block other travelers (their messages stop appearing for you, on
 your device, immediately), and report messages — a report sends us the message
 you reported, the reason you picked, anything you typed, your account id, and
 the time, so a moderator can review it. Deleting your account permanently
@@ -1021,6 +1059,34 @@ Also a dated known gap: a photo you remove from your dating profile stays in our
 storage until a pending storage fix is applied or you delete your account. And
 the published-map section now says that, from the next version, a map pin no
 longer carries the caption of the post you saved the place from.
+
+**Also on September 30:** we found that **deleting your own comment or city-chat
+message has never gone through** — our database refused it, so the comment or
+message stayed up. This policy said the opposite: *"You can delete any of your
+own comments at any time (a deleted comment's text stays hidden on our server"*
+and, for city chat, *"they disappear from the room at once"*; and *"You can
+delete any of your own posts, comments, or game nights at any time"*. They now
+say what the current version does, what changes once a pending database update
+and the next app version are in (a deleted comment or message has its text
+erased, unless a report of it we have not dismissed exists — then moderators
+keep it), and that a report filed after a deletion finds nothing to review
+unless an earlier report kept it. Game nights, not switched on yet, would hit
+the same refusal. The dated known gap sits in the social section.
+
+**And on September 30, from the continuing check of what leaves your phone:** the
+list of outside services now includes several your phone contacts directly that
+this page did not describe. Since the September app version, typing in Book's
+Rooms search suggests places through Photon (the Photon row only mentioned
+business owners). The app fetches the day's currency exchange rates from
+ExchangeRate-API, with Frankfurter as a fallback. The photos on a place page and
+on your Saved tiles load from Google's image servers (the Google row said only
+that our server asks Google), hotel and tour photos load from LiteAPI's and
+Viator's image servers, the map pictures come from Apple or Google, and the card
+page is hosted on GitHub Pages. None of these carries anything about you; each
+is now described. One dated known gap, in the Nominatim row: the city typed into
+a hotel search could reach Nominatim straight from your phone before the app had
+read its settings, which the next version fixes. We also list, before it is
+switched on, the Wikimedia photo for well-known places.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
