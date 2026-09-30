@@ -26,9 +26,12 @@ before any of the "planned" items below go live.
 
 ### Without an account (local-only — the default)
 
-**If you don't sign in, everything you put into Pinorama stays on your
-device.** There is no server-side copy of your personal data. Data the app
-handles locally includes:
+**If you don't sign in, what you save in Pinorama stays on your device** —
+there is no account, and no server-side copy of the places, links, captions,
+answers and settings listed below. What does leave your phone — to look up a
+place, run a hotel or flight search, read a caption with AI when you agree,
+report a crash, or complete a booking you make (which we keep on our server) —
+is described further down this page. Data the app handles locally includes:
 
 - Places you save (name, coordinates, category, and the caption/notes)
 - Links to social media posts you share or paste in, and their captions
@@ -453,6 +456,14 @@ These uses are live in the main app:
   would rather this did not happen,
   turn Pinorama's location permission off in your phone's settings — the app
   falls back to your saved places and your profile's home base.
+- **How far a saved place is — from the next version of the app, no prompt,
+  and only if you have already granted the permission.** Your **Saved** list and
+  a place's page read your position the same way (the position your phone
+  already has, if it is under 30 minutes old, or one coarse fresh reading) to
+  show roughly how many minutes away each place is on foot and by car. **That
+  reading stays on your phone** — it is not sent to us or to anyone — and the
+  app keeps it in memory for five minutes. Without the permission, the line
+  simply isn't shown.
 
 Other optional location features are described in their own sections below:
 sharing your location on the map, the drop-off pin when you order a delivery,
@@ -484,6 +495,15 @@ and driver live location during an active run.
   iPhone or an Android phone, and when it was last updated, only so we can send
   you notifications. If you say no, nothing is stored. Signing out removes
   this phone's token from your account, and deleting your account deletes it.
+- **Booking tours in the app** — not switched on yet (today a tour opens on
+  Viator's own page). When it is, written here before we switch it on: to book a
+  tour, our server passes to Viator the lead traveler's name, email and phone,
+  and whatever that tour's operator asks for — which can include each
+  traveler's name, date of birth, passport details, height or weight, your
+  arrival or pickup details and special requirements. We keep the contact name
+  and email, the tour, date and price, the booking reference, the reference of
+  the card charge, and the voucher link — never those answers. The card is
+  entered on Viator's own hosted form.
 - **Phone or WhatsApp number** — optional, only for account recovery if you
   get locked out.
 - **Anonymous usage counts** — we don't currently measure how the app is used
@@ -634,7 +654,9 @@ record of a sale is something we have to keep for bookkeeping and tax. **If you 
 without being signed in**, that booking was never attached to an account, so
 deleting an account cannot find it. Email admin@nomadzachstudios.com with your
 booking reference and we will delete it by hand — the same rule as for flights,
-below.
+below. The same goes for a hotel booked while you were signed in if our server
+could not confirm your sign-in at the moment the booking completed (a sign-in
+that had just expired, for example): it is saved without your account.
 
 **A payment attempt that does not become a booking is recorded too** — even one
 you back out of on the card page — with the guest's email and the payment
@@ -713,7 +735,8 @@ price — kept only as long as bookkeeping and tax law require. One honest limit
 if you booked a flight **without being signed in**, that booking was never
 attached to an account, so deleting an account cannot find it. Email
 admin@nomadzachstudios.com with your booking reference and we will delete it by
-hand.
+hand. The same goes for a flight booked while you were signed in if our server
+could not confirm your sign-in when the booking completed.
 
 **Booking for someone else.** If you book a flight for another traveler, you are
 giving us their name, date of birth and travel document details. By doing that
@@ -724,8 +747,13 @@ document details pass through to the airline and are not stored by us.
 
 **Sign-in and request logs.** Our hosting provider (Supabase) records the IP
 address and the device or browser type of sign-ins (kept with your sign-in
-sessions) and of requests to our server, for security and troubleshooting. We
-don't use them to build a profile of you.
+sessions) and of requests to our server, for security and troubleshooting. A
+request's log entry also holds its web address — which part of our server it
+asked and what it asked for, such as an id or a city name — its time and
+result, and, when you're signed in, your account id. Request logs are kept for
+7 days. We don't use them to build a profile of you. (What you type — a
+message, a caption, a note — travels in the body of a request, which these
+logs do not keep.)
 
 If you don't have an account, your data lives only in your phone's local app
 storage, protected by your device's own security (passcode, encryption).
@@ -799,7 +827,10 @@ load" until the next hour; and the counts are deleted within about a day.
   parcel, the parcel record kept on your phone includes the **recipient's name,
   phone number and addresses**, and it stays there after you delete your
   account until you delete the app (see Express parcels below). We say this
-  because the list above would otherwise read as complete.
+  because the list above would otherwise read as complete. A hotel or flight
+  booked while our server could not confirm your sign-in is not linked to your
+  account either, so deleting your account cannot reach it — email us its
+  booking reference and we delete it by hand.
 - If you're in the EU/EEA/UK, the GDPR gives you rights to access, correct,
   delete, and port your data. If you're a California resident, the CCPA
   gives you similar rights, including the right to know we don't sell your
@@ -1190,6 +1221,23 @@ the email with your sign-in code has been delivered for us by Resend, an
 email-delivery service, which receives your email address and that message.
 This page never named it; the sign-in line and the table of outside services
 now do.
+
+**And five more from the same check:** the section on using the app without an
+account opened with *"everything you put into Pinorama stays on your device.
+There is no server-side copy of your personal data."* A place lookup, a search,
+an AI caption read you agree to, a crash report and a booking you make all leave
+your phone, as the rest of this page described, so it now says what stays and
+points to what leaves. The request-log line said our host records only the IP
+address and device type of a request; each entry also holds the request's web
+address (which part of our server it asked and what for, such as an id or a city
+name), its time and result, and your account id when you're signed in, for 7
+days — now said. A hotel or flight booked while our server could not confirm your sign-in is
+saved without your account, like a signed-out booking, so deleting your account
+cannot reach it: the hotel, flight and deletion lines now say so. From the next
+version, your Saved list and place pages read your position without asking,
+only if you have already allowed location, to show how far each place is; that
+reading stays on your phone. And a new "Planned" line says what booking a tour
+in the app will send to Viator, before it is switched on.
 
 **Changelog — September 29, 2026:** we checked every deletion promise in this
 policy against what the app does. **Newly described, because the app already did
