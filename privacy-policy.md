@@ -328,6 +328,15 @@ code made then, until an account signed in there opens its promo codes or adds, 
 version, the next person on the phone can see which roles you applied for and their status, and see and change your
 promo codes, and an application of yours that hadn't gone out yet could be sent as the next signed-in account's.
 
+**Your delivery orders and sent parcels show only to your account on the phone, too — from the next version of the
+app.** While nobody is signed in, or someone else is, the app shows none of the food orders or parcels you placed there,
+nobody else can remove them, and another account signing in never sends one of yours as its own. One an older version
+recorded for an account stays that account's; one the app can't tie to any account — placed while nobody was signed in,
+or by an older version that recorded none — belongs to no account until an account signed in on the phone opens its
+deliveries, places one or syncs them, which makes it that account's. Until that version, the next person on the phone
+can see an order or parcel that recorded no account (a sent parcel's record includes its recipient's name, phone number
+and addresses).
+
 **Your buddy-trip drafts show only to your account on the phone, too — from the next version of the app.** A trip you
 draft while signed in shows only to your account: while nobody is signed in, or someone else is, the travel-buddy board
 shows none of it, and nobody else can delete it there. A draft made while nobody was signed in, or before that version,
@@ -893,17 +902,20 @@ load" until the next hour; and the counts are deleted within about a day.
   deleted with your account; if you want those gone as well, delete the app.
   **From the next version of the app, deleting your account also removes from
   the phone** the booking notes, drafted meetups, planned posts, buddy-trip
-  drafts, joined city chats, partner applications, promo codes, dating filters
-  and AI-caption answer that belonged to it — and nothing that belongs to anyone
-  else who uses the phone. If the
+  drafts, joined city chats, partner applications, promo codes, delivery orders,
+  sent-parcel records, dating filters and AI-caption answer that belonged to it —
+  and nothing that belongs to anyone else who uses the phone. If the
   phone won't let the app remove some of them, the app tells you; nobody can
   open them, and deleting the app removes them. Until that version, they stay
   on the phone after you delete your account; deleting the app removes them.
   **One item on the phone is not yours alone:** if you ever sent an express
   parcel, the parcel record kept on your phone includes the **recipient's name,
-  phone number and addresses**, and it stays there after you delete your
-  account until you delete the app (see Express parcels below). We say this
-  because the list above would otherwise read as complete. A hotel or flight
+  phone number and addresses**. From the next version of the app it leaves the
+  phone with your account, as above — one sent with an older version once the app
+  has tied it to your account, which happens the next time an account opens its
+  deliveries, sends one or syncs them on the phone. Until then it stays there
+  after you delete your account until you delete the app (see Express parcels
+  below). We name it because it holds someone else's details. A hotel or flight
   booked while our server could not confirm your sign-in is not linked to your
   account either, so deleting your account cannot reach it — email us its
   booking reference and we delete it by hand.
@@ -1204,9 +1216,12 @@ once it's delivered — a **proof-of-delivery record**. The recipient does **not
 need a Pinorama account; their name and phone are information **you provide** for
 the delivery. By sending a parcel you confirm you're allowed to share those
 recipient details for this purpose. **A copy of each parcel record is also kept
-on your phone**, and that copy survives signing out and deleting your account —
-delete the app to remove it (disclosed September 14, 2026; an in-app eraser for
-it is a decision we have not made yet).
+on your phone**, and that copy survives signing out. From the next version of the
+app it shows only to the account that sent it on the phone, and deleting your
+account removes it (one sent with an older version, once the app has tied it to an
+account — the next time one opens its deliveries, sends one or syncs them there);
+until then it survives deleting your account too — delete the app to remove it
+(disclosed September 14, 2026).
 
 **Who can see a parcel.** You (the sender) see the full record. **The assigned
 courier** sees the recipient's name, phone, notes, and address **only while the
@@ -1256,6 +1271,11 @@ only to the account that made them on the phone, nobody else can change those pr
 in no longer sends an application that hadn't gone out yet as its own; ones made while nobody was signed in, or before
 that version, become the next signed-in account's. Until then they stay visible — and promo codes changeable — to
 whoever uses the app next.
+
+**Also on October 1 — delivery orders and sent parcels:** from the next version of the app, they show only to the
+account that placed them on the phone, another account signing in never sends one as its own, and deleting your account
+removes them from the phone — including a sent parcel's record of the recipient's details (an older one once the app has
+tied it to an account).
 
 **Changelog — September 30, 2026:** the dating section now describes **Remove my
 travel profile**, coming in the next version of the app: it erases your dating
