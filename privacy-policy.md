@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: September 30, 2026**
+**Effective date: October 1, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -1082,7 +1082,9 @@ room so you can meet travelers there. The app tells you the moment it happens,
 with a one-tap **leave** right on the same card. You can leave any room with
 one tap, a room you leave is never joined for you again, and dismissing a
 suggested city also stops it being auto-joined. Your booking details are never
-shown to the room — other travelers only see what you choose to post.
+shown to the room — other travelers only see what you choose to post. From the
+next version of the app, this happens only while you're signed in: with nobody
+signed in, a booking note joins no room.
 
 If you send a message, we store the message text, the room's city, your
 account id, and the time — and every signed-in traveler in that room can see
@@ -1101,6 +1103,17 @@ deletes your chat messages and the reports you filed.
 When you're signed in, we also remember **which city rooms you've joined** (the
 city and the time you joined) so your rooms sync across your devices. You can
 leave a room at any time, and deleting your account removes this too.
+
+**From the next version of the app, the rooms you joined show only to your
+account on the phone.** While nobody is signed in, or someone else is, the
+app lists none of them and nobody else can leave them there, and another
+account that signs in on the phone is no longer added to your rooms. A room
+joined while nobody was signed in, or before that version, isn't tied to an
+account yet: it stays listed — and can be left — for whoever uses the phone
+until an account signed in there next opens its city chats or joins one, which
+makes the room that account's. Until that version, your joined rooms stay
+listed — and can be left — on the phone after you sign out, and the next
+account to sign in there can be added to them too.
 
 ## Food delivery & express parcels (optional; not yet active)
 
@@ -1204,6 +1217,13 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — October 1, 2026 (joined city chats at sign-out):** from the next version of the app, the city chats an
+account joined show only to that account on the phone, nobody else can leave them there, and another account signing in
+on the phone is no longer added to them; a room joined while nobody was signed in, or before that version, stays listed
+for whoever uses the phone until an account signed in there next opens its city chats or joins one. And a booking joins
+its city's chat only while someone is signed in. Until then joined rooms stay listed — and can be left — after you sign
+out, and the next account to sign in there can be added to them too.
 
 **Changelog — September 30, 2026:** the dating section now describes **Remove my
 travel profile**, coming in the next version of the app: it erases your dating
