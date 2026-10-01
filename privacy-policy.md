@@ -136,7 +136,10 @@ between your devices. When you're signed in we hold:
   restaurant, influencer or host), we store which role you applied for and
   when, against your account. The application reuses details you've already
   given us — it collects no new personal information beyond that choice — and
-  no other user can see it. Deleting your account erases it.
+  no other user can see it. Deleting your account erases it. On a shared phone,
+  see "Your partner applications and promo codes show only to your account"
+  below — until the next version of the app, the next person on the phone can see
+  which roles you applied for and their status.
 - **Merchant menus** — if you run a restaurant and publish your menu in the
   app, we store what you publish: the restaurant's name, the dishes with
   their prices and currency, and when you last updated it. A published menu
@@ -314,6 +317,16 @@ version, belongs to no account and stays visible until the app next reads it wit
 that account's. Your dating filters are one setting per phone: if another account signs in on the phone and saves its
 own, they replace yours there. Until that version, all of these stay visible — and changeable — on the phone after you
 sign out.
+
+**Your partner applications and promo codes show only to your account on the phone, too — from the next version of
+the app.** While nobody is signed in, or someone else is, the app shows none of your partner applications or their
+status — and opens no merchant dashboard on them — and nobody else can change or delete the promo codes you made (the
+app keeps those only on the phone). Another account that signs in on the phone no longer sends an application of yours
+that hadn't gone out yet as its own. An application made while nobody was signed in, or before that version, belongs
+to no account until the app next runs with an account signed in on the phone, which makes it that account's; a promo
+code made then, until an account signed in there opens its promo codes or adds, changes or deletes one. Until that
+version, the next person on the phone can see which roles you applied for and their status, and see and change your
+promo codes, and an application of yours that hadn't gone out yet could be sent as the next signed-in account's.
 
 **Your buddy-trip drafts show only to your account on the phone, too — from the next version of the app.** A trip you
 draft while signed in shows only to your account: while nobody is signed in, or someone else is, the travel-buddy board
@@ -878,6 +891,14 @@ load" until the next hour; and the counts are deleted within about a day.
   device too** — your dating data and your conversations. **Your saved places,
   your profile, your notes and your points stay on the phone** and are not
   deleted with your account; if you want those gone as well, delete the app.
+  **From the next version of the app, deleting your account also removes from
+  the phone** the booking notes, drafted meetups, planned posts, buddy-trip
+  drafts, joined city chats, partner applications, promo codes, dating filters
+  and AI-caption answer that belonged to it — and nothing that belongs to anyone
+  else who uses the phone. If the
+  phone won't let the app remove some of them, the app tells you; nobody can
+  open them, and deleting the app removes them. Until that version, they stay
+  on the phone after you delete your account; deleting the app removes them.
   **One item on the phone is not yours alone:** if you ever sent an express
   parcel, the parcel record kept on your phone includes the **recipient's name,
   phone number and addresses**, and it stays there after you delete your
@@ -1224,6 +1245,17 @@ on the phone is no longer added to them; a room joined while nobody was signed i
 for whoever uses the phone until an account signed in there next opens its city chats or joins one. And a booking joins
 its city's chat only while someone is signed in. Until then joined rooms stay listed — and can be left — after you sign
 out, and the next account to sign in there can be added to them too.
+
+**Also on October 1 — deleting your account clears its records from the phone:** from the next version of the app,
+deleting your account also removes from the phone the booking notes, drafted meetups, planned posts, buddy-trip drafts,
+joined city chats, partner applications, promo codes, dating filters and AI-caption answer that belonged to it, and nothing
+anyone else's; if the phone won't let it remove some of them, the app says so.
+
+**Also on October 1 — partner applications and promo codes at sign-out:** from the next version of the app, they show
+only to the account that made them on the phone, nobody else can change those promo codes, and another account signing
+in no longer sends an application that hadn't gone out yet as its own; ones made while nobody was signed in, or before
+that version, become the next signed-in account's. Until then they stay visible — and promo codes changeable — to
+whoever uses the app next.
 
 **Changelog — September 30, 2026:** the dating section now describes **Remove my
 travel profile**, coming in the next version of the app: it erases your dating
