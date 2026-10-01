@@ -315,6 +315,15 @@ that account's. Your dating filters are one setting per phone: if another accoun
 own, they replace yours there. Until that version, all of these stay visible — and changeable — on the phone after you
 sign out.
 
+**Your buddy-trip drafts show only to your account on the phone, too — from the next version of the app.** A trip you
+draft while signed in shows only to your account: while nobody is signed in, or someone else is, the travel-buddy board
+shows none of it, and nobody else can delete it there. A draft made while nobody was signed in, or before that version,
+isn't tied to an account on the phone: it stays visible until the app next syncs with an account signed in, which makes
+it that account's — and deleting one while nobody is signed in removes it from the phone only, never from anyone's saved
+copy with us. So from that version, nobody can delete your saved copy with us from a phone you're not signed in on. Until
+that version, while nobody is signed in the board shows every draft on the phone, and deleting one there can also delete
+its account's saved copy with us.
+
 **And one more clearing, on a different trigger — when the phone changes hands.**
 Your blocked list and your safety reports are treated differently on purpose.
 They are **not** cleared when you sign out or when your session expires, because
@@ -428,6 +437,19 @@ When you save a post, the app needs to turn text into a map pin:
   to it — and you can turn this off any time under Settings → AI place
   detection. (This third-party-AI sharing is disclosed here and asked for
   in-app because it is your personal content leaving our systems.)
+  **From the next version of the app, an account's answer counts only for
+  that account.** If you're signed in, the phone keeps your answer with your
+  account (only on the phone — it's never sent to us), so anyone else who
+  uses the app on that phone — another account, or someone signed out — is
+  asked for their own answer, and your "Use AI" never sends their captions.
+  If nobody is signed in — or the app can't tell who is — the answer isn't
+  kept: it covers whoever uses the app on that phone until the app is fully
+  closed or someone signs in or out, and the question is asked again after
+  that. The phone keeps one signed-in answer at a time, so if another account
+  answers on it, you'll be asked again. Answers given before that version,
+  yes or no, no longer count, because the app can't tell whose they were:
+  you'll be asked again (once, if you're signed in). Until that version, one
+  answer on a phone covers everyone who uses the app on it.
 
 ### Device location (live — opt-in, foreground only, never in the background)
 
@@ -604,7 +626,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
 | Wikidata / Wikimedia Commons — **not switched on yet** | A free photo of a well-known place, and the place's own website, on its place page. Our server looks places up in Wikidata ahead of time; nobody's request is involved | Nothing about you reaches Wikidata. When such a photo is shown, your phone loads it straight from Wikimedia's image servers, which see that the request came from your phone |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
-| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after you have said yes (once, and you can change it in Settings); a menu photo, from the next version of the app, only after you say yes to that scan |
+| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after a yes on that phone — your account's own if you're signed in (asked once, and you can change it in Settings), or, while nobody is signed in, a yes given since the app was last fully closed or anyone signed in or out (until the next version of the app, one yes on a phone covers everyone who uses the app on it); a menu photo, from the next version of the app, only after you say yes to that scan |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
@@ -1195,6 +1217,11 @@ longer carries the caption of the post you saved the place from.
 social accounts you linked aside on the phone and hides them until you sign in again with the same account. Until then
 they stay visible — and, on a shared phone, changeable — to whoever uses the app next.
 
+**Also on September 30 — the AI caption question:** from the next version of the app, a signed-in answer counts only for
+the account that gave it; an answer given while nobody is signed in is never kept and covers whoever uses the app on that
+phone only until the app is fully closed or someone signs in or out. Answers given before that version no longer count.
+Until then, one answer on a phone covers everyone who uses the app on it.
+
 **Also on September 30 — your travel profile at sign-out:** from the next version of the app, while nobody is signed
 in the app hides the travel-buddy profile of the account that was signed in — including the lock its relationship
 status puts on the dating lane — and lets no one change it, until that account signs in again. Until then it stays
@@ -1203,6 +1230,11 @@ visible — and changeable — to whoever uses the app next.
 **Also on September 30 — booking notes, drafted meetups, dating filters and planned posts at sign-out:** from the next
 version of the app, each shows only to the account that made it — hidden, and not changeable, while nobody or another
 account is signed in. Until then they stay visible — and changeable — to whoever uses the app next.
+
+**Also on September 30 — buddy-trip drafts at sign-out:** from the next version of the app, a trip drafted while signed
+in shows only to that account on the phone, nobody else can delete it there, and nobody can delete an account's saved
+copy with us from a phone that account isn't signed in on. Until then, while nobody is signed in, the board shows every
+draft on the phone, and deleting one there can also delete its account's saved copy with us.
 
 **Also on September 30:** we found that **deleting your own comment or city-chat
 message has never gone through** — our database refused it, so the comment or
