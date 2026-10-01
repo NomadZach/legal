@@ -303,6 +303,18 @@ with the same account; a different account that signs in sees its own profile, n
 phone without ever signing in isn't hidden. Until that version, your travel profile stays visible — and changeable — on
 the phone after you sign out.
 
+**Your booking notes, drafted meetups, dating filters and planned posts show only to your account — from the next
+version of the app.** The app keeps these on the phone: the note it makes when you tell it you booked something at a
+partner (the hotel, flight or tour, the price you saw, the city and the dates), the meetups you draft, the dating filters
+you set (the ages you're looking for, interests and radius), and the posts you schedule (captions, times, location tags
+and the photos you picked). What you make while signed in shows only to your account: while nobody is signed in, or
+someone else is, the app shows none of it — not in Tickets, not as countries on your passport or world map, and not in
+Social's trip cards — and nobody else can change or delete it. Anything made while nobody was signed in, or before that
+version, belongs to no account and stays visible until the app next reads it with an account signed in, which makes it
+that account's. Your dating filters are one setting per phone: if another account signs in on the phone and saves its
+own, they replace yours there. Until that version, all of these stay visible — and changeable — on the phone after you
+sign out.
+
 **And one more clearing, on a different trigger — when the phone changes hands.**
 Your blocked list and your safety reports are treated differently on purpose.
 They are **not** cleared when you sign out or when your session expires, because
@@ -1187,6 +1199,10 @@ they stay visible — and, on a shared phone, changeable — to whoever uses the
 in the app hides the travel-buddy profile of the account that was signed in — including the lock its relationship
 status puts on the dating lane — and lets no one change it, until that account signs in again. Until then it stays
 visible — and changeable — to whoever uses the app next.
+
+**Also on September 30 — booking notes, drafted meetups, dating filters and planned posts at sign-out:** from the next
+version of the app, each shows only to the account that made it — hidden, and not changeable, while nobody or another
+account is signed in. Until then they stay visible — and changeable — to whoever uses the app next.
 
 **Also on September 30:** we found that **deleting your own comment or city-chat
 message has never gone through** — our database refused it, so the comment or
