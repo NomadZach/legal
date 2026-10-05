@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: October 1, 2026**
+**Effective date: October 5, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -645,7 +645,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | OpenStreetMap Nominatim | Turns place text into map coordinates, and the city typed into a hotel search into that city | The place or city text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way"). **Known gap, disclosed September 30, 2026:** in the current version of the app, a hotel search made before the app has read its settings (for example on its very first launch) can send the typed city straight from your phone to Nominatim instead; the next version always goes through our server |
 | Photon (komoot) | Suggests places while you type in the Rooms search on Book, and addresses while a business partner types their venue | The typed text only, requested from your phone |
 | ExchangeRate-API (open.er-api.com), with Frankfurter (api.frankfurter.app) as a fallback | Today's currency exchange rates, so prices can be shown in your currency | A request for the day's rates against the US dollar, sent from your phone — usually no more than about twice a day. Nothing about you is in it; like any website, the service sees that the request came from your phone |
-| Google Places API | Provides real place details — star ratings, review counts, price level, opening hours, photos, and review snippets — via our server | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
+| Google Places API | Provides real place details — star ratings, review counts, price level, opening hours and one photo — via our server, each time a place page opens (nothing of Google's is kept on our server — see "About Google place content" below) | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
 | Wikidata / Wikimedia Commons — **not switched on yet** | A free photo of a well-known place, and the place's own website, on its place page. Our server looks places up in Wikidata ahead of time; nobody's request is involved | Nothing about you reaches Wikidata. When such a photo is shown, your phone loads it straight from Wikimedia's image servers, which see that the request came from your phone |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after a yes on that phone — your account's own if you're signed in (asked once, and you can change it in Settings), or, while nobody is signed in, a yes given since the app was last fully closed or anyone signed in or out (until the next version of the app, one yes on a phone covers everyone who uses the app on it); a menu photo, from the next version of the app, only after you say yes to that scan |
@@ -659,12 +659,15 @@ privacy documentation at sentry.io/privacy for their practices.
 Each of these services has its own privacy policy that governs its side of
 the exchange.
 
-**About Google place content:** ratings, review counts, price levels, hours,
-photos, and review snippets shown on place pages are supplied by Google and
-displayed with "Powered by Google" attribution; review snippets link back to
-Google Maps. Our server reuses this place content for up to 7 days per place
-(older copies are no longer shown, but are not yet deleted automatically) to avoid
-repeated lookups — the cache holds place facts only, never
+**About Google place content:** ratings, review counts, price levels, hours
+and a photo shown on place pages are supplied by Google and displayed with
+"Powered by Google" attribution, with a link to the place's reviews on Google
+Maps. **Since October 5, 2026 our server keeps no copy of this content:** each
+time a place page opens, our server asks Google again. When Google finds nothing
+for a place, our server notes "nothing found" so it can wait 12 hours before
+asking again — that note holds no Google content and nothing about you. **Known
+gap:** copies saved before October 5, 2026 are no longer shown to anyone, but
+they are not yet deleted automatically; they hold place facts only, never
 anything about you. Google's own terms and privacy policy govern that content.
 
 **LiteAPI (Nuitée) — hotel search and paid hotel bookings (live since August
@@ -1254,6 +1257,18 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
+**Changelog — October 5, 2026 (Google place content):** our server no longer
+keeps a copy of Google's place content. Since today's server update, each place
+page asks Google again when it opens, and shows one photo and no review text (a
+link opens the place's reviews on Google Maps). This replaces *"Our server reuses
+this place content for up to 7 days per place (older copies are no longer shown,
+but are not yet deleted automatically)"* in "About Google place content", and
+*"photos, and review snippets"* in the Google row of Third-party services; it
+corrects the September 29 entry's *"the place-lookup and Google caches are no
+longer reused after 30 and 7 days"* for Google. Copies saved before today are no
+longer shown, but are not yet deleted automatically (a known gap). The
+place-lookup (OpenStreetMap) cache is unchanged.
+
 **Changelog — October 1, 2026 (joined city chats at sign-out):** from the next version of the app, the city chats an
 account joined show only to that account on the phone, nobody else can leave them there, and another account signing in
 on the phone is no longer added to them; a room joined while nobody was signed in, or before that version, stays listed
@@ -1412,7 +1427,8 @@ copy can stay while you have others, and newer drafts may not be backed up; unti
 a pending update, a block does not remove the other person's follow, the app now
 in the store does not remove yours, and either of you can still follow the other;
 the place-lookup and Google caches are no longer reused after 30 and 7 days but
-are not yet deleted automatically. Also corrected: your date of birth leaves your
+are not yet deleted automatically. *[Corrected October 5, 2026: since that day's
+server update the Google cache is not reused at all — see the October 5 entry.]* Also corrected: your date of birth leaves your
 dating profile only with your account — the app has no separate way to delete a
 dating profile — and a deleted chat message's text stays until the daily clean-up
 deletes every chat message once it is 30 days old.
