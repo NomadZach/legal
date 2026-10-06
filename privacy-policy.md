@@ -716,8 +716,8 @@ and payment, is covered by that partner's own privacy policy, not this one.
 ## Hotel bookings (accommodation)
 
 When you book a hotel room in Pinorama we store a booking record: the email you
-enter at checkout (the guest's name goes to the supplier with the booking, but we
-don't keep it), the hotel, the stay dates, the price and
+enter at checkout (the guest's name goes to the supplier with the booking, but our
+server doesn't keep it), the hotel, the stay dates, the price and
 currency, the supplier's booking reference, and whether the booking was made in
 the test ("sandbox") or live environment. We use this to show the booking in
 your app, deliver your confirmation, and handle cancellation and support. The
@@ -740,6 +740,18 @@ you back out of on the card page — with the guest's email and the payment
 reference, plus the hotel, dates, price and the hotel's booking reference when we
 have them, so a charge can be traced and returned. It is kept and deleted like a
 booking record.
+
+**While a hotel payment is in progress, a short note stays on your phone** so the
+app can finish the booking if it is closed or crashes mid-payment, and can settle an
+earlier payment before it starts a new one: the payment references, the amount and
+currency, when you started paying, the guest name and email on the checkout form,
+and — when you were signed in — your own account's user id. It goes once the
+booking is settled one way or the other; when a payment does not become a booking, a
+small receipt takes its place (see "Small receipts kept on your phone" below — a
+receipt never holds the name or email). If it is still there after two days, the app
+settles it the next time it checks your hotel bookings, keeping a receipt in its
+place when your bookings list can't show the booking. Signing out does not remove
+it, and neither does deleting your account; deleting the app does.
 
 ## Flight bookings (air travel)
 
@@ -842,8 +854,9 @@ week.
 If you don't have an account, your data lives only in your phone's local app
 storage, protected by your device's own security (passcode, encryption).
 There's no server copy to leak — **with one exception: a hotel or flight you
-book while signed out is a record on our server** (the contact name and email
-the booking needs, the booking reference, price, dates and route), because a
+book while signed out is a record on our server** (the email — and for a flight
+the contact name — the booking needs, the booking reference, price and dates, and a
+flight's route), because a
 supplier cannot deliver a booking to a record that does not exist. No account
 deletion can reach that record; it stays until you email us to delete it (see
 the Hotel and Flight sections). Local-only also means **we can't recover your
@@ -852,8 +865,9 @@ data if you delete the app or lose your phone**.
 **Small receipts kept on your phone (hotels, flights and tours).** Two kinds of
 booking receipt can be kept on the phone itself: one when a payment attempt did
 not become a booking (the hold ran out, the supplier said no, or we could not
-confirm the outcome), and one when a booking you made **while signed out**
-succeeded. Each holds only references (the hold or cart id, the payment
+confirm the outcome), and one when a booking succeeded that your bookings list
+can't show — because you made it **while signed out**, or because our server could
+not confirm your sign-in at the moment it completed. Each holds only references (the hold or cart id, the payment
 reference, the confirmation code or booking reference), the dates, the amount
 and currency, for a hotel or tour its name, for a flight the route (the two
 airport codes), and — when you were signed in — your own account's user id,
@@ -863,8 +877,10 @@ the session that made it: a signed-in account sees its own, and a receipt made
 while signed out is shown to the signed-out session on that phone and never to
 any signed-in account. It survives signing out until you remove it with its own
 "Remove this receipt" control under My bookings (whether it should also be
-cleared by signing out is an open decision, dated September 24, 2026). Nothing
-about these receipts is sent anywhere.
+cleared by signing out is an open decision, dated September 24, 2026). Deleting
+your account does not remove one either: a receipt that belonged to a deleted
+account can no longer be shown or removed in the app, and deleting the app removes
+it. Nothing about these receipts is sent anywhere.
 
 If you have an account, a copy is also stored on Supabase, protected by
 industry-standard encryption in transit and at rest, with database access
@@ -1260,6 +1276,21 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — October 6, 2026 (the hotel payment note on your phone, and three
+corrections):** the Hotel bookings section now says what the app keeps on your phone
+while a hotel payment is in progress — the payment references, the amount, when you
+started paying, the guest name and email and, when signed in, your account's user id
+— and when it goes; neither signing out nor deleting your account removes it. That
+note has been part of hotel checkout since August 2026; the page never mentioned it.
+This was a gap rather than a false statement. Corrected in the same pass:
+"Small receipts" said a booking receipt is kept only for a booking made while signed
+out — it read "one when a booking you made while signed out succeeded" — but since
+September 24 one is also kept when our server could not confirm your sign-in; it now
+says so, and that deleting your account does not remove a receipt. The signed-out
+booking record was said to hold "the contact name and email the booking needs" — a
+hotel's holds the email only. And "we don't keep" the hotel guest's name now says it
+is our server that doesn't keep it.
 
 **Changelog — October 6, 2026 (server logs):** added "Our server's own logs"
 under Sign-in and request logs. The functions on our server keep booking
