@@ -832,6 +832,13 @@ result, and, when you're signed in, your account id. Request logs are kept for
 message, a caption, a note — travels in the body of a request, which these
 logs do not keep.)
 
+**Our server's own logs.** Separately, the functions that run on our server
+keep their own log, to sort out a booking that fails. It holds booking
+references — the reservation, confirmation and booking codes our partners give
+us, and, where a payment could not be recorded, that payment's transaction id —
+never your name, email address or phone number. These logs are kept for about a
+week.
+
 If you don't have an account, your data lives only in your phone's local app
 storage, protected by your device's own security (passcode, encryption).
 There's no server copy to leak — **with one exception: a hotel or flight you
@@ -1253,6 +1260,12 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — October 6, 2026 (server logs):** added "Our server's own logs"
+under Sign-in and request logs. The functions on our server keep booking
+references in their own logs for about a week, and no names, email addresses or
+phone numbers. This was a gap rather than a false statement: those logs existed,
+and this page did not mention them.
 
 **Changelog — October 6, 2026 (follow records):** the database fix this page
 promised on September 13 was applied on October 5, so the known gap under Follows
