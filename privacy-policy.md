@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: October 6, 2026**
+**Effective date: October 12, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -716,13 +716,13 @@ and payment, is covered by that partner's own privacy policy, not this one.
 ## Hotel bookings (accommodation)
 
 When you book a hotel room in Pinorama we store a booking record: the email you
-enter at checkout (the guest's name goes to the supplier with the booking, but our
-server doesn't keep it), the hotel, the stay dates, the price and
+enter at checkout (the guest's name and phone number go to the supplier with the booking, but our
+server doesn't keep them), the hotel, the stay dates, the price and
 currency, the supplier's booking reference, and whether the booking was made in
 the test ("sandbox") or live environment. We use this to show the booking in
 your app, deliver your confirmation, and handle cancellation and support. The
-guest name and email are passed to the accommodation supplier (LiteAPI/Nuitée)
-so the hotel knows who is arriving — that is what a booking is. **Your card
+guest name, email and phone number are passed to the accommodation supplier (LiteAPI/Nuitée)
+so the hotel knows who is arriving and can reach you — that is what a booking is. **Your card
 details never touch Pinorama:** the card is entered on the payment processor's
 hosted form and processed by them as merchant of record. Deleting your account
 removes your email from your booking records and unlinks them from your account;
@@ -743,12 +743,12 @@ booking record.
 
 **While a hotel payment is in progress, a short note stays on your phone** so the
 app can finish the booking if it is closed or crashes mid-payment, and can settle an
-earlier payment before it starts a new one: the payment references, the amount and
-currency, when you started paying, the guest name and email on the checkout form,
+earlier payment before it starts a new one: the payment references, which hotel the
+payment is for, the amount and currency, when you started paying, the guest name, email and phone number on the checkout form,
 and — when you were signed in — your own account's user id. It goes once the
 booking is settled one way or the other; when a payment does not become a booking, a
 small receipt takes its place (see "Small receipts kept on your phone" below — a
-receipt never holds the name or email). If it is still there after two days, the app
+receipt never holds the name, email or phone number). If it is still there after two days, the app
 settles it the next time it checks your hotel bookings, keeping a receipt in its
 place when your bookings list can't show the booking. Signing out does not remove
 it, and neither does deleting your account; deleting the app does.
@@ -871,8 +871,10 @@ not confirm your sign-in at the moment it completed. Each holds only references 
 reference, the confirmation code or booking reference), the dates, the amount
 and currency, for a hotel or tour its name, for a flight the route (the two
 airport codes), and — when you were signed in — your own account's user id,
-which is what lets your account see its own receipts — **never your name, email
-or card details, and never a ticket or voucher link.** A receipt is shown only to
+which is what lets your account see its own receipts; when the booking system
+refused a hotel booking because it did not accept the phone number, the receipt
+also records that reason — never the number. **Never your name, email or card
+details, and never a ticket or voucher link.** A receipt is shown only to
 the session that made it: a signed-in account sees its own, and a receipt made
 while signed out is shown to the signed-out session on that phone and never to
 any signed-in account. It survives signing out until you remove it with its own
@@ -881,6 +883,12 @@ cleared by signing out is an open decision, dated September 24, 2026). Deleting
 your account does not remove one either: a receipt that belonged to a deleted
 account can no longer be shown or removed in the app, and deleting the app removes
 it. Nothing about these receipts is sent anywhere.
+
+A third, short-lived note sits beside them: when a booking is confirmed while you
+are not looking at the screen, the app keeps its booking reference on your phone
+until the confirmation is shown or the next time you pay — at most two days (one
+day for flights) — so it can ask before you pay twice; never the name, email or
+card. Nothing about it is sent anywhere either.
 
 If you have an account, a copy is also stored on Supabase, protected by
 industry-standard encryption in transit and at rest, with database access
@@ -1276,6 +1284,16 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — October 12, 2026 (what the phone keeps during and after a hotel or flight
+payment):** three additions for the version of the app built on October 12, 2026. The hotel
+payment note on your phone now also names which hotel the payment is for. A small receipt kept
+when the booking system refused a hotel booking because it did not accept the phone number now
+records that reason — never the number. And a third, short-lived note is described: when a
+booking is confirmed while you are not looking at the screen, the app keeps its booking reference
+on your phone until the confirmation is shown or the next time you pay — at most two days (one
+day for flights) — so it can ask before you pay twice; never the name, email or card. Nothing else
+changed.
 
 **Changelog — October 6, 2026 (the hotel payment note on your phone, and three
 corrections):** the Hotel bookings section now says what the app keeps on your phone
