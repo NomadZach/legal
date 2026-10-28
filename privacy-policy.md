@@ -1106,7 +1106,7 @@ directions, and deleting your account permanently deletes your messages.
 
 ## Reporting content and people
 
-Every place you can report something — a post, a comment, a direct message, a
+Every place you can report something — a post, a comment, a traveler's profile, a direct message, a
 city-chat message, a dating profile, a place, or a creator's published map —
 sends the report to us so a person can look at it. Apple requires this for apps with user-generated content,
 and we would want it anyway.
@@ -1298,8 +1298,9 @@ feed does not use that record yet, so the person you blocked can still read your
 and comments until a pending database update lands. Also corrected: a block you make in a
 live city chat room has been recorded on our server since September 23, 2026 and comes back
 when you sign in, like a block from a dating deck, a match, a profile, a post or a comment;
-this page had said city-chat blocks stayed on your phone. Nothing about what we collect or
-keep changed.
+this page had said city-chat blocks stayed on your phone. And "a traveler's profile" joins the
+list of things you can report, ahead of the version of the app that adds that report button.
+Nothing about what we collect or keep changed.
 
 **Changelog — October 12, 2026 (what the phone keeps during and after a hotel or flight
 payment):** three additions for the version of the app built on October 12, 2026. The hotel
