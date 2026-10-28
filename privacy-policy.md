@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: October 12, 2026**
+**Effective date: October 28, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -131,7 +131,7 @@ between your devices. When you're signed in we hold:
   Other users can report a comment or block you (a block hides
   everything you write from that person and removes any follow between the two
   of you — see "Blocking" under the dating section below, including its dated
-  known gap), and deleting your account erases all your comments.
+  known gaps), and deleting your account erases all your comments.
 - **Partner applications** — if you apply to work with Pinorama (as a driver,
   restaurant, influencer or host), we store which role you applied for and
   when, against your account. The application reuses details you've already
@@ -1041,7 +1041,12 @@ them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
-also report.
+also report. **Known gap, disclosed October 28, 2026:** for posts and comments in
+the feed, our server records your block, but until a pending database update
+lands it does not yet use that record when it serves the feed, so a traveler you
+blocked can still read your posts and comments — they no longer appear to you,
+but you still appear to them there. Your app hides theirs from you at once; the
+server-side half arrives with that update.
 
 You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
@@ -1284,6 +1289,12 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — October 28, 2026 (blocking in the feed):** "Blocking" gains a dated
+known gap: for posts and comments in the feed, a block is recorded on our server, but the
+feed does not use that record yet, so the person you blocked can still read your posts
+and comments until a pending database update lands. Nothing about what we collect or
+keep changed.
 
 **Changelog — October 12, 2026 (what the phone keeps during and after a hotel or flight
 payment):** three additions for the version of the app built on October 12, 2026. The hotel
