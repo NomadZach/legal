@@ -352,10 +352,11 @@ device to its next user. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
 them again. The exception is a block that is also recorded on our server
-(a block made from a dating deck, a match, a traveler's profile, or a post or
-comment — see "Blocking" below): those are restored to this list when you sign
-in. For city-chat blocks, the code to do the same is written and switched off —
-when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
+(a block made from a dating deck, a match, a traveler's profile, a live city
+chat room, or a post or comment — see "Blocking" below): those are restored to
+this list when you sign in. City-chat blocks made before September 23, 2026
+were kept on the phone only; the code that copies those to your account is
+written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -1023,8 +1024,8 @@ visible only to the two people in it.
 
 Blocking is two-way and immediate. **Where the block is kept depends on the
 surface:** a block you make from a dating deck, a match, a traveler's profile,
-or a post or comment in the feed is recorded on our server as well as on your
-device. That server record is what stops the other person reaching you even
+a live city chat room, or a post or comment in the feed is recorded on our server
+as well as on your device. That server record is what stops the other person reaching you even
 from their own phone. **It also removes any follow between the two of you, in
 both directions, and prevents either of you from following the other again
 while the block stands. Unblocking lifts the block but does not bring the
@@ -1033,9 +1034,10 @@ follow back** — either of you may follow again later as a fresh choice.
 lands, a block does not remove the other person's follow of you, and the version
 of the app now in use does not remove your follow of them either; either of
 you can still follow the other while the block stands. A block
-you make inside a city chat room is kept **on your device** only, so it protects
-you immediately and does not follow you to a new phone — see "your blocked
-list lives on this phone" above. Either way, a blocked traveler no longer
+you made inside a city chat room before September 23, 2026, or one you make in the
+sample room (whose senders are invented), is kept **on your device** only, so it
+protects you immediately and does not follow you to a new phone — see "your
+blocked list lives on this phone" above. Either way, a blocked traveler no longer
 appears to you nor you to
 them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
@@ -1293,7 +1295,10 @@ project repository.
 **Changelog — October 28, 2026 (blocking in the feed):** "Blocking" gains a dated
 known gap: for posts and comments in the feed, a block is recorded on our server, but the
 feed does not use that record yet, so the person you blocked can still read your posts
-and comments until a pending database update lands. Nothing about what we collect or
+and comments until a pending database update lands. Also corrected: a block you make in a
+live city chat room has been recorded on our server since September 23, 2026 and comes back
+when you sign in, like a block from a dating deck, a match, a profile, a post or a comment;
+this page had said city-chat blocks stayed on your phone. Nothing about what we collect or
 keep changed.
 
 **Changelog — October 12, 2026 (what the phone keeps during and after a hotel or flight
