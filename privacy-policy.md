@@ -128,10 +128,10 @@ between your devices. When you're signed in we hold:
   it. **Deleting your own comment does not go through yet in the current
   version of the app**, and once it does, a comment someone reported is kept
   for our moderators (see the dated known gaps in the social section below).
-  Other users can report a comment or block you (a block hides
-  everything you write from that person and removes any follow between the two
-  of you — see "Blocking" under the dating section below, including its dated
-  known gaps), and deleting your account erases all your comments.
+  Other users can report a comment or block you (what a block hides, and
+  whether it removes a follow between the two of you, depends on where it is
+  made and on the version of the app — see "Blocking" under the dating section
+  below, including its dated known gaps), and deleting your account erases all your comments.
 - **Partner applications** — if you apply to work with Pinorama (as a driver,
   restaurant, influencer or host), we store which role you applied for and
   when, against your account. The application reuses details you've already
@@ -351,12 +351,15 @@ changed hands, and both lists name other people, so they should not follow the
 device to its next user. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
-them again. The exception is a block that is also recorded on our server
-(a block made from a dating deck, a match, a traveler's profile, a live city
-chat room, or a post or comment — see "Blocking" below): those are restored to
-this list when you sign in. City-chat blocks made before September 23, 2026
-were kept on the phone only; the code that copies those to your account is
-written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
+them again. The exception is a block that is also recorded on our server (in
+the version of the app now in use, a block made from a dating deck, a match or a
+dating profile; from the next app update, also one made from a traveler's
+profile, a live city chat room, or a post or comment — see "Blocking" below):
+the version now in use puts those back on this list when you open the safety
+center, and the next app update does it as soon as you sign in. City-chat blocks
+made in the version now in use stay on the phone only; the code that copies
+those to your account is written and switched off — when we turn it on we will
+say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -1023,32 +1026,33 @@ match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
 Blocking is two-way and immediate. **Where the block is kept depends on the
-surface:** a block you make from a dating deck, a match, a traveler's profile,
-a live city chat room, or a post or comment in the feed is recorded on our server
-as well as on your device. That server record is what stops the other person reaching you even
+surface:** a block you make from a dating deck, a match or a dating profile is
+recorded on our server as well as on your device. That server record is what stops the other person reaching you even
 from their own phone. **It also removes any follow between the two of you, in
 both directions, and prevents either of you from following the other again
 while the block stands. Unblocking lifts the block but does not bring the
 follow back** — either of you may follow again later as a fresh choice.
-**Known gap, disclosed September 29, 2026:** until a pending database update
-lands, a block does not remove the other person's follow of you, and the version
-of the app now in use does not remove your follow of them either; either of
-you can still follow the other while the block stands. A block
-you made inside a city chat room before September 23, 2026, or one you make in the
-sample room (whose senders are invented), is kept **on your device** only, so it
-protects you immediately and does not follow you to a new phone — see "your
-blocked list lives on this phone" above. Either way, a blocked traveler no longer
-appears to you nor you to
+**Known gap, disclosed October 28, 2026:** the version of the app now in use
+(built September 7, 2026) records only blocks made from a dating deck, a match
+or a dating profile on our server — those remove any follow between you, both
+ways, since October 5, 2026. A block made in that version from a traveler's
+profile, the feed or a city chat room stays on your phone and does not remove a
+follow; the next app update records those on our server as described above. A
+block you make in the sample city chat room (whose senders are invented) is
+always kept **on your device** only, so it protects you immediately and does not
+follow you to a new phone — see "your blocked list lives on this phone" above. A
+blocked traveler no longer appears to you; where the block is recorded on our
+server, you also stop appearing to
 them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
 also report. **Known gap, disclosed October 28, 2026:** for posts and comments in
-the feed, our server records your block, but until a pending database update
-lands it does not yet use that record when it serves the feed, so a traveler you
-blocked can still read your posts and comments — they no longer appear to you,
-but you still appear to them there. Your app hides theirs from you at once; the
-server-side half arrives with that update.
+the feed, a block is not recorded on our server at all in the version of the app
+now in use; from the next app update it is, but the feed does not use that record
+until a pending database update lands. Until then a traveler you blocked can still
+read your posts and comments — they no longer appear to you, but you still appear
+to them there. Your app hides theirs from you at once.
 
 You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
@@ -1101,8 +1105,10 @@ can send each other **direct messages**. Messages are stored on our servers
 so they can be delivered, and each message is visible **only to the two of
 you** — no other user can read it. We store the message text, who sent it to
 whom, the time, and whether it was read. An anti-spam limit caps how fast
-anyone can send. Blocking a traveler stops messages between you in both
-directions, and deleting your account permanently deletes your messages.
+anyone can send. Blocking a traveler from the match or from your chat with them
+stops messages between you in both directions (a block made from their profile
+does so from the next app update — see "Blocking"), and deleting your account
+permanently deletes your messages.
 
 ## Reporting content and people
 
@@ -1292,14 +1298,23 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — October 28, 2026 (blocking in the feed):** "Blocking" gains a dated
-known gap: for posts and comments in the feed, a block is recorded on our server, but the
-feed does not use that record yet, so the person you blocked can still read your posts
-and comments until a pending database update lands. Also corrected: a block you make in a
-live city chat room has been recorded on our server since September 23, 2026 and comes back
-when you sign in, like a block from a dating deck, a match, a profile, a post or a comment;
-this page had said city-chat blocks stayed on your phone. And "a traveler's profile" joins the
-list of things you can report, ahead of the version of the app that adds that report button.
+**Changelog — October 28, 2026 (blocking):** "Blocking" now describes the version of the app
+in people's hands (built September 7, 2026) and, separately, the next app update. In the
+version now in use only blocks made from a dating deck, a match or a dating profile are
+recorded on our server — since our database update of October 5, 2026 they remove any follow
+between you, both ways — and they come back to your list when you open the safety center;
+blocks made from a traveler's profile, the feed or a city chat room stay on your phone. From
+the next app update those are recorded on our server too, and blocks come back when you sign
+in. Earlier today this page said those blocks were already recorded on our server ("since
+September 23, 2026" for city chat); that described the next update, not the version in use,
+and is corrected here. For posts and comments in the feed, even a recorded block is not used by
+the feed until a pending database update lands. Retired: the September 29, 2026 known gap ("until
+a pending database update lands, a block does not remove the other person's follow of you, and
+the version of the app now in use does not remove your follow of them either") — that database
+update landed on October 5, 2026, and what still differs is which surfaces record a block, not
+which follow is removed. Messages: blocking stops them both ways when the block is made from the
+match or your chat; from their profile, from the next app update. And "a traveler's profile" joins
+the list of things you can report, ahead of the version of the app that adds that report button.
 Nothing about what we collect or keep changed.
 
 **Changelog — October 12, 2026 (what the phone keeps during and after a hotel or flight
