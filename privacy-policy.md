@@ -706,7 +706,9 @@ you type at checkout go to them and on into the airline's booking system so a
 ticket can be issued in your name, and your card is entered into a payment form
 run by their payment provider. See the "Flight bookings" section below for
 exactly what leaves your phone, what we keep, and what we deliberately do not
-keep.
+keep. From the next app update, the airline logos on flight results are loaded by
+your phone straight from the image server the flight supplier's data names, which
+sees that the request came from your phone and which airline's logo it asked for.
 
 **Viator (Tripadvisor) — tours and activities (live since August 14, 2026):**
 tour and activity listings come from Viator's partner API. Our server sends
@@ -1330,6 +1332,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 4, 2026 (airline logos):** ahead of the next app update. Flight results will show an airline's logo when the flight supplier's data gives one, and your phone loads that picture straight from the image server the data names, which sees that the request came from your phone and which airline's logo it asked for. Nothing else changed.
 
 **Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Also corrected the same day. A dated known gap: when one person signs out and another signs in on the same phone, the first person's blocked list, report history and any unsent report stay on that phone, and an unsent report can be sent under the new account. The next app update ends that gap, and to do it the phone keeps one account id after sign-out, a random code with no name or email in it, only to tell when a different account signs in; it stays on the phone, and a different account signing in replaces it. Earlier today this page said it was removed once that check had run; it is not, because removing it would reopen the gap the next time the phone changes hands. Retired: "you can see the reports you filed" (the app has no such screen) and "anything you typed in the optional note (500 characters maximum)" with its two shorter forms (no report in the app sends a note, so we were describing more than we collect). "the time you filed it" is now "the time it reached us", because an unsent report is stamped on arrival. On the social map, "Blocking a traveler stops the sharing between you" now says which blocks do. Nothing else about what we collect or keep changed.
 
