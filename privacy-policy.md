@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: October 28, 2026**
+**Effective date: November 4, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -353,13 +353,14 @@ copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
 them again. The exception is a block that is also recorded on our server (in
 the version of the app now in use, a block made from a dating deck, a match or a
-dating profile; from the next app update, also one made from a traveler's
-profile, a live city chat room, or a post or comment — see "Blocking" below):
+dating profile; from the next app update, also a new one made from a traveler's
+profile, a creator's map, a live city chat room, or a post or comment — see
+"Blocking" below):
 the version now in use puts those back on this list when you open the safety
-center, and the next app update does it as soon as you sign in. City-chat blocks
-made in the version now in use stay on the phone only; the code that copies
-those to your account is written and switched off — when we turn it on we will
-say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
+center, and the next app update does it as soon as you sign in. A block made from
+any other surface in the version now in use stays on the phone only, and updating
+the app does not copy it to your account. For city-chat blocks, the code that
+copies them is written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
 too: every post shows its like count, and the fact that your account liked a
@@ -1025,8 +1026,8 @@ to anyone; likes are stored server-side only to detect a mutual match. A
 match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
-Blocking is two-way and immediate. **Where the block is kept depends on the
-surface:** a block you make from a dating deck, a match or a dating profile is
+A block takes effect on your phone immediately. **Whether it also holds on the
+other person's phone depends on where you made it:** a block you make from a dating deck, a match or a dating profile is
 recorded on our server as well as on your device. That server record is what stops the other person reaching you even
 from their own phone. **It also removes any follow between the two of you, in
 both directions, and prevents either of you from following the other again
@@ -1037,12 +1038,19 @@ follow back** — either of you may follow again later as a fresh choice.
 or a dating profile on our server — those remove any follow between you, both
 ways, since October 5, 2026. A block made in that version from a traveler's
 profile, the feed or a city chat room stays on your phone and does not remove a
-follow; the next app update records those on our server as described above. A
+follow, and updating the app does not change that: to put one on our server,
+unblock that traveler and block them again after the update. From the next app
+update, a new block made from a traveler's profile, a creator's map, the feed or a
+live city chat room is recorded on our server as described above. A
 block you make in the sample city chat room (whose senders are invented) is
 always kept **on your device** only, so it protects you immediately and does not
 follow you to a new phone — see "your blocked list lives on this phone" above. A
-blocked traveler no longer appears to you; where the block is recorded on our
-server, you also stop appearing to
+blocked traveler's posts, comments, messages and cards stop appearing to you on
+this phone. A block never stops them finding your public profile, your entry in
+the travelers directory or your published maps: blocking hides those only from
+you, and making your profile private is what hides yours from everyone. Where the
+block is recorded on our server, the dating deck, your matches, direct messages and
+live city chat rooms stop showing you to
 them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, anything you typed in the note, your
 account id, and the time — so a moderator can review it and act. Blocking is
@@ -1107,7 +1115,7 @@ you** — no other user can read it. We store the message text, who sent it to
 whom, the time, and whether it was read. An anti-spam limit caps how fast
 anyone can send. Blocking a traveler from the match or from your chat with them
 stops messages between you in both directions (a block made from their profile
-does so from the next app update — see "Blocking"), and deleting your account
+or a map of theirs does so from the next app update — see "Blocking"), and deleting your account
 permanently deletes your messages.
 
 ## Reporting content and people
@@ -1297,6 +1305,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. Nothing about what we collect or keep changed.
 
 **Changelog — October 28, 2026 (blocking):** "Blocking" now describes the version of the app
 in people's hands (built September 7, 2026) and, separately, the next app update. In the
