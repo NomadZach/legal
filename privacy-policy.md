@@ -1139,6 +1139,16 @@ to review. We keep the report so we can act on repeat
 behaviour — a single complaint and a tenth complaint about the same person are
 different situations.
 
+**Limiting an account (coming with a pending database update, disclosed November
+4, 2026):** if a moderator decides an account has broken our rules, they can limit
+it. We then store on that profile the time it happened and which moderator did it;
+we store no separate reason, and any reports behind it stay on file as described
+here. A limited account is hidden from public surfaces and cannot post, comment,
+chat, send new messages, like in dating or publish, and its owner cannot lift the
+limit; a moderator can. You can still sign in, read, file a report, and ask us for
+a copy of your data. Deleting your account deletes this record with your profile.
+None of this happens until that update lands.
+
 **Who can see it:** you can see the reports you filed. **The person you reported
 cannot see your report and is never told who reported them.** That is deliberate:
 telling someone who reported them turns a safety tool into a way to retaliate.
@@ -1306,7 +1316,7 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. Nothing about what we collect or keep changed.
+**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Nothing else about what we collect or keep changed.
 
 **Changelog — October 28, 2026 (blocking):** "Blocking" now describes the version of the app
 in people's hands (built September 7, 2026) and, separately, the next app update. In the
