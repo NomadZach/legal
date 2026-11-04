@@ -348,7 +348,11 @@ dropped — and we would rather you keep that protection. They **are** removed w
 a **different account** signs in on the same device, or when the app opens and
 finds a different account owns it. Those two cases mean the phone has genuinely
 changed hands, and both lists name other people, so they should not follow the
-device to its next user. **Your blocked list lives on this phone.** It is not
+device to its next user. **Known gap, disclosed November 4, 2026:** that removal
+only runs when the app sees one account replace another directly. When one person
+signs out and another then signs in on the same phone, the first person's blocked
+list, report history and any unsent report stay on that phone, and an unsent report
+can be sent under the new account. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
 them again. The exception is a block that is also recorded on our server (in
@@ -1052,7 +1056,7 @@ you, and making your profile private is what hides yours from everyone. Where th
 block is recorded on our server, the dating deck, your matches, direct messages and
 live city chat rooms stop showing you to
 them. When you report someone, we send us what you reported (which profile,
-which surface), the reason you picked, anything you typed in the note, your
+which surface), the reason you picked, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
 also report. **Known gap, disclosed October 28, 2026:** for posts and comments in
@@ -1103,7 +1107,10 @@ coordinates for this feature. What others see is deliberately limited:
 
 Your shared location automatically ages off the map after a few hours, and
 turning the social map off **deletes** your shared location from our servers
-(it's gone, not hidden). Blocking a traveler stops the sharing between you.
+(it's gone, not hidden). A block recorded on our server stops the sharing between
+you, both ways; in the version of the app now in use, a block made from a traveler's
+profile, the feed or a city chat room stays on your phone and only hides them from
+you (see "Blocking").
 Deleting your account removes your shared location too.
 
 ## Messages between matches
@@ -1126,8 +1133,7 @@ sends the report to us so a person can look at it. Apple requires this for apps 
 and we would want it anyway.
 
 **What a report contains:** what you reported (which surface, and which item),
-the reason you chose from the list, anything you typed in the optional note
-(500 characters maximum), your account id, and the time you filed it.
+the reason you chose from the list, your account id, and the time it reached us.
 
 **What we do with it:** a moderator reviews it and decides what happens to the
 reported content or account. Once the fix for deleting comments and city-chat
@@ -1149,7 +1155,8 @@ limit; a moderator can. You can still sign in, read, file a report, and ask us f
 a copy of your data. Deleting your account deletes this record with your profile.
 None of this happens until that update lands.
 
-**Who can see it:** you can see the reports you filed. **The person you reported
+**Who can see it:** our moderators. The app has no screen that shows you the reports
+you filed; if you want a copy, email us. **The person you reported
 cannot see your report and is never told who reported them.** That is deliberate:
 telling someone who reported them turns a safety tool into a way to retaliate.
 
@@ -1191,7 +1198,7 @@ unless a report of it that we have not dismissed exists — then we keep the tex
 hidden, for our moderators. Our daily clean-up deletes every chat message once it
 is 30 days old. You can block other travelers (their messages stop appearing for you, on
 your device, immediately), and report messages — a report sends us the message
-you reported, the reason you picked, anything you typed, your account id, and
+you reported, the reason you picked, your account id, and
 the time, so a moderator can review it. Deleting your account permanently
 deletes your chat messages and the reports you filed.
 
@@ -1316,7 +1323,7 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
-**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Nothing else about what we collect or keep changed.
+**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Also corrected the same day. A dated known gap: when one person signs out and another signs in on the same phone, the first person's blocked list, report history and any unsent report stay on that phone, and an unsent report can be sent under the new account. Retired: "you can see the reports you filed" (the app has no such screen) and "anything you typed in the optional note (500 characters maximum)" with its two shorter forms (no report in the app sends a note, so we were describing more than we collect). "the time you filed it" is now "the time it reached us", because an unsent report is stamped on arrival. On the social map, "Blocking a traveler stops the sharing between you" now says which blocks do. Nothing else about what we collect or keep changed.
 
 **Changelog — October 28, 2026 (blocking):** "Blocking" now describes the version of the app
 in people's hands (built September 7, 2026) and, separately, the next app update. In the
