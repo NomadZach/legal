@@ -312,7 +312,7 @@ anything can be done about it.
 
 **Booking for someone else.** When you book for other travelers, you confirm you have
 their permission to give us their details and to buy the ticket for them. For anyone
-under 18, you confirm you are their parent or guardian or have that person's permission.
+under 18, you confirm you are their parent or guardian or have their parent's or guardian's permission.
 
 **Changes, cancellations and refunds.** Whether a fare can be changed or
 refunded, and what the airline charges for it, is set by **the airline's own

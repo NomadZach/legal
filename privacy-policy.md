@@ -800,7 +800,7 @@ a whole: a **contact first and last name, email address, and phone number**, so
 the airline and the supplier can reach whoever made the booking. From the next app
 update you can book for up to nine travelers, including children and infants. If you
 book for someone else, you must have their permission to give us their details; for
-anyone under 18, you must be their parent or guardian or have that person's permission.
+anyone under 18, you must be their parent or guardian or have their parent's or guardian's permission.
 The first traveler's name is also the booking's contact name, which we keep.
 
 **Where the travel-document details go — and where they do not.** Your travel
