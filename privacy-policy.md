@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 4, 2026**
+**Effective date: November 5, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -357,8 +357,7 @@ The next app update ends it: an unsent block or report can no longer go out unde
 another account, and the first person's blocked list and report history are removed
 when the next account signs in. To tell that a different account has signed in, the
 phone keeps one account id after sign-out, a random code with no name or email in
-it. It stays on that phone, is never sent anywhere or shown to anyone, and is used
-only for that check. There is only ever one, the most recent account's: a different
+it. The app keeps it on that phone, never sends it anywhere or shows it to anyone, and uses it only for that check and to mark a block or report made while signed out as that account's, so it can go out when that account signs back in. If a different account signs in first, that unsent block or report is deleted from the phone and never goes out. There is only ever one, the most recent account's: a different
 account signing in replaces it, and it is deleted when you delete your account on
 that phone, or with the app. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
@@ -987,16 +986,17 @@ recorded until you check in yourself.
   private), and when you last updated it.
 - **Who can see it:** your choice. *Public* shows your city to signed-in
   Pinorama travelers; *friends-only* shows it only to people you follow who
-  also follow you; *private* shows it to nobody. Anyone you have blocked — or
-  who has blocked you — can never see your presence, in either direction.
+  also follow you; *private* shows it to nobody. Anyone separated from you by a
+  block recorded on our server can never see your presence, in either direction.
 - **Checking out** deletes the record entirely, and deleting your account
   deletes it automatically.
 - **Invites:** if you are visible to another traveler in your city, they can
   send you a fixed "wants to chill" invite (invites carry no free-text
   message). Declining is silent — the sender is never told. **Accepting an
   invite connects the two of you for messaging** inside Pinorama, the same
-  way a travel-buddy match does; blocking someone hides you from each other
-  everywhere, including any invites already sent. Invite records are deleted
+  way a travel-buddy match does; a block recorded on our server hides your
+  presence and any invites already sent from each other and stops new messages
+  (see "Blocking" for what stays visible). Invite records are deleted
   when either account is deleted.
 
 ## Dating & travel-buddy discovery (optional)
@@ -1026,14 +1026,14 @@ What other travelers can see: signed-in users searching nearby see your
 display name, bio, interests, photos, gender (if you set one), whether
 you're looking to date, to find a travel buddy, or both, city, and a
 distance rounded to whole kilometers,
-computed from a further-blurred (~1 km grid) position. **That blurred position
-itself is sent to their app too** (it is not shown on screen) — never your legal
-name, email or exact location. **Known gap, disclosed September 29, 2026:** until
-a pending database update lands, the distance is worked out from your stored
-~110 m position rather than the ~1 km grid, so it can be a little more precise
-than this paragraph describes. That same pending update also stops sending the
-blurred position to other travelers' apps: once it lands, they receive only the
-whole-kilometre distance. **Which genders you want to
+computed from a further-blurred (~1 km grid) position — never that position itself,
+your legal name, email or exact location. **Known gap, disclosed November 5, 2026:** a
+dating photo uploaded from the version of the app now in use is re-compressed by your
+phone before it is sent, which normally drops the photo's location and camera details,
+but that version does not check, and we have not confirmed on a device that nothing is
+left. From the next app update the app removes those details before the photo leaves
+your phone and does not upload a photo it can't clean. A photo already uploaded stays
+as it was until you replace or remove it. **Which genders you want to
 meet is never shown to anyone** — it is only a filter. Who liked you is
 not shown
 to anyone; likes are stored server-side only to detect a mutual match. A
@@ -1063,9 +1063,9 @@ blocked traveler's posts, comments, messages and cards stop appearing to you on
 this phone. A block never stops them finding your public profile, your entry in
 the travelers directory or your published maps: blocking hides those only from
 you, and making your profile private is what hides yours from everyone. Where the
-block is recorded on our server, the dating deck, your matches, direct messages and
-live city chat rooms stop showing you to
-them. When you report someone, we send us what you reported (which profile,
+block is recorded on our server, you stop appearing to them in the dating deck and
+live city chat rooms, and neither of you can send the other a new direct message. A
+match you already had, and messages already sent, stay visible to them. When you report someone, we send us what you reported (which profile,
 which surface), the reason you picked, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
@@ -1130,10 +1130,11 @@ can send each other **direct messages**. Messages are stored on our servers
 so they can be delivered, and each message is visible **only to the two of
 you** — no other user can read it. We store the message text, who sent it to
 whom, the time, and whether it was read. An anti-spam limit caps how fast
-anyone can send. Blocking a traveler from the match or from your chat with them
-stops messages between you in both directions (a block made from their profile
-or a map of theirs does so from the next app update — see "Blocking"), and deleting your account
-permanently deletes your messages.
+anyone can send. A block recorded on our server stops new messages between you in both directions
+(see "Blocking" for which blocks are recorded, in the version of the app now in use
+and from the next app update); messages already sent stay visible to the person you
+blocked. Deleting your account permanently deletes your messages from our servers; a
+copy already on the other person's phone can stay there.
 
 ## Reporting content and people
 
@@ -1333,9 +1334,11 @@ policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
 
+**Changelog — November 5, 2026 (what a block hides, and the distance on a dating card):** Corrected: "Blocking" said that where a block is recorded on our server, "the dating deck, your matches, direct messages and live city chat rooms stop showing you to them." That overstated it. They stop seeing you in the dating deck and live city chat rooms, and neither of you can send the other a new direct message, but a match you already had and messages already sent stay visible to them. "Messages between matches" now says the same, no longer names only some of the blocks that stop messages, and says a copy of your messages already on the other person's phone can stay there after you delete your account. Also corrected: "blocking someone hides you from each other everywhere, including any invites already sent" and "Anyone you have blocked — or who has blocked you — can never see your presence". Both are true only of a block recorded on our server, and now say so. Corrected: the account id the next app update keeps after sign-out was described as "is never sent anywhere or shown to anyone, and is used only for that check". The app never sends or shows it, but from that update it also marks a block or report made while signed out as that account's. The page now says so, and says that if a different account signs in first, that unsent block or report is deleted and never goes out. New known gap: dating photos uploaded from the version of the app now in use. Retired: the September 29, 2026 known gap on the dating card ("until a pending database update lands, the distance is worked out from your stored ~110 m position") and the sentence "That blurred position itself is sent to their app too". That database update landed on October 5, 2026: the distance now comes from the ~1 km grid, and the position is no longer sent.
+
 **Changelog — November 4, 2026 (airline logos):** ahead of the next app update. Flight results will show an airline's logo when the flight supplier's data gives one, and your phone loads that picture straight from the image server the data names, which sees that the request came from your phone and which airline's logo it asked for. Nothing else changed.
 
-**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Also corrected the same day. A dated known gap: when one person signs out and another signs in on the same phone, the first person's blocked list, report history and any unsent report stay on that phone, and an unsent report can be sent under the new account. The next app update ends that gap, and to do it the phone keeps one account id after sign-out, a random code with no name or email in it, only to tell when a different account signs in; it stays on the phone, and a different account signing in replaces it. Earlier today this page said it was removed once that check had run; it is not, because removing it would reopen the gap the next time the phone changes hands. Retired: "you can see the reports you filed" (the app has no such screen) and "anything you typed in the optional note (500 characters maximum)" with its two shorter forms (no report in the app sends a note, so we were describing more than we collect). "the time you filed it" is now "the time it reached us", because an unsent report is stamped on arrival. On the social map, "Blocking a traveler stops the sharing between you" now says which blocks do. Nothing else about what we collect or keep changed.
+**Changelog — November 4, 2026 (what a block covers):** "Blocking" now names what a block covers and what it does not. On our server it covers the dating deck, your matches, direct messages and live city chat rooms. (Corrected November 5: see the entry above. A match you already had and messages already sent stay visible to them.) It never stops a blocked traveler finding your public profile, your entry in the travelers directory or your published maps; making your profile private does that. Retired: "Blocking is two-way and immediate" and "where the block is recorded on our server, you also stop appearing to them", both broader than the app. The October 28 entry's "those are recorded on our server too" means NEW blocks: updating the app does not copy an older phone-only block to your account, so unblock and block that traveler again to put it on our server. A block made from a creator's map joins the list the next app update records on our server. "Reporting content and people" also gains "Limiting an account": when a pending database update lands, we store the time a moderator limits an account and which moderator did it. Also corrected the same day. A dated known gap: when one person signs out and another signs in on the same phone, the first person's blocked list, report history and any unsent report stay on that phone, and an unsent report can be sent under the new account. The next app update ends that gap, and to do it the phone keeps one account id after sign-out, a random code with no name or email in it, only to tell when a different account signs in; it stays on the phone, and a different account signing in replaces it. Earlier today this page said it was removed once that check had run; it is not, because removing it would reopen the gap the next time the phone changes hands. (Corrected November 5: see the entry above, for what else it is used for.) Retired: "you can see the reports you filed" (the app has no such screen) and "anything you typed in the optional note (500 characters maximum)" with its two shorter forms (no report in the app sends a note, so we were describing more than we collect). "the time you filed it" is now "the time it reached us", because an unsent report is stamped on arrival. On the social map, "Blocking a traveler stops the sharing between you" now says which blocks do. Nothing else about what we collect or keep changed.
 
 **Changelog — October 28, 2026 (blocking):** "Blocking" now describes the version of the app
 in people's hands (built September 7, 2026) and, separately, the next app update. In the
