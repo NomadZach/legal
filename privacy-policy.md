@@ -795,7 +795,8 @@ we keep.
 **What you type at checkout.** For each traveler on the booking: their **first
 and last name exactly as printed on their travel document**, their **date of
 birth**, and their **travel document details** — the type (a passport today),
-its number, its expiry date, and the country that issued it. For the booking as
+its number, its expiry date, and the country that issued it. From the next app update,
+also their **gender as shown on the passport** and their **nationality**. For the booking as
 a whole: a **contact first and last name, email address, and phone number**, so
 the airline and the supplier can reach whoever made the booking. From the next app
 update you can book for up to nine travelers, including children and infants. If you
@@ -804,7 +805,7 @@ anyone under 18, you must be their parent or guardian or have their parent's or 
 The first traveler's name is also the booking's contact name, which we keep.
 
 **Where the travel-document details go — and where they do not.** Your travel
-document details and date of birth are sent **straight through us to our flight
+document details and date of birth, and from the next app update your gender and nationality, are sent **straight through us to our flight
 supplier, LiteAPI (Nuitée), and on into the airline's booking system**. They are
 **not stored on our servers**. There is no passport field in our booking table
 and no passport number in our records — that is a deliberate choice, not an
@@ -861,9 +862,10 @@ hand. The same goes for a flight booked while you were signed in if our server
 could not confirm your sign-in when the booking completed.
 
 **Booking for someone else.** If you book a flight for another traveler, you are
-giving us their name, date of birth and travel document details. By doing that
-you confirm you are allowed to. The same rules above apply to their details: the
-document details pass through to the airline and are not stored by us.
+giving us their name, date of birth and travel document details, and from the next
+app update their gender and nationality. By doing that you confirm you are allowed to.
+The same rules above apply to their details: the document details, gender and
+nationality pass through to the airline and are not stored by us.
 
 ## Storage and security
 
@@ -1342,8 +1344,8 @@ full card number.
 Pinorama is not directed at anyone under 18, and you must be 18 or older
 to use it (the optional dating / travel-buddy feature is strictly 18+). We do not
 knowingly collect data from minors, with one exception from the next app update: someone
-booking a flight enters the name, date of birth and passport details of anyone under
-18 traveling on that booking, including 12-to-17-year-olds, whom the flight form counts
+booking a flight enters the name, date of birth, gender, nationality and passport details
+of anyone under 18 traveling on that booking, including 12-to-17-year-olds, whom the flight form counts
 as adults (see "Flight bookings"). If you believe a
 minor is using the app, contact us.
 
@@ -1353,6 +1355,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 5, 2026 (gender and nationality on a flight booking):** ahead of the next app update. Our flight supplier requires each traveler's gender as shown on the passport and their nationality, so the checkout form will ask for them. They go to the supplier and the airline with the other passenger details, and we don't store them, on our servers or on your phone.
 
 **Changelog — November 5, 2026 (booking for others):** ahead of the next app update, which lets you book a flight for up to nine travelers. "Children" said "We do not knowingly collect data from minors"; anyone under 18 on a flight booking is now the one exception, and what happens to their details is what "Flight bookings" describes for every traveler. Nothing about a passport is stored by us, for anyone. The first traveler's name is kept as the booking's contact name.
 

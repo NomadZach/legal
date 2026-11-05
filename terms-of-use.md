@@ -306,8 +306,8 @@ not a failure, and you should not book again.
 
 **Names must match the document.** Airlines match a ticket to a travel document.
 You are responsible for entering each passenger's name **exactly as printed on
-their passport**, along with a correct date of birth and document details. A
-ticket issued in the wrong name can be worthless and the airline decides whether
+their passport**, along with a correct date of birth and document details, and
+the gender and nationality the booking form asks for. A ticket issued in the wrong name can be worthless and the airline decides whether
 anything can be done about it.
 
 **Booking for someone else.** When you book for other travelers, you confirm you have
