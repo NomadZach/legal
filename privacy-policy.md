@@ -85,11 +85,13 @@ between your devices. When you're signed in we hold:
   note**, and can react to it or ask to join. Only you, the trip's owner, see
   who reacted; friends see only the count. If your profile is private, your
   trips stay hidden too. Switch it off and the trip is private again. Deleting
-  a draft removes it from our servers, and deleting your account erases them
-  all. **Known gap, disclosed September 29, 2026:** while you have other drafts
-  saved with your account, deleting one removes it from your phone at once but
-  its server copy can stay — and newer drafts may not be backed up — until a
-  pending database update lands. Deleting your account still erases them all.
+  a draft removes it from our servers the next time the app syncs, and deleting your
+  account erases them all. **Known gap, disclosed November 5, 2026:** if a phone
+  already held drafts when your account first signed in on it, or your account is on
+  two phones, a draft you delete can stay on our servers or be uploaded again. In the
+  version of the app now in use, one phone's sync can also remove the other's newer
+  drafts from our servers until that phone syncs again; the next app update ends that.
+  Deleting your account still erases them all.
 - **Your buddy-profile draft.** The profile you draft for the travel-buddy
   feature (display name, age or date of birth, home base, bio, interests, what you're looking
   for, relationship status, and whether your info is verified) is stored with
@@ -100,12 +102,10 @@ between your devices. When you're signed in we hold:
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
 - **Your daily streak** — how many days in a row you have saved, posted or
-  liked something, and the last such day, stored with your account. **The
-  number is public unless you make your profile private:** other travelers, and
-  anyone using the app's public data interface even without an account, can read
-  it. The app itself never shows another traveler's number, and once a pending
-  database update lands, readers without an account can no longer read it. The day itself is never shown to
-  anyone else.
+  liked something, and the last such day, stored with your account. **Other
+  signed-in travelers can read the number unless you make your profile private;**
+  since October 5, 2026, readers without an account cannot. The app itself never
+  shows another traveler's number. The day itself is never shown to anyone else.
 - **Posts and likes** — posts you choose to publish in the app. A post
   contains the text you write (a caption), an optional photo you pick from your
   phone, an optional place name with its coordinates, and timestamps. A post's
@@ -113,7 +113,10 @@ between your devices. When you're signed in we hold:
   that address can open it, which is how other travelers' apps show it — and the
   app removes the photo's location and camera details before it leaves your
   phone (a photo in a format it can't clean is not uploaded). Your posts, and a
-  record of which posts you've liked, are stored with your account.
+  record of which posts you've liked, are stored with your account. Any signed-in
+  account can read the posts of a public profile, with their place and coordinates,
+  and, though our Terms forbid it, nothing in the app stops one from copying many at
+  once. The same goes for likes, comments and city-chat messages.
 - **Which posts you've seen** — so the feed can stop showing you the same
   things and, later, rank what you see. We store one row per post per day
   (your account saw this post, on this date), never a moment-by-moment
@@ -153,8 +156,8 @@ between your devices. When you're signed in we hold:
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
-  other users see only **numbers** (a follower and following count on
-  profiles), never the lists themselves. Unfollowing deletes the record
+  other users see only **a follower count** on your profile, up to an hour
+  behind, never the lists themselves, and only you see how many you follow. Unfollowing deletes the record
   immediately, and deleting your account erases every follow record in both
   directions.
 - **Profile views (counts only)** — when the profile-views feature is on and
@@ -179,6 +182,10 @@ between your devices. When you're signed in we hold:
   you here. **You can turn this off:** Settings has a **private profile**
   switch that takes you out of the directory and stops other travelers
   opening your profile. Deleting your posts or your account also removes you.
+  **Known gap, disclosed November 5, 2026:** apart from the directory, the account
+  id, display name, avatar emoji and @username of every public profile, posted or not, can be read
+  in bulk without an account through the app's public data interface. Making your
+  profile private stops it.
 - **Social handles and self-reported follower counts** — the @handles you type
   in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
   follower counts you enter for them, stored with your account and shown to you
@@ -197,7 +204,9 @@ between your devices. When you're signed in we hold:
   the game night stays on your phone and is not uploaded. A game night with a
   location is **public promo content**: it appears on the map for **everyone
   using the app, including people without accounts**. The app shows the venue
-  name with it, not your name or handle, but it is stored with your account.
+  name with it, not your name or handle, but it is stored with your account, and
+  anyone reading the public data directly also gets that account's id, which leads
+  to its public profile if it has one.
   Game nights **expire off the map automatically after 7 days**, you can
   remove your own at any time in the Work hub (it disappears for everyone
   immediately, though its details stay hidden on our server — see the dated
@@ -213,7 +222,9 @@ between your devices. When you're signed in we hold:
   through your phone's normal share sheet. A **public** event is **public promo/
   social content**: it appears on the map for **everyone using the app,
   including people without accounts**, so nearby travelers can find and join it.
-  Public events show the event title and place, are stored with your account,
+  Public events show the event title and place, are stored with your account (anyone
+  reading the public data directly also gets that account's id, which leads to its
+  public profile if it has one),
   **expire off the map automatically** (after the event's time, or after 7 days
   if you set no time), can be removed by you at any time, and are erased when you
   delete your account. **Known gap, disclosed September 29, 2026:** a public event
@@ -234,15 +245,10 @@ between your devices. When you're signed in we hold:
   places you have saved and publish them together as a **map** under your creator
   profile. Publishing takes a **copy** of the places you chose: for each pin on the
   published map we store its name, its address, its **coordinates**, its category,
-  the **caption saved with it** (often the words of the post you saved it from —
-  never your private note), and its position on the map — plus the map's title,
-  blurb and cover emoji, stored with your account. **From the next version of the
-  app, a pin no longer carries that caption:** a map you publish or re-publish from
-  then on stores no caption on its pins, and a map published before keeps the
-  captions it was published with until you re-publish or unpublish it — or until
-  a pending database update is applied, which clears the captions already on
-  published pins and keeps every new pin clear, whichever version of the app
-  published it.
+  and its position on the map — plus the map's title,
+  blurb and cover emoji, stored with your account. **Since October 5, 2026, a pin carries no caption:** the captions already on
+  published pins were cleared, and every new pin stays clear, whichever version of
+  the app published it.
   **A published map is open to anyone: it is listed in the app's creator section, and
   it can be opened from a shared link by someone who has no Pinorama account at all.**
   What they see is: the map's title, blurb, cover emoji, how many pins it has,
@@ -260,8 +266,9 @@ between your devices. When you're signed in we hold:
   no view counter, and a reader without an account can only read.
 
 Your device stays the primary copy; the cloud copy is a synced backup. Syncing
-happens when you sign in and when you open the app. Your saved places, profile,
-and points stay private to your account.
+happens when you sign in and when you open the app. Your saved places and points
+stay private to your account. Your profile is public by default, and this page says
+which parts of it others can read.
 
 **What signing out does — and what it erases.** Signing out leaves most of your
 local data alone: your saved places, your profile, your notes, your points and
@@ -1334,6 +1341,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 5, 2026 (who can read what in bulk):** From an audit of what can be read directly, without the app. New: the account id, display name, avatar emoji and @username of every public profile can be read in bulk without an account, posted or not, which the directory paragraph did not say, and it is a dated known gap. Corrected: "Your saved places, profile, and points stay private to your account"; a profile is public by default. New: any signed-in account can copy public posts, likes, comments and city-chat messages in bulk, though our Terms forbid it, and a direct reader of a game night or public event also gets the posting account's id. Brought up to date, all because database updates landed on October 5, 2026: readers without an account can no longer read your streak number; other travelers see a follower count up to an hour behind and no following count, where this said "a follower and following count"; and published map pins carry no caption. Narrowed: the September 29, 2026 known gap on buddy-trip drafts ("deleting one removes it from your phone at once but its server copy can stay"). The sync fault it named is fixed, and a new gap dated today says what remains.
 
 **Changelog — November 5, 2026 (what a block hides, and the distance on a dating card):** Corrected: "Blocking" said that where a block is recorded on our server, "the dating deck, your matches, direct messages and live city chat rooms stop showing you to them." That overstated it. They stop seeing you in the dating deck and live city chat rooms, and neither of you can send the other a new direct message, but a match you already had and messages already sent stay visible to them. "Messages between matches" now says the same, no longer names only some of the blocks that stop messages, and says a copy of your messages already on the other person's phone can stay there after you delete your account. Also corrected: "blocking someone hides you from each other everywhere, including any invites already sent" and "Anyone you have blocked — or who has blocked you — can never see your presence". Both are true only of a block recorded on our server, and now say so. Corrected: the account id the next app update keeps after sign-out was described as "is never sent anywhere or shown to anyone, and is used only for that check". The app never sends or shows it, but from that update it also marks a block or report made while signed out as that account's. The page now says so, and says that if a different account signs in first, that unsent block or report is deleted and never goes out. It also says this is one separate record, because things saved on the phone can carry the same id: "keeps one account id" and "There is only ever one" read wider than they should. New known gap: dating photos uploaded from the version of the app now in use. Retired: the September 29, 2026 known gap on the dating card ("until a pending database update lands, the distance is worked out from your stored ~110 m position") and the sentence "That blurred position itself is sent to their app too". That database update landed on October 5, 2026: the distance now comes from the ~1 km grid, and the position is no longer sent.
 
