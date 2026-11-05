@@ -1015,7 +1015,9 @@ it requires an account and being 18 or older.
 
 If you opt in, we store: your short bio, your interest tags, an optional
 display name, your gender and who you want to meet (both optional — used
-to decide who appears in whose deck), up to **5 photos you choose to
+to decide who appears in whose deck; together these can reveal your sexual
+orientation, which is sensitive data, and if you never choose who you want to meet,
+your profile is stored as open to everyone), up to **5 photos you choose to
 upload** (stored on our servers and deleted with your account; each photo
 lives at an unguessable address), your city, your search radius, and —
 only when you tap the share-location button — an **approximate position**
@@ -1341,6 +1343,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 5, 2026 (who you want to meet):** "Discovery" now says what our App Store and Google Play privacy declarations already say: your gender and who you want to meet can together reveal your sexual orientation, which is sensitive data. It also says that if you never choose who you want to meet, your profile is stored as open to everyone. Nothing about what we collect changed.
 
 **Changelog — November 5, 2026 (who can read what in bulk):** From an audit of what can be read directly, without the app. New: the account id, display name, avatar emoji and @username of every public profile can be read in bulk without an account, posted or not, which the directory paragraph did not say, and it is a dated known gap. Corrected: "Your saved places, profile, and points stay private to your account"; a profile is public by default. New: any signed-in account can copy public posts, likes, comments and city-chat messages in bulk, though our Terms forbid it, and a direct reader of a game night or public event also gets the posting account's id. Brought up to date, all because database updates landed on October 5, 2026: readers without an account can no longer read your streak number; other travelers see a follower count up to an hour behind and no following count, where this said "a follower and following count"; and published map pins carry no caption. Narrowed: the September 29, 2026 known gap on buddy-trip drafts ("deleting one removes it from your phone at once but its server copy can stay"). The sync fault it named is fixed, and a new gap dated today says what remains.
 
