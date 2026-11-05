@@ -716,6 +716,9 @@ exactly what leaves your phone, what we keep, and what we deliberately do not
 keep. From the next app update, the airline logos on flight results are loaded by
 your phone straight from the image server the flight supplier's data names, which
 sees that the request came from your phone and which airline's logo it asked for.
+Also from the next app update, as you type in the flight search's airport picker, what
+you have typed goes through our server to LiteAPI so it can suggest airports. Your name
+and account are not attached.
 
 **Viator (Tripadvisor) — tours and activities (live since August 14, 2026):**
 tour and activity listings come from Viator's partner API. Our server sends
@@ -1343,6 +1346,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 5, 2026 (airport suggestions):** ahead of the next app update. What you type in the flight search's airport picker goes through our server to LiteAPI so it can suggest airports, without your name or account.
 
 **Changelog — November 5, 2026 (who you want to meet):** "Discovery" now says what our App Store and Google Play privacy declarations already say: your gender and who you want to meet can together reveal your sexual orientation, which is sensitive data. It also says that if you never choose who you want to meet, your profile is stored as open to everyone. Nothing about what we collect changed.
 
