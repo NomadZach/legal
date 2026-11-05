@@ -1,6 +1,6 @@
 # Pinorama Terms of Use
 
-**Effective date: September 6, 2026**
+**Effective date: November 5, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -128,7 +128,8 @@ solicit, scam, or harm anyone (all section-5 rules apply; we may remove
 profiles or suspend accounts for abuse). **Meeting strangers carries risk
 that is yours to manage**: Pinorama does not verify or vet travelers. Meet
 in public places, tell someone where you're going, and use the in-app
-safety tools — blocking works instantly and both ways. Matches and
+safety tools. A block hides someone from you on your phone right away; the Privacy
+Policy says what it does on our server and what stays visible. Matches and
 conversations are between you and the other traveler; Pinorama is not
 responsible for what happens off the app or in person.
 
@@ -142,8 +143,9 @@ and use good judgment about meeting people — Pinorama doesn't vet travelers.
 Matched travelers can send each other **direct messages**. DMs are private
 to the two of you, but they are not exempt from the rules: the section-5
 acceptable-use rules apply, harassment or solicitation in DMs is grounds for
-removal, an anti-spam rate limit applies, and blocking someone ends the
-conversation both ways.
+removal, an anti-spam rate limit applies, and a block recorded on our server stops
+new messages both ways (the Privacy Policy says which blocks are recorded and what
+stays visible).
 
 You can also join **city chat rooms** — public per-city rooms visible to all
 signed-in travelers in that room. You join only by your own tap (suggestions
@@ -426,6 +428,8 @@ changed — not that a feature we already described switched on. ⚖️ If anyon
 reviewing this considers "flights are now live" a material change that warrants
 re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
 `src/data/termsAcceptance.js` together, and the gate re-asks.
+
+**Changelog — November 5, 2026:** two sentences about blocking claimed too much and are corrected: "blocking works instantly and both ways" and "blocking someone ends the conversation both ways". A block hides someone from you on your phone right away. Where it is recorded on our server it also stops new messages both ways, but a match you already had and messages already sent stay visible to the person you blocked. The Privacy Policy has the detail. Nothing else in these terms changed.
 
 **Changelog — September 6, 2026:** one sentence in section 9 (hotel bookings) was
 narrowed. It said: *"the refund is issued by the payment processor back to your
