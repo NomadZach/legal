@@ -310,6 +310,10 @@ their passport**, along with a correct date of birth and document details. A
 ticket issued in the wrong name can be worthless and the airline decides whether
 anything can be done about it.
 
+**Booking for someone else.** When you book for other travelers, you confirm you have
+their permission to give us their details and to buy the ticket for them. For anyone
+under 18, you confirm you are their parent or guardian or have that person's permission.
+
 **Changes, cancellations and refunds.** Whether a fare can be changed or
 refunded, and what the airline charges for it, is set by **the airline's own
 fare rules**, not by Pinorama. Where the supplier tells us those rules and fees,
@@ -428,6 +432,8 @@ changed — not that a feature we already described switched on. ⚖️ If anyon
 reviewing this considers "flights are now live" a material change that warrants
 re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
 `src/data/termsAcceptance.js` together, and the gate re-asks.
+
+**Changelog — November 5, 2026 (booking for someone else):** added the short "Booking for someone else" part of section 9, ahead of the next app update, which lets you book a flight for up to nine travelers.
 
 **Changelog — November 5, 2026:** two sentences about blocking claimed too much and are corrected: "blocking works instantly and both ways" and "blocking someone ends the conversation both ways". A block hides someone from you on your phone right away. Where it is recorded on our server it also stops new messages both ways, but a match you already had and messages already sent stay visible to the person you blocked. The Privacy Policy has the detail. Nothing else in these terms changed.
 

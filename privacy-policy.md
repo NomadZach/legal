@@ -710,7 +710,7 @@ the flight booking itself come from LiteAPI. Flight booking is **live** (switche
 on August 25, 2026; this page described it in advance from August 23). For flights
 they act as the consolidator between us and the airline: the passenger details
 you type at checkout go to them and on into the airline's booking system so a
-ticket can be issued in your name, and your card is entered into a payment form
+ticket can be issued in each traveler's name, and your card is entered into a payment form
 run by their payment provider. See the "Flight bookings" section below for
 exactly what leaves your phone, what we keep, and what we deliberately do not
 keep. From the next app update, the airline logos on flight results are loaded by
@@ -797,7 +797,11 @@ and last name exactly as printed on their travel document**, their **date of
 birth**, and their **travel document details** — the type (a passport today),
 its number, its expiry date, and the country that issued it. For the booking as
 a whole: a **contact first and last name, email address, and phone number**, so
-the airline and the supplier can reach whoever made the booking.
+the airline and the supplier can reach whoever made the booking. From the next app
+update you can book for up to nine travelers, including children and infants. If you
+book for someone else, you must have their permission to give us their details; for
+anyone under 18, you must be their parent or guardian or have that person's permission.
+The first traveler's name is also the booking's contact name, which we keep.
 
 **Where the travel-document details go — and where they do not.** Your travel
 document details and date of birth are sent **straight through us to our flight
@@ -1337,8 +1341,11 @@ full card number.
 
 Pinorama is not directed at anyone under 18, and you must be 18 or older
 to use it (the optional dating / travel-buddy feature is strictly 18+). We do not
-knowingly collect data from minors; if you believe a minor is using the
-app, contact us.
+knowingly collect data from minors, with one exception from the next app update: someone
+booking a flight enters the name, date of birth and passport details of anyone under
+18 traveling on that booking, including 12-to-17-year-olds, whom the flight form counts
+as adults (see "Flight bookings"). If you believe a
+minor is using the app, contact us.
 
 ## Changes to this policy
 
@@ -1346,6 +1353,8 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 5, 2026 (booking for others):** ahead of the next app update, which lets you book a flight for up to nine travelers. "Children" said "We do not knowingly collect data from minors"; anyone under 18 on a flight booking is now the one exception, and what happens to their details is what "Flight bookings" describes for every traveler. Nothing about a passport is stored by us, for anyone. The first traveler's name is kept as the booking's contact name.
 
 **Changelog — November 5, 2026 (airport suggestions):** ahead of the next app update. What you type in the flight search's airport picker goes through our server to LiteAPI so it can suggest airports, without your name or account.
 
