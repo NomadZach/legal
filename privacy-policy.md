@@ -88,9 +88,7 @@ between your devices. When you're signed in we hold:
   a draft removes it from our servers the next time the app syncs, and deleting your
   account erases them all. **Known gap, disclosed November 5, 2026:** if a phone
   already held drafts when your account first signed in on it, or your account is on
-  two phones, a draft you delete can stay on our servers or be uploaded again. In the
-  version of the app now in use, one phone's sync can also remove the other's newer
-  drafts from our servers until that phone syncs again; the next app update ends that.
+  two phones, a draft you delete can stay on our servers or be uploaded again.
   Deleting your account still erases them all.
 - **Your buddy-profile draft.** The profile you draft for the travel-buddy
   feature (display name, age or date of birth, home base, bio, interests, what you're looking
@@ -128,9 +126,8 @@ between your devices. When you're signed in we hold:
   through the same profanity filter as city chat before they're stored, are
   rate-limited against flooding, and follow the post they're on: if a post is
   deleted or its author's profile isn't public, its comments disappear with
-  it. **Deleting your own comment does not go through yet in the current
-  version of the app**, and once it does, a comment someone reported is kept
-  for our moderators (see the dated known gaps in the social section below).
+  it. You can delete your own comment, and one someone reported is kept for
+  our moderators (see the social section below).
   Other users can report a comment or block you (what a block hides, and
   whether it removes a follow between the two of you, depends on where it is
   made and on the version of the app — see "Blocking" under the dating section
@@ -141,8 +138,7 @@ between your devices. When you're signed in we hold:
   given us — it collects no new personal information beyond that choice — and
   no other user can see it. Deleting your account erases it. On a shared phone,
   see "Your partner applications and promo codes show only to your account"
-  below — until the next version of the app, the next person on the phone can see
-  which roles you applied for and their status.
+  below.
 - **Merchant menus** — if you run a restaurant and publish your menu in the
   app, we store what you publish: the restaurant's name, the dishes with
   their prices and currency, and when you last updated it. A published menu
@@ -150,9 +146,8 @@ between your devices. When you're signed in we hold:
   publish. If you use the photo scan to fill a menu in, the photo is sent
   through our server to Anthropic's Claude API so an AI model can read the
   dishes off it — the photo itself is not stored, and only the dish list you
-  confirm is saved. From the next version of the app, it asks you before each
-  scan and sends nothing unless you say yes; the version now in use sends the
-  photo as soon as you take or pick it. Deleting your account erases your menus.
+  confirm is saved. It asks you before each scan and sends nothing unless you
+  say yes. Deleting your account erases your menus.
 - **Follows (who you follow)** — tapping "follow" on another traveler's
   profile stores a follow record (your account → theirs). **Who you follow,
   and who follows you, is visible only to the two people in each pair** —
@@ -209,8 +204,9 @@ between your devices. When you're signed in we hold:
   to its public profile if it has one.
   Game nights **expire off the map automatically after 7 days**, you can
   remove your own at any time in the Work hub (it disappears for everyone
-  immediately, though its details stay hidden on our server — see the dated
-  known gaps in the social section), and deleting your account erases them
+  immediately, and the venue, sport, fixture, time and location you entered are
+  blanked on our server; the record that your account posted it, and when, stays
+  until you delete your account), and deleting your account erases them
   entirely.
 - **Events you create (PUBLIC ones)** — the "create" button on the map lets you
   post an event (a meet-up, game night, drinks night, or club night): we store
@@ -227,11 +223,15 @@ between your devices. When you're signed in we hold:
   public profile if it has one),
   **expire off the map automatically** (after the event's time, or after 7 days
   if you set no time), can be removed by you at any time, and are erased when you
-  delete your account. **Known gap, disclosed September 29, 2026:** a public event
-  you remove leaves your map at once and everyone else's once our server records
-  it (if that fails, others may see it until it expires), but its title, type,
-  place, location and time stay hidden on our server until you delete your
-  account. Whether an event is public or private, when you **share an
+  delete your account. **Known gap, disclosed September 29, 2026 (updated
+  November 6, 2026):** a public event you remove leaves your map at once and
+  everyone else's once our server records it (if that fails, others may see it
+  until it expires); our server then blanks its type, title, place and location,
+  but keeps its date and time, hidden, with the record that your account posted
+  it, until you delete your account. An event removed with a version of the app
+  built before October 12, 2026 may still have all of those details there,
+  hidden once it expires, until you delete your account. Whether an event is
+  public or private, when you **share an
   invite** the message is created on your device and sent by you through your own
   apps — we don't send it or see who you send it to. (This is about event
   invites. Personal *referral* invite links work differently: if someone joins
@@ -290,62 +290,57 @@ note this also happens if your session simply expires** — not only when you ta
 "sign out" — so if a check-in or a conversation matters to you, don't rely on it
 surviving on the device.
 
-**Your linked social accounts are set aside, not cleared — from the next version of the app.** When your session ends,
-the handles you linked (with the follower counts you typed, and any removal that hasn't reached our server yet) are
-moved aside on the phone under your account and hidden: while nobody is signed in, the app shows none of an account's
-linked accounts and lets no one change yours. They come back when you sign in again with the same account. If a different account signs in
-on this phone before you do, it sees its own linked accounts, never yours; yours come back from your account when you
-next sign in, but anything that only ever existed on this phone — a platform linked without a handle, or a removal that
-never reached our server — may not. Until that version, your linked accounts stay visible on the phone after you sign
-out, like the rest of your profile.
+**Your linked social accounts are set aside, not cleared.** When your session ends, the handles you linked (with the
+follower counts you typed, and any removal that hasn't reached our server yet) are moved aside on the phone under your
+account and hidden: while nobody is signed in, the app shows none of an account's linked accounts and lets no one change
+yours. They come back when you sign in again with the same account. If a different account signs in on this phone before
+you do, it sees its own linked accounts, never yours; yours come back from your account when you next sign in, but
+anything that only ever existed on this phone — a platform linked without a handle, or a removal that never reached our
+server — may not.
 
-**Your travel profile is hidden while nobody is signed in — from the next version of the app.** Your travel-buddy and
-dating profile (your name, birthday, home base, bio, photo, relationship status and verification) stays on the phone
-when your session ends, but while nobody is signed in the app shows none of it — not in "my travel profile", and not as
-the lock your relationship status puts on the dating lane — and lets no one change it. It's shown again when you sign in
-with the same account; a different account that signs in sees its own profile, never yours. A profile made on this
-phone without ever signing in isn't hidden. Until that version, your travel profile stays visible — and changeable — on
-the phone after you sign out.
+**Your travel profile is hidden while nobody is signed in.** Your travel-buddy and dating profile (your name, birthday,
+home base, bio, photo, relationship status and verification) stays on the phone when your session ends, but while nobody
+is signed in the app shows none of it — not in "my travel profile", and not as the lock your relationship status puts on
+the dating lane — and lets no one change it. It's shown again when you sign in with the same account; a different
+account that signs in sees its own profile, never yours. A profile made on this phone without ever signing in isn't
+hidden.
 
-**Your booking notes, drafted meetups, dating filters and planned posts show only to your account — from the next
-version of the app.** The app keeps these on the phone: the note it makes when you tell it you booked something at a
-partner (the hotel, flight or tour, the price you saw, the city and the dates), the meetups you draft, the dating filters
-you set (the ages you're looking for, interests and radius), and the posts you schedule (captions, times, location tags
-and the photos you picked). What you make while signed in shows only to your account: while nobody is signed in, or
-someone else is, the app shows none of it — not in Tickets, not as countries on your passport or world map, and not in
-Social's trip cards — and nobody else can change or delete it. Anything made while nobody was signed in, or before that
-version, belongs to no account and stays visible until the app next reads it with an account signed in, which makes it
-that account's. Your dating filters are one setting per phone: if another account signs in on the phone and saves its
-own, they replace yours there. Until that version, all of these stay visible — and changeable — on the phone after you
-sign out.
+**Your booking notes, drafted meetups, dating filters and planned posts show only to your account.** The app keeps these
+on the phone: the note it makes when you tell it you booked something at a partner (the hotel, flight or tour, the price
+you saw, the city and the dates), the meetups you draft, the dating filters you set (the ages you're looking for,
+interests and radius), and the posts you schedule (captions, times, location tags and the photos you picked). What you
+make while signed in shows only to your account: while nobody is signed in, or someone else is, the app shows none of it
+— not in Tickets, not as countries on your passport or world map, and not in Social's trip cards — and nobody else can
+change or delete it. Anything made while nobody was signed in, or with a version of the app built before October 12,
+2026, belongs to no account: whoever uses the phone can see, change or delete it until the app next reads it with an
+account signed in, which makes it that account's. Your dating filters are one setting per phone: if another account
+signs in on the phone and saves its own,
+they replace yours there.
 
-**Your partner applications and promo codes show only to your account on the phone, too — from the next version of
-the app.** While nobody is signed in, or someone else is, the app shows none of your partner applications or their
-status — and opens no merchant dashboard on them — and nobody else can change or delete the promo codes you made (the
-app keeps those only on the phone). Another account that signs in on the phone no longer sends an application of yours
-that hadn't gone out yet as its own. An application made while nobody was signed in, or before that version, belongs
-to no account until the app next runs with an account signed in on the phone, which makes it that account's; a promo
-code made then, until an account signed in there opens its promo codes or adds, changes or deletes one. Until that
-version, the next person on the phone can see which roles you applied for and their status, and see and change your
-promo codes, and an application of yours that hadn't gone out yet could be sent as the next signed-in account's.
+**Your partner applications and promo codes show only to your account on the phone, too.** While nobody is signed in,
+or someone else is, the app shows none of your partner applications or their status — and opens no merchant dashboard
+on them — and nobody else can change or delete the promo codes you made (the app keeps those only on the phone).
+Another account that signs in on the phone no longer sends an application of yours that hadn't gone out yet as its
+own. An application made while nobody was signed in, or with a version of the app built before October 12, 2026, belongs
+to no account until the app next runs with an account signed in on the phone, which makes it that account's, and if it
+hadn't gone out yet, it is sent as that account's application; a promo code made then, until an account signed in there
+opens its promo codes or adds, changes or deletes one. Until then, whoever uses the phone can see such an application
+and its status, or see and change such a promo code.
 
-**Your delivery orders and sent parcels show only to your account on the phone, too — from the next version of the
-app.** While nobody is signed in, or someone else is, the app shows none of the food orders or parcels you placed there,
-nobody else can remove them, and another account signing in never sends one of yours as its own. One an older version
-recorded for an account stays that account's; one the app can't tie to any account — placed while nobody was signed in,
-or by an older version that recorded none — belongs to no account until an account signed in on the phone opens its
-deliveries, places one or syncs them, which makes it that account's. Until that version, the next person on the phone
-can see an order or parcel that recorded no account (a sent parcel's record includes its recipient's name, phone number
-and addresses).
+**Your delivery orders and sent parcels show only to your account on the phone, too.** While nobody is signed in, or
+someone else is, the app shows none of the food orders or parcels you placed there, nobody else can remove them, and
+another account signing in never sends one of yours as its own. One an older version recorded for an account stays that
+account's; one the app can't tie to any account — placed while nobody was signed in, or by an older version that
+recorded none — belongs to no account until an account signed in on the phone opens its deliveries, places one or syncs
+them, which makes it that account's. Until then, whoever uses the phone can see it (a sent parcel's record includes its
+recipient's name, phone number and addresses).
 
-**Your buddy-trip drafts show only to your account on the phone, too — from the next version of the app.** A trip you
-draft while signed in shows only to your account: while nobody is signed in, or someone else is, the travel-buddy board
-shows none of it, and nobody else can delete it there. A draft made while nobody was signed in, or before that version,
-isn't tied to an account on the phone: it stays visible until the app next syncs with an account signed in, which makes
-it that account's — and deleting one while nobody is signed in removes it from the phone only, never from anyone's saved
-copy with us. So from that version, nobody can delete your saved copy with us from a phone you're not signed in on. Until
-that version, while nobody is signed in the board shows every draft on the phone, and deleting one there can also delete
-its account's saved copy with us.
+**Your buddy-trip drafts show only to your account on the phone, too.** A trip you draft while signed in shows only to
+your account: while nobody is signed in, or someone else is, the travel-buddy board shows none of it, and nobody else
+can delete it there. A draft made while nobody was signed in, or with a version of the app built before October 12,
+2026, isn't tied to an account on the phone: it stays visible until the app next syncs with an account signed in, which
+makes it that account's — and deleting one while nobody is signed in removes it from the phone only, never from anyone's
+saved copy with us. So nobody can delete your saved copy with us from a phone you're not signed in on.
 
 **And one more clearing, on a different trigger — when the phone changes hands.**
 Your blocked list and your safety reports are treated differently on purpose.
@@ -362,23 +357,30 @@ list, report history and any unsent report stay on that phone, and an unsent rep
 can be sent under the new account. That is true of the version of the app now in use.
 The next app update ends it: an unsent block or report can no longer go out under
 another account, and the first person's blocked list and report history are removed
-when the next account signs in. To tell that a different account has signed in, the
-phone keeps one separate record of the account id after sign-out, a random code with no name or email in
-it. The app keeps it on that phone, never sends it anywhere or shows it to anyone, and uses it only for that check and to mark a block or report made while signed out as that account's, so it can go out when that account signs back in. If a different account signs in first, that unsent block or report is deleted from the phone and never goes out. There is only ever one such record, the most recent account's: a different
-account signing in replaces it, and it is deleted when you delete your account on
-that phone, or with the app. Things you saved on the phone while signed in, like a
-draft, can carry the same id so the app can tell whose they are. **Your blocked list lives on this phone.** It is not
+when the next account signs in. From the next app update, to tell that a different
+account has signed in, the phone keeps one separate record of the account id after
+sign-out, a random code with no name or email in it. The app keeps it on that phone,
+never sends it anywhere or shows it to anyone, and uses it only for that check and to
+mark a block or report made while signed out as that account's, so it can go out when
+that account signs back in. If a different account signs in first, that unsent block
+or report is deleted from the phone and never goes out. There is only ever one such
+record, the most recent account's: a different account signing in replaces it, and it
+is deleted when you delete your account on that phone, or with the app. Things you
+saved on the phone while signed in, like a draft, already carry your account id so the
+app can tell whose they are. **Your blocked list lives on this phone.** It is not
 copied to your account today, so if you reinstall the app or sign in on a new
 phone, the app will not know who you had blocked and you will need to block
-them again. The exception is a block that is also recorded on our server (in
-the version of the app now in use, a block made from a dating deck, a match or a
-dating profile; from the next app update, also a new one made from a traveler's
-profile, a creator's map, a live city chat room, or a post or comment — see
-"Blocking" below):
-the version now in use puts those back on this list when you open the safety
-center, and the next app update does it as soon as you sign in. A block made from
-any other surface in the version now in use stays on the phone only, and updating
-the app does not copy it to your account. For city-chat blocks, the code that
+them again. The exception is a block that is also recorded on our server (a
+block made while you're signed in from a dating deck, a match, a dating profile,
+a traveler's profile, a post or comment, or a live city chat room; from the next
+version of the app, also one made from a creator's map — see "Blocking" below):
+the app puts those back on this list when you open the safety center, and from
+the next version of the app also as soon as you sign in. A block made while
+you're signed out, one whose upload to our server fails, one made in the sample
+city chat room, or one made in a version of the app built before October 12,
+2026 from a traveler's profile, the feed or a city chat room, stays on the phone
+only, and updating the app does not copy it to your account. For city-chat
+blocks, the code that
 copies them is written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
@@ -388,46 +390,44 @@ the post they're on to the same audience as the post itself. **Game nights go
 further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
 You can delete your own posts at any time: a deleted post disappears for everyone
-at once and its words, place and location are erased (its photo: see the known
-gap below). Once a pending database update and the next version of the app are
-in, one thing changes: if someone had reported the post and that report is still
-open or under review when you delete it, we keep the post — its words, place,
-location and photo — hidden from everyone but our moderators, so the report can
-be dealt with; we do not yet erase it automatically once the report is closed
-(that clean-up is still being built), so email us if you want it gone. Deleting
-your own comments does not go through yet (see the known gap below). Deleting
-your account removes your posts, likes, comments, and game nights along with
-everything else.
-**Known gaps, disclosed September 29, 2026:** deleting a post removes it from the
-app at once, but **a photo you attached to it stays in our storage** at its
-unguessable web address — the post no longer shows it, though a place another
+at once, its words, place and location are erased, and its photo is deleted from
+our storage right after (if that deletion fails, the file stays until you delete
+your account; for a post deleted with an older version of the app, see the known
+gap below). One exception: if someone had reported the post and that report is
+still open or under review when you delete it, we keep the post — its words,
+place, location and photo — hidden from everyone but our moderators, so the
+report can be dealt with — except its photo file, which stays at its unguessable
+web address, so anyone who has that address, or a place another traveler saved
+from the post, can still show it; we do not yet erase it automatically once the
+report is closed (that clean-up is still being built), so email us if you want
+it gone. You
+can delete your own comments too (see below). Deleting your account removes your
+posts, likes, comments, and game nights along with everything else.
+**Known gaps, disclosed September 29, 2026 (updated November 6, 2026):** **a
+photo attached to a post you deleted with a version of the app built before
+October 12, 2026 stays in our storage** at its unguessable web address until you
+delete your account — the post no longer shows it, though a place another
 traveler saved from that post can still show it, and anyone who has the address
 can still open it. **The comments on a post that is deleted** disappear for
 everyone at once, but **their text stays on our server**, hidden from everyone
 except the post's author, until the comment's writer, or the post's author,
-deletes their account. **Game nights are not switched on yet**; if they are
-before the fix below lands, deleting one will not go through either. If you want
-any of these erased now, email admin@nomadzachstudios.com
-and we will do it by hand. We would rather say so than let this policy promise
-more than the app does; each note comes out the day the app deletes that item
-fully.
-**Known gap, disclosed September 30, 2026 — deleting your own comments and
-city-chat messages:** in the current version of the app, **deleting your own
-comment or city-chat message does not work.** Our database refuses it, so the
-comment or message stays up for everyone who could see it. A pending database
-update and the next version of the app fix it; until you have both, email
-admin@nomadzachstudios.com and we will delete it by hand. **Once that fix is
-in,** deleting a comment or a city-chat message takes it down for everyone at
-once and **erases its text** — unless someone reported it before you deleted it
-and we have not dismissed that report (it is open, under review, or was acted
-on): then the text is kept, readable only by our moderators, and we do not yet
-erase it afterwards (that clean-up is still being built), so email us if you
-want it gone. What stays either way is the hidden record that you wrote it,
-where and when: for a comment until you delete your account; for a city-chat
-message until our 30-day clean-up, which deletes every chat message — kept text
-included. And because deleting erases the text, **a report filed after you
-deleted something finds nothing left to review** — unless an earlier report we
-had not dismissed had already kept it.
+deletes their account. **Game nights are not switched on yet**; when they are,
+removing one goes through. If you want any of these erased now, email
+admin@nomadzachstudios.com and we will do it by hand. We would rather say so than
+let this policy promise more than the app does; each note comes out the day the
+app deletes that item fully.
+**Deleting your own comments and city-chat messages:** deleting a comment or a
+city-chat message takes it down for everyone at once and **erases its text** —
+unless someone reported it before you deleted it and we have not dismissed that
+report (it is open, under review, or was acted on): then the text is kept,
+readable only by our moderators, and we do not yet erase it afterwards (that
+clean-up is still being built), so email us if you want it gone. What stays
+either way is the hidden record that you wrote it, where and when: for a
+comment until you delete your account; for a city-chat message until our 30-day
+clean-up, which deletes every chat message — kept text included. And because
+deleting erases the text, **a report filed after you deleted something finds
+nothing left to review** — unless an earlier report we had not dismissed had
+already kept it.
 
 **A map you publish is public in the same way** —
 see "Maps you publish" above: anyone can open it, including someone with no
@@ -477,19 +477,18 @@ When you save a post, the app needs to turn text into a map pin:
   to it — and you can turn this off any time under Settings → AI place
   detection. (This third-party-AI sharing is disclosed here and asked for
   in-app because it is your personal content leaving our systems.)
-  **From the next version of the app, an account's answer counts only for
-  that account.** If you're signed in, the phone keeps your answer with your
-  account (only on the phone — it's never sent to us), so anyone else who
-  uses the app on that phone — another account, or someone signed out — is
-  asked for their own answer, and your "Use AI" never sends their captions.
-  If nobody is signed in — or the app can't tell who is — the answer isn't
-  kept: it covers whoever uses the app on that phone until the app is fully
-  closed or someone signs in or out, and the question is asked again after
-  that. The phone keeps one signed-in answer at a time, so if another account
-  answers on it, you'll be asked again. Answers given before that version,
-  yes or no, no longer count, because the app can't tell whose they were:
-  you'll be asked again (once, if you're signed in). Until that version, one
-  answer on a phone covers everyone who uses the app on it.
+  **An account's answer counts only for that account.** If you're signed in,
+  the phone keeps your answer with your account (only on the phone — it's
+  never sent to us), so anyone else who uses the app on that phone — another
+  account, or someone signed out — is asked for their own answer, and your
+  "Use AI" never sends their captions. If nobody is signed in — or the app
+  can't tell who is — the answer isn't kept: it covers whoever uses the app
+  on that phone until the app is fully closed or someone signs in or out, and
+  the question is asked again after that. The phone keeps one signed-in
+  answer at a time, so if another account answers on it, you'll be asked
+  again. Answers given with a version of the app built before October 12,
+  2026, yes or no, no longer count, because the app can't tell whose they
+  were: you'll be asked again (once, if you're signed in).
 
 ### Device location (live — opt-in, foreground only, never in the background)
 
@@ -551,11 +550,11 @@ These uses are live in the main app:
   would rather this did not happen,
   turn Pinorama's location permission off in your phone's settings — the app
   falls back to your saved places and your profile's home base.
-- **How far a saved place is — from the next version of the app, no prompt,
-  and only if you have already granted the permission.** Your **Saved** list and
-  a place's page read your position the same way (the position your phone
-  already has, if it is under 30 minutes old, or one coarse fresh reading) to
-  show roughly how many minutes away each place is on foot and by car. **That
+- **How far a saved place is — no prompt, and only if you have already granted
+  the permission.** Your **Saved** list and a place's page read your position
+  the same way (the position your phone already has, if it is under 30 minutes
+  old, or one coarse fresh reading) to show roughly how many minutes away each
+  place is on foot and by car. **That
   reading stays on your phone** — it is not sent to us or to anyone — and the
   app keeps it in memory for five minutes. Without the permission, the line
   simply isn't shown.
@@ -637,36 +636,35 @@ app and, on iPhone, a scrambled code made from the identifier the phone gives ou
 (neither is your account); and a short trail of what the app did just before —
 the screens and system events, and for each recent request, which service it
 went to and which part of it (for example our server's profiles table, or the
-map search), with everything after that cut off. Apart from the dated known gap
-below, we do not attach your name, email, account identity, or precise location
-to crash reports, and crash data is never used for advertising or cross-app
-tracking. **Known gap, disclosed September 30, 2026:** in the test versions of
-the app so far (crash reports began on August 7, 2026), that trail kept each
-request's full address — which can hold your account's ID, the text of a place
-search, the link of a post you saved, or the area of the map around you — and
-the app's own log lines, and the app also told Sentry each time it was opened,
-with that installation identifier. From the next version of the app, every
-address is cut down to the service and its part, the log lines are left out,
-and nothing goes to Sentry unless the app crashes or hits an error. Crash reports exist
-only to fix defects. Sentry deletes each report 30 days after it arrives (on the
-plan we use today). Deleting your account does not reach reports already sent, so
-a report from the test versions that holds your account's ID in an address stays
-until those 30 days pass; and a report the app has not been able to send yet waits
-on the phone until it can, even after you sign out. Sentry processes this data on our behalf; see Sentry's
+map search), with everything after that cut off; the app's own log lines are left out,
+and nothing goes to Sentry unless the app crashes or hits an error. Apart from what
+versions of the app built before October 12, 2026 sent (below), we do not attach your
+name, email, account identity, or precise location to crash reports, and crash data is
+never used for advertising or cross-app tracking. In versions of the app built
+before October 12, 2026 (crash reports began on August 7, 2026), that trail kept each
+request's full address — which can hold your account's ID, the text of a place search,
+the link of a post you saved, or the area of the map around you — and the app's own log
+lines, and the app also told Sentry each time it was opened, with that installation
+identifier. Crash reports exist only to fix defects. Sentry deletes each report 30 days
+after it arrives (on the plan we use today). Deleting your account does not reach
+reports already sent, so a report from one of those versions that holds your account's
+ID in an address stays until those 30 days pass; and a report the app has not been able
+to send yet waits on the phone until it can, even after you sign out. Sentry processes
+this data on our behalf; see Sentry's
 privacy documentation at sentry.io/privacy for their practices.
 
 ## Third-party services
 
 | Service | What it does | What it receives |
 |---|---|---|
-| Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces; the phone's model, OS version, language, time zone, memory and storage; the app version; a random installation identifier and, on iPhone, a scrambled code made from the identifier the phone gives our apps; the screens and system events just before, and which service and part of it the app's most recent requests went to. No name, email, account identity, or precise location attached by us — see the dated known gap under "Crash reports" for the test versions so far |
-| OpenStreetMap Nominatim | Turns place text into map coordinates, and the city typed into a hotel search into that city | The place or city text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way"). **Known gap, disclosed September 30, 2026:** in the current version of the app, a hotel search made before the app has read its settings (for example on its very first launch) can send the typed city straight from your phone to Nominatim instead; the next version always goes through our server |
+| Sentry (Functional Software, Inc.) | Crash reporting — collects error reports when the app crashes so we can fix defects | Crash stack traces; the phone's model, OS version, language, time zone, memory and storage; the app version; a random installation identifier and, on iPhone, a scrambled code made from the identifier the phone gives our apps; the screens and system events just before, and which service and part of it the app's most recent requests went to. No name, email, account identity, or precise location attached by us — see "Crash reports" for versions built before October 12, 2026 |
+| OpenStreetMap Nominatim | Turns place text into map coordinates, and the city typed into a hotel search into that city | The place or city text only — sent by our server on your behalf, and reused for up to 30 days from an unlinked cache (older copies are not yet deleted automatically — see "One thing leaves your device either way"). |
 | Photon (komoot) | Suggests places while you type in the Rooms search on Book, and addresses while a business partner types their venue | The typed text only, requested from your phone |
 | ExchangeRate-API (open.er-api.com), with Frankfurter (api.frankfurter.app) as a fallback | Today's currency exchange rates, so prices can be shown in your currency | A request for the day's rates against the US dollar, sent from your phone — usually no more than about twice a day. Nothing about you is in it; like any website, the service sees that the request came from your phone |
 | Google Places API | Provides real place details — star ratings, review counts, price level, opening hours and one photo — via our server, when a place page or a map pin's card opens, and for a saved place whose own picture can't be shown (nothing of Google's is kept on our server — see "About Google place content" below) | The place's name and coordinates only, sent from our server. Your identity, account, and precise device location are never sent to Google. The photos on a place page and on your Saved tiles are then loaded by your phone straight from Google's image servers, which see that the request came from your phone |
 | Wikidata / Wikimedia Commons — **not switched on yet** | A free photo of a well-known place, and the place's own website, on its place page. Our server looks places up in Wikidata ahead of time; nobody's request is involved | Nothing about you reaches Wikidata. When such a photo is shown, your phone loads it straight from Wikimedia's image servers, which see that the request came from your phone |
 | TikTok / Instagram / X oEmbed | Fetches a shared post's public caption, and the post's preview image when a saved place needs one | The post link, requested from your device — and a request for the preview image itself, from your device, when the place is displayed. Nothing is stored on our servers; your phone caches the image address for a few hours |
-| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after a yes on that phone — your account's own if you're signed in (asked once, and you can change it in Settings), or, while nobody is signed in, a yes given since the app was last fully closed or anyone signed in or out (until the next version of the app, one yes on a phone covers everyone who uses the app on it); a menu photo, from the next version of the app, only after you say yes to that scan |
+| Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after a yes on that phone — your account's own if you're signed in (asked once, and you can change it in Settings), or, while nobody is signed in, a yes given since the app was last fully closed or anyone signed in or out; a menu photo only after you say yes to that scan |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
 | Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
@@ -965,22 +963,20 @@ load" until the next hour; and the counts are deleted within about a day.
   device too** — your dating data and your conversations. **Your saved places,
   your profile, your notes and your points stay on the phone** and are not
   deleted with your account; if you want those gone as well, delete the app.
-  **From the next version of the app, deleting your account also removes from
-  the phone** the booking notes, drafted meetups, planned posts, buddy-trip
-  drafts, joined city chats, partner applications, promo codes, delivery orders,
-  sent-parcel records, dating filters and AI-caption answer that belonged to it —
-  and nothing that belongs to anyone else who uses the phone. If the
-  phone won't let the app remove some of them, the app tells you; nobody can
-  open them, and deleting the app removes them. Until that version, they stay
-  on the phone after you delete your account; deleting the app removes them.
+  **Deleting your account also removes from the phone** the booking notes,
+  drafted meetups, planned posts, buddy-trip drafts, joined city chats, partner
+  applications, promo codes, delivery orders, sent-parcel records, dating filters
+  and AI-caption answer that belonged to it — and nothing that belongs to anyone
+  else who uses the phone. If the phone won't let the app remove some of them,
+  the app tells you; nobody can open them, and deleting the app removes them.
   **One item on the phone is not yours alone:** if you ever sent an express
   parcel, the parcel record kept on your phone includes the **recipient's name,
-  phone number and addresses**. From the next version of the app it leaves the
-  phone with your account, as above — one sent with an older version once the app
-  has tied it to your account, which happens the next time an account opens its
-  deliveries, sends one or syncs them on the phone. Until then it stays there
-  after you delete your account until you delete the app (see Express parcels
-  below). We name it because it holds someone else's details. A hotel or flight
+  phone number and addresses**. It leaves the phone with your account, as above —
+  one sent with an older version once the app has tied it to your account, which
+  happens the next time an account opens its deliveries, sends one or syncs them
+  on the phone. Until then it stays there after you delete your account until you
+  delete the app (see Express parcels below). We name it because it holds someone
+  else's details. A hotel or flight
   booked while our server could not confirm your sign-in is not linked to your
   account either, so deleting your account cannot reach it — email us its
   booking reference and we delete it by hand.
@@ -1045,12 +1041,12 @@ display name, bio, interests, photos, gender (if you set one), whether
 you're looking to date, to find a travel buddy, or both, city, and a
 distance rounded to whole kilometers,
 computed from a further-blurred (~1 km grid) position — never that position itself,
-your legal name, email or exact location. **Known gap, disclosed November 5, 2026:** a
-dating photo uploaded from the version of the app now in use is re-compressed by your
-phone before it is sent, which normally drops the photo's location and camera details,
-but that version does not check, and we have not confirmed on a device that nothing is
-left. From the next app update the app removes those details before the photo leaves
-your phone and does not upload a photo it can't clean. A photo already uploaded stays
+your legal name, email or exact location. The app removes a dating photo's location
+and camera details before the photo leaves your phone, and does not upload a photo it
+can't clean. **Known gap, disclosed November 5, 2026:** a dating photo uploaded from a
+version of the app built before October 12, 2026 was re-compressed by your phone
+before it was sent, which normally drops those details, but that version did not
+check, and we have not confirmed on a device that nothing is left. Such a photo stays
 as it was until you replace or remove it. **Which genders you want to
 meet is never shown to anyone** — it is only a filter. Who liked you is
 not shown
@@ -1059,21 +1055,22 @@ match is created only when two people like each other, and each match is
 visible only to the two people in it.
 
 A block takes effect on your phone immediately. **Whether it also holds on the
-other person's phone depends on where you made it:** a block you make from a dating deck, a match or a dating profile is
-recorded on our server as well as on your device. That server record is what stops the other person reaching you even
+other person's phone depends on where you made it:** a block you make while you're signed in from a dating deck, a
+match, a dating profile, a traveler's profile, a post or comment in the feed, or a live city chat room is recorded on
+our server as well as on your device. From the next version of the app you can also block a creator from their published
+map, and that block is
+recorded the same way. That server record is what stops the other person reaching you even
 from their own phone. **It also removes any follow between the two of you, in
 both directions, and prevents either of you from following the other again
 while the block stands. Unblocking lifts the block but does not bring the
 follow back** — either of you may follow again later as a fresh choice.
-**Known gap, disclosed October 28, 2026:** the version of the app now in use
-(built September 7, 2026) records only blocks made from a dating deck, a match
-or a dating profile on our server — those remove any follow between you, both
-ways, since October 5, 2026. A block made in that version from a traveler's
+**Known gap, disclosed October 28, 2026 (updated November 6, 2026):** a block
+made in a version of the app built before October 12, 2026 from a traveler's
 profile, the feed or a city chat room stays on your phone and does not remove a
 follow, and updating the app does not change that: to put one on our server,
-unblock that traveler and block them again after the update. From the next app
-update, a new block made from a traveler's profile, a creator's map, the feed or a
-live city chat room is recorded on our server as described above. A
+unblock that traveler and block them again while signed in. A block made while
+you're signed out, or whose upload to our server fails, also stays on your phone
+only, and the app does not send it later. A
 block you make in the sample city chat room (whose senders are invented) is
 always kept **on your device** only, so it protects you immediately and does not
 follow you to a new phone — see "your blocked list lives on this phone" above. A
@@ -1087,10 +1084,10 @@ match you already had, and messages already sent, stay visible to them. When you
 which surface), the reason you picked, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
-also report. **Known gap, disclosed October 28, 2026:** for posts and comments in
-the feed, a block is not recorded on our server at all in the version of the app
-now in use; from the next app update it is, but the feed does not use that record
-until a pending database update lands. Until then a traveler you blocked can still
+also report. **Known gap, disclosed October 28, 2026 (updated November 6,
+2026):** for posts and comments in the feed, a block you make there is recorded
+on our server, but the feed does not use that record until a pending database
+update lands. Until then a traveler you blocked can still
 read your posts and comments — they no longer appear to you, but you still appear
 to them there. Your app hides theirs from you at once.
 
@@ -1098,17 +1095,17 @@ You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
 profile, likes, matches, and blocks.
 
-**Removing your dating profile.** From the next version of the app, **Remove my
-travel profile**, at the bottom of your travel profile, turns discovery off and
-erases from our servers your display name, bio, interest tags, date of birth,
-gender, city and approximate position, and resets who you want to meet to
-everyone; its photos come off the profile at once, and their files are deleted from our storage (see "Photo files" below). An empty, switched-off profile record stays behind. Your likes,
-matches and blocks stay until you delete your account, and so does your
-buddy-profile draft — on your phone and in its restore copy with your account
-(described above) — so saving it publishes the profile again. Travelers who were
-already shown your profile may still have what their app saved of it. Until you
-have that version, email admin@nomadzachstudios.com and we'll remove your profile
-for you. **Photo files (updated November 6, 2026):** since October 5, 2026,
+**Removing your dating profile.** **Remove my travel profile**, at the bottom of
+your travel profile, turns discovery off and erases from our servers your
+display name, bio, interest tags, date of birth, gender, city and approximate
+position, and resets who you want to meet to everyone; its photos come off the
+profile at once, and their files are deleted from our storage (see "Photo files"
+below). An empty, switched-off profile record stays behind. Your likes, matches
+and blocks stay until you delete your account, and so does your buddy-profile
+draft — on your phone and in its restore copy with your account (described
+above) — so saving it publishes the profile again. Travelers who were already
+shown your profile may still have what their app saved of it. **Photo files
+(updated November 6, 2026):** since October 5, 2026,
 removing a photo from your profile also deletes the file from our storage,
 right after the photo comes off the profile; if that deletion fails, the
 file stays until you delete your account. **A photo you removed before
@@ -1137,9 +1134,9 @@ coordinates for this feature. What others see is deliberately limited:
 Your shared location automatically ages off the map after a few hours, and
 turning the social map off **deletes** your shared location from our servers
 (it's gone, not hidden). A block recorded on our server stops the sharing between
-you, both ways; in the version of the app now in use, a block made from a traveler's
-profile, the feed or a city chat room stays on your phone and only hides them from
-you (see "Blocking").
+you, both ways; a block made in a version of the app built before October 12, 2026
+from a traveler's profile, the feed or a city chat room stays on your phone and only
+hides them from you (see "Blocking").
 Deleting your account removes your shared location too.
 
 ## Messages between matches
@@ -1150,8 +1147,8 @@ so they can be delivered, and each message is visible **only to the two of
 you** — no other user can read it. We store the message text, who sent it to
 whom, the time, and whether it was read. An anti-spam limit caps how fast
 anyone can send. A block recorded on our server stops new messages between you in both directions
-(see "Blocking" for which blocks are recorded, in the version of the app now in use
-and from the next app update); messages already sent stay visible to the person you
+(see "Blocking" for which blocks are recorded); messages already sent stay visible to the person
+you
 blocked. Deleting your account permanently deletes your messages from our servers; a
 copy already on the other person's phone can stay there.
 
@@ -1166,12 +1163,11 @@ and we would want it anyway.
 the reason you chose from the list, your account id, and the time it reached us.
 
 **What we do with it:** a moderator reviews it and decides what happens to the
-reported content or account. Once the fix for deleting comments and city-chat
-messages is in (see the dated known gap in the social section): if the author
-deletes a comment or city-chat message after you reported it, we keep its text
-for the moderator unless we dismissed your report; if they deleted it before
-anyone reported it, its text is already erased and there is nothing left for us
-to review. We keep the report so we can act on repeat
+reported content or account. If the author deletes a comment or city-chat
+message after you reported it, we keep its text for the moderator unless we
+dismissed your report; if they deleted it before anyone reported it, its text
+is already erased and there is nothing left for us to review. We keep the
+report so we can act on repeat
 behaviour — a single complaint and a tenth complaint about the same person are
 different situations.
 
@@ -1214,18 +1210,17 @@ room so you can meet travelers there. The app tells you the moment it happens,
 with a one-tap **leave** right on the same card. You can leave any room with
 one tap, a room you leave is never joined for you again, and dismissing a
 suggested city also stops it being auto-joined. Your booking details are never
-shown to the room — other travelers only see what you choose to post. From the
-next version of the app, this happens only while you're signed in: with nobody
-signed in, a booking note joins no room.
+shown to the room — other travelers only see what you choose to post. This
+happens only while you're signed in: with nobody signed in, a booking note
+joins no room.
 
 If you send a message, we store the message text, the room's city, your
 account id, and the time — and every signed-in traveler in that room can see
 the message with your display name. An anti-spam limit caps how fast anyone
-can post. **Deleting your own message does not go through yet in the current
-version of the app** (see the dated known gap in the social section); once it
-does, a deleted message disappears from the room at once and its text is erased,
-unless a report of it that we have not dismissed exists — then we keep the text,
-hidden, for our moderators. Our daily clean-up deletes every chat message once it
+can post. When you delete your own message, it disappears from the room at once
+and its text is erased, unless a report of it that we have not dismissed exists
+— then we keep the text, hidden, for our moderators. Our daily clean-up deletes
+every chat message once it
 is 30 days old. You can block other travelers (their messages stop appearing for you, on
 your device, immediately), and report messages — a report sends us the message
 you reported, the reason you picked, your account id, and
@@ -1236,16 +1231,14 @@ When you're signed in, we also remember **which city rooms you've joined** (the
 city and the time you joined) so your rooms sync across your devices. You can
 leave a room at any time, and deleting your account removes this too.
 
-**From the next version of the app, the rooms you joined show only to your
-account on the phone.** While nobody is signed in, or someone else is, the
-app lists none of them and nobody else can leave them there, and another
-account that signs in on the phone is no longer added to your rooms. A room
-joined while nobody was signed in, or before that version, isn't tied to an
-account yet: it stays listed — and can be left — for whoever uses the phone
-until an account signed in there next opens its city chats or joins one, which
-makes the room that account's. Until that version, your joined rooms stay
-listed — and can be left — on the phone after you sign out, and the next
-account to sign in there can be added to them too.
+**The rooms you joined show only to your account on the phone.** While nobody
+is signed in, or someone else is, the app lists none of them and nobody else
+can leave them there, and another account that signs in on the phone is no
+longer added to your rooms. A room joined while nobody was signed in, or with
+a version of the app built before October 12, 2026, isn't tied to an account
+yet: it stays listed — and can be left — for whoever uses the phone until an
+account signed in there next opens its city chats or joins one, which makes
+the room that account's.
 
 ## Food delivery & express parcels (optional; not yet active)
 
@@ -1315,12 +1308,11 @@ once it's delivered — a **proof-of-delivery record**. The recipient does **not
 need a Pinorama account; their name and phone are information **you provide** for
 the delivery. By sending a parcel you confirm you're allowed to share those
 recipient details for this purpose. **A copy of each parcel record is also kept
-on your phone**, and that copy survives signing out. From the next version of the
-app it shows only to the account that sent it on the phone, and deleting your
-account removes it (one sent with an older version, once the app has tied it to an
-account — the next time one opens its deliveries, sends one or syncs them there);
-until then it survives deleting your account too — delete the app to remove it
-(disclosed September 14, 2026).
+on your phone**, and that copy survives signing out. It shows only to the account
+that sent it on the phone, and deleting your account removes it (one sent with an
+older version, once the app has tied it to an account — the next time one opens
+its deliveries, sends one or syncs them there); until then it survives deleting
+your account too — delete the app to remove it (disclosed September 14, 2026).
 
 **Who can see a parcel.** You (the sender) see the full record. **The assigned
 courier** sees the recipient's name, phone, notes, and address **only while the
@@ -1355,6 +1347,59 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 6, 2026 (what the version on phones already does):** the version of the app our testers have,
+built October 12, 2026, already does most of what this page said would come "from the next version of the app", so those
+lines now say what it does, and where an older version still matters they name it: "a version of the app built before
+October 12, 2026". Crash reports: the September 30, 2026 known gap is retired ("From the next version of the app, every
+address is cut down to the service and its part, the log lines are left out, and nothing goes to Sentry unless the app
+crashes or hits an error"); what reports from those older versions hold, and that they stay until Sentry's 30 days pass,
+is kept. Menu scans: "From the next version of the app, it asks you before each scan" now says it asks, and "the version
+now in use sends the photo as soon as you take or pick it" is gone. Hotel search: the September 30, 2026 known gap ("the
+next version always goes through our server") is retired. "Remove my travel profile" lost "From the next version of the
+app", and "Until you have that version, email admin@nomadzachstudios.com and we'll remove your profile for you" is gone.
+Deleting your own comments and city-chat messages works: the September 30, 2026 known gap ("deleting your own comment or
+city-chat message does not work", "A pending database update and the next version of the app fix it") is retired, since
+that database update landed on October 5, 2026, and the comments, posts, city chat and "Reporting" lines that pointed at
+it now say what happens. Deleting a post: "Once a pending database update and the next version of the app are in" is
+gone, so a reported post is kept for our moderators now (its photo file stays at its unguessable web address), and the
+photo of a post with no open report is deleted with it; the September 29, 2026 known gap ("a photo you attached to it
+stays in our storage") now covers only a post deleted with an older version, and "if they are before the fix below
+lands, deleting one will not go through either" (game nights) is retired. "How far a saved place is — from the next
+version of the app" lost those words. Buddy-trip drafts: "In the version of the app now in use, one phone's sync can
+also remove the other's newer drafts from our servers until that phone syncs again; the next app update ends that" is
+gone. Signing out: linked social accounts, your travel profile, booking notes, drafted meetups, dating filters and
+planned posts, partner applications and promo codes, delivery orders and sent parcels, buddy-trip drafts and joined city
+chats each lost "— from the next version of the app" and their "Until that version, …" sentence, and "or before that
+version" now names the date; for a record no account owns yet, the page now says that whoever uses the phone can see it
+(and change or delete a booking note, meetup, dating filter, planned post or promo code) until an account claims it, and
+that an unsent partner application is then sent as that account's, which the removed sentences used to cover. AI
+captions: "From the next version of the app, an account's answer counts only for that account" and the Anthropic row now
+say it does, and "Until that version, one answer on a phone covers everyone who uses the app on it" is gone. Deleting
+your account: "From the next version of the app, deleting your account also removes from the phone" and the sent-parcel
+line now say it does, and "Until that version, they stay on the phone after you delete your account" is gone. Dating
+photos: "From the next app update the app removes those details before the photo leaves your phone" now says it does;
+the November 5, 2026 known gap covers only photos uploaded from an older version. City chat: "From the next version of
+the app, this happens only while you're signed in" and "the rooms you joined show only to your account on the phone" now
+say it does. Blocking: this page said less than the version on phones does. It said "the version of the app now in use
+(built September 7, 2026) records only blocks made from a dating deck, a match or a dating profile on our server", that
+a block made "in the version of the app now in use" from a traveler's profile, the feed or a city chat room "stays on
+your phone and only hides them from you", and that for posts and comments "a block is not recorded on our server at all
+in the version of the app now in use". The version on phones also records on our server a block made while you're signed
+in from a traveler's profile, a post or comment in the feed, or a live city chat room, and removes any follow between
+you, both ways; a block made while you're signed out, or whose upload fails, stays on your phone and is not sent later.
+Where a block is recorded, only two things still come with the next version of the app: blocking a creator from their
+published map, which the version on phones does not offer, and putting your blocks back on your list as soon as you sign
+in (the version on phones does it when you open the safety center). The October 28, 2026 known gaps now cover only a
+block made in an older version, and, unchanged, that the feed does not use the record until a pending database update
+lands. Removing a public event: the September 29, 2026 known gap said "its title, type, place, location and time stay
+hidden on our server until you delete your account"; with our database update of October 5, 2026 and the version on
+phones, our server blanks its type, title, place and location, and only its date and time, and the record that your
+account posted it, stay. Removing a game night: "though its details stay hidden on our server" is retired; our server
+blanks the venue, sport, fixture, time and location. Crash reports: "We do not attach your name, email, account
+identity, or precise location" again names the exception for older versions. The shared-phone paragraph: "To tell that a
+different account has signed in, the phone keeps one separate record of the account id after sign-out" now says it comes
+with the next app update; the version on phones keeps no such record. Nothing else about what we collect changed.
 
 **Changelog — November 6, 2026 (photos that are now deleted):** two lines said we keep photos that we have been
 deleting since October 5, 2026. Deleting your account now removes the photos attached to your posts as well as your
