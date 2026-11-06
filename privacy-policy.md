@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 5, 2026**
+**Effective date: November 6, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -953,12 +953,11 @@ load" until the next hour; and the counts are deleted within about a day.
   use the **"delete my account" button in the Settings screen** — tap the
   **⚙️ gear at the top of your Profile screen** to get there. It
   permanently erases your cloud account and the records stored for it
-  (including your posts and likes) immediately. Photos you uploaded are
-  removed on a best-effort pass straight after: **dating photos are
-  deleted today; photos attached to posts live in a separate store and
-  are not yet included in that pass.** We are closing that gap; until we
-  do, this sentence tells you exactly what happens rather than promising
-  more than the app does. You can also delete any
+  (including your posts and likes) immediately. Photos you uploaded are removed on a best-effort pass straight after:
+  **your dating photos and the photos attached to your posts.** If part of
+  that pass fails, the app tells you at the time; email us and we'll finish
+  it. **An account deleted before October 5, 2026 had only its dating photos
+  removed** — if yours was one, email us and we'll remove its post photos too. You can also delete any
   individual post yourself inside the app, or **email
   admin@nomadzachstudios.com** and we'll action the deletion for you
   promptly. **Deleting your account also signs you out on the phone, so
@@ -1103,19 +1102,20 @@ profile, likes, matches, and blocks.
 travel profile**, at the bottom of your travel profile, turns discovery off and
 erases from our servers your display name, bio, interest tags, date of birth,
 gender, city and approximate position, and resets who you want to meet to
-everyone; its photos come off the profile at once (the files themselves: see the
-known gap below). An empty, switched-off profile record stays behind. Your likes,
+everyone; its photos come off the profile at once, and their files are deleted from our storage (see "Photo files" below). An empty, switched-off profile record stays behind. Your likes,
 matches and blocks stay until you delete your account, and so does your
 buddy-profile draft — on your phone and in its restore copy with your account
 (described above) — so saving it publishes the profile again. Travelers who were
 already shown your profile may still have what their app saved of it. Until you
 have that version, email admin@nomadzachstudios.com and we'll remove your profile
-for you. **Known gap, disclosed September 30, 2026:** removing a photo from your
-profile, or removing the whole profile, takes the photo off your profile at once,
-but until a pending storage fix is applied the file itself stays in our storage
-at its unguessable web address — travelers who were shown your profile received
-that address, and anyone who has it can still open the file. It is deleted when
-you delete your account. If you want a photo file erased now, email us.
+for you. **Photo files (updated November 6, 2026):** since October 5, 2026,
+removing a photo from your profile also deletes the file from our storage,
+right after the photo comes off the profile; if that deletion fails, the
+file stays until you delete your account. **A photo you removed before
+October 5, 2026 may still be in our storage** at its unguessable web address —
+travelers who were shown your profile received that address, and anyone who
+has it can still open the file. It is deleted when you delete your account. If
+you want it erased now, email us.
 
 ## Sharing your location on the map (optional)
 
@@ -1355,6 +1355,13 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 6, 2026 (photos that are now deleted):** two lines said we keep photos that we have been
+deleting since October 5, 2026. Deleting your account now removes the photos attached to your posts as well as your
+dating photos (it said post photos were "not yet included in that pass"); an account deleted before October 5 had only
+its dating photos removed, and we remove its post photos on request. And removing a dating photo now deletes its file
+(it said the file stays "until a pending storage fix is applied"); a photo removed before October 5 may still be stored
+until you delete your account or ask us.
 
 **Changelog — November 5, 2026 (gender and nationality on a flight booking):** ahead of the next app update. Our flight supplier requires each traveler's gender as shown on the passport and their nationality, so the checkout form will ask for them. They go to the supplier and the airline with the other passenger details, and we don't store them, on our servers or on your phone.
 
