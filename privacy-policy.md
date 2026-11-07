@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 6, 2026**
+**Effective date: November 7, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -288,7 +288,10 @@ We do this for both groups for the same reason: so that someone else signing in
 on the same phone can never read them. **Please
 note this also happens if your session simply expires** — not only when you tap
 "sign out" — so if a check-in or a conversation matters to you, don't rely on it
-surviving on the device.
+surviving on the device. **A session we can't check is not treated as ended.** If
+the app can't reach our server, your dating data and your conversations stay on the
+phone; they are cleared once our server says your session is over, or when you
+sign out.
 
 **Your linked social accounts are set aside, not cleared.** When your session ends, the handles you linked (with the
 follower counts you typed, and any removal that hasn't reached our server yet) are moved aside on the phone under your
@@ -1347,6 +1350,12 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 7, 2026 (a session we can't check):** "What signing out does" said your dating data and your
+conversations are cleared "if your session simply expires". It now also says what happens when the app can't reach our
+server: a session we can't check is not treated as ended, so they are not cleared until our server says the session is
+over or you sign out. This is what the version of the app on phones already does; nothing about what we collect or keep
+changed.
 
 **Changelog — November 6, 2026 (what the version on phones already does):** the version of the app our testers have,
 built October 12, 2026, already does most of what this page said would come "from the next version of the app", so those
