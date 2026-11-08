@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 7, 2026**
+**Effective date: November 8, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -670,7 +670,7 @@ privacy documentation at sentry.io/privacy for their practices.
 | Anthropic (Claude API) | Extracts place names from captions, and reads dishes off menu photos for restaurant owners, via our server | Caption text, or the menu photo being scanned — no identity attached, and the photo is not stored. A caption is sent only after a yes on that phone — your account's own if you're signed in (asked once, and you can change it in Settings), or, while nobody is signed in, a yes given since the app was last fully closed or anyone signed in or out; a menu photo only after you say yes to that scan |
 | Travelpayouts (Aviasales) | Looks up flight prices for a route and month, via our server | The route you searched — origin, destination and month. Nothing that identifies you: the request comes from our server, and carries no account, device or contact detail. |
 | MET Norway (api.met.no) | Returns the forecast for the weather chip on your home screen, via our server | A coordinate for one of your saved places, **deliberately rounded to about 22 km** before it leaves us. Never your live device location, and nothing that identifies you. |
-| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in |
+| Supabase (AWS, Sydney) | Hosts our accounts database and cloud sync (region ap-southeast-2, Australia) | Your email, profile, saved places, points activity, which posts your feed showed you, and any posts, likes, comments, and game nights you create — only when you're signed in; plus, for every caller signed in or not, the daily fair-use counts described under Storage and security (a feature, a date, a number and a scrambled code — never your network address) |
 | Resend (Resend, Inc., USA) | Delivers the email with your sign-in code, for our server (since August 3, 2026) | Your email address and that message, with its one-time code. Nothing else about you |
 | Apple / Google / Expo | Standard app distribution and app infrastructure | Standard app-store and crash-level technical data per their own policies |
 | Your phone's built-in map service (Apple on iPhone, Google on Android) | Draws the maps in the app, and turns a location reading into a city name, on your own device's request — see "Device location" above | The part of the map you are looking at (the map pictures for that area), and for a city name the coordinates of that one reading — both sent by your phone to its platform provider. Neither passes through our servers and we never see either |
@@ -938,6 +938,27 @@ them in the current hour — your account id, the feature name, the hour and a
 number. It holds no location, no names and nothing about who was shown to
 you; past an hourly allowance far above normal use the app shows "couldn't
 load" until the next hour; and the counts are deleted within about a day.
+
+**Daily fair-use counts.** Some of what the app asks our server to do can cost
+us money each time, such as a hotel search, or having AI read a caption or a
+menu photo. So that one caller can't run up our partners' bills or our AI bill,
+our server counts these requests per caller per day. Each count holds only which
+feature it was for, the date (UTC), a number and a scrambled code standing for
+the caller — nothing about what you searched for or sent, and never your network
+(IP) address or your account itself. The code is made one way from the address
+the request came from, with a secret key kept on our server (a salted hash).
+When our server recognizes that a request comes from a signed-in account, it
+makes the code from the account instead, and also counts the address under a
+code of its own as a backstop, so that many travelers sharing one mobile
+network's address aren't all turned away together. The key doesn't change, so
+the same address or account always makes the same code. Past a daily allowance
+set well above one traveler's normal use, that request is turned down until
+midnight UTC. **Known gap, disclosed November 8, 2026:** nothing deletes these
+daily counts yet, so they stay on our server. Separately, several parts of our
+server keep a running count of recent requests per caller in their own working
+memory, to slow sudden bursts; that count is kept under the address itself (and
+the account, where our server recognizes one), is never saved, and is gone when
+that part of the server shuts down.
 
 ## Your rights and choices
 
@@ -1350,6 +1371,15 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 8, 2026 (daily fair-use counts):** this page said less than our server does. Since October 5,
+2026, for hotel searches and for AI reading a caption or a menu photo, our server has kept a count per caller per day:
+which feature, the date, a number and a scrambled code made with a secret key from the network address the request
+came from (a salted hash), never the address itself. Nothing deletes those counts yet. "Daily fair-use counts", new
+under Storage and security, now says so, with a dated known gap for the deletion. It also says that where our server
+recognizes a signed-in account, the code is made from the account instead and the address is counted as a backstop,
+and that several parts of our server keep a short count per caller in their working memory that is never saved.
+"Abuse prevention counts", the hourly counts for the who's-nearby features, is unchanged. The Supabase row under "Third-party services" now names the daily counts too, since they are kept for signed-out callers as well. Nothing else changed.
 
 **Changelog — November 7, 2026 (a session we can't check):** "What signing out does" said your dating data and your
 conversations are cleared "if your session simply expires". It now also says what happens when the app can't reach our
