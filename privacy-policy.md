@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 8, 2026**
+**Effective date: November 10, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -64,7 +64,12 @@ between your devices. When you're signed in we hold:
   between the two accounts **expires 6 months after you join**, is recorded
   **once** (the first invite link wins; it never changes afterwards), and is
   erased with your account. We never see who you *send* an invite to — a
-  referral is recorded only if the person you invited actually joins.
+  referral is recorded only if the person you invited actually joins. Your own
+  invite link carries a short invite code, which our server records as yours so
+  that travelers who join through it are credited to you. If you delete your
+  account, that code is **retired**: it stays recorded with nothing linking it
+  to you, credits nobody from then on, and is never given to anyone else — so an
+  invite link or QR code you already handed out can never credit a stranger.
 - **Your saved places**, including their names, **addresses and coordinates**,
   categories, the original post links, their **captions**, **your own notes,
   want-to-go / been-there marks, star ratings and reviews** of them (private —
@@ -166,7 +171,9 @@ between your devices. When you're signed in we hold:
   loads, we record which posts were on it: one record per post per day, holding
   your account, the post and the date — never how long you looked or how far
   you scrolled. Nothing reads these records yet; they are kept for a future
-  "For You" feed that will use them to rank posts. You can't see them in the app,
+  "For You" feed that will use them to rank posts. Until a nightly clean-up
+  we're adding runs, they are kept until you delete your account; once it runs,
+  it deletes the ones more than a year old. You can't see them in the app,
   other travelers never can, and deleting your account erases them.
 - **The traveler directory** — signed-in travelers can see a directory of
   travelers who have a public profile and at least one published post. It
@@ -610,7 +617,8 @@ and driver live location during an active run.
   you opened a screen — and nothing about *what* the place was. **The records
   are not linked to you or your account**, so they can't be traced back to a
   person, and they stay in our own database — we don't send them to any
-  analytics company. Nothing in the app can read them back, including you,
+  analytics company. A nightly clean-up will delete each record once it is
+  180 days old. Nothing in the app can read them back, including you,
   which is why they aren't listed under "Access" below: there is nothing there
   that is about you specifically. We never put your name, email, phone,
   address or location in them, and the app additionally refuses any value that
@@ -937,7 +945,11 @@ keeps a short-lived count of how many times your account asked for each of
 them in the current hour — your account id, the feature name, the hour and a
 number. It holds no location, no names and nothing about who was shown to
 you; past an hourly allowance far above normal use the app shows "couldn't
-load" until the next hour; and the counts are deleted within about a day.
+load" until the next hour; and the counts are deleted within about a day
+whenever anyone is using these features, because each time a count starts for
+a new hour, every count more than a day old is cleared away. If nobody uses
+them for a while, the last counts wait for the next use, until a nightly
+clean-up we're adding runs: it deletes counts more than a day old even then.
 
 **Daily fair-use counts.** Some of what the app asks our server to do can cost
 us money each time, such as a hotel search, or having AI read a caption or a
@@ -953,8 +965,10 @@ code of its own as a backstop, so that many travelers sharing one mobile
 network's address aren't all turned away together. The key doesn't change, so
 the same address or account always makes the same code. Past a daily allowance
 set well above one traveler's normal use, that request is turned down until
-midnight UTC. **Known gap, disclosed November 8, 2026:** nothing deletes these
-daily counts yet, so they stay on our server. Separately, several parts of our
+midnight UTC. **Known gap, disclosed November 8, 2026 (updated November 10,
+2026):** these daily counts stay on our server until a nightly clean-up we're
+adding deletes them; once it runs, it deletes each count when it is more than
+two days old, and until it runs nothing deletes them. Separately, several parts of our
 server keep a running count of recent requests per caller in their own working
 memory, to slow sudden bursts; that count is kept under the address itself (and
 the account, where our server recognizes one), is never saved, and is gone when
@@ -1155,9 +1169,12 @@ coordinates for this feature. What others see is deliberately limited:
   further-blurred (~1 km grid) pin and a whole-kilometre distance — never your
   exact spot, name, or coordinates.
 
-Your shared location automatically ages off the map after a few hours, and
-turning the social map off **deletes** your shared location from our servers
-(it's gone, not hidden). A block recorded on our server stops the sharing between
+Your shared location automatically ages off the map after a few hours: after
+that nobody is shown it, but the last location you shared stays stored on our
+servers until you turn the social map off or delete your account. A nightly
+clean-up we're adding will also delete one that has gone a week without an
+update. Turning the social map off **deletes** your shared location from our
+servers (it's gone, not hidden). A block recorded on our server stops the sharing between
 you, both ways; a block made in a version of the app built before October 12, 2026
 from a traveler's profile, the feed or a city chat room stays on your phone and only
 hides them from you (see "Blocking").
@@ -1371,6 +1388,18 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 10, 2026 (how long our server keeps things):** we checked every time limit this page gives for
+what our server keeps against what our server actually deletes today. "Abuse prevention counts" said the counts "are
+deleted within about a day": that happens only while someone is using those features, so it now says that on a quiet
+stretch the last counts wait for the next use, until a nightly clean-up we're adding runs. The social map said your
+shared location "ages off the map after a few hours": it now also says the last location you shared stays stored until
+you turn the map off or delete your account, and that the clean-up we're adding will also delete one that has gone a
+week without an update. "Daily fair-use counts" keeps its November 8 known gap and now says how long a count will be
+kept once that clean-up runs (until it is more than two days old). Two lines now say how long records are kept: the
+posts your feed showed you (until you delete your account; once the clean-up runs, no more than a year) and, under
+*Planned*, anonymous usage counts (180 days). New under "Who invited you", because our server already records it: your own
+invite code, and that deleting your account retires it so it can never credit anyone else. Nothing about what we collect changed.
 
 **Changelog — November 8, 2026 (daily fair-use counts):** this page said less than our server does. Since October 5,
 2026, for hotel searches and for AI reading a caption or a menu photo, our server has kept a count per caller per day:
