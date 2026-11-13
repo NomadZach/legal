@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 10, 2026**
+**Effective date: November 13, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -184,10 +184,10 @@ between your devices. When you're signed in we hold:
   you here. **You can turn this off:** Settings has a **private profile**
   switch that takes you out of the directory and stops other travelers
   opening your profile. Deleting your posts or your account also removes you.
-  **Known gap, disclosed November 5, 2026:** apart from the directory, the account
-  id, display name, avatar emoji and @username of every public profile, posted or not, can be read
-  in bulk without an account through the app's public data interface. Making your
-  profile private stops it.
+  Since our database update of November 13, 2026, none of this can be read without
+  an account: the account id, display name, avatar emoji and @username of a public
+  profile are served only to signed-in travelers, and making your profile private
+  hides it from them too.
 - **Social handles and self-reported follower counts** — the @handles you type
   in for platforms you link (Instagram, TikTok, X, Facebook, YouTube) and any
   follower counts you enter for them, stored with your account and shown to you
@@ -1122,12 +1122,11 @@ match you already had, and messages already sent, stay visible to them. When you
 which surface), the reason you picked, your
 account id, and the time — so a moderator can review it and act. Blocking is
 still the instant protection: it takes effect immediately, whether or not you
-also report. **Known gap, disclosed October 28, 2026 (updated November 6,
-2026):** for posts and comments in the feed, a block you make there is recorded
-on our server, but the feed does not use that record until a pending database
-update lands. Until then a traveler you blocked can still
-read your posts and comments — they no longer appear to you, but you still appear
-to them there. Your app hides theirs from you at once.
+also report. For posts and comments, a block you make in the feed is recorded
+on our server, and since our database update of November 13, 2026 our server uses that
+record: a traveler you blocked is no longer shown your posts and comments, and you
+are no longer shown theirs (the number of comments shown on a post can still count
+theirs). Your app hides theirs from you at once.
 
 You can turn discovery off at any time (your profile stops being served to
 others), and deleting your account permanently deletes your discovery
@@ -1212,15 +1211,14 @@ report so we can act on repeat
 behaviour — a single complaint and a tenth complaint about the same person are
 different situations.
 
-**Limiting an account (coming with a pending database update, disclosed November
-4, 2026):** if a moderator decides an account has broken our rules, they can limit
+**Limiting an account (disclosed November 4, 2026; in place since our database
+update of November 13, 2026):** if a moderator decides an account has broken our rules, they can limit
 it. We then store on that profile the time it happened and which moderator did it;
 we store no separate reason, and any reports behind it stay on file as described
 here. A limited account is hidden from public surfaces and cannot post, comment,
 chat, send new messages, like in dating or publish, and its owner cannot lift the
 limit; a moderator can. You can still sign in, read, file a report, and ask us for
 a copy of your data. Deleting your account deletes this record with your profile.
-None of this happens until that update lands.
 
 **Who can see it:** our moderators. The app has no screen that shows you the reports
 you filed; if you want a copy, email us. **The person you reported
@@ -1388,6 +1386,17 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 13, 2026 (a database update landed: a block reaches posts and comments, limiting an account, and profiles need an account to read):**
+our database update of November 13, 2026 is in, and this page now says what our server does with it. Retired: the October 28,
+2026 known gap on the feed ("the feed does not use that record until a pending database update lands. Until then a traveler
+you blocked can still read your posts and comments"). Our server now uses a recorded block for posts and comments, both ways,
+and "Blocking" says so, with one limit named: the number of comments shown on a post can still count a blocked traveler's.
+"Limiting an account" no longer says "coming with a pending database update" or "None of this happens until that update
+lands": a moderator can limit an account now, and that paragraph already said what a limited account can and cannot do.
+Retired: the November 5, 2026 known gap on the traveler directory ("the account id, display name, avatar emoji and @username
+of every public profile, posted or not, can be read in bulk without an account through the app's public data interface"). Since
+this update they are served only to signed-in travelers.
 
 **Changelog — November 10, 2026 (how long our server keeps things):** we checked every time limit this page gives for
 what our server keeps against what our server actually deletes today. "Abuse prevention counts" said the counts "are
