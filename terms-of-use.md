@@ -51,7 +51,9 @@ available," without warranties of any kind** — things may break, change,
 or be removed without notice, and data may be lost. If you use Pinorama
 without an account, your data lives only on your device and deleting the app
 deletes it; if you have an account, we sync a cloud backup, but we don't
-guarantee against data loss. To the maximum extent permitted by
+guarantee against data loss. Places saved on a phone while nobody is signed in are
+added to the account that signs in on that phone; from the next app update, that is
+the next account to sign in, whoever it is. To the maximum extent permitted by
 law, NomadZach Studios is not liable for any damages arising from your use
 of Pinorama. What that covers, the limit on what we can owe you, and the rights it
 cannot take away are set out in "No warranties" and "Limits on our liability" below.
@@ -69,7 +71,10 @@ site under the partner's terms (see section 8).
 
 ## 3. Your account
 
-Accounts are optional — you can use Pinorama without one. If you create an
+Accounts are optional — you can use Pinorama without one. Places you save before
+you have an account are added to it when you sign in; from the next app update,
+places saved while nobody is signed in go to the account that signs in next on
+that phone. If you create an
 account, you sign in with a **one-time code sent to your email**, so keep
 access to that email address; there is no password. You're responsible for
 activity under your account and for giving us an email address you control.
@@ -250,7 +255,7 @@ from the provider, at no extra cost to you. Some booking inventory shown
 in the app is sample/preview content and not a real offer; other listings are
 marked **"LIVE"** (see section 2).
 
-## 9. Delivery and express parcels (not yet active)
+## 9. Delivery and express parcels (not yet active), and hotel and flight bookings (live)
 
 Pinorama is adding **food delivery** and **express parcel** services. They are
 **not active yet** — these terms apply only where and when the service is
@@ -817,6 +822,13 @@ changed — not that a feature we already described switched on. ⚖️ If anyon
 reviewing this considers "flights are now live" a material change that warrants
 re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
 `src/data/termsAcceptance.js` together, and the gate re-asks.
+
+**Changelog — November 13, 2026 (places saved while signed out):** sections 1 and 3 now say that places saved on a phone while nobody is
+signed in are added to the account that signs in on that phone, and that from the next app update that is the next account to
+sign in, whoever it is. The Privacy Policy says the same.
+
+**Changelog — November 13, 2026 (a heading):** section 9 was headed "Delivery and express parcels (not yet active)" while the live hotel and
+flight booking terms sit under it. The heading now names them. No term changed.
 
 **Changelog — November 13, 2026 (who carries which risk):** these terms are much longer. New, and written to say plainly what was
 implied before: "The short version" (a summary at the top), "No warranties", "Travel, meetups and meeting people are at

@@ -16,6 +16,8 @@ person reads it.
 
 You can use the whole app **without an account**,
 in which case your data stays on your device and we hold almost none of it.
+Places saved on a phone while nobody is signed in are added to the account that
+signs in on it (see "Without an account" below).
 If you **create an account** (optional), your saved places and profile are
 stored in our cloud database so they survive a lost phone and sync between
 your devices. This policy explains both cases, plus what will change as
@@ -39,6 +41,14 @@ is described further down this page. Data the app handles locally includes:
 - App settings and progress (e.g. which tips you've seen)
 
 We can't see any of this, and we don't have it.
+
+**If someone signs in on this phone later, the places saved on it while nobody was
+signed in go to that account** and are backed up with it. In the version of the app
+now in use that happens for the first account ever to sign in on the phone. From the
+next app update it is the next account to sign in on the phone, whoever that is. A
+place saved while an account was signed in stays with that account. So on a phone
+you share, places you save while signed out become part of the next person's account
+if they sign in before you do.
 
 ### With an account (optional cloud sync)
 
@@ -171,9 +181,9 @@ between your devices. When you're signed in we hold:
   loads, we record which posts were on it: one record per post per day, holding
   your account, the post and the date — never how long you looked or how far
   you scrolled. Nothing reads these records yet; they are kept for a future
-  "For You" feed that will use them to rank posts. Until a nightly clean-up
-  we're adding runs, they are kept until you delete your account; once it runs,
-  it deletes the ones more than a year old. You can't see them in the app,
+  "For You" feed that will use them to rank posts. A nightly clean-up
+  deletes the ones more than a year old (in place since our database update of
+  November 13, 2026). You can't see them in the app,
   other travelers never can, and deleting your account erases them.
 - **The traveler directory** — signed-in travelers can see a directory of
   travelers who have a public profile and at least one published post. It
@@ -281,6 +291,10 @@ which parts of it others can read.
 local data alone: your saved places, your profile, your notes, your points and
 your trip history all stay on the phone. **There are two deliberate exceptions,
 and both are cleared from the device when your session ends.**
+
+**From the next app update, a place you save after signing out is not tied to your
+account.** It stays on the phone, and it goes to whichever account signs in next on
+this phone: yours, if you sign back in first.
 
 **First, your dating data.** That means your date check-ins (including a safety
 check-in for a first date), your date plans, your matches, and the cached
@@ -617,8 +631,8 @@ and driver live location during an active run.
   you opened a screen — and nothing about *what* the place was. **The records
   are not linked to you or your account**, so they can't be traced back to a
   person, and they stay in our own database — we don't send them to any
-  analytics company. A nightly clean-up will delete each record once it is
-  180 days old. Nothing in the app can read them back, including you,
+  analytics company. A nightly clean-up deletes each record once it is
+  180 days old (in place since our database update of November 13, 2026). Nothing in the app can read them back, including you,
   which is why they aren't listed under "Access" below: there is nothing there
   that is about you specifically. We never put your name, email, phone,
   address or location in them, and the app additionally refuses any value that
@@ -948,8 +962,8 @@ you; past an hourly allowance far above normal use the app shows "couldn't
 load" until the next hour; and the counts are deleted within about a day
 whenever anyone is using these features, because each time a count starts for
 a new hour, every count more than a day old is cleared away. If nobody uses
-them for a while, the last counts wait for the next use, until a nightly
-clean-up we're adding runs: it deletes counts more than a day old even then.
+them for a while, a nightly clean-up deletes counts more than a day old even
+then (in place since our database update of November 13, 2026).
 
 **Daily fair-use counts.** Some of what the app asks our server to do can cost
 us money each time, such as a hotel search, or having AI read a caption or a
@@ -965,10 +979,9 @@ code of its own as a backstop, so that many travelers sharing one mobile
 network's address aren't all turned away together. The key doesn't change, so
 the same address or account always makes the same code. Past a daily allowance
 set well above one traveler's normal use, that request is turned down until
-midnight UTC. **Known gap, disclosed November 8, 2026 (updated November 10,
-2026):** these daily counts stay on our server until a nightly clean-up we're
-adding deletes them; once it runs, it deletes each count when it is more than
-two days old, and until it runs nothing deletes them. Separately, several parts of our
+midnight UTC. A nightly clean-up deletes each of these daily counts once it is more than
+two days old (in place since our database update of November 13, 2026; until
+then nothing deleted them). Separately, several parts of our
 server keep a running count of recent requests per caller in their own working
 memory, to slow sudden bursts; that count is kept under the address itself (and
 the account, where our server recognizes one), is never saved, and is gone when
@@ -1171,8 +1184,8 @@ coordinates for this feature. What others see is deliberately limited:
 Your shared location automatically ages off the map after a few hours: after
 that nobody is shown it, but the last location you shared stays stored on our
 servers until you turn the social map off or delete your account. A nightly
-clean-up we're adding will also delete one that has gone a week without an
-update. Turning the social map off **deletes** your shared location from our
+clean-up also deletes one that has gone a week without an update (in place
+since our database update of November 13, 2026). Turning the social map off **deletes** your shared location from our
 servers (it's gone, not hidden). A block recorded on our server stops the sharing between
 you, both ways; a block made in a version of the app built before October 12, 2026
 from a traveler's profile, the feed or a city chat room stays on your phone and only
@@ -1394,6 +1407,19 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 13, 2026 (places saved while signed out):** "Without an account" said that what you save stays on your
+device, and "What signing out does" said your saved places stay on the phone. Both are true, and neither said what happens next.
+When someone signs in on the phone, the places saved on it while nobody was signed in go to that account: today the first
+account ever to sign in on that phone, and from the next app update the next account to sign in, whoever that is. The page says
+so in three places now, and says what that means on a phone you share.
+
+**Changelog — November 13, 2026 (the nightly clean-ups are running):** five sentences on this page described "a nightly clean-up
+we're adding". Our database update of November 13, 2026 put those clean-ups in place, so each sentence now says what happens: which
+posts your feed showed you are deleted when more than a year old; anonymous usage records at 180 days; the abuse-prevention counts
+when more than a day old, on quiet nights too; a shared map location that has gone a week without an update; and the daily
+fair-use counts when more than two days old. Retired with it: the November 8, 2026 known gap on those daily counts ("these daily
+counts stay on our server until a nightly clean-up we're adding deletes them … until it runs nothing deletes them").
 
 **Changelog — November 13, 2026 (photos on content a moderator takes down):** new, under "Reporting": when a moderator takes
 down a post or a dating profile, its photo files are moved into private storage that only our moderators can open, kept for
