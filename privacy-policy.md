@@ -1220,6 +1220,14 @@ chat, send new messages, like in dating or publish, and its owner cannot lift th
 limit; a moderator can. You can still sign in, read, file a report, and ask us for
 a copy of your data. Deleting your account deletes this record with your profile.
 
+**Photos on content a moderator takes down (in place since our database update of
+November 13, 2026):** when a moderator takes down a post or a dating profile, its
+photo files are moved out of public reach into private storage that only our
+moderators can open. The image then no longer loads for anyone who had its web
+address, and we still hold what the report was about. We keep those files for 90
+days after the takedown and then delete them; if the person whose content it was
+deletes their account first, the files are deleted with the account.
+
 **Who can see it:** our moderators. The app has no screen that shows you the reports
 you filed; if you want a copy, email us. **The person you reported
 cannot see your report and is never told who reported them.** That is deliberate:
@@ -1386,6 +1394,12 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 13, 2026 (photos on content a moderator takes down):** new, under "Reporting": when a moderator takes
+down a post or a dating profile, its photo files are moved into private storage that only our moderators can open, kept for
+90 days after the takedown and then deleted, or deleted sooner with the account of the person whose content it was. Until now
+a takedown hid the post or profile and left its photo file at its web address; this page had said nothing about keeping a
+photo, only a reported comment's or city-chat message's text.
 
 **Changelog — November 13, 2026 (a database update landed: a block reaches posts and comments, limiting an account, and profiles need an account to read):**
 our database update of November 13, 2026 is in, and this page now says what our server does with it. Retired: the October 28,
