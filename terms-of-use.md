@@ -1,12 +1,48 @@
 # Pinorama Terms of Use
 
-**Effective date: November 5, 2026**
+**Effective date: November 13, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
 
-These are short terms for Pinorama, made by NomadZach Studios
+These are the terms for Pinorama, made by NomadZach Studios
 (contact: admin@nomadzachstudios.com). By using the app you agree to them.
+They are long because they say plainly who carries which risk; "The short version"
+below sums them up.
+
+## The short version
+
+This is a plain-English summary of who carries which risk when you use Pinorama. It is here to help you
+read the rest. **It is only a summary: the full sections below are the agreement, and where this list
+and a full section differ, the full section wins.**
+
+- **The app is offered as it is.** Things can break, change, be wrong or go missing. We work to keep it
+  accurate, but we do not promise that it is.
+- **Places change.** Venues close, opening hours move, prices go up, and a pin can land in the wrong
+  spot. Check anything important with the place itself before you travel.
+- **Information from other sources is theirs.** Place details, prices, AI-read captions and menus, and
+  partner data come from other people and other systems, and can be wrong.
+- **Your trip is your responsibility.** Where you go, what you do there, how you get there, and your
+  health, insurance, visas and local laws are up to you.
+- **We do not check who people are.** We do not screen, background-check or verify the travelers,
+  hosts, venues or suppliers you find through the app.
+- **Meeting people carries real risk.** If you meet someone from the feed, city chat, dating or buddy
+  matching, or a meetup, you do so at your own risk. Meet in public and tell someone where you are.
+- **Other people answer for what they post and do.** We are not responsible for another user's words or
+  conduct, online or in person. You can report anything and block anyone.
+- **We do not tolerate abuse.** Abusive content and abusive users are removed. We review reports and act
+  within 24 hours.
+- **A booking is between you and the supplier.** The hotel, airline or tour operator delivers what you
+  bought, and their rules decide changes, cancellations and refunds.
+- **We are not responsible for money you lose** because of a supplier, a delay, a missed connection, a
+  non-refundable cost, a bank fee, or something outside our control.
+- **Points are not money.** They have no cash value.
+- **If we are liable, there is a limit.** Our total liability is capped, and we are not liable for
+  indirect losses, as far as the law allows.
+- **If your actions cause a claim against us, you cover it**, as far as the law allows, and you release
+  us from disputes between you and other users or suppliers.
+- **Your legal rights still stand.** Nothing in these terms takes away rights the law says cannot be
+  taken away, including your rights as a consumer where you live.
 
 ## 1. Provided as-is
 
@@ -17,7 +53,8 @@ without an account, your data lives only on your device and deleting the app
 deletes it; if you have an account, we sync a cloud backup, but we don't
 guarantee against data loss. To the maximum extent permitted by
 law, NomadZach Studios is not liable for any damages arising from your use
-of Pinorama.
+of Pinorama. What that covers, the limit on what we can owe you, and the rights it
+cannot take away are set out in "No warranties" and "Limits on our liability" below.
 
 ## 2. Sample content
 
@@ -61,7 +98,8 @@ about. You agree not to:
   rights
 - Upload or share unlawful, infringing, or harmful content
 
-We may suspend access for abuse.
+We may suspend access for abuse. See "Zero tolerance for abusive content and abusive
+users" below.
 
 ## 6. Your content and third-party links
 
@@ -328,6 +366,353 @@ own for handling a change, it will be shown to you before you agree to it.
 permission to enter a country. Passport validity, visas, transit rules and
 health requirements are your responsibility, and Pinorama does not check them.
 
+## No warranties
+
+**What "as is" means here.** Section "1. Provided as-is" already says Pinorama is provided "as is" and
+"as available". This section spells out what that covers. "The service" means the Pinorama app, its
+website, and everything shown or done through them. "Content" means anything you see in the service:
+maps, pins, place details, photos, ratings, reviews, opening hours, prices, availability, deals, weather,
+posts, comments, messages, profiles, events, menus, and anything a computer system produced.
+
+**Maps and place details can be wrong.** A place's location comes from captions, geotags, public map
+data and other sources, and any of them can be mistaken. A pin may be in the wrong place, a place may
+have moved or closed, opening hours may be out of date, and a category may not fit. Directions links hand
+you to a separate maps app, which has its own accuracy limits.
+
+**Prices and availability change.** A price shown in the app, including a price marked "LIVE", is a
+quote at the moment it was fetched. It can change before you book, can differ from what the supplier
+charges at the door, and may not include taxes or charges the supplier or your bank adds. Availability
+can disappear between the moment you see it and the moment you try to book.
+
+**Computer-read text can be wrong.** Some features use automated tools, including AI models, to read a
+caption, a menu photo or other text and suggest a place, a price or a plan. These suggestions are
+guesses. They can misread a name, pick the wrong city, invent a detail, or miss something important.
+Treat them as a starting point, and check them before you rely on them.
+
+**Other people's posts are their own opinions.** Posts, comments, chat messages, reviews and profiles are
+written by other users or by third parties. We do not check them for truth, and they do not represent our
+views.
+
+**Third-party data belongs to third parties.** Some content comes from partners and providers, for
+example place details supplied by Google, tours and activities, and hotel and flight offers. It is
+provided under their terms, and we cannot promise it is complete, current or correct.
+
+**The precise terms.** To the fullest extent the law allows, the service and all content are provided
+"as is" and "as available", without warranties of any kind, whether express, implied or statutory. That
+includes any warranty of accuracy, completeness, reliability, merchantability, fitness for a particular
+purpose, title, non-infringement, and any warranty that the service will be uninterrupted, timely, secure,
+free of errors or viruses, or that defects will be corrected. We do not warrant any content, any place, any
+user, or any product or service offered by a supplier or partner.
+
+**Check before you travel.** Before you rely on anything in the app for a decision that costs money or
+affects your safety, confirm it directly with the place, the supplier, or an official source.
+
+## Travel, meetups and meeting people are at your own risk
+
+**Travel carries risk.** Travel can involve accidents, illness, injury, theft, loss, delay, unsafe
+conditions, extreme weather, unrest, and laws and customs different from your own. Many activities people
+discover through travel content, such as water sports, hiking, nightlife, driving or riding a scooter, and
+visiting remote places, carry risks of their own.
+
+**You choose where you go and what you do.** Pinorama shows you places, posts, people and offers. It does
+not tell you to go anywhere, do anything or meet anyone. Every trip, activity, venue, transport choice and
+meeting you make because of something you saw in the app is your own decision.
+
+**We do not screen anyone.** We do not screen, background-check, identity-check or otherwise verify the
+users of the app, the people you meet through it, or the places, hosts, venues, creators or suppliers
+that appear in it. A profile, a photo, a review, a follower count or a badge is not proof of who
+someone is, and it is not a recommendation from us.
+
+**Meeting people from the app.** This applies to anyone you meet through the feed, a comment, a city
+chat room, a direct message, dating or travel-buddy matching, an event, a game night, or a meetup you
+draft, join or attend. Meeting a stranger carries risk, and that risk is yours to manage. Some practical
+steps that help:
+
+- Meet for the first time in a busy public place, and get there and leave on your own.
+- Tell a friend where you are going, who you are meeting, and when you expect to be back.
+- Keep your phone charged, and keep your passport, money and drink in your own hands.
+- Do not send money, share financial details, or hand over documents to someone you met online.
+- Leave if anything feels wrong, and contact local emergency services if you are in danger.
+- Report and block anyone who makes you uncomfortable, using the tools in the app.
+
+These are suggestions, not a guarantee of safety, and following them does not shift the risk to us.
+
+**Your health, insurance, documents and local laws.** You are responsible for being fit to travel and
+to take part in what you choose to do, for having suitable travel and health insurance, for your passport,
+visas, vaccinations and entry rules (see also the "Travel documents, visas and entry rules are yours" part
+of the flight terms), and for following the laws and customs of every place you visit.
+
+**The precise terms.** To the fullest extent the law allows, you use the service, travel, take part in
+activities, and meet other people at your own risk, and you accept the risks that come with doing so. We
+are not responsible for any injury, illness, loss or damage that results from places you visit, activities
+you take part in, transport you use, or people you meet because of the service, except where the law does
+not allow us to exclude that responsibility (see "Limits on our liability").
+
+## Other people's conduct and content
+
+**People answer for themselves.** Pinorama is a place where travelers post, comment, chat, match and meet.
+Each user is responsible for what they post, say and do, in the app and in person. We are not the author
+of other users' content, and we do not endorse it.
+
+**What you can do.** You can report posts, comments, messages and profiles, and you can block other users,
+from inside the app. The section "Zero tolerance for abusive content and abusive users" explains what
+happens when you do. If you are in danger, contact local emergency services first: we cannot respond to
+an emergency.
+
+**No duty to watch everything.** We do not review content before it appears, and we have no obligation
+to monitor what users post or send. We may, at our discretion, review, refuse, remove or restrict any
+content or account that we believe breaks these terms or the law, or that puts people at risk. Choosing
+to act in one case does not make us responsible for content we did not act on.
+
+**The precise terms.** To the fullest extent the law allows, we are not responsible or liable for the
+content, statements, conduct or omissions of any user or third party, whether online or offline, and any
+dispute you have with another user is between you and that user.
+
+## Bookings, payments, refunds and suppliers
+
+**Who you are dealing with.** "Supplier" means the business that actually provides what you book: a
+hotel or other accommodation, an airline, a tour or activity operator, and the booking companies that
+place the booking with them. "Partner site" means another company's website or app that a link in
+Pinorama sends you to. When you book, your contract for the stay, flight, tour or other service is with
+the supplier, or with the partner site where you completed the purchase. It is not with NomadZach
+Studios, except for anything we ourselves agree to do in these terms.
+
+**This section adds to the booking terms already in these terms.** The section "8. Bookings and affiliate
+links" and the "Hotel bookings" and "Flight bookings" parts of section 9 describe how bookings work today.
+This section explains how risk is shared. If they seem to differ on a specific booking point, those parts
+apply.
+
+**The supplier's rules decide changes and refunds.** Whether a booking can be changed, cancelled or
+refunded, how much is refunded, and any fee for doing so are set by the supplier's own rules, such as a
+hotel rate's cancellation policy or an airline's fare rules. Those rules, as shown at checkout or on the
+partner site, are what apply to your booking. Where we pass on a request for you, we will do so, but the
+supplier makes the decision and pays any refund.
+
+**We do not hold the inventory.** We do not own, run or control any hotel, flight, tour or other
+service sold through the app. We show what suppliers tell us is available. Until a supplier confirms a
+booking, the price and availability can change, and a booking can fail. A booking exists only once the
+supplier confirms it.
+
+**What the supplier is responsible for.** To the fullest extent the law allows, we are not responsible
+for what a supplier or partner site does or fails to do, including:
+
+- cancelling, changing or rescheduling a booking, a flight or a tour;
+- overbooking, denied boarding, missed or delayed flights, or lost or damaged baggage;
+- strikes, weather, air traffic control, airport or border closures, or other disruptions;
+- the condition, cleanliness, safety, location, facilities or quality of a stay, flight or activity;
+- a supplier's or partner site's handling of your purchase, your payment or your refund;
+- a supplier going out of business or failing to honour a booking.
+
+Where you have a complaint about one of these, the supplier is the party that can resolve it, and you
+may also have rights against the supplier under the law where you live or where you travel. If you
+contact us, we will tell you what we know and pass on your request where we can.
+
+**Partner sites.** When a link takes you to a partner site to finish a purchase, the partner site's own
+terms and privacy policy apply there. We do not control those sites and are not a party to what you buy
+on them.
+
+**Payments, currencies and bank charges.** Payments for in-app bookings are taken by the supplier or
+its payment provider, as described in section 9. Prices may be shown in a currency other than the one
+your card uses. Your bank or card issuer may convert the amount at its own rate and may add foreign
+transaction, conversion or other fees. Those charges come from your bank, not from us, and we are not
+responsible for them or for exchange rate movements between booking and charge or refund.
+
+**Chargebacks.** If you think a charge is wrong, please contact us and the supplier first so it can be
+looked into. If you ask your bank to reverse a charge (a "chargeback") for a booking that was provided as
+agreed, or while a refund is already being handled, the supplier may treat the booking as cancelled or
+pursue the amount. We may limit access to booking features for an account that files chargebacks in bad
+faith.
+
+**Accurate details are yours.** You are responsible for the details you enter when booking: names,
+dates, number of travelers, contact details and document details. Mistakes in those details can make a
+booking unusable, and the supplier decides whether anything can be fixed.
+
+## Money you lose
+
+**What this section covers.** Travel involves money that can be lost in ways nobody fully controls. To
+the fullest extent the law allows, we are not responsible for:
+
+- money lost because a supplier, partner site, airline, venue or other user did not deliver, cancelled,
+  changed something, or refused a refund;
+- missed connections, missed flights, missed tours or events, extra nights, or onward travel you had to
+  rebook;
+- non-refundable bookings, deposits, tickets or fees, including ones you booked through the app;
+- bank, card, currency conversion or foreign transaction fees, and exchange rate changes;
+- money you send to, or lose to, another user, including through a scam or a dispute;
+- points, rewards, credits or perks that are adjusted, expire or are reset. As section "7. Points and
+  rewards" says, points have no cash value;
+- data lost from your phone, including saved places, notes or drafts, for example if the app is deleted,
+  the phone is lost or reset, or a sync fails (see "1. Provided as-is");
+- lost profits, lost revenue, lost business, lost bookings, lost opportunities, or lost goodwill.
+
+**Where we caused the loss.** This section does not excuse us from a loss we caused by breaking these
+terms or by our own negligence, to the extent the law makes us responsible for it. Any such liability is
+subject to "Limits on our liability".
+
+## Limits on our liability
+
+**Indirect losses.** To the fullest extent the law allows, NomadZach Studios, and its owners, officers,
+employees, contractors and agents, will not be liable to you for any indirect, incidental, special,
+consequential, exemplary or punitive damages, or for any loss of profits, revenue, data, goodwill or
+opportunity, arising out of or relating to these terms or the service, even if we were told such damages
+were possible.
+
+**The overall cap.** To the fullest extent the law allows, our total liability to you for all claims
+arising out of or relating to these terms or the service, taken together, is limited to the greater of:
+
+- **(a)** the amount you paid **directly to NomadZach Studios** for the service in the 12 months before
+  the event that gave rise to the claim. Amounts you paid to a supplier, airline, hotel, partner site or
+  payment provider are not amounts paid to us, even if you booked inside the app; and
+- **(b)** US$100.
+
+**Why there is a cap.** Pinorama is a small product offered largely for free. The cap reflects how the
+risk is shared under these terms and is part of the reason we can offer the service on these terms.
+
+**What these limits do not cover.** Nothing in these terms limits or excludes any liability that cannot
+be limited or excluded under the law that applies to you. That includes, for example:
+
+- liability for death or personal injury caused by our negligence;
+- liability for fraud or fraudulent misrepresentation;
+- liability for our gross negligence or wilful misconduct, where the law does not allow it to be limited;
+- any rights you have as a consumer under the law of the country where you live. If you live in the
+  European Union or the United Kingdom, for example, you have legal rights as a consumer that these terms
+  do not take away, including rights relating to services that are not provided with reasonable care and
+  skill or as described.
+
+**Some places do not allow these limits.** Some countries and states do not allow certain warranties to
+be excluded or certain liability to be limited. In those places, some of the limits in this section and in
+"No warranties" may not apply to you, and our liability is limited to the smallest amount the law allows.
+
+## You agree to cover us (indemnity)
+
+**What "indemnity" means.** To "indemnify" someone means to cover the costs they face because of
+something you did. This section asks you to do that in a limited set of cases.
+
+**When you cover us.** To the extent the law allows, you agree to defend, indemnify and hold harmless
+NomadZach Studios and its owners, officers, employees, contractors and agents from any claim, demand,
+loss, liability, damage, fine, cost or expense, including reasonable legal fees, brought by a third party
+or a public authority, to the extent it arises from:
+
+- content you post, upload, send or save in the app;
+- your conduct, in the app or in person, including toward people you meet through it;
+- your breach of these terms;
+- your breach of any law or of anyone else's rights, including intellectual property and privacy rights;
+- your dealings with another user, a supplier or a partner site, including a booking you make for
+  yourself or for someone else.
+
+**When you do not.** You do not have to cover us for any claim to the extent it was caused by our own
+breach of these terms, our negligence, or our wilful misconduct. If you are a consumer, this section
+applies only as far as the law where you live allows.
+
+**How it works.** We will tell you about a claim covered by this section within a reasonable time. We
+may choose to handle the defence ourselves, and if we do, you agree to cooperate reasonably. You may not
+settle a claim in a way that admits fault on our behalf or binds us without our written agreement.
+
+## Release
+
+**What a release is.** A "release" means giving up the right to bring a claim against someone. This
+section is about disputes that are really between you and someone else.
+
+**The release.** To the extent the law allows, you release NomadZach Studios and its owners, officers,
+employees, contractors and agents from claims, demands and damages of every kind, known and unknown,
+arising out of or connected with a dispute between you and another user, a supplier, or a partner site.
+This includes disputes about a meeting, a match, a message, a post, an event, a booking, a payment or a
+refund.
+
+**What it does not release.** This release does not cover claims about our own conduct, such as our own
+breach of these terms or our own negligence, and it does not cover anything the law does not allow you to
+give up. If you live somewhere with a law that stops a general release from covering claims you did not
+know about when you agreed to it, you give up the benefit of that law only to the extent the law itself
+allows you to.
+
+## Zero tolerance for abusive content and abusive users
+
+**The rule.** Pinorama has zero tolerance for objectionable or abusive content and for abusive users.
+This applies everywhere in the app: posts, comments, city chat, direct messages, profiles, photos, dating
+and buddy profiles, events and game nights. It adds to the acceptable-use rules in "5. Acceptable use".
+
+**What is not allowed.** Plain examples of what we do not tolerate:
+
+- harassment, bullying, stalking, or unwanted repeated contact;
+- threats of violence, or encouraging anyone to harm themselves or others;
+- hate speech, or attacks on people because of race, ethnicity, nationality, religion, caste, sex, gender
+  identity, sexual orientation, disability, age or illness;
+- any sexual content involving minors, or any content that sexualises a minor, in any form;
+- sharing intimate or sexual images of someone without their consent, or threatening to;
+- pornography or sexually explicit content;
+- scams, fraud, fake bookings, requests for money, phishing, or spam;
+- impersonating another person, business or brand, or using fake profiles;
+- sharing someone else's private information, such as their address or documents, without permission;
+- promoting illegal activity, illegal drugs, weapons sales, or human trafficking or exploitation.
+
+**Everyone can report and block.** Every post, comment, message and profile can be reported from inside
+the app, and every user can be blocked from inside the app. If you see something that breaks these rules,
+please report it.
+
+**What we do.** We review reports and act on them within 24 hours. Where content breaks these terms, we
+remove it. Where a user is responsible for content or behaviour that breaks these terms, we may warn them,
+limit what they can do, suspend their account, or remove their account and block them from returning,
+depending on how serious it is. We may act without a report when we become aware of a problem, and we
+may act without notice where we think people are at risk.
+
+**Authorities.** Where the law requires it, or where we believe someone is in immediate danger, we may
+report content or accounts to law enforcement or the relevant authorities. Content involving the sexual
+exploitation of children is reported where the law requires it.
+
+**No promise of perfection.** Moderation is done by people and tools that can make mistakes. Acting on a
+report does not mean we guarantee that all abusive content or abusive users will be found, and the
+limits in "Other people's conduct and content" still apply.
+
+## Events outside our control (force majeure)
+
+**What this means.** "Force majeure" is the legal name for events nobody could reasonably control or
+prevent.
+
+**The terms.** We are not responsible for any failure or delay in providing the service, or in doing
+anything these terms require, to the extent it is caused by events outside our reasonable control. That
+includes natural disasters, extreme weather, fire, flood, earthquake, epidemics and pandemics, war,
+terrorism, civil unrest, government action, sanctions, border closures, strikes and labour disputes,
+failures of the internet, power or telecommunications networks, outages or failures of third-party
+services we rely on (such as hosting, app stores, maps, payment, booking and data providers), and
+cyber-attacks we could not reasonably prevent.
+
+**Bookings are covered by the supplier's rules.** When an event like this disrupts a booking, what
+happens to the booking, and any refund, is decided by the supplier's rules and by any rights you have
+under the law, as described in "Bookings, payments, refunds and suppliers".
+
+## General
+
+**If part of these terms is invalid (severability).** If a court or other authority decides that any part
+of these terms is invalid or cannot be enforced, that part will be changed only as much as needed to make
+it enforceable, or removed if that is not possible. The rest of these terms stays in full effect.
+
+**No waiver.** If we do not enforce a right under these terms straight away, or at all, we have not given
+it up. We can still enforce it later. A waiver only counts if we give it in writing.
+
+**Entire agreement.** These terms, together with the Privacy Policy and any additional terms shown to you
+for a specific feature or booking (such as a rate's cancellation policy or an airline's fare rules), are
+the whole agreement between you and us about the service. They replace any earlier understanding about
+it. A supplier's or partner site's own terms are a separate agreement between you and them.
+
+**Assignment.** You may not transfer your rights or obligations under these terms to anyone else without
+our written agreement. We may transfer ours, for example to a company formed to run Pinorama or as part of
+a sale, merger or reorganisation, provided your rights under these terms are not reduced as a result.
+
+**No third-party rights.** Apart from the people named in "You agree to cover us (indemnity)" and
+"Release", nobody other than you and us has rights under these terms.
+
+**Translations.** We may offer these terms in languages other than English. If a translation differs from
+the English version, the English version governs, except where the law where you live requires otherwise.
+
+**Headings.** Headings and the short version are there to make these terms easier to read. They do not
+change the meaning of any section.
+
+**Surviving sections.** Sections that by their nature should continue after you stop using the service or
+delete your account continue to apply. These include "No warranties", "Money you lose", "Limits on our
+liability", "You agree to cover us (indemnity)", "Release", and "Governing law".
+
+**Contact.** Questions about these terms can be sent to the contact address in the "Contact" section.
+
 ## Copyright complaints (DMCA)
 
 Pinorama hosts content that travelers post. If you believe something posted in
@@ -432,6 +817,15 @@ changed — not that a feature we already described switched on. ⚖️ If anyon
 reviewing this considers "flights are now live" a material change that warrants
 re-acceptance, the fix is one line — bump the date here and `TERMS_VERSION` in
 `src/data/termsAcceptance.js` together, and the gate re-asks.
+
+**Changelog — November 13, 2026 (who carries which risk):** these terms are much longer. New, and written to say plainly what was
+implied before: "The short version" (a summary at the top), "No warranties", "Travel, meetups and meeting people are at
+your own risk", "Other people's conduct and content", "Bookings, payments, refunds and suppliers" (a booking is between
+you and the supplier, and the supplier's rules decide refunds), "Money you lose", "Limits on our liability" (a cap, and
+the rights it cannot take away), "You agree to cover us (indemnity)", "Release", "Zero tolerance for abusive content and
+abusive users" (we review reports and act within 24 hours), "Events outside our control (force majeure)" and "General".
+Section 1 and section 5 each gained one sentence pointing at them. Nothing in sections 2 to 13 was removed. The app asks
+everyone to accept these terms again.
 
 **Changelog — November 5, 2026 (booking for someone else):** added the short "Booking for someone else" part of section 9, ahead of the next app update, which lets you book a flight for up to nine travelers.
 
