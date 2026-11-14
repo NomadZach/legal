@@ -1,6 +1,6 @@
 # Pinorama Privacy Policy
 
-**Effective date: November 13, 2026**
+**Effective date: November 14, 2026**
 
 > **Pinorama was previously known as NomadMap — same app,
 > same operator (NomadZach Studios).**
@@ -115,9 +115,10 @@ between your devices. When you're signed in we hold:
 - **Points activity** — a log of in-app points you earn (e.g. save
   milestones). Points are in-app only and are not money (see the Terms).
 - **Your daily streak** — how many days in a row you have saved, posted or
-  liked something, and the last such day, stored with your account. **Other
-  signed-in travelers can read the number unless you make your profile private;**
-  since October 5, 2026, readers without an account cannot. The app itself never
+  liked something, and the last such day, stored with your account. **Since our
+  database update of November 14, 2026, no other traveler can read the number.**
+  Before it, other signed-in travelers could unless your profile was private, and
+  since October 5, 2026, readers without an account could not. The app itself never
   shows another traveler's number. The day itself is never shown to anyone else.
 - **Posts and likes** — posts you choose to publish in the app. A post
   contains the text you write (a caption), an optional photo you pick from your
@@ -128,8 +129,13 @@ between your devices. When you're signed in we hold:
   phone (a photo in a format it can't clean is not uploaded). Your posts, and a
   record of which posts you've liked, are stored with your account. Any signed-in
   account can read the posts of a public profile, with their place and coordinates,
-  and, though our Terms forbid it, nothing in the app stops one from copying many at
-  once. The same goes for likes, comments and city-chat messages.
+  in the feed and on that profile. Since our database update of November 14, 2026,
+  our server hands other people's posts out only through those pages, up to 50 at a
+  time, and counts how often each account asks (see "Abuse prevention counts"), so
+  an account can no longer copy them without limit. Our Terms forbid copying in bulk
+  at all. Comments and city-chat messages are served the same way, a page at a time
+  and counted. Likes are narrower: an account can read its own likes and who liked
+  its own posts, and of anyone else's only how many likes a post has.
 - **Which posts you've seen** — so the feed can stop showing you the same
   things and, later, rank what you see. We store one row per post per day
   (your account saw this post, on this date), never a moment-by-moment
@@ -217,8 +223,9 @@ between your devices. When you're signed in we hold:
   location is **public promo content**: it appears on the map for **everyone
   using the app, including people without accounts**. The app shows the venue
   name with it, not your name or handle, but it is stored with your account, and
-  anyone reading the public data directly also gets that account's id, which leads
-  to its public profile if it has one.
+  a signed-in account reading the public data directly also gets that account's id,
+  which leads to its public profile if it has one. Since our database update of
+  November 14, 2026, people without an account cannot read that id.
   Game nights **expire off the map automatically after 7 days**, you can
   remove your own at any time in the Work hub (it disappears for everyone
   immediately, and the venue, sport, fixture, time and location you entered are
@@ -235,9 +242,10 @@ between your devices. When you're signed in we hold:
   through your phone's normal share sheet. A **public** event is **public promo/
   social content**: it appears on the map for **everyone using the app,
   including people without accounts**, so nearby travelers can find and join it.
-  Public events show the event title and place, are stored with your account (anyone
-  reading the public data directly also gets that account's id, which leads to its
-  public profile if it has one),
+  Public events show the event title and place, are stored with your account (a
+  signed-in account reading the public data directly also gets that account's id,
+  which leads to its public profile if it has one; since our database update of
+  November 14, 2026, people without an account cannot read that id),
   **expire off the map automatically** (after the event's time, or after 7 days
   if you set no time), can be removed by you at any time, and are erased when you
   delete your account. **Known gap, disclosed September 29, 2026 (updated
@@ -408,8 +416,9 @@ blocks, the code that
 copies them is written and switched off — when we turn it on we will say so here. Everything else on the phone is untouched. **Posts, likes, comments, and game nights are the exceptions:** a
 text post you publish is visible to other signed-in users whenever your profile
 is public — and accounts are public by default. Likes are visible
-too: every post shows its like count, and the fact that your account liked a
-post can be seen by other signed-in users. Comments you write are visible on
+too: every post shows its like count. Since our database update of November 14,
+2026, the fact that your account liked a post can be read only by you and by the
+account whose post it is; before it, any signed-in account could read it. Comments you write are visible on
 the post they're on to the same audience as the post itself. **Game nights go
 further: they're shown on the map to everyone using the app, even people
 without accounts** (they're venue promo content — that's their whole point).
@@ -953,13 +962,16 @@ industry-standard encryption in transit and at rest, with database access
 rules that keep your places and profile readable only by you. That copy is
 what lets us restore your map on a new phone.
 
-**Abuse prevention counts.** To stop automated scraping of the "who's nearby"
-features (the city bubbles, the match pins and the dating deck), our server
-keeps a short-lived count of how many times your account asked for each of
-them in the current hour — your account id, the feature name, the hour and a
-number. It holds no location, no names and nothing about who was shown to
-you; past an hourly allowance far above normal use the app shows "couldn't
-load" until the next hour; and the counts are deleted within about a day
+**Abuse prevention counts.** To stop automated scraping, our server keeps a
+short-lived count of how many times your account asked for each of these in the
+current hour — your account id, the feature name, the hour and a number: the
+"who's nearby" features (the city bubbles, the match pins and the dating deck)
+and, since our database update of November 13, 2026, the feed, a traveler's
+profile, the people search, a post's comments and comment counts, and a city
+chat room (since November 14, 2026, also a profile's post count). It holds no
+location, no names and nothing about who or what was shown to you; past an
+hourly allowance far above normal use our server refuses until the next hour and
+the app says it couldn't load; and the counts are deleted within about a day
 whenever anyone is using these features, because each time a count starts for
 a new hour, every count more than a day old is cleared away. If nobody uses
 them for a while, a nightly clean-up deletes counts more than a day old even
@@ -1407,6 +1419,19 @@ When planned features launch or anything else changes, we'll update this
 policy, change the effective date at the top, and flag meaningful changes
 in the app. The current version always lives with the app and in our
 project repository.
+
+**Changelog — November 14, 2026 (who can read what in bulk, after the database update):** our database update of November 14, 2026
+closed the direct reads this page disclosed on November 5. "Posts and likes" said "Any signed-in account can read the posts of a public
+profile, with their place and coordinates, and, though our Terms forbid it, nothing in the app stops one from copying many at once. The
+same goes for likes, comments and city-chat messages." Other people's posts, comments and city-chat messages are now served only through
+the app's own pages, a page at a time, and each account's requests are counted by the hour; of other people's likes an account reads
+only a post's count, and where this page said "the fact that your account liked a post can be seen by other signed-in users", it
+is now only you and the account whose post it is. "Your daily streak" said "Other signed-in travelers can read the number unless you make your profile private": no
+other traveler can read it now. Game nights and public events said "anyone reading the public data directly also gets that account's
+id": a signed-in account still does, people without an account no longer do. And "Abuse prevention counts" said less than our server
+does: it named only the "who's nearby" features, while since November 13, 2026 the same hourly count also covers the feed, a
+traveler's profile, the people search, comments and city chat. It names them all now. The one thing newly counted by this update is
+how often an account asks for a profile's post count.
 
 **Changelog — November 13, 2026 (places saved while signed out):** "Without an account" said that what you save stays on your
 device, and "What signing out does" said your saved places stay on the phone. Both are true, and neither said what happens next.
